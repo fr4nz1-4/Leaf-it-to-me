@@ -1,0 +1,2704 @@
+fileFormatVersion: 2
+guid: 969bbc508e0da4a7b800a54331bb050d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3239716765693741651
+    second: naked_tree_0
+  - first:
+      213: 3515134507614087646
+    second: naked_tree_1
+  - first:
+      213: 8249925673774246006
+    second: naked_tree_2
+  - first:
+      213: 6220020348579355839
+    second: naked_tree_3
+  - first:
+      213: -3966165159572034564
+    second: naked_tree_4
+  - first:
+      213: 3170140729622848623
+    second: naked_tree_5
+  - first:
+      213: -1719063841703797109
+    second: naked_tree_6
+  - first:
+      213: 911767995631554165
+    second: naked_tree_7
+  - first:
+      213: -6374618207278126319
+    second: naked_tree_8
+  - first:
+      213: -1308211041829549619
+    second: naked_tree_9
+  - first:
+      213: -423290779680233829
+    second: naked_tree_10
+  - first:
+      213: 7317484578541368615
+    second: naked_tree_11
+  - first:
+      213: 7332027319713699889
+    second: naked_tree_12
+  - first:
+      213: -3472958850099488609
+    second: naked_tree_13
+  - first:
+      213: 8889051888582524969
+    second: naked_tree_14
+  - first:
+      213: -3603133802642139319
+    second: naked_tree_15
+  - first:
+      213: 4972625375484014257
+    second: naked_tree_16
+  - first:
+      213: 1484202054504943610
+    second: naked_tree_17
+  - first:
+      213: -6447806553438919236
+    second: naked_tree_18
+  - first:
+      213: -7583917260811572108
+    second: naked_tree_19
+  - first:
+      213: -7592068628601527404
+    second: naked_tree_20
+  - first:
+      213: 8495362562274549020
+    second: naked_tree_21
+  - first:
+      213: 11437460086612842
+    second: naked_tree_22
+  - first:
+      213: 2621514052968880110
+    second: naked_tree_23
+  - first:
+      213: -4941985680667909272
+    second: naked_tree_24
+  - first:
+      213: -251034624483712473
+    second: naked_tree_25
+  - first:
+      213: 5587592608969994309
+    second: naked_tree_26
+  - first:
+      213: 1203173345829060985
+    second: naked_tree_27
+  - first:
+      213: -4438860937682631818
+    second: naked_tree_28
+  - first:
+      213: 893906317983906181
+    second: naked_tree_29
+  - first:
+      213: -2372109941997599997
+    second: naked_tree_30
+  - first:
+      213: -3993457531620067225
+    second: naked_tree_31
+  - first:
+      213: -7197266838206471487
+    second: naked_tree_32
+  - first:
+      213: -7229777878318456125
+    second: naked_tree_33
+  - first:
+      213: -733654077468801209
+    second: naked_tree_34
+  - first:
+      213: 7805759740421417345
+    second: naked_tree_35
+  - first:
+      213: 8356373303319971060
+    second: naked_tree_36
+  - first:
+      213: 2150687002050432559
+    second: naked_tree_37
+  - first:
+      213: -7301830596838939763
+    second: naked_tree_38
+  - first:
+      213: 8705541454481739986
+    second: naked_tree_39
+  - first:
+      213: 8337310123007524811
+    second: naked_tree_40
+  - first:
+      213: 8721648430688123595
+    second: naked_tree_41
+  - first:
+      213: -3330941468685093175
+    second: naked_tree_42
+  - first:
+      213: -4208382591999887113
+    second: naked_tree_43
+  - first:
+      213: -5679954281905102737
+    second: naked_tree_44
+  - first:
+      213: -6472312694815274906
+    second: naked_tree_45
+  - first:
+      213: -8515210326196600612
+    second: naked_tree_46
+  - first:
+      213: 5292917177082908604
+    second: naked_tree_47
+  - first:
+      213: 55935861030408017
+    second: naked_tree_48
+  - first:
+      213: 6144464210514204846
+    second: naked_tree_49
+  - first:
+      213: 371428835536229469
+    second: naked_tree_50
+  - first:
+      213: -3741498061394595176
+    second: naked_tree_51
+  - first:
+      213: 9088368944718421975
+    second: naked_tree_52
+  - first:
+      213: 2025622362060068388
+    second: naked_tree_53
+  - first:
+      213: -426960194810963817
+    second: naked_tree_54
+  - first:
+      213: 2993916796436583847
+    second: naked_tree_55
+  - first:
+      213: -8933987514174990010
+    second: naked_tree_56
+  - first:
+      213: 1994283361231968625
+    second: naked_tree_57
+  - first:
+      213: -7034819670761881439
+    second: naked_tree_58
+  - first:
+      213: -5187523251617604887
+    second: naked_tree_59
+  - first:
+      213: -6599967433330468512
+    second: naked_tree_60
+  - first:
+      213: 7689669506370582630
+    second: naked_tree_61
+  - first:
+      213: 4987342336317610515
+    second: naked_tree_62
+  - first:
+      213: -6393682088556621373
+    second: naked_tree_63
+  - first:
+      213: -6774962567750632154
+    second: naked_tree_64
+  - first:
+      213: -5123883617590688696
+    second: naked_tree_65
+  - first:
+      213: 5303442331195452915
+    second: naked_tree_66
+  - first:
+      213: 1948052242470765885
+    second: naked_tree_67
+  - first:
+      213: -1458679507557025764
+    second: naked_tree_68
+  - first:
+      213: 4077184559431112826
+    second: naked_tree_69
+  - first:
+      213: 4673952957715825291
+    second: naked_tree_70
+  - first:
+      213: -727065890569650385
+    second: naked_tree_71
+  - first:
+      213: 5463610634677799605
+    second: naked_tree_72
+  - first:
+      213: 7571671213828195814
+    second: naked_tree_73
+  - first:
+      213: -8742334526976568926
+    second: naked_tree_74
+  - first:
+      213: 5404354331415305262
+    second: naked_tree_75
+  - first:
+      213: 5805369630179725234
+    second: naked_tree_76
+  - first:
+      213: -857002659233390360
+    second: naked_tree_77
+  - first:
+      213: -4718344376674319399
+    second: naked_tree_78
+  - first:
+      213: 6639401384868638425
+    second: naked_tree_79
+  - first:
+      213: 3131743750317290519
+    second: naked_tree_80
+  - first:
+      213: 3421358005915890374
+    second: naked_tree_81
+  - first:
+      213: 3821263845016607603
+    second: naked_tree_82
+  - first:
+      213: 3001494672522335658
+    second: naked_tree_83
+  - first:
+      213: -7505129514904979389
+    second: naked_tree_84
+  - first:
+      213: -4679436557419115643
+    second: naked_tree_85
+  - first:
+      213: 23068991045313916
+    second: naked_tree_86
+  - first:
+      213: -2786266287326626137
+    second: naked_tree_87
+  - first:
+      213: 1926833296165235597
+    second: naked_tree_88
+  - first:
+      213: 3457910182058708379
+    second: naked_tree_89
+  - first:
+      213: -8512211104364272531
+    second: naked_tree_90
+  - first:
+      213: 7053071899099446440
+    second: naked_tree_91
+  - first:
+      213: -2629171359078356920
+    second: naked_tree_92
+  - first:
+      213: 667523384301511250
+    second: naked_tree_93
+  - first:
+      213: -169502331696878969
+    second: naked_tree_94
+  - first:
+      213: 7153413592993457701
+    second: naked_tree_95
+  - first:
+      213: -8313412119116625187
+    second: naked_tree_96
+  - first:
+      213: 7883394152863093230
+    second: naked_tree_97
+  - first:
+      213: -3217714442992192198
+    second: naked_tree_98
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: naked_tree_0
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 828
+        width: 21
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35a8d00db39c5fc20800000000000000
+      internalID: 3239716765693741651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naked_tree_1
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 846
+        width: 9
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed92e00f53448c030800000000000000
+      internalID: 3515134507614087646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naked_tree_2
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 845
+        width: 56
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67860b8b0bf9d7270800000000000000
+      internalID: 8249925673774246006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naked_tree_3
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 845
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbc16cc4d83f15650800000000000000
+      internalID: 6220020348579355839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naked_tree_4
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 859
+        width: 19
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfbad2f0dc955f8c0800000000000000
+      internalID: -3966165159572034564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naked_tree_5
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 849
+        width: 26
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f64ea2d823a9efb20800000000000000
+      internalID: 3170140729622848623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naked_tree_6
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 843
+        width: 28
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8ed6014b88a428e0800000000000000
+      internalID: -1719063841703797109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naked_tree_7
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 832
+        width: 41
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57e4039492047ac00800000000000000
+      internalID: 911767995631554165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naked_tree_8
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 803
+        width: 97
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11b2370c38ec887a0800000000000000
+      internalID: -6374618207278126319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naked_tree_9
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 805
+        width: 84
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc981881dfc48dde0800000000000000
+      internalID: -1308211041829549619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naked_tree_10
+      rect:
+        serializedVersion: 2
+        x: 607
+        y: 829
+        width: 26
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b962670574b202af0800000000000000
+      internalID: -423290779680233829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naked_tree_11
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 809
+        width: 20
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7257b59547dec8560800000000000000
+      internalID: 7317484578541368615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naked_tree_12
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 826
+        width: 7
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1389ef2200890c560800000000000000
+      internalID: 7332027319713699889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naked_tree_13
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 824
+        width: 7
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f98554c83529dcfc0800000000000000
+      internalID: -3472958850099488609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naked_tree_14
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 798
+        width: 39
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9200af0b8914c5b70800000000000000
+      internalID: 8889051888582524969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naked_tree_15
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 818
+        width: 42
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 947105f85e81ffdc0800000000000000
+      internalID: -3603133802642139319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naked_tree_16
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 813
+        width: 21
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1be61d2de60520540800000000000000
+      internalID: 4972625375484014257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naked_tree_17
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 817
+        width: 19
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aff0ca9a7e1f89410800000000000000
+      internalID: 1484202054504943610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naked_tree_18
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 788
+        width: 28
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb566d10a1ac486a0800000000000000
+      internalID: -6447806553438919236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naked_tree_19
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 816
+        width: 42
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47c6f5fbe6380c690800000000000000
+      internalID: -7583917260811572108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naked_tree_20
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 807
+        width: 41
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 493a1d98ecd83a690800000000000000
+      internalID: -7592068628601527404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naked_tree_21
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 826
+        width: 27
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1dd6827d3795e570800000000000000
+      internalID: 8495362562274549020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naked_tree_22
+      rect:
+        serializedVersion: 2
+        x: 604
+        y: 811
+        width: 46
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6368913f42a82000800000000000000
+      internalID: 11437460086612842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naked_tree_23
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 820
+        width: 55
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee797ec442d716420800000000000000
+      internalID: 2621514052968880110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naked_tree_24
+      rect:
+        serializedVersion: 2
+        x: 665
+        y: 784
+        width: 39
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 863e8ba053a8a6bb0800000000000000
+      internalID: -4941985680667909272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naked_tree_25
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 754
+        width: 52
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 722235dc655248cf0800000000000000
+      internalID: -251034624483712473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naked_tree_26
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 788
+        width: 9
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 540314f9fdd1b8d40800000000000000
+      internalID: 5587592608969994309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naked_tree_27
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 792
+        width: 7
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9710c5988c782b010800000000000000
+      internalID: 1203173345829060985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naked_tree_28
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 791
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 673c11ace7ff562c0800000000000000
+      internalID: -4438860937682631818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naked_tree_29
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 805
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58978e16f0bc76c00800000000000000
+      internalID: 893906317983906181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naked_tree_30
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 806
+        width: 23
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3038f036392941fd0800000000000000
+      internalID: -2372109941997599997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naked_tree_31
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 794
+        width: 37
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7687d2288836498c0800000000000000
+      internalID: -3993457531620067225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naked_tree_32
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 793
+        width: 49
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c2210381fb2e1c90800000000000000
+      internalID: -7197266838206471487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naked_tree_33
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 774
+        width: 64
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c2e9dd135baaab90800000000000000
+      internalID: -7229777878318456125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naked_tree_34
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 770
+        width: 46
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 747847ce08981d5f0800000000000000
+      internalID: -733654077468801209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naked_tree_35
+      rect:
+        serializedVersion: 2
+        x: 579
+        y: 724
+        width: 60
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1892dd19021a35c60800000000000000
+      internalID: 7805759740421417345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naked_tree_36
+      rect:
+        serializedVersion: 2
+        x: 596
+        y: 782
+        width: 45
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f4c1f2de3dc7f370800000000000000
+      internalID: 8356373303319971060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naked_tree_37
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 443
+        width: 662
+        height: 355
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2e044cfe66c8dd10800000000000000
+      internalID: 2150687002050432559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naked_tree_38
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 786
+        width: 31
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d83265942cfaaaa90800000000000000
+      internalID: -7301830596838939763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naked_tree_39
+      rect:
+        serializedVersion: 2
+        x: 707
+        y: 766
+        width: 47
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d052d334db40d870800000000000000
+      internalID: 8705541454481739986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naked_tree_40
+      rect:
+        serializedVersion: 2
+        x: 746
+        y: 764
+        width: 12
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bcfb128426314b370800000000000000
+      internalID: 8337310123007524811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naked_tree_41
+      rect:
+        serializedVersion: 2
+        x: 709
+        y: 719
+        width: 41
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bca3207d905890970800000000000000
+      internalID: 8721648430688123595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naked_tree_42
+      rect:
+        serializedVersion: 2
+        x: 732
+        y: 737
+        width: 24
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c6386fd16e16c1d0800000000000000
+      internalID: -3330941468685093175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naked_tree_43
+      rect:
+        serializedVersion: 2
+        x: 746
+        y: 759
+        width: 17
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f8b8ec5452d895c0800000000000000
+      internalID: -4208382591999887113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naked_tree_44
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 688
+        width: 29
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f60669e9cafbc21b0800000000000000
+      internalID: -5679954281905102737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naked_tree_45
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 726
+        width: 21
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 668c84655e9bd26a0800000000000000
+      internalID: -6472312694815274906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naked_tree_46
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 694
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd04057e255e3d980800000000000000
+      internalID: -8515210326196600612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naked_tree_47
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 709
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbf07952128347940800000000000000
+      internalID: 5292917177082908604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naked_tree_48
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 611
+        width: 74
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15f4ce68e59b6c000800000000000000
+      internalID: 55935861030408017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naked_tree_49
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 665
+        width: 11
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea8dcca05a5854550800000000000000
+      internalID: 6144464210514204846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naked_tree_50
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 667
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d545979de84972500800000000000000
+      internalID: 371428835536229469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naked_tree_51
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 670
+        width: 42
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89233c22657831cc0800000000000000
+      internalID: -3741498061394595176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naked_tree_52
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 667
+        width: 42
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7df12a9276f502e70800000000000000
+      internalID: 9088368944718421975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naked_tree_53
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 647
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4269dab5ec47c1c10800000000000000
+      internalID: 2025622362060068388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naked_tree_54
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 611
+        width: 37
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7989f0707f1231af0800000000000000
+      internalID: -426960194810963817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naked_tree_55
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 636
+        width: 30
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a59da2c6778c8920800000000000000
+      internalID: 2993916796436583847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naked_tree_56
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 611
+        width: 16
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64913dda0b9140480800000000000000
+      internalID: -8933987514174990010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naked_tree_57
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 602
+        width: 18
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17914bf962e1dab10800000000000000
+      internalID: 1994283361231968625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naked_tree_58
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 601
+        width: 16
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a0ce4118cc4f5e90800000000000000
+      internalID: -7034819670761881439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naked_tree_59
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 596
+        width: 53
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ead04b56173208b0800000000000000
+      internalID: -5187523251617604887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naked_tree_60
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 610
+        width: 20
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 069d03766943864a0800000000000000
+      internalID: -6599967433330468512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naked_tree_61
+      rect:
+        serializedVersion: 2
+        x: 725
+        y: 600
+        width: 22
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6683f57aca137ba60800000000000000
+      internalID: 7689669506370582630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naked_tree_62
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 595
+        width: 19
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31a5a794e69963540800000000000000
+      internalID: 4987342336317610515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naked_tree_63
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 589
+        width: 20
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c11ec004041547a0800000000000000
+      internalID: -6393682088556621373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naked_tree_64
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 583
+        width: 19
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62db7ae907f7af1a0800000000000000
+      internalID: -6774962567750632154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naked_tree_65
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 583
+        width: 18
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 844401f4ffe44e8b0800000000000000
+      internalID: -5123883617590688696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naked_tree_66
+      rect:
+        serializedVersion: 2
+        x: 723
+        y: 578
+        width: 22
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fdacad83bc999940800000000000000
+      internalID: 5303442331195452915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naked_tree_67
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 584
+        width: 18
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d358f5c713fd80b10800000000000000
+      internalID: 1948052242470765885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naked_tree_68
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 570
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c18fbee57bab1cbe0800000000000000
+      internalID: -1458679507557025764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naked_tree_69
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 568
+        width: 15
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a78599441c1159830800000000000000
+      internalID: 4077184559431112826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naked_tree_70
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 578
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b82c98d83773dd040800000000000000
+      internalID: 4673952957715825291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naked_tree_71
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 545
+        width: 30
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2ffa48bc61f8e5f0800000000000000
+      internalID: -727065890569650385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naked_tree_72
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 556
+        width: 12
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ba440fbce4a2db40800000000000000
+      internalID: 5463610634677799605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naked_tree_73
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 573
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e5c7404adaf31960800000000000000
+      internalID: 7571671213828195814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naked_tree_74
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 535
+        width: 22
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a1ddeb011dfca680800000000000000
+      internalID: -8742334526976568926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naked_tree_75
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 541
+        width: 26
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2c5a5481af100b40800000000000000
+      internalID: 5404354331415305262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naked_tree_76
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 442
+        width: 27
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2bf04b4abe0d09050800000000000000
+      internalID: 5805369630179725234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naked_tree_77
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 431
+        width: 17
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e024dc3f905b14f0800000000000000
+      internalID: -857002659233390360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naked_tree_78
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 442
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d38d5cc9c2158eb0800000000000000
+      internalID: -4718344376674319399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naked_tree_79
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 440
+        width: 23
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9dee45ae164e32c50800000000000000
+      internalID: 6639401384868638425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naked_tree_80
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 317
+        width: 62
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71436352950367b20800000000000000
+      internalID: 3131743750317290519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naked_tree_81
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 226
+        width: 227
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c23e00bafa1b7f20800000000000000
+      internalID: 3421358005915890374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naked_tree_82
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 341
+        width: 76
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37b124b983bd70530800000000000000
+      internalID: 3821263845016607603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naked_tree_83
+      rect:
+        serializedVersion: 2
+        x: 548
+        y: 378
+        width: 137
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa5dbe6808377a920800000000000000
+      internalID: 3001494672522335658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naked_tree_84
+      rect:
+        serializedVersion: 2
+        x: 562
+        y: 376
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 348f9c6587c68d790800000000000000
+      internalID: -7505129514904979389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naked_tree_85
+      rect:
+        serializedVersion: 2
+        x: 579
+        y: 370
+        width: 26
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58b8e066e3d4f0fb0800000000000000
+      internalID: -4679436557419115643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naked_tree_86
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 371
+        width: 69
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7525980025f15000800000000000000
+      internalID: 23068991045313916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naked_tree_87
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 356
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7aeff3ee2913559d0800000000000000
+      internalID: -2786266287326626137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naked_tree_88
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 87
+        width: 203
+        height: 218
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8be25f8cac7dba10800000000000000
+      internalID: 1926833296165235597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naked_tree_89
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 87
+        width: 192
+        height: 133
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9dc0d26df6fcff20800000000000000
+      internalID: 3457910182058708379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naked_tree_90
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 189
+        width: 36
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d646b37a91d8ed980800000000000000
+      internalID: -8512211104364272531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naked_tree_91
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 82
+        width: 17
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8acbc11068b81e160800000000000000
+      internalID: 7053071899099446440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naked_tree_92
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 179
+        width: 34
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 848e080349e438bd0800000000000000
+      internalID: -2629171359078356920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naked_tree_93
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 203
+        width: 11
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 252ee883bf4834900800000000000000
+      internalID: 667523384301511250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naked_tree_94
+      rect:
+        serializedVersion: 2
+        x: 524
+        y: 112
+        width: 155
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78a6b92078ec5adf0800000000000000
+      internalID: -169502331696878969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naked_tree_95
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 87
+        width: 53
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52663dd23c7064360800000000000000
+      internalID: 7153413592993457701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naked_tree_96
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 91
+        width: 73
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dda40a859b3d0ac80800000000000000
+      internalID: -8313412119116625187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naked_tree_97
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 101
+        width: 124
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee1dbc9c631776d60800000000000000
+      internalID: 7883394152863093230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: naked_tree_98
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 91
+        width: 51
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a357ec423c16853d0800000000000000
+      internalID: -3217714442992192198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      naked_tree_0: 3239716765693741651
+      naked_tree_1: 3515134507614087646
+      naked_tree_10: -423290779680233829
+      naked_tree_11: 7317484578541368615
+      naked_tree_12: 7332027319713699889
+      naked_tree_13: -3472958850099488609
+      naked_tree_14: 8889051888582524969
+      naked_tree_15: -3603133802642139319
+      naked_tree_16: 4972625375484014257
+      naked_tree_17: 1484202054504943610
+      naked_tree_18: -6447806553438919236
+      naked_tree_19: -7583917260811572108
+      naked_tree_2: 8249925673774246006
+      naked_tree_20: -7592068628601527404
+      naked_tree_21: 8495362562274549020
+      naked_tree_22: 11437460086612842
+      naked_tree_23: 2621514052968880110
+      naked_tree_24: -4941985680667909272
+      naked_tree_25: -251034624483712473
+      naked_tree_26: 5587592608969994309
+      naked_tree_27: 1203173345829060985
+      naked_tree_28: -4438860937682631818
+      naked_tree_29: 893906317983906181
+      naked_tree_3: 6220020348579355839
+      naked_tree_30: -2372109941997599997
+      naked_tree_31: -3993457531620067225
+      naked_tree_32: -7197266838206471487
+      naked_tree_33: -7229777878318456125
+      naked_tree_34: -733654077468801209
+      naked_tree_35: 7805759740421417345
+      naked_tree_36: 8356373303319971060
+      naked_tree_37: 2150687002050432559
+      naked_tree_38: -7301830596838939763
+      naked_tree_39: 8705541454481739986
+      naked_tree_4: -3966165159572034564
+      naked_tree_40: 8337310123007524811
+      naked_tree_41: 8721648430688123595
+      naked_tree_42: -3330941468685093175
+      naked_tree_43: -4208382591999887113
+      naked_tree_44: -5679954281905102737
+      naked_tree_45: -6472312694815274906
+      naked_tree_46: -8515210326196600612
+      naked_tree_47: 5292917177082908604
+      naked_tree_48: 55935861030408017
+      naked_tree_49: 6144464210514204846
+      naked_tree_5: 3170140729622848623
+      naked_tree_50: 371428835536229469
+      naked_tree_51: -3741498061394595176
+      naked_tree_52: 9088368944718421975
+      naked_tree_53: 2025622362060068388
+      naked_tree_54: -426960194810963817
+      naked_tree_55: 2993916796436583847
+      naked_tree_56: -8933987514174990010
+      naked_tree_57: 1994283361231968625
+      naked_tree_58: -7034819670761881439
+      naked_tree_59: -5187523251617604887
+      naked_tree_6: -1719063841703797109
+      naked_tree_60: -6599967433330468512
+      naked_tree_61: 7689669506370582630
+      naked_tree_62: 4987342336317610515
+      naked_tree_63: -6393682088556621373
+      naked_tree_64: -6774962567750632154
+      naked_tree_65: -5123883617590688696
+      naked_tree_66: 5303442331195452915
+      naked_tree_67: 1948052242470765885
+      naked_tree_68: -1458679507557025764
+      naked_tree_69: 4077184559431112826
+      naked_tree_7: 911767995631554165
+      naked_tree_70: 4673952957715825291
+      naked_tree_71: -727065890569650385
+      naked_tree_72: 5463610634677799605
+      naked_tree_73: 7571671213828195814
+      naked_tree_74: -8742334526976568926
+      naked_tree_75: 5404354331415305262
+      naked_tree_76: 5805369630179725234
+      naked_tree_77: -857002659233390360
+      naked_tree_78: -4718344376674319399
+      naked_tree_79: 6639401384868638425
+      naked_tree_8: -6374618207278126319
+      naked_tree_80: 3131743750317290519
+      naked_tree_81: 3421358005915890374
+      naked_tree_82: 3821263845016607603
+      naked_tree_83: 3001494672522335658
+      naked_tree_84: -7505129514904979389
+      naked_tree_85: -4679436557419115643
+      naked_tree_86: 23068991045313916
+      naked_tree_87: -2786266287326626137
+      naked_tree_88: 1926833296165235597
+      naked_tree_89: 3457910182058708379
+      naked_tree_9: -1308211041829549619
+      naked_tree_90: -8512211104364272531
+      naked_tree_91: 7053071899099446440
+      naked_tree_92: -2629171359078356920
+      naked_tree_93: 667523384301511250
+      naked_tree_94: -169502331696878969
+      naked_tree_95: 7153413592993457701
+      naked_tree_96: -8313412119116625187
+      naked_tree_97: 7883394152863093230
+      naked_tree_98: -3217714442992192198
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

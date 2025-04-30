@@ -4,7 +4,7 @@ using UnityEngine.UI;
 
 public class SceneLoader : MonoBehaviour
 {
-	public Button introButton, playButton, exitButton;
+	public Button introButton, playButton, exitButton, houseButton;
 	public CanvasGroup intro;
 
 	private void Start() {;
@@ -14,14 +14,15 @@ public class SceneLoader : MonoBehaviour
 
 	void StartGame()
 	{
-		LoadSceneByName("GameScene");
+		LoadSceneByName("TreeMap");
 	}
 
 	void EndGame()
 	{
 		Application.Quit();
 	}
-	void LoadSceneByName(string sceneName)
+
+	public static void LoadSceneByName(string sceneName)
 	{
 		SceneManager.LoadScene(sceneName);
 	}
