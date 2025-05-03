@@ -5,8 +5,9 @@ public class ClickableSceneLink : MonoBehaviour
 {
     public string sceneToLoad;
 
-    public void OnMouseDown()
+    public void ChangeScene(string sceneToLoad)
     {
+        Debug.Log("called changeScene");
         SceneLoader.LoadSceneByName(sceneToLoad);
     }
 }
