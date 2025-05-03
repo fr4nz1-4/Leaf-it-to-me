@@ -7,15 +7,19 @@ public class PlayerMovement : MonoBehaviour
     public float moveSpeed = 5f;
     private Vector3 targetPosition;
     private bool isMoving = false;
+    MinigameManager minigameManager;
     
     // Update is called once per frame
     void Update()
     {
         if (Input.GetMouseButtonDown(0))
         {
-            targetPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            targetPosition.z = transform.position.z;
-            isMoving = true;
+            if (!FindFirstObjectByType<MinigameManager>().isMinigameActive)
+            {
+                targetPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+                targetPosition.z = transform.position.z;
+                isMoving = true;
+            }
         }
 
         if (isMoving)

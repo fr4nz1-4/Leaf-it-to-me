@@ -6,8 +6,23 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/TreeMap.unity
+    guid: f48609b69e1364e07a2aa30514ad2bd0
+  - enabled: 1
     path: Assets/Scenes/House1_Scene.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
+  - enabled: 1
+    path: Assets/Scenes/House2_Scene.unity
+    guid: 5cdc689b1294b4b9aaa7cbf68512925a
+  - enabled: 1
+    path: Assets/Scenes/House3_Scene.unity
+    guid: 530f1249403c04dcc9910cf3dab2c135
+  - enabled: 1
+    path: Assets/Scenes/House4_Scene.unity
+    guid: 0a85ccdcea11c41528afc09d106d3893
+  - enabled: 1
+    path: Assets/Scenes/House5_Scene.unity
+    guid: 3e3b7314b67844faba986a48c500449e
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
