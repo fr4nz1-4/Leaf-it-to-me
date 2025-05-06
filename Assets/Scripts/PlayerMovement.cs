@@ -8,6 +8,7 @@ public class PlayerMovement : MonoBehaviour
     private Vector3 targetPosition;
     private bool isMoving = false;
     MinigameManager minigameManager;
+    private Rigidbody2D rb;
     
     // Update is called once per frame
     void Update()
