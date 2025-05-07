@@ -4,15 +4,18 @@ using UnityEngine;
 public class ClickableCharacter : MonoBehaviour
 {
     public MinigameManager miniGameManager;
+    public DialogManager dialogManager;
+    
     private void OnMouseDown()
     {
         Debug.Log("You clicked on: " + gameObject.name); 
         
         switch (gameObject.name)
         {
-            case "flower_1_0":
-                Debug.Log("I'm the flower fairy. we will play rock paper scissors now");
-                miniGameManager.ShowMinigamePanel();     
+            case "animal_fairy":
+                Debug.Log("I'm the animal fairy. we will play rock paper scissors now");
+                // miniGameManager.ShowMinigamePanel();     
+                dialogManager.StartDialog();
                 break;
         }
     }
