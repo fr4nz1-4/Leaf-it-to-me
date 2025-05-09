@@ -11,12 +11,23 @@ public class MinigameManager : MonoBehaviour
     public Image playerHandImage;
     public Image enemyHandImage;
 
-    public Sprite rockSprite;
-    public Sprite paperSprite;
-    public Sprite scissorsSprite;
+    // public Sprite rockSprite;
+    // public Sprite paperSprite;
+    // public Sprite scissorsSprite;
+    
+    public Sprite playerRockSprite;
+    public Sprite playerPaperSprite;
+    public Sprite playerScissorsSprite;
+    
+    public Sprite enemyRockSprite;
+    public Sprite enemyPaperSprite;
+    public Sprite enemyScissorsSprite;
     
     public bool isMinigameActive = false;
     private int win_counter = 0;
+
+    private string player;
+    private string enemy;
 
     public void ShowMinigamePanel()
     {
@@ -40,8 +51,8 @@ public class MinigameManager : MonoBehaviour
         Debug.Log("playerMove: " + playerMove);
         Debug.Log("enemyMove: " + enemyMove);
         
-        SetHandSprite(playerHandImage, playerMove);
-        SetHandSprite(enemyHandImage, enemyMove);
+        SetPlayerHandSprite(playerMove);
+        SetEnemyHandSprite(enemyMove);
         
         string result = "";
 
@@ -63,26 +74,43 @@ public class MinigameManager : MonoBehaviour
         resultText.text = $"You: {playerMove}\n\n Enemy: {enemyMove}\n\n{result}";
         if (win_counter == 3)
         {
-            resultText.text = "You won 3 times!";
+            resultText.text = $"You: {playerMove}\n\n Enemy: {enemyMove}\n\n{result}\nYou won 3 times!";
             StartCoroutine(CloseMinigameWithDelay());
         }
     }
 
-    void SetHandSprite(Image image, string move)
+    void SetPlayerHandSprite(string move)
     {
         switch (move)
         {
             case "Rock":
-                image.sprite = rockSprite;
+                playerHandImage.sprite = playerRockSprite;
                 break;
             case "Paper":
-                image.sprite = paperSprite;
+                playerHandImage.sprite = playerPaperSprite;
                 break;
             case "Scissors":
-                image.sprite = scissorsSprite;
+                playerHandImage.sprite = playerScissorsSprite;
                 break;
         }
     }
+
+    void SetEnemyHandSprite(string move)
+    {
+        switch (move)
+        {
+            case "Rock":
+                enemyHandImage.sprite = enemyRockSprite;
+                break;
+            case "Paper":
+                enemyHandImage.sprite = enemyPaperSprite;
+                break;
+            case "Scissors":
+                enemyHandImage.sprite = enemyScissorsSprite;
+                break;
+        }
+    }
+
 
     private IEnumerator CloseMinigameWithDelay()
     {
