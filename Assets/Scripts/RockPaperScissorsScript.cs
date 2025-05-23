@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
 
-public class MinigameManager : MonoBehaviour
+public class RockPaperScissorsScript : MonoBehaviour
 {
     public GameObject minigamePanel;
     public TextMeshProUGUI resultText;
@@ -11,10 +11,6 @@ public class MinigameManager : MonoBehaviour
     public Image playerHandImage;
     public Image enemyHandImage;
 
-    // public Sprite rockSprite;
-    // public Sprite paperSprite;
-    // public Sprite scissorsSprite;
-    
     public Sprite playerRockSprite;
     public Sprite playerPaperSprite;
     public Sprite playerScissorsSprite;

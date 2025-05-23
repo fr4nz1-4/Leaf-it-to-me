@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ClickableSceneLink : MonoBehaviour
 {
@@ -8,6 +9,6 @@ public class ClickableSceneLink : MonoBehaviour
     public void ChangeScene(string sceneToLoad)
     {
         Debug.Log("called changeScene");
-        SceneLoader.LoadSceneByName(sceneToLoad);
+        SceneManager.LoadScene(sceneToLoad);
     }
 }

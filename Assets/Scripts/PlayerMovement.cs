@@ -2,12 +2,14 @@ using System.Numerics;
 using UnityEngine;
 using Vector3 = UnityEngine.Vector3;
 
+// controls the Player movement
+
 public class PlayerMovement : MonoBehaviour
 {
     public float moveSpeed = 5f;
     private Vector3 targetPosition;
     private bool isMoving = false;
-    MinigameManager minigameManager;
+    RockPaperScissorsScript _rockPaperScissorsScript;
     private Rigidbody2D rb;
     
     // Update is called once per frame
@@ -15,7 +17,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            if (!FindFirstObjectByType<MinigameManager>().isMinigameActive)
+            if (!FindFirstObjectByType<RockPaperScissorsScript>().isMinigameActive)
             {
                 targetPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
                 targetPosition.z = transform.position.z;
