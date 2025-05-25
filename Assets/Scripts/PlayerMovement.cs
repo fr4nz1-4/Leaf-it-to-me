@@ -1,5 +1,6 @@
 using System.Numerics;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using Vector3 = UnityEngine.Vector3;
 
 // controls the Player movement
@@ -7,6 +8,7 @@ using Vector3 = UnityEngine.Vector3;
 public class PlayerMovement : MonoBehaviour
 {
     public float moveSpeed = 5f;
+    private Vector3 mousePosition;
     private Vector3 targetPosition;
     private bool isMoving = false;
     RockPaperScissorsScript _rockPaperScissorsScript;
@@ -22,6 +24,15 @@ public class PlayerMovement : MonoBehaviour
                 targetPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
                 targetPosition.z = transform.position.z;
                 isMoving = true;
+            }
+
+            if (gameObject.transform.position.x > targetPosition.x)
+            {
+                gameObject.GetComponent<SpriteRenderer>().flipX = true;
+            }
+            else
+            {
+                gameObject.GetComponent<SpriteRenderer>().flipX = false;
             }
         }
 
@@ -44,5 +55,10 @@ public class PlayerMovement : MonoBehaviour
             }
             
         }
+    }
+
+    void checkSpriteFlip()
+    {
+        
     }
 }
