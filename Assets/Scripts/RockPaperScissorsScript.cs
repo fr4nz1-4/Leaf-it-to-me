@@ -3,11 +3,8 @@ using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
 
-public class RockPaperScissorsScript : MonoBehaviour
+public class RockPaperScissorsScript : MinigameScript
 {
-    public GameObject minigamePanel;
-    public TextMeshProUGUI resultText;
-
     public Image playerHandImage;
     public Image enemyHandImage;
 
@@ -19,19 +16,18 @@ public class RockPaperScissorsScript : MonoBehaviour
     public Sprite enemyPaperSprite;
     public Sprite enemyScissorsSprite;
     
-    public bool isMinigameActive = false;
     private int win_counter = 0;
 
     private string player;
     private string enemy;
 
-    public void ShowMinigamePanel()
-    {
-        Debug.Log("showMinigame button pressed");
-        minigamePanel.SetActive(true);
-        resultText.text = "";
-        isMinigameActive = true;
-    }
+    // public void ShowMinigamePanel()
+    // {
+    //     Debug.Log("showMinigame button pressed");
+    //     minigamePanel.SetActive(true);
+    //     resultText.text = "";
+    //     isMinigameActive = true;
+    // }
 
     public void HideMinigamePanel()
     {
