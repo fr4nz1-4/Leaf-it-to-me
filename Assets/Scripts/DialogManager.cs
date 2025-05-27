@@ -2,7 +2,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-// opens DialogPanel, starts Dialog, contains all Dialog-Logic
+// wird nicht verwendet
 public class DialogManager : MonoBehaviour
 {
     public GameObject dialogPanel;
@@ -35,10 +35,10 @@ public class DialogManager : MonoBehaviour
     }
 
     // Methode um Dialog zu starten und Zeilen nacheinander anzuzeigen
-    void startDialog(DialogLine dialogLine)
+    public void startDialog(DialogLine dialogLine)
     {
         // currentDialogLines = dialogLinesText;
-        dialogLinesText = dialogLine.dialogLines;
+        dialogLinesText = dialogLine.dialogText;
         currentLine = 0;
 
         // Portraits während des Dialogs setzen

@@ -5,7 +5,7 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "DialogLine", menuName = "Dialog/DialogLine")]
 public class DialogLine : ScriptableObject
 {
-    [TextArea(2, 5)] public string[] dialogLines;
+    /*[TextArea(2, 5)] */ public string[] dialogText;
 
     public Sprite playerPortrait;
     public Sprite npcPortrait;

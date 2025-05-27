@@ -1,6 +1,6 @@
 using UnityEngine;
 
-// everything the mouse can do
+// kann theoretisch gelöscht werden, ist nicht mehr nötig
 public class MouseController : MonoBehaviour
 {
     /*public Vector3 mousePos;

@@ -1,6 +1,7 @@
 using System.Numerics;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.UI;
 using Vector2 = UnityEngine.Vector2;
 using Vector3 = UnityEngine.Vector3;
 
@@ -31,9 +32,6 @@ public class PlayerMovement : MonoBehaviour
             print("WorldSpace: " + mousePosWorld);
             mousePosWorld2d = new Vector2(mousePosWorld.x, mousePosWorld.y);
             
-            if (!FindFirstObjectByType<RockPaperScissorsScript>().isMinigameActive 
-                || !FindFirstObjectByType<DialogManager>().isMinigameActive)
-            {
                 // targetPosition.z = transform.position.z;
                 hit = Physics2D.Raycast(mousePosWorld2d, Vector2.zero);
 
@@ -46,7 +44,6 @@ public class PlayerMovement : MonoBehaviour
                         isMoving = true;
                     }
                 }
-            }
 
             if (gameObject.transform.position.x > targetPos.x)
             {
@@ -63,11 +60,11 @@ public class PlayerMovement : MonoBehaviour
             transform.position = Vector3.MoveTowards(transform.position, targetPos, moveSpeed * Time.deltaTime);
             
             // Skalierung anhand der y-Position
-            float minY = 0.5f; 
-            float maxY = -2f;
+            float minY = -1.5f; // höchste position / am weitesten hinten
+            float maxY = -5f; // niedrigste position / am weitesten vorne
 
             float scale = Mathf.InverseLerp(minY, maxY, transform.position.y); // Wert zwischen 0 und 1
-            float finalScale = Mathf.Lerp(0.35f, 0.5f, scale); // Skaliere zwischen 60% und 100%
+            float finalScale = Mathf.Lerp(0.4f, 0.5f, scale); 
 
             transform.localScale = new Vector3(finalScale, finalScale, 0.5f); // gleichmäßig skalieren
             
@@ -75,7 +72,6 @@ public class PlayerMovement : MonoBehaviour
             {
                 isMoving = false;
             }
-            
         }
     }
 }
