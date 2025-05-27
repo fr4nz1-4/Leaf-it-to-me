@@ -5,18 +5,13 @@ public class MinigameScript : MonoBehaviour
 {
     public GameObject minigamePanel;
     public TextMeshProUGUI resultText;
-    public bool isMinigameActive = false;
+    public GameObject player;
     
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public void closeMinigamePanel()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        Debug.Log("hideMinigame button pressed");
+        minigamePanel.SetActive(false);
+        player.GetComponent<PlayerMovement>().enabled = true;
     }
     
     public void ShowMinigamePanel()
@@ -24,6 +19,6 @@ public class MinigameScript : MonoBehaviour
         Debug.Log("showMinigame button pressed");
         minigamePanel.SetActive(true);
         resultText.text = "";
-        isMinigameActive = true;
+        player.GetComponent<PlayerMovement>().enabled = false;
     }
 }

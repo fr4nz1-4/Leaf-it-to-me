@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class DialogUIScript : MonoBehaviour
 {
     public GameObject dialogPanel;
-    // public MinigameScript minigame;
+    public MinigameScript minigame;
     public DialogLine dialogLine;
     private TypewriterEffect typewriterEffect;
     
@@ -59,9 +59,17 @@ public class DialogUIScript : MonoBehaviour
         leaveDialog.gameObject.SetActive(true);
         yield return new WaitUntil(() => buttonClicked);
         
-        CloseDialogPanel();
+        HideDialogPanel();
     }
 
+    // dialogfenster ausblenden, Charakter kann sich aber nicht bewegen
+    public void HideDialogPanel()
+    {
+        buttonClicked = true;
+        dialogPanel.SetActive(false);
+        textLabel.text = string.Empty;
+    }
+    
     // dialogfenster ausblenden, textfeld clearen und charakterbewegung aktivieren
     public void CloseDialogPanel()
     {
@@ -75,6 +83,7 @@ public class DialogUIScript : MonoBehaviour
     {
         buttonClicked = true;
         // minigame starten bzw methode aufrufen
+        minigame.ShowMinigamePanel();
     }
     
 }

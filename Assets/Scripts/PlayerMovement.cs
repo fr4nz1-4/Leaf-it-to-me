@@ -32,18 +32,17 @@ public class PlayerMovement : MonoBehaviour
             print("WorldSpace: " + mousePosWorld);
             mousePosWorld2d = new Vector2(mousePosWorld.x, mousePosWorld.y);
             
-                // targetPosition.z = transform.position.z;
-                hit = Physics2D.Raycast(mousePosWorld2d, Vector2.zero);
-
-                if (hit.collider != null)
+            // targetPosition.z = transform.position.z;
+            hit = Physics2D.Raycast(mousePosWorld2d, Vector2.zero);
+            if (hit.collider != null) 
+            { 
+                print("Collider getroffen: " + hit.collider.name); 
+                if (hit.collider.gameObject.CompareTag("Ground")) 
                 {
-                    print("Collider getroffen: " + hit.collider.name);
-                    if (hit.collider.gameObject.CompareTag("Ground"))
-                    {
-                        targetPos = hit.point;
-                        isMoving = true;
-                    }
+                    targetPos = hit.point; 
+                    isMoving = true;
                 }
+            }
 
             if (gameObject.transform.position.x > targetPos.x)
             {
@@ -73,5 +72,15 @@ public class PlayerMovement : MonoBehaviour
                 isMoving = false;
             }
         }
+    }
+    
+    void OnDisable()
+    {
+        Debug.Log("PlayerMovement wurde deaktiviert!");
+    }
+    
+    void OnEnable()
+    {
+        Debug.Log("PlayerMovement wurde aktiviert!");
     }
 }

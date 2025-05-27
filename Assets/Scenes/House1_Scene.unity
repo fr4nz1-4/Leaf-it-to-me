@@ -889,7 +889,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 475960920}
         m_TargetAssemblyTypeName: MinigameManager, Assembly-CSharp
-        m_MethodName: HideMinigamePanel
+        m_MethodName: closeMinigamePanel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1657,7 +1657,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minigamePanel: {fileID: 689999280}
   resultText: {fileID: 216484797}
-  isMinigameActive: 0
+  player: {fileID: 1833215181}
   playerHandImage: {fileID: 1023113971}
   enemyHandImage: {fileID: 1762250070}
   playerRockSprite: {fileID: 21300000, guid: 64354895a3e3647d2b2e92e6b10a60b5, type: 3}
@@ -2334,6 +2334,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogPanel: {fileID: 2117462204}
+  minigame: {fileID: 475960920}
   dialogLine: {fileID: 11400000, guid: e7cf58b94b8e34114a2a210c79a2028d, type: 2}
   textLabel: {fileID: 143354669}
   startMinigame: {fileID: 270000379}
@@ -3178,9 +3179,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 0432d53daeca64a83b43df6eb3e46855, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -4360,9 +4361,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: ced13f28ff1e24782ae2d93837cba6e0, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1

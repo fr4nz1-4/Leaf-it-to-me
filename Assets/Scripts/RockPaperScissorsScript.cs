@@ -1,7 +1,9 @@
+using System;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
+using Random = UnityEngine.Random;
 
 public class RockPaperScissorsScript : MinigameScript
 {
@@ -18,26 +20,9 @@ public class RockPaperScissorsScript : MinigameScript
     
     private int win_counter = 0;
 
-    private string player;
-    private string enemy;
-
-    // public void ShowMinigamePanel()
-    // {
-    //     Debug.Log("showMinigame button pressed");
-    //     minigamePanel.SetActive(true);
-    //     resultText.text = "";
-    //     isMinigameActive = true;
-    // }
-
-    public void HideMinigamePanel()
-    {
-        Debug.Log("hideMinigame button pressed");
-        minigamePanel.SetActive(false);
-        isMinigameActive = false;
-    }
-
     public void PlayerChoice(string playerMove)
     {
+        Debug.Log("Playermovement= " + player.GetComponent<PlayerMovement>().enabled);
         string[] choices = { "Rock", "Paper", "Scissors" };
         string enemyMove = choices[Random.Range(0, choices.Length)];
         Debug.Log("playerMove: " + playerMove);
@@ -64,11 +49,11 @@ public class RockPaperScissorsScript : MinigameScript
             result = "You lose!";
         }
         resultText.text = $"You: {playerMove}\n\n Enemy: {enemyMove}\n\n{result}";
-        if (win_counter == 3)
-        {
-            resultText.text = $"You: {playerMove}\n\n Enemy: {enemyMove}\n\n{result}\nYou won 3 times!";
-            StartCoroutine(CloseMinigameWithDelay());
-        }
+        // if (win_counter == 3)
+        // {
+        //     resultText.text = $"You: {playerMove}\n\n Enemy: {enemyMove}\n\n{result}\nYou won 3 times!";
+        //     StartCoroutine(CloseMinigameWithDelay());
+        // }
     }
 
     void SetPlayerHandSprite(string move)
@@ -107,8 +92,7 @@ public class RockPaperScissorsScript : MinigameScript
     private IEnumerator CloseMinigameWithDelay()
     {
         yield return new WaitForSeconds(2.0f);
-        isMinigameActive = false;
-        minigamePanel.SetActive(false);
+        closeMinigamePanel();
         win_counter = 0;
     }
 }
