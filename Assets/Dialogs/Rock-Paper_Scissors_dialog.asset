@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba036015fde13415e9a5056fce6ce88d, type: 3}
+  m_Name: Rock-Paper_Scissors_dialog
+  m_EditorClassIdentifier: 
+  dialogText:
+  - Hello, Hello, Heeeeeellllllooooo. I want to play Rock, Paper, Scissor. Are you
+    going to play with me, are you going to play with me?
+  - Why? Don't you have friends?
+  - You're mean!
+  - Excuse me. I'm just stating facts. You wouldn't need me if you...
+  - Hey! They are just children. Be nice to them! They haven't done anything to you!!!
+  - Ok fine.... (I fought against monsters, and now I need to play against children.
+    That's stupid. Let's get this over with)
+  - ...
+  - Ok let's play your (stupid) game.
+  - Yippy, Yippy, Yippy
+  playerPortrait: {fileID: 0}
+  npcPortrait: {fileID: 0}

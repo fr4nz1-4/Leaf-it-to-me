@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba036015fde13415e9a5056fce6ce88d, type: 3}
+  m_Name: kindergarden_fairy_1_dialog
+  m_EditorClassIdentifier: 
+  dialogText:
+  - Hi anybody here?
+  - Oh thank god, you must be the new assistant. I'm Coccinella but you can call
+    me Ella. I need your help ASAP. The children are a handful today, and I only
+    have four hands.
+  - No I'm n......
+  - Ok so would you please entertain the kids. They are all over the place.
+  - I'm not you.....
+  - What are you waiting for don't stand there like you're frozen. The kids are already
+    waiting for you.
+  - I have been trying to tell you, I'M NOT YOUR...... (They just left, she didn't
+    even listen to me, they literally turned around. Who is this PERSON????????)
+  - ...
+  - (OK let me just help the children, maybe the fairy will talk to me then.....)
+  playerPortrait: {fileID: 21300000, guid: ce688af3802634dca9151408ce9ac862, type: 3}
+  npcPortrait: {fileID: 21300000, guid: 4a55e061834f84d6a96d00fa9a65868c, type: 3}

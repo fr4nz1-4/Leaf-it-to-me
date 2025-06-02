@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba036015fde13415e9a5056fce6ce88d, type: 3}
+  m_Name: Tic-tac-toe_dialog
+  m_EditorClassIdentifier: 
+  dialogText:
+  - --QUIET-- Can you play with me?
+  - Umm... What?
+  - --QUIET-- Play with me?
+  - Yeah, but which game?
+  - Ummm... Tic... Tac... Toe... ?
+  - Is that a question?
+  - No?
+  - Are you sure?
+  - No?
+  - Would you just play with them?
+  - Yes, sure... (How did I get myself into this situation?)
+  - ...
+  - Great... let's play Tic-Tac-Toe.
+  playerPortrait: {fileID: 0}
+  npcPortrait: {fileID: 0}
