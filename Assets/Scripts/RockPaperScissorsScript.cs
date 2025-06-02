@@ -92,7 +92,7 @@ public class RockPaperScissorsScript : MinigameScript
     private IEnumerator CloseMinigameWithDelay()
     {
         yield return new WaitForSeconds(2.0f);
-        closeMinigamePanel();
+        HideMinigamePanel();
         win_counter = 0;
     }
 }

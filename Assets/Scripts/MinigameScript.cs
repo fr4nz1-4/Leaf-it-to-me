@@ -7,7 +7,7 @@ public class MinigameScript : MonoBehaviour
     public TextMeshProUGUI resultText;
     public GameObject player;
     
-    public void closeMinigamePanel()
+    public void HideMinigamePanel()
     {
         Debug.Log("hideMinigame button pressed");
         minigamePanel.SetActive(false);

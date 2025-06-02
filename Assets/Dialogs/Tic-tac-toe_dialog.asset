@@ -26,5 +26,5 @@ MonoBehaviour:
   - Yes, sure... (How did I get myself into this situation?)
   - ...
   - Great... let's play Tic-Tac-Toe.
-  playerPortrait: {fileID: 0}
-  npcPortrait: {fileID: 0}
+  playerPortrait: {fileID: 21300000, guid: ce688af3802634dca9151408ce9ac862, type: 3}
+  npcPortrait: {fileID: 21300000, guid: 59944e2ff9e8e47b090efaf3fc0856a9, type: 3}
