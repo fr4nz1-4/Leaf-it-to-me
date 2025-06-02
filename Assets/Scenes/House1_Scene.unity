@@ -1339,6 +1339,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogScript: {fileID: 691458583}
+  dialogLine: {fileID: 11400000, guid: e7cf58b94b8e34114a2a210c79a2028d, type: 2}
 --- !u!65 &475960919
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1982,7 +1983,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogPanel: {fileID: 2117462204}
   minigame: {fileID: 475960920}
-  dialogLine: {fileID: 11400000, guid: e7cf58b94b8e34114a2a210c79a2028d, type: 2}
   textLabel: {fileID: 143354669}
   startMinigame: {fileID: 270000379}
   leaveDialog: {fileID: 60255449}

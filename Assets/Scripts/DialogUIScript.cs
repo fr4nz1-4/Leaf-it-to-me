@@ -8,7 +8,7 @@ public class DialogUIScript : MonoBehaviour
 {
     public GameObject dialogPanel;
     public MinigameScript minigame;
-    public DialogLine dialogLine;
+    // public DialogLine dialogLine;
     private TypewriterEffect typewriterEffect;
     
     [SerializeField] private TMP_Text textLabel;
