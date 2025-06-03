@@ -84,6 +84,8 @@ public class DialogUIScript : MonoBehaviour
         buttonClicked = true;
         // minigame starten bzw methode aufrufen
         minigame.ShowMinigamePanel();
+        
+        // gameObject.GetComponent<MinigameScript>().ShowMinigamePanel();
     }
     
 }
