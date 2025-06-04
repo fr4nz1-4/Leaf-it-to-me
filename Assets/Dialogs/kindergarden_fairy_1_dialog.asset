@@ -27,4 +27,4 @@ MonoBehaviour:
   - ...
   - (OK let me just help the children, maybe the fairy will talk to me then.....)
   playerPortrait: {fileID: 21300000, guid: ce688af3802634dca9151408ce9ac862, type: 3}
-  npcPortrait: {fileID: 21300000, guid: 4a55e061834f84d6a96d00fa9a65868c, type: 3}
+  npcPortrait: {fileID: 21300000, guid: e3f29ca0521994b05acaaadbe5d47b67, type: 3}

@@ -20,4 +20,4 @@ MonoBehaviour:
   - In one of the cupboards.
   - (Urgh they won't listen to me. Maybe the coffee will give them a boost.)
   playerPortrait: {fileID: 21300000, guid: ce688af3802634dca9151408ce9ac862, type: 3}
-  npcPortrait: {fileID: 21300000, guid: 4a55e061834f84d6a96d00fa9a65868c, type: 3}
+  npcPortrait: {fileID: 21300000, guid: 7ad8f1825985a4a18a22133797bdfb6f, type: 3}
