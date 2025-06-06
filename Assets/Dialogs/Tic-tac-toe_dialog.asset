@@ -27,4 +27,4 @@ MonoBehaviour:
   - ...
   - Great... let's play Tic-Tac-Toe.
   playerPortrait: {fileID: 21300000, guid: ce688af3802634dca9151408ce9ac862, type: 3}
-  npcPortrait: {fileID: 21300000, guid: 59944e2ff9e8e47b090efaf3fc0856a9, type: 3}
+  npcPortrait: {fileID: 1126669169103290318, guid: 67ca3edffd4cb42aa9ccea769eae1fa0, type: 3}
