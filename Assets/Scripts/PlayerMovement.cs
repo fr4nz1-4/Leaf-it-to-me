@@ -1,3 +1,4 @@
+using System;
 using System.Numerics;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -19,13 +20,20 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody2D rb;
     private RaycastHit2D hit;
     RockPaperScissorsScript rockPaperScissorsScript;
-    
+    private AudioSource audioSource;
+
+    private void Start()
+    {
+        audioSource = GetComponent<AudioSource>();
+    }
+
     // Update is called once per frame
     void Update()
     {
         if (Input.GetMouseButtonDown(0))
         {
             print("Mouse button clicked");
+            audioSource.Play();
             mousePos = Input.mousePosition;
             print("ScreenSpace: " + Input.mousePosition);
             mousePosWorld = mainCamera.ScreenToWorldPoint(mousePos);
