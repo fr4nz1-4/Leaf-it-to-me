@@ -481,6 +481,7 @@ GameObject:
   - component: {fileID: 140079576}
   - component: {fileID: 140079577}
   - component: {fileID: 140079578}
+  - component: {fileID: 140079579}
   m_Layer: 0
   m_Name: sandkasten
   m_TagString: Untagged
@@ -824,6 +825,22 @@ PolygonCollider2D:
       - {x: -2.885, y: -1.27}
       - {x: -2.835, y: -1.26}
   m_UseDelaunayMesh: 0
+--- !u!114 &140079579
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 140079575}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06e025fc324d246b597c16f593ed738a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  monologScript: {fileID: 1880559953}
+  text: Wow I have never been to the Sea and I have never build a Sandcastle. Must
+    be fun.....
+  SpeechbubbleScript: {fileID: 0}
 --- !u!1 &143354667
 GameObject:
   m_ObjectHideFlags: 0
@@ -1480,6 +1497,7 @@ GameObject:
   - component: {fileID: 258236979}
   - component: {fileID: 258236980}
   - component: {fileID: 258236981}
+  - component: {fileID: 258236982}
   m_Layer: 0
   m_Name: books
   m_TagString: Untagged
@@ -1603,6 +1621,22 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 2.99, y: 1.575918}
   m_EdgeRadius: 0
+--- !u!114 &258236982
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 258236978}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06e025fc324d246b597c16f593ed738a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  monologScript: {fileID: 1880559953}
+  text: "They do have lot\xB4s of books. I wonder if I can recognize one from my
+    childhood..... Oh yes it\xB4s the very gigantic hungry caterpillar!"
+  SpeechbubbleScript: {fileID: 0}
 --- !u!1 &266288452
 GameObject:
   m_ObjectHideFlags: 0
@@ -2467,6 +2501,7 @@ GameObject:
   - component: {fileID: 434893576}
   - component: {fileID: 434893577}
   - component: {fileID: 434893578}
+  - component: {fileID: 434893579}
   m_Layer: 0
   m_Name: schubladen
   m_TagString: Untagged
@@ -2716,6 +2751,21 @@ PolygonCollider2D:
       - {x: -0.59999996, y: -0.29}
       - {x: -0.39, y: -0.28}
   m_UseDelaunayMesh: 0
+--- !u!114 &434893579
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 434893575}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06e025fc324d246b597c16f593ed738a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  monologScript: {fileID: 1880559953}
+  text: Do they really need so many kitchen tools for these children?
+  SpeechbubbleScript: {fileID: 0}
 --- !u!1 &441216125
 GameObject:
   m_ObjectHideFlags: 0
@@ -3914,6 +3964,7 @@ GameObject:
   - component: {fileID: 545770489}
   - component: {fileID: 545770490}
   - component: {fileID: 545770491}
+  - component: {fileID: 545770492}
   m_Layer: 0
   m_Name: crayons
   m_TagString: Untagged
@@ -4407,6 +4458,22 @@ PolygonCollider2D:
       - {x: 19.522705, y: 0.5596509}
       - {x: 19.522705, y: 0.6898023}
   m_UseDelaunayMesh: 0
+--- !u!114 &545770492
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 545770488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06e025fc324d246b597c16f593ed738a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  monologScript: {fileID: 1880559953}
+  text: Oh there is one Pen missing from this layer. The developers are just cutting
+    corners
+  SpeechbubbleScript: {fileID: 0}
 --- !u!1 &566539324
 GameObject:
   m_ObjectHideFlags: 0
@@ -5348,6 +5415,7 @@ GameObject:
   - component: {fileID: 642276690}
   - component: {fileID: 642276691}
   - component: {fileID: 642276692}
+  - component: {fileID: 642276693}
   m_Layer: 0
   m_Name: kindergarten fairy area
   m_TagString: Untagged
@@ -5462,6 +5530,21 @@ CapsuleCollider2D:
   m_Offset: {x: -0.26299518, y: 0.42578954}
   m_Size: {x: 10.432123, y: 1.1469529}
   m_Direction: 1
+--- !u!114 &642276693
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 642276689}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06e025fc324d246b597c16f593ed738a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  monologScript: {fileID: 1880559953}
+  text: Oh, I wonder what I can use this for?
+  SpeechbubbleScript: {fileID: 0}
 --- !u!1 &649074650
 GameObject:
   m_ObjectHideFlags: 0
@@ -5909,7 +5992,7 @@ MonoBehaviour:
   monologScript: {fileID: 1880559953}
   text: There are a lot of Games in here. Wait.... No way.... Is this the Fairys
     vs. Plants limited edition in gold??????..... How did it get here???... Will
-    the notice if I take it?
+    they notice if I take it?
   SpeechbubbleScript: {fileID: 0}
 --- !u!60 &778446790
 PolygonCollider2D:
@@ -10502,7 +10585,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 4a55e061834f84d6a96d00fa9a65868c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 80b06fcfe00264b049ce4f5d395b3387, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1

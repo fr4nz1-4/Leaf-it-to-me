@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using UnityEngine;
 using TMPro;
@@ -20,6 +21,7 @@ public class DialogUIScript : MonoBehaviour
     
     public GameObject player;
     private bool buttonClicked = false;
+    private bool skipRequested = false;
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -45,16 +47,19 @@ public class DialogUIScript : MonoBehaviour
     //jede zeile des dialogs anzeigen lassen und am ende zwei buttons anzeigen lassen
     private IEnumerator StepThroughDialogue(DialogLine dialogLine)
     {
+        skipRequested = false;
         // yield return new WaitForSeconds(1);
         foreach (string dialogue in dialogLine.dialogText)
         {
+            if (skipRequested) break;
+            
             yield return typewriterEffect.Run(dialogue, textLabel);
-            yield return new WaitUntil(() => Input.GetMouseButtonDown(0));
+            yield return new WaitUntil(() => Input.GetMouseButtonDown(0) || skipRequested);
             textLabel.text = string.Empty;
         }
         
         // evtl noch buttons nur einblenden, wenn sie zugewiesen sind 
-        yield return new WaitUntil(() => Input.GetMouseButtonDown(0));
+        // yield return new WaitUntil(() => Input.GetMouseButtonDown(0));
         buttonClicked = false;
         if (minigame != null)
         {
@@ -83,11 +88,14 @@ public class DialogUIScript : MonoBehaviour
         player.GetComponent<PlayerMovement>().enabled = true;
     }
 
-    public void skipDialogue()
+    private void Update()
     {
-        textLabel.text = string.Empty;
-        
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            skipRequested = true;
+        }
     }
+
     public void startMinigameOnClick()
     {
         buttonClicked = true;
