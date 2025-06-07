@@ -14,6 +14,7 @@ public class DialogUIScript : MonoBehaviour
     [SerializeField] private TMP_Text textLabel;
     public Button startMinigame;
     public Button leaveDialog;
+    // public Button SkipDialog;
     public Image playerPortrait;
     public Image npcPortrait;
     
@@ -55,7 +56,10 @@ public class DialogUIScript : MonoBehaviour
         // evtl noch buttons nur einblenden, wenn sie zugewiesen sind 
         yield return new WaitUntil(() => Input.GetMouseButtonDown(0));
         buttonClicked = false;
-        startMinigame.gameObject.SetActive(true);
+        if (minigame != null)
+        {
+            startMinigame.gameObject.SetActive(true);
+        }
         leaveDialog.gameObject.SetActive(true);
         yield return new WaitUntil(() => buttonClicked);
         
@@ -79,6 +83,11 @@ public class DialogUIScript : MonoBehaviour
         player.GetComponent<PlayerMovement>().enabled = true;
     }
 
+    public void skipDialogue()
+    {
+        textLabel.text = string.Empty;
+        
+    }
     public void startMinigameOnClick()
     {
         buttonClicked = true;
