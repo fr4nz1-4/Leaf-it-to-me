@@ -49,6 +49,7 @@ public class RockPaperScissorsScript : MinigameScript
             result = "You lose!";
         }
         resultText.text = $"You: {playerMove}\n\n Enemy: {enemyMove}\n\n{result}";
+        // TODO: überarbeiten, sodass dann auch gleich buttons ausgeblendet werden
         // if (win_counter == 3)
         // {
         //     resultText.text = $"You: {playerMove}\n\n Enemy: {enemyMove}\n\n{result}\nYou won 3 times!";
