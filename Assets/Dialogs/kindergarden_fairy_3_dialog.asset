@@ -13,55 +13,55 @@ MonoBehaviour:
   m_Name: kindergarden_fairy_3_dialog
   m_EditorClassIdentifier: 
   dialogText:
-  - Thank you so much. Now what did you want to tell me?
-  - I'm not your new assistant.
-  - Why didn't you say something sooner?
-  - Because I tried and you didn't listen!
-  - "I\u2019m, sorry. Sometimes these kids are driving me insane. If you're not the
-    new assistant, why are you here?"
-  - To find the room that will grant me one wish. Is the legend real?
-  - Great. Awesome. How do I get there?
-  - Well that is going to be the tricky part.
-  - I have done lots of tricky things. This won't be a problem.
-  - --LAUGHING--- You see there are four different keys to open the room of wishes.
+  - '#Thank you so much. Now what did you want to tell me?'
+  - '@I''m not your new assistant.'
+  - '#Why didn''t you say something sooner?'
+  - '@Because I tried and you didn''t listen!'
+  - "#I\u2019m, sorry. Sometimes these kids are driving me insane. If you're not
+    the new assistant, why are you here?"
+  - '#To find the room that will grant me one wish. Is the legend real?'
+  - '@Great. Awesome. How do I get there?'
+  - '#Well that is going to be the tricky part.'
+  - '@I have done lots of tricky things. This won''t be a problem.'
+  - '#--LAUGHING--- You see there are four different keys to open the room of wishes.
     The keys are in possession of four different people living in this tree. And
-    to be completely honest. They probably won't give you their keys.
-  - What? Why?
-  - For starters, because they are occupied with their own problems and don't know
-    how to handle them. And some of the citizens of this tree sadly don't get along.
-    There was a high fairy one, but they disappeared. Since then everything was out
-    of order and the people stopped communicating with each other.
-  - I wish it was different! Every time the parents are picking up their children
-    from me there is a lot of Drama. They don't want there children playing with
-    each other.
-  - I just wish I could be like the high fairy and bring everybody together.
+    to be completely honest. They probably won''t give you their keys.'
+  - '@What? Why?'
+  - '#For starters, because they are occupied with their own problems and don''t
+    know how to handle them. And some of the citizens of this tree sadly don''t get
+    along. There was a high fairy one, but they disappeared. Since then everything
+    was out of order and the people stopped communicating with each other.'
+  - '#I wish it was different! Every time the parents are picking up their children
+    from me there is a lot of Drama. They don''t want there children playing with
+    each other.'
+  - '#I just wish I could be like the high fairy and bring everybody together.'
   - ...
-  - Unfortunately I am not.
+  - '#Unfortunately I am not.'
   - ...
-  - But maybe you are......
-  - OMG, I have the perfect Idea! You are going to help me resolve this conflict.
-  - And why would I?
-  - You're perfect for the job. You're new and full of energy and have the time to
-    do it. You're so much more like the high fairy was. Come on it will be fun.
-  - I don't see why it would be fun and I should help you. I'm here to find the Room
-    of Wishes.
-  - Exactly. If you help the people resolve their conflicts they have the time to
-    search for their keys.
+  - '@But maybe you are......'
+  - '#OMG, I have the perfect Idea! You are going to help me resolve this conflict.'
+  - '@And why would I?'
+  - '#You''re perfect for the job. You''re new and full of energy and have the time
+    to do it. You''re so much more like the high fairy was. Come on it will be fun.'
+  - '@I don''t see why it would be fun and I should help you. I''m here to find the
+    Room of Wishes.'
+  - '#Exactly. If you help the people resolve their conflicts they have the time
+    to search for their keys.'
   - ...
-  - The keys you will need to open the Room of Wishes.
+  - '#The keys you will need to open the Room of Wishes.'
   - ...
-  - And...
+  - '#And...'
   - ...
-  - I happen to have one of the keys. If you help me resolve the conflicts I will
-    give you my key.
-  - (Unfortunately I probably need the keys. And they are right. I need them for
+  - '#I happen to have one of the keys. If you help me resolve the conflicts I will
+    give you my key.'
+  - '@(Unfortunately I probably need the keys. And they are right. I need them for
     my Quest. I should make the deal and start talking to the other citizens. I can
-    do it)
-  - Alright I'll help you.
-  - Perfect great. Thank you so much. You won't regret it.
-  - We'll see. Where should I start?
-  - Oh you can start at my next door neighbour. Mellifera. They are in charge of
-    growing our produce and flowers. Very important. Good luck.
-  - Thanks.
+    do it)'
+  - '@Alright I''ll help you.'
+  - '#Perfect, great. Thank you so much. You won''t regret it.'
+  - '@We''ll see. Where should I start?'
+  - '#Oh you can start at my next door neighbour. Mellifera. They are in charge of
+    growing our produce and flowers. Very important. Good luck.'
+  - '@Thanks.'
   playerPortrait: {fileID: 21300000, guid: ce688af3802634dca9151408ce9ac862, type: 3}
   npcPortrait: {fileID: 21300000, guid: 80b06fcfe00264b049ce4f5d395b3387, type: 3}

@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 4a55e061834f84d6a96d00fa9a65868c
+guid: 4af49ed36899943d19d44fe7b84521f5
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7317457997291452691
-    second: kindergarten_fairy_fast_fertig_0
+      213: 4005135380560534250
+    second: tic_tac_toe_base_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: kindergarten_fairy_fast_fertig_0
+      name: tic_tac_toe_base_0
       rect:
         serializedVersion: 2
-        x: 1
-        y: 4
-        width: 1034
-        height: 1055
+        x: 0
+        y: 0
+        width: 1920
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 319f56b6745dc8560800000000000000
-      internalID: 7317457997291452691
+      spriteID: aead8a39869159730800000000000000
+      internalID: 4005135380560534250
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      kindergarten_fairy_fast_fertig_0: 7317457997291452691
+      tic_tac_toe_base_0: 4005135380560534250
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

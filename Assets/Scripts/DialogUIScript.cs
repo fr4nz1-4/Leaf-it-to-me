@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using NUnit.Framework.Constraints;
 using UnityEngine;
 using TMPro;
 using UnityEngine.Rendering;
@@ -48,12 +49,26 @@ public class DialogUIScript : MonoBehaviour
     private IEnumerator StepThroughDialogue(DialogLine dialogLine)
     {
         skipRequested = false;
+
         // yield return new WaitForSeconds(1);
-        foreach (string dialogue in dialogLine.dialogText)
+        foreach (string rawLine in dialogLine.dialogText)
         {
-            if (skipRequested) break;
+            string displayText = rawLine;
+            textLabel.alignment = TextAlignmentOptions.Center;
             
-            yield return typewriterEffect.Run(dialogue, textLabel);
+            if (skipRequested) break;
+
+            if (rawLine.StartsWith("@"))
+            {
+                displayText = rawLine.Substring(1); // 1. Zeichen entfernen
+                textLabel.alignment = TextAlignmentOptions.Left;
+            } else if (rawLine.StartsWith("#"))
+            {
+                displayText = rawLine.Substring(1); // 1. Zeichen entfernen
+                textLabel.alignment = TextAlignmentOptions.Right;
+            }
+            
+            yield return typewriterEffect.Run(displayText, textLabel);
             yield return new WaitUntil(() => Input.GetMouseButtonDown(0) || skipRequested);
             textLabel.text = string.Empty;
         }

@@ -13,11 +13,11 @@ MonoBehaviour:
   m_Name: kindergarden_fairy_2_dialog
   m_EditorClassIdentifier: 
   dialogText:
-  - Thank you so much, the children are calming down now.
-  - 'Great. So what I''ve been trying to tell you: I''m actually not your new....'
-  - Would you mind bringing me another cup of coffee? I really need the boost.
-  - I'm not... You know what forget it. Where is the coffee?
-  - In one of the cupboards.
-  - (Urgh they won't listen to me. Maybe the coffee will give them a boost.)
+  - '#Thank you so much, the children are calming down now.'
+  - '@Great. So what I''ve been trying to tell you: I''m actually not your new....'
+  - '#Would you mind bringing me another cup of coffee? I really need the boost.'
+  - '@I''m not... You know what forget it. Where is the coffee?'
+  - '#In one of the cupboards.'
+  - '@(Urgh they won''t listen to me. Maybe the coffee will give them a boost.)'
   playerPortrait: {fileID: 21300000, guid: ce688af3802634dca9151408ce9ac862, type: 3}
   npcPortrait: {fileID: 21300000, guid: 7ad8f1825985a4a18a22133797bdfb6f, type: 3}

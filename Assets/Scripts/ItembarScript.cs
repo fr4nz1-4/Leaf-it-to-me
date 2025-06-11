@@ -1,26 +1,52 @@
+using System;
+using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Serialization;
+using UnityEngine.UI;
 
 public class ItembarScript : MonoBehaviour
 {
-    public GameObject Itembar_folded_in;
-    public GameObject Itembar_folded_out;
+    public GameObject itembar_folded_in;
+    public GameObject itembar_folded_out;
+    public List<Image> itemSlots;
 
-    void Start()
+    private void Start()
     {
-        
+        foreach (var slot in itemSlots)
+        {
+            slot.color = new Color(1, 1, 1, 0); // komplett transparent
+            slot.sprite = null;
+            slot.enabled = true; // Komponente bleibt aktiv
+        }
     }
-    
+
     public void fold_itembar_in()
     {
         Debug.Log("Itembar einklappen");
-        Itembar_folded_out.SetActive(false);
-        Itembar_folded_in.SetActive(true);
+        itembar_folded_out.SetActive(false);
+        itembar_folded_in.SetActive(true);
     }
 
     public void fold_itembar_out()
     {
         Debug.Log("Itembar ausklappen");
-        Itembar_folded_out.SetActive(true);
-        Itembar_folded_in.SetActive(false);
+        itembar_folded_out.SetActive(true);
+        itembar_folded_in.SetActive(false);
+    }
+
+    public void add_item(Sprite itemSprite)
+    {
+        Debug.Log("AddItem aufgerufen!");
+        foreach (var slot in itemSlots)
+        {
+            Debug.Log("in schleife drin");
+            if (slot.sprite == null)
+            {
+                slot.sprite = itemSprite;
+                slot.color = new Color(1, 1, 1, 1); // sichtbar machen (volle Deckkraft)
+                Debug.Log("Item zu Inventar hinzugefügt");
+                return;
+            }
+        }
     }
 }

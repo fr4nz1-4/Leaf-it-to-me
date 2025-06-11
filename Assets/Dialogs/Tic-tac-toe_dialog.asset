@@ -13,18 +13,18 @@ MonoBehaviour:
   m_Name: Tic-tac-toe_dialog
   m_EditorClassIdentifier: 
   dialogText:
-  - --QUIET-- Can you play with me?
-  - Umm... What?
-  - --QUIET-- Play with me?
-  - Yeah, but which game?
-  - Ummm... Tic... Tac... Toe... ?
-  - Is that a question?
-  - No?
-  - Are you sure?
-  - No?
+  - '#--QUIET-- Can you play with me?'
+  - '@Umm... What?'
+  - '#--QUIET-- Play with me?'
+  - '@Yeah, but which game?'
+  - '#Ummm... Tic... Tac... Toe... ?'
+  - '@Is that a question?'
+  - '#No?'
+  - '@Are you sure?'
+  - '#No?'
   - Would you just play with them?
-  - Yes, sure... (How did I get myself into this situation?)
+  - '@Yes, sure... (How did I get myself into this situation?)'
   - ...
-  - Great... let's play Tic-Tac-Toe.
+  - '@Great... let''s play Tic-Tac-Toe.'
   playerPortrait: {fileID: 21300000, guid: ce688af3802634dca9151408ce9ac862, type: 3}
   npcPortrait: {fileID: 1126669169103290318, guid: 67ca3edffd4cb42aa9ccea769eae1fa0, type: 3}
