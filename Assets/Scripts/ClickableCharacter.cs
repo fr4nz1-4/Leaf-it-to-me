@@ -7,6 +7,12 @@ public class ClickableCharacter : MonoBehaviour
     public DialogUIScript dialogScript;
     // public DialogManager dialogManager;
     public DialogLine dialogLine;
+    private SpriteRenderer spriteRenderer;
+
+    private void Start()
+    {
+        spriteRenderer = GetComponent<SpriteRenderer>();
+    }
 
     private void OnMouseDown()
     {
@@ -14,5 +20,17 @@ public class ClickableCharacter : MonoBehaviour
 
         // Dialog starten
         dialogScript.ShowDialogue(dialogLine);
+    }
+
+    private void OnMouseOver()
+    {
+        Debug.Log("You hovered over: " + gameObject.name);
+        ColorUtility.TryParseHtmlString("FFAE00", out Color color);
+        spriteRenderer.color = color;
+    }
+    
+    private void OnMouseExit()
+    {
+        spriteRenderer.color = Color.white;
     }
 }

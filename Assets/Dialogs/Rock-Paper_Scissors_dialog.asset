@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogText:
   - '#Hello, Hello, Heeeeeellllllooooo. I want to play Rock, Paper, Scissor. Are
-    you going to play with me, are you going to play with me?'
+    you going to play with me? Are you going to play with me?'
   - '@Why? Don''t you have friends?'
   - '#You''re mean!'
   - '@Excuse me. I''m just stating facts. You wouldn''t need me if you...'
@@ -23,6 +23,6 @@ MonoBehaviour:
     That''s stupid. Let''s get this over with)'
   - '@...'
   - '@Ok let''s play your (stupid) game.'
-  - '#Yippy, Yippy, Yippy'
+  - '#Yippy, Yippy, Yippy!!!!'
   playerPortrait: {fileID: 21300000, guid: ce688af3802634dca9151408ce9ac862, type: 3}
   npcPortrait: {fileID: 21300000, guid: caad315df3d0e4733a7a29d046475d9a, type: 3}

@@ -23,6 +23,8 @@ public class DialogUIScript : MonoBehaviour
     public GameObject player;
     private bool buttonClicked = false;
     private bool skipRequested = false;
+
+    // private GameObject canvas;
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -32,6 +34,7 @@ public class DialogUIScript : MonoBehaviour
         // ShowDialogue(dialogLine);
         startMinigame.gameObject.SetActive(false);
         leaveDialog.gameObject.SetActive(false);
+        // canvas = GameObject.Find("Canvas"); 
     }
 
     public void ShowDialogue(DialogLine dialogLine)
@@ -62,7 +65,8 @@ public class DialogUIScript : MonoBehaviour
             {
                 displayText = rawLine.Substring(1); // 1. Zeichen entfernen
                 textLabel.alignment = TextAlignmentOptions.Left;
-            } else if (rawLine.StartsWith("#"))
+            } 
+            else if (rawLine.StartsWith("#"))
             {
                 displayText = rawLine.Substring(1); // 1. Zeichen entfernen
                 textLabel.alignment = TextAlignmentOptions.Right;

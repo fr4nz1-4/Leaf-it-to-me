@@ -2,8 +2,10 @@ using System;
 using System.Collections;
 using UnityEngine;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine.Serialization;
 using UnityEngine.UI;
+using ColorUtility = UnityEngine.ColorUtility;
 
 public class ClickableObject : MonoBehaviour
 {
@@ -11,11 +13,12 @@ public class ClickableObject : MonoBehaviour
     public string text;
     private AudioSource audioSource;
     public SpeechbubbleScript SpeechbubbleScript;
-    
+    private SpriteRenderer spriteRenderer;
 
     void Start()
     {
         audioSource = GetComponent<AudioSource>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     private void OnMouseDown()
@@ -37,5 +40,17 @@ public class ClickableObject : MonoBehaviour
         {
             SpeechbubbleScript.ShowSpeechbubble(text);
         }
+    }
+    
+    private void OnMouseOver()
+    {
+        Debug.Log("You hovered over: " + gameObject.name);
+        ColorUtility.TryParseHtmlString("#BCBCBC", out Color color);
+        spriteRenderer.color = color;
+    }
+
+    private void OnMouseExit()
+    {
+        spriteRenderer.color = Color.white;
     }
 }
