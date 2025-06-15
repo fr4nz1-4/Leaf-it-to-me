@@ -14,11 +14,13 @@ public class ClickableObject : MonoBehaviour
     private AudioSource audioSource;
     public SpeechbubbleScript SpeechbubbleScript;
     private SpriteRenderer spriteRenderer;
-
+    private Vector3 standardScale;
+    private Vector3 transformedScale;
     void Start()
     {
         audioSource = GetComponent<AudioSource>();
         spriteRenderer = GetComponent<SpriteRenderer>();
+        standardScale = gameObject.transform.localScale;
     }
 
     private void OnMouseDown()
@@ -47,10 +49,13 @@ public class ClickableObject : MonoBehaviour
         Debug.Log("You hovered over: " + gameObject.name);
         ColorUtility.TryParseHtmlString("#BCBCBC", out Color color);
         spriteRenderer.color = color;
+        
+        gameObject.transform.localScale = standardScale * 1.02f;
     }
 
     private void OnMouseExit()
     {
         spriteRenderer.color = Color.white;
+        gameObject.transform.localScale = standardScale;
     }
 }

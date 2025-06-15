@@ -11,4 +11,11 @@ public class ClickableSceneLink : MonoBehaviour
         Debug.Log("called changeScene");
         SceneManager.LoadScene(sceneToLoad);
     }
+    
+    public void QuitGame()
+    {
+        Debug.Log("Spiel wird beendet..."); // Funktioniert nur im Editor
+        Application.Quit();
+    }
+    
 }
