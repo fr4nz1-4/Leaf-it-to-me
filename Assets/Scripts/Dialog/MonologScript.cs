@@ -24,6 +24,7 @@ public class MonologScript : MonoBehaviour
     {
         monologPanel.SetActive(true);
         player.GetComponent<PlayerMovement>().enabled = false;
+        InputBlocker.Instance.BlockInput(); 
         StartCoroutine(StepThroughDialogue(text));
     }
     
@@ -46,5 +47,6 @@ public class MonologScript : MonoBehaviour
         monologPanel.SetActive(false);
         textLabel.text = string.Empty;
         player.GetComponent<PlayerMovement>().enabled = true;
+        InputBlocker.Instance.UnblockInput();
     }
 }

@@ -12,6 +12,7 @@ public class MinigameScript : MonoBehaviour
         Debug.Log("hideMinigame button pressed");
         minigamePanel.SetActive(false);
         player.GetComponent<PlayerMovement>().enabled = true;
+        InputBlocker.Instance.UnblockInput(); 
     }
     
     public void ShowMinigamePanel()
@@ -20,5 +21,6 @@ public class MinigameScript : MonoBehaviour
         minigamePanel.SetActive(true);
         resultText.text = "";
         player.GetComponent<PlayerMovement>().enabled = false;
+        InputBlocker.Instance.BlockInput(); 
     }
 }

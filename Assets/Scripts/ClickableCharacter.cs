@@ -8,7 +8,10 @@ public class ClickableCharacter : MonoBehaviour
     // public DialogManager dialogManager;
     public DialogLine dialogLine;
     private SpriteRenderer spriteRenderer;
-
+    public LayerMask interactableLayer;
+    private Vector3 standardScale;
+    private Vector3 transformedScale;
+    
     private void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
@@ -16,6 +19,8 @@ public class ClickableCharacter : MonoBehaviour
 
     private void OnMouseDown()
     {
+        if (InputBlocker.Instance.IsBlocked) return;
+
         Debug.Log("You clicked on: " + gameObject.name);
 
         // Dialog starten
@@ -24,6 +29,8 @@ public class ClickableCharacter : MonoBehaviour
 
     private void OnMouseOver()
     {
+        if (InputBlocker.Instance.IsBlocked) return;
+
         Debug.Log("You hovered over: " + gameObject.name);
         ColorUtility.TryParseHtmlString("FFAE00", out Color color);
         spriteRenderer.color = color;

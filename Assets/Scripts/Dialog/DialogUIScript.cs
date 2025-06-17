@@ -39,6 +39,7 @@ public class DialogUIScript : MonoBehaviour
 
     public void ShowDialogue(DialogLine dialogLine)
     {
+        InputBlocker.Instance.BlockInput(); 
         playerPortrait.sprite = dialogLine.playerPortrait;
         npcPortrait.sprite = dialogLine.npcPortrait;
         dialogPanel.SetActive(true);
@@ -105,6 +106,7 @@ public class DialogUIScript : MonoBehaviour
         dialogPanel.SetActive(false);
         textLabel.text = string.Empty;
         player.GetComponent<PlayerMovement>().enabled = true;
+        InputBlocker.Instance.UnblockInput(); 
     }
 
     private void Update()

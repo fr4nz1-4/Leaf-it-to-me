@@ -23,6 +23,7 @@ public class SpeechbubbleScript : MonoBehaviour
         Speechbubble.SetActive(true);
         player.GetComponent<PlayerMovement>().enabled = false;
         StartCoroutine(StepThroughDialogue(text));
+        InputBlocker.Instance.BlockInput(); 
     }
     
     private IEnumerator StepThroughDialogue(string text)
@@ -43,5 +44,6 @@ public class SpeechbubbleScript : MonoBehaviour
         Speechbubble.SetActive(false);
         textLabel.text = string.Empty;
         player.GetComponent<PlayerMovement>().enabled = true;
+        InputBlocker.Instance.UnblockInput(); 
     }
 }

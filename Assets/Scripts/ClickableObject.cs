@@ -16,6 +16,7 @@ public class ClickableObject : MonoBehaviour
     private SpriteRenderer spriteRenderer;
     private Vector3 standardScale;
     private Vector3 transformedScale;
+    
     void Start()
     {
         audioSource = GetComponent<AudioSource>();
@@ -25,6 +26,8 @@ public class ClickableObject : MonoBehaviour
 
     private void OnMouseDown()
     {
+        if (InputBlocker.Instance.IsBlocked) return;
+        
         Debug.Log("You clicked on: " + gameObject.name);
         
         if (monologScript != null)
@@ -46,6 +49,8 @@ public class ClickableObject : MonoBehaviour
     
     private void OnMouseOver()
     {
+        if (InputBlocker.Instance.IsBlocked) return;
+
         Debug.Log("You hovered over: " + gameObject.name);
         ColorUtility.TryParseHtmlString("#BCBCBC", out Color color);
         spriteRenderer.color = color;
