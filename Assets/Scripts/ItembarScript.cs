@@ -9,6 +9,7 @@ public class ItembarScript : MonoBehaviour
     public GameObject itembar_folded_in;
     public GameObject itembar_folded_out;
     public List<Image> itemSlots;
+    private bool _isItembarfoldedOut;
 
     private void Start()
     {
@@ -19,6 +20,18 @@ public class ItembarScript : MonoBehaviour
             slot.enabled = true; // Komponente bleibt aktiv
         }
     }
+
+    // private void OnMouseOver()
+    // {
+    //     if (_isItembarfoldedOut)
+    //     {
+    //         fold_itembar_in();
+    //     }
+    //     else
+    //     {
+    //         fold_itembar_out();
+    //     }
+    // }
 
     public void fold_itembar_in()
     {

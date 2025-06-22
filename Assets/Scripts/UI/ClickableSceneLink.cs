@@ -28,6 +28,7 @@ public class ClickableSceneLink : MonoBehaviour
         {
             player.GetComponent<PlayerMovement>().enabled = false;
             pausePanel.SetActive(true);
+            InputBlocker.Instance.BlockInput(); 
         }
     }
 
@@ -35,5 +36,6 @@ public class ClickableSceneLink : MonoBehaviour
     {
         player.GetComponent<PlayerMovement>().enabled = true;
         pausePanel.SetActive(false);
+        InputBlocker.Instance.UnblockInput(); 
     }
 }
