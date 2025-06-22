@@ -15,6 +15,7 @@ public class ClickableCharacter : MonoBehaviour
     private void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
+        standardScale = gameObject.transform.localScale;
     }
 
     private void OnMouseDown()
@@ -32,12 +33,14 @@ public class ClickableCharacter : MonoBehaviour
         if (InputBlocker.Instance.IsBlocked) return;
 
         Debug.Log("You hovered over: " + gameObject.name);
-        ColorUtility.TryParseHtmlString("FFAE00", out Color color);
+        ColorUtility.TryParseHtmlString("BCBCBC", out Color color);
         spriteRenderer.color = color;
+        gameObject.transform.localScale = standardScale * 1.02f;
     }
     
     private void OnMouseExit()
     {
         spriteRenderer.color = Color.white;
+        gameObject.transform.localScale = standardScale;
     }
 }

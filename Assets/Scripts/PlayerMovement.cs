@@ -5,6 +5,7 @@ using UnityEngine.InputSystem;
 using UnityEngine.UI;
 using Vector2 = UnityEngine.Vector2;
 using Vector3 = UnityEngine.Vector3;
+using UnityEngine.AI;
 
 // controls the Player movement
 
@@ -17,18 +18,23 @@ public class PlayerMovement : MonoBehaviour
     public Vector2 targetPos;
     public float moveSpeed = 5f;
     private bool isMoving = false;
-    private Rigidbody2D rb;
+    public Rigidbody2D rb;
     private RaycastHit2D hit;
-    RockPaperScissorsScript rockPaperScissorsScript;
+    // RockPaperScissorsScript rockPaperScissorsScript;
     private AudioSource audioSource;
-
+    public InputActionReference move;
+    private Vector2 _movementDirection;
+    private SpriteRenderer spriteRenderer;
+    
     private void Start()
     {
         audioSource = GetComponent<AudioSource>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
+        rb = GetComponent<Rigidbody2D>();
     }
-
-    // Update is called once per frame
-    void Update()
+    
+    // old update method
+    /*void Update()
     {
         if (Input.GetMouseButtonDown(0))
         {
@@ -80,8 +86,51 @@ public class PlayerMovement : MonoBehaviour
                 isMoving = false;
             }
         }
-    }
+        }*/
+
+    // simple WASD movement
+    /*void Update()
+    {
+        Vector3 pos = transform.position;
+
+        if (Input.GetKey("w"))
+        {
+            pos.y += moveSpeed * Time.deltaTime;
+        } else if (Input.GetKey("s"))
+        {
+            pos.y -= moveSpeed * Time.deltaTime;
+        } else if (Input.GetKey("d"))
+        {
+            gameObject.GetComponent<SpriteRenderer>().flipX = false;
+            pos.x += moveSpeed * Time.deltaTime;
+        } else if (Input.GetKey("a"))
+        {
+            gameObject.GetComponent<SpriteRenderer>().flipX = true;
+            pos.x -= moveSpeed * Time.deltaTime;
+        }
+
+        transform.position = pos;
+    }*/
     
+    
+    // movement with rigidbody --> looks better
+    void Update()
+    {
+        targetPos.x = Input.GetAxisRaw("Horizontal");
+        targetPos.y = Input.GetAxisRaw("Vertical");
+
+        // FlipX für Richtung
+        if (targetPos.x > 0) spriteRenderer.flipX = false;
+        if (targetPos.x < 0) spriteRenderer.flipX = true;
+    }
+
+    void FixedUpdate()
+    {
+        // Physik-konforme Bewegung
+        rb.MovePosition(rb.position + targetPos.normalized * moveSpeed * Time.fixedDeltaTime);
+
+    }
+
     void OnDisable()
     {
         Debug.Log("PlayerMovement wurde deaktiviert!");
