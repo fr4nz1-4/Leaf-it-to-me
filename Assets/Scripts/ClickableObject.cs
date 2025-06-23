@@ -54,8 +54,11 @@ public class ClickableObject : MonoBehaviour
         Debug.Log("You hovered over: " + gameObject.name);
         ColorUtility.TryParseHtmlString("#BCBCBC", out Color color);
         spriteRenderer.color = color;
-        
-        gameObject.transform.localScale = standardScale * 1.02f;
+
+        if (gameObject.name != "crayons")
+        {
+            gameObject.transform.localScale = standardScale * 1.02f;
+        }
     }
 
     private void OnMouseExit()

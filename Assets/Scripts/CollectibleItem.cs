@@ -3,19 +3,14 @@ using UnityEngine;
 
 public class CollectibleItem : MonoBehaviour
 {
-    public Sprite sprite;
+    public Sprite closeUpSprite;
     public CloseUpScript closeUpScript;
- 
+
     private void OnMouseDown()
-    {
-        if (closeUpScript != null)
-        {
-            closeUpScript.ShowCloseUpPanel(sprite);
-        }
-        
-        Sprite itemSprite = gameObject.GetComponent<SpriteRenderer>().sprite;
+    { 
+        closeUpScript.ShowCloseUpPanel(closeUpSprite);
         // Debug.Log(itemSprite.name);
-        GameObject.Find("ItembarManager").GetComponent<ItembarScript>().add_item(itemSprite);
+        GameObject.Find("ItembarManager").GetComponent<ItembarScript>().add_item(closeUpSprite);
         gameObject.SetActive(false);
     }
 }

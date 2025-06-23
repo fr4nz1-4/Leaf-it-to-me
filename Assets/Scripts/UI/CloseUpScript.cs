@@ -11,29 +11,27 @@ public class CloseUpScript : MonoBehaviour
 
     public void Start()
     {
-        Debug.Log("showCloseUpPanel button pressed");
         closeUpPanel.SetActive(false);
     }
     
     public void ShowCloseUpPanel(Sprite sprite)
     {
+        Debug.Log("showCloseUpPanel button pressed");
         closeUpPanel.SetActive(true);
         player.GetComponent<PlayerMovement>().enabled = false;
         InputBlocker.Instance.BlockInput(); 
         StartCoroutine(setSpriteAndWait(sprite));
     }
     
-    //jede zeile des dialogs anzeigen lassen und am ende zwei buttons anzeigen lassen
     private IEnumerator setSpriteAndWait(Sprite sprite)
     {
         image.sprite = sprite;
-        
-        yield return new WaitUntil(() => Input.GetMouseButtonDown(0));
-        
+        // yield return new WaitUntil(() => Input.GetMouseButtonDown(0));
+        yield return new WaitForSeconds(1.5f);
         CloseCloseUpPanel();
     }
     
-    // dialogfenster ausblenden, textfeld clearen und charakterbewegung aktivieren
+    // closeuppanel ausblenden, textfeld clearen und charakterbewegung aktivieren
     public void CloseCloseUpPanel()
     {
         closeUpPanel.SetActive(false);
