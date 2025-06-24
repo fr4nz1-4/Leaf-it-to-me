@@ -10,7 +10,13 @@ public class ItembarScript : MonoBehaviour
     public GameObject itembar_folded_out;
     public List<Image> itemSlots;
     private bool _isItembarfoldedOut;
-
+    
+    // private void Awake() // not working
+    // {
+    //     DontDestroyOnLoad(this.gameObject);   // ItembarManager bleibt erhalten
+    //     DontDestroyOnLoad(itembar_folded_out);      // ItembarPanel bleibt ebenfalls erhalten
+    // }
+    
     private void Start()
     {
         foreach (var slot in itemSlots)
@@ -58,6 +64,7 @@ public class ItembarScript : MonoBehaviour
                 slot.sprite = itemSprite;
                 slot.color = new Color(1, 1, 1, 1); // sichtbar machen (volle Deckkraft)
                 Debug.Log("Item zu Inventar hinzugefügt");
+                // DontDestroyOnLoad(slot.gameObject);
                 return;
             }
         }

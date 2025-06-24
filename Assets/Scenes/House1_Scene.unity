@@ -2601,7 +2601,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -2
+  m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 72681e6677e6d46e8a6c8ffdc359f6af, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -4629,7 +4629,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -1
+  m_SortingOrder: -2
   m_Sprite: {fileID: 21300000, guid: 7223848bcaea141dda85d5402e17bf25, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -5093,7 +5093,6 @@ GameObject:
   - component: {fileID: 503431340}
   - component: {fileID: 503431342}
   - component: {fileID: 503431341}
-  - component: {fileID: 503431343}
   m_Layer: 0
   m_Name: Itembar_folded-out
   m_TagString: Untagged
@@ -5271,7 +5270,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 503431343}
+      - m_Target: {fileID: 1828120431}
         m_TargetAssemblyTypeName: ItembarScript, Assembly-CSharp
         m_MethodName: fold_itembar_in
         m_Mode: 1
@@ -5321,27 +5320,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 503431336}
   m_CullTransparentMesh: 1
---- !u!114 &503431343
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 503431336}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 891194f4f320b4a4f99d7e18b6558e25, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itembar_folded_in: {fileID: 2085548327}
-  itembar_folded_out: {fileID: 503431336}
-  itemSlots:
-  - {fileID: 907323889}
-  - {fileID: 1429557813}
-  - {fileID: 333539487}
-  - {fileID: 222682107}
-  - {fileID: 548019095}
-  - {fileID: 1814280414}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -10283,7 +10261,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -2
+  m_SortingOrder: -3
   m_Sprite: {fileID: 21300000, guid: 0c82bd74fe5f1452689a450ac1e2bac0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -11708,7 +11686,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -2
+  m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: b7c3e3a27ec574702895cca6dd906aaa, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -14563,6 +14541,59 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1814280412}
   m_CullTransparentMesh: 1
+--- !u!1 &1828120430
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1828120432}
+  - component: {fileID: 1828120431}
+  m_Layer: 0
+  m_Name: ItembarManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1828120431
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1828120430}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 891194f4f320b4a4f99d7e18b6558e25, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itembar_folded_in: {fileID: 2085548327}
+  itembar_folded_out: {fileID: 503431336}
+  itemSlots:
+  - {fileID: 907323889}
+  - {fileID: 1429557813}
+  - {fileID: 333539487}
+  - {fileID: 222682107}
+  - {fileID: 548019095}
+  - {fileID: 1814280414}
+--- !u!4 &1828120432
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1828120430}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.6393698, y: -0.618658, z: 2.2343497}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1833215181
 GameObject:
   m_ObjectHideFlags: 0
@@ -16752,7 +16783,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 503431343}
+      - m_Target: {fileID: 1828120431}
         m_TargetAssemblyTypeName: ItembarScript, Assembly-CSharp
         m_MethodName: fold_itembar_out
         m_Mode: 1
@@ -17144,3 +17175,4 @@ SceneRoots:
   - {fileID: 104082599}
   - {fileID: 957420321}
   - {fileID: 1955517910}
+  - {fileID: 1828120432}
