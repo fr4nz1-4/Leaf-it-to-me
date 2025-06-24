@@ -5093,6 +5093,7 @@ GameObject:
   - component: {fileID: 503431340}
   - component: {fileID: 503431342}
   - component: {fileID: 503431341}
+  - component: {fileID: 503431343}
   m_Layer: 0
   m_Name: Itembar_folded-out
   m_TagString: Untagged
@@ -5270,7 +5271,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 756470678}
+      - m_Target: {fileID: 503431343}
         m_TargetAssemblyTypeName: ItembarScript, Assembly-CSharp
         m_MethodName: fold_itembar_in
         m_Mode: 1
@@ -5320,6 +5321,27 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 503431336}
   m_CullTransparentMesh: 1
+--- !u!114 &503431343
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 503431336}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 891194f4f320b4a4f99d7e18b6558e25, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itembar_folded_in: {fileID: 2085548327}
+  itembar_folded_out: {fileID: 503431336}
+  itemSlots:
+  - {fileID: 907323889}
+  - {fileID: 1429557813}
+  - {fileID: 333539487}
+  - {fileID: 222682107}
+  - {fileID: 548019095}
+  - {fileID: 1814280414}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -7880,59 +7902,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 721526431}
   m_CullTransparentMesh: 1
---- !u!1 &756470677
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 756470679}
-  - component: {fileID: 756470678}
-  m_Layer: 0
-  m_Name: ItembarManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &756470678
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 756470677}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 891194f4f320b4a4f99d7e18b6558e25, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itembar_folded_in: {fileID: 2085548327}
-  itembar_folded_out: {fileID: 503431336}
-  itemSlots:
-  - {fileID: 907323889}
-  - {fileID: 1429557813}
-  - {fileID: 333539487}
-  - {fileID: 222682107}
-  - {fileID: 548019095}
-  - {fileID: 1814280414}
---- !u!4 &756470679
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 756470677}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 23.17443, y: -1.0205964, z: -0.013713412}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &769633992
 GameObject:
   m_ObjectHideFlags: 0
@@ -16783,7 +16752,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 756470678}
+      - m_Target: {fileID: 503431343}
         m_TargetAssemblyTypeName: ItembarScript, Assembly-CSharp
         m_MethodName: fold_itembar_out
         m_Mode: 1
@@ -17169,7 +17138,6 @@ SceneRoots:
   - {fileID: 1880559954}
   - {fileID: 1447334810}
   - {fileID: 576826858}
-  - {fileID: 756470679}
   - {fileID: 2012610828}
   - {fileID: 1466758081}
   - {fileID: 362153913}

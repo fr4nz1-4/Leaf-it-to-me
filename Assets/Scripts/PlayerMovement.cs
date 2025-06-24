@@ -128,6 +128,16 @@ public class PlayerMovement : MonoBehaviour
     {
         // Physik-konforme Bewegung
         rb.MovePosition(rb.position + targetPos.normalized * moveSpeed * Time.fixedDeltaTime);
+        
+        // Skalierung anhand der y-Position
+        float minY = -1.5f; // höchste position / am weitesten hinten
+        float maxY = -5f; // niedrigste position / am weitesten vorne
+
+        float scale = Mathf.InverseLerp(minY, maxY, transform.position.y); // Wert zwischen 0 und 1
+        float finalScale = Mathf.Lerp(0.4f, 0.5f, scale); 
+
+        transform.localScale = new Vector3(finalScale, finalScale, 0.5f); // gleichmäßig skalieren
+
     }
 
     void OnDisable()
