@@ -128,7 +128,6 @@ public class PlayerMovement : MonoBehaviour
     {
         // Physik-konforme Bewegung
         rb.MovePosition(rb.position + targetPos.normalized * moveSpeed * Time.fixedDeltaTime);
-
     }
 
     void OnDisable()

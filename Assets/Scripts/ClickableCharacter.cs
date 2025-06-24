@@ -33,7 +33,7 @@ public class ClickableCharacter : MonoBehaviour
         if (InputBlocker.Instance.IsBlocked) return;
 
         Debug.Log("You hovered over: " + gameObject.name);
-        ColorUtility.TryParseHtmlString("BCBCBC", out Color color);
+        ColorUtility.TryParseHtmlString("#BCBCBC", out Color color);
         spriteRenderer.color = color;
         gameObject.transform.localScale = standardScale * 1.02f;
     }

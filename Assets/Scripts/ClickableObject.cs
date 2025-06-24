@@ -55,10 +55,11 @@ public class ClickableObject : MonoBehaviour
         ColorUtility.TryParseHtmlString("#BCBCBC", out Color color);
         spriteRenderer.color = color;
 
-        if (gameObject.name != "crayons")
+        if (gameObject.name == "crayons" || gameObject.name == "paper on floor")
         {
-            gameObject.transform.localScale = standardScale * 1.02f;
+            return;
         }
+        gameObject.transform.localScale = standardScale * 1.02f;
     }
 
     private void OnMouseExit()
