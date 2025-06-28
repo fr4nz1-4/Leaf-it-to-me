@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba036015fde13415e9a5056fce6ce88d, type: 3}
+  m_Name: Prolog_dialog
+  m_EditorClassIdentifier: 
+  dialogText:
+  - I have travelled through a lot of different worlds, swam through raging rivers,
+    climbed steep mountains and a lot more to be here today. To be standing on this
+    very ground, to hope for a better and easier future.
+  - ...
+  - I can finally see it, this beautiful, magnificent tree. All of it was worth it.
+    This tree will be my salvation. Ancient legends say the tree is magic, that somewhere
+    inside this tree, there is a room, and if you enter the room you will be granted
+    one wish.
+  - ...
+  - 'That''s what I''m here for. That''s why I travelled so far. To be granted that
+    one wish. '
+  - ...
+  - 'I just need to find the room. I overcame so much this will be child''s play.
+    The residents of this tree will for sure know where I need to go. Let me just
+    go talk to one of them. '
+  playerPortrait: {fileID: 0}
+  npcPortrait: {fileID: 0}

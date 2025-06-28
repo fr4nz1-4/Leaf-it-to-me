@@ -372,6 +372,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneToLoad: 
+  player: {fileID: 0}
+  pausePanel: {fileID: 0}
 --- !u!1 &1053639206
 GameObject:
   m_ObjectHideFlags: 0

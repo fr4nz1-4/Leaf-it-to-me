@@ -49,6 +49,18 @@ public class DialogUIScript : MonoBehaviour
         StartCoroutine(StepThroughDialogue(dialogLine));
     }
 
+    public void ShowDialogueWithoutButtons(DialogLine dialogLine)
+    {
+        InputBlocker.Instance.BlockInput(); 
+        playerPortrait.sprite = dialogLine.playerPortrait;
+        npcPortrait.sprite = dialogLine.npcPortrait;
+        dialogPanel.SetActive(true);
+        startMinigame.gameObject.SetActive(false);
+        leaveDialog.gameObject.SetActive(false);
+        player.GetComponent<PlayerMovement>().enabled = false;
+        StartCoroutine(StepThroughDialogueWithoutButtons(dialogLine));
+    }
+    
     //jede zeile des dialogs anzeigen lassen und am ende zwei buttons anzeigen lassen
     private IEnumerator StepThroughDialogue(DialogLine dialogLine)
     {
@@ -89,6 +101,39 @@ public class DialogUIScript : MonoBehaviour
         yield return new WaitUntil(() => buttonClicked);
         
         HideDialogPanel();
+    }
+    
+    private IEnumerator StepThroughDialogueWithoutButtons(DialogLine dialogLine)
+    {
+        skipRequested = false;
+
+        // yield return new WaitForSeconds(1);
+        foreach (string rawLine in dialogLine.dialogText)
+        {
+            string displayText = rawLine;
+            textLabel.alignment = TextAlignmentOptions.Center;
+            
+            if (skipRequested) break;
+
+            if (rawLine.StartsWith("@"))
+            {
+                displayText = rawLine.Substring(1); // 1. Zeichen entfernen
+                textLabel.alignment = TextAlignmentOptions.Left;
+            } 
+            else if (rawLine.StartsWith("#"))
+            {
+                displayText = rawLine.Substring(1); // 1. Zeichen entfernen
+                textLabel.alignment = TextAlignmentOptions.Right;
+            }
+            
+            yield return typewriterEffect.Run(displayText, textLabel);
+            yield return new WaitUntil(() => Input.GetMouseButtonDown(0) || skipRequested);
+            textLabel.text = string.Empty;
+        }
+        // evtl noch buttons nur einblenden, wenn sie zugewiesen sind
+        // yield return new WaitUntil(() => Input.GetMouseButtonDown(0));
+        
+        CloseDialogPanel();
     }
 
     // dialogfenster ausblenden, Charakter kann sich aber nicht bewegen
