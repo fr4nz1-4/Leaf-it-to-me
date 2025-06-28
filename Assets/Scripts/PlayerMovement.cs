@@ -116,6 +116,17 @@ public class PlayerMovement : MonoBehaviour
     // movement with rigidbody --> looks better
     void Update()
     {
+        if (Input.GetMouseButtonDown(0))
+        {
+            print("Mouse button clicked");
+            audioSource.Play();
+            mousePos = Input.mousePosition;
+            print("ScreenSpace: " + Input.mousePosition);
+            mousePosWorld = mainCamera.ScreenToWorldPoint(mousePos);
+            print("WorldSpace: " + mousePosWorld);
+            mousePosWorld2d = new Vector2(mousePosWorld.x, mousePosWorld.y);
+
+        }
         targetPos.x = Input.GetAxisRaw("Horizontal");
         targetPos.y = Input.GetAxisRaw("Vertical");
 
@@ -130,11 +141,11 @@ public class PlayerMovement : MonoBehaviour
         rb.MovePosition(rb.position + targetPos.normalized * moveSpeed * Time.fixedDeltaTime);
         
         // Skalierung anhand der y-Position
-        float minY = -1.5f; // höchste position / am weitesten hinten
-        float maxY = -5f; // niedrigste position / am weitesten vorne
+        float minY = -0.9f; // höchste position / am weitesten hinten
+        float maxY = -2.0f; // niedrigste position / am weitesten vorne
 
         float scale = Mathf.InverseLerp(minY, maxY, transform.position.y); // Wert zwischen 0 und 1
-        float finalScale = Mathf.Lerp(0.4f, 0.5f, scale); 
+        float finalScale = Mathf.Lerp(0.5f, 0.6f, scale); 
 
         transform.localScale = new Vector3(finalScale, finalScale, 0.5f); // gleichmäßig skalieren
 
