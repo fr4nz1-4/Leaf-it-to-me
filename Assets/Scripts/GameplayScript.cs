@@ -3,12 +3,16 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.Serialization;
+using UnityEngine.UIElements;
+using Image = UnityEngine.UI.Image;
 
 public class GameplayScript : MonoBehaviour
 {
     public PrologScript prologScript;
     public DialogUIScript dialogScript;
     public DialogLine[] dialogLine;
+    private ItembarScript _itembar;
+    private Image _cup;
 
     public GameObject kindergardenFairy;
 
@@ -21,6 +25,8 @@ public class GameplayScript : MonoBehaviour
         {
             StartCoroutine(House2Gameplay());
         }
+
+        _itembar = GameObject.Find("ItembarManager").GetComponent<ItembarScript>();
     }
 
     // raum 1:
@@ -35,13 +41,25 @@ public class GameplayScript : MonoBehaviour
         // kindergardenFairy.GetComponent<SpriteRenderer>().sprite = ;
         // --> ella danach nicht mehr anklickbar --> clickable character script entfernen
         // dann frei rumbewegen
+        yield return new WaitUntil(() => !dialogScript.dialogPanel.activeSelf);
         // rock paper scissors kind MUSS angeklickt werden --> checken
+        // yield return new WaitUntil(() => );
         // danach wieder dialog mit ella --> man bekommt LEERE tasse in inventar
         // dialogScript.ShowDialogueWithoutButtons(dialogLine[2]);
-        // GameObject.Find("ItembarManager").GetComponent<ItembarScript>().add_item(/*leere tasse*/);
+        // yield return new WaitUntil(() => !dialogScript.dialogPanel.activeSelf);
+        // _itembar.add_item(/*leere tasse*/);
+        // foreach (var slot in _itembar.itemSlots)
+        // {
+        //     if (slot.sprite.name == "tasse")
+        //     {
+        //         _cup = slot;
+        //     }
+        // }
         // danach kaffeekanne finden und anklicken --> kaffee wird in tasse aufgefüllt
+        // checken ob kaffeekanne angeklickt wurde --> wenn ja, sprite von tasse austauschen
         // wieder dialog mit ella (tasse zurückbringen) --> rübergehen zu raum 2 
         // dialogScript.ShowDialogueWithoutButtons(dialogLine[3]);
+        // SceneManager.LoadScene("House2_Scene");
     }
 
     // raum 2:

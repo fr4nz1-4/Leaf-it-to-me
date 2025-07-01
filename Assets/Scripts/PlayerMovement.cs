@@ -14,16 +14,17 @@ public class PlayerMovement : MonoBehaviour
     public Camera mainCamera;
     public Vector3 mousePos;
     public Vector3 mousePosWorld;
-    private Vector2 mousePosWorld2d;
+    private Vector2 _mousePosWorld2d;
     public Vector2 targetPos;
     public float moveSpeed = 5f;
-    private bool isMoving = false;
+    // private bool isMoving = false;
     public Rigidbody2D rb;
+    public Animator animator;
     private RaycastHit2D hit;
     // RockPaperScissorsScript rockPaperScissorsScript;
     private AudioSource audioSource;
-    public InputActionReference move;
-    private Vector2 _movementDirection;
+    // public InputActionReference move;
+    // private Vector2 _movementDirection;
     private SpriteRenderer spriteRenderer;
     
     private void Start()
@@ -44,10 +45,10 @@ public class PlayerMovement : MonoBehaviour
             print("ScreenSpace: " + Input.mousePosition);
             mousePosWorld = mainCamera.ScreenToWorldPoint(mousePos);
             print("WorldSpace: " + mousePosWorld);
-            mousePosWorld2d = new Vector2(mousePosWorld.x, mousePosWorld.y);
+            _mousePosWorld2d = new Vector2(mousePosWorld.x, mousePosWorld.y);
             
             // targetPosition.z = transform.position.z;
-            hit = Physics2D.Raycast(mousePosWorld2d, Vector2.zero);
+            hit = Physics2D.Raycast(_mousePosWorld2d, Vector2.zero);
             if (hit.collider != null) 
             { 
                 print("Collider getroffen: " + hit.collider.name); 
@@ -124,10 +125,12 @@ public class PlayerMovement : MonoBehaviour
             print("ScreenSpace: " + Input.mousePosition);
             mousePosWorld = mainCamera.ScreenToWorldPoint(mousePos);
             print("WorldSpace: " + mousePosWorld);
-            mousePosWorld2d = new Vector2(mousePosWorld.x, mousePosWorld.y);
+            _mousePosWorld2d = new Vector2(mousePosWorld.x, mousePosWorld.y);
 
         }
         targetPos.x = Input.GetAxisRaw("Horizontal");
+        float horizontal = Input.GetAxis("Horizontal");
+        animator.SetFloat("horizontal", Mathf.Abs(horizontal));
         targetPos.y = Input.GetAxisRaw("Vertical");
 
         // FlipX für Richtung
