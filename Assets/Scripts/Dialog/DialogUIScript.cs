@@ -11,7 +11,7 @@ public class DialogUIScript : MonoBehaviour
     public GameObject dialogPanel;
     public MinigameScript minigame;
     // public DialogLine dialogLine;
-    private TypewriterEffect typewriterEffect;
+    private TypewriterEffect _typewriterEffect;
     
     [SerializeField] private TMP_Text textLabel;
     public Button startMinigame;
@@ -21,20 +21,24 @@ public class DialogUIScript : MonoBehaviour
     public Image npcPortrait;
     
     public GameObject player;
-    private bool buttonClicked = false;
-    private bool skipRequested = false;
+    private bool _buttonClicked = false;
+    private bool _skipRequested = false;
+    private Vector3 _playerStandardScale;
+    private Vector3 _npcStandardScale;
 
     // private GameObject canvas;
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        typewriterEffect = GetComponent<TypewriterEffect>();
+        _typewriterEffect = GetComponent<TypewriterEffect>();
         CloseDialogPanel();
         // ShowDialogue(dialogLine);
         startMinigame.gameObject.SetActive(false);
         leaveDialog.gameObject.SetActive(false);
         // canvas = GameObject.Find("Canvas"); 
+        _playerStandardScale = playerPortrait.transform.localScale;
+        _npcStandardScale = npcPortrait.transform.localScale;
     }
 
     public void ShowDialogue(DialogLine dialogLine)
@@ -64,7 +68,7 @@ public class DialogUIScript : MonoBehaviour
     //jede zeile des dialogs anzeigen lassen und am ende zwei buttons anzeigen lassen
     private IEnumerator StepThroughDialogue(DialogLine dialogLine)
     {
-        skipRequested = false;
+        _skipRequested = false;
 
         // yield return new WaitForSeconds(1);
         foreach (string rawLine in dialogLine.dialogText)
@@ -72,40 +76,44 @@ public class DialogUIScript : MonoBehaviour
             string displayText = rawLine;
             textLabel.alignment = TextAlignmentOptions.Center;
             
-            if (skipRequested) break;
+            if (_skipRequested) break;
 
             if (rawLine.StartsWith("@"))
             {
                 displayText = rawLine.Substring(1); // 1. Zeichen entfernen
-                textLabel.alignment = TextAlignmentOptions.Left;
+                // textLabel.alignment = TextAlignmentOptions.Left;
+                playerPortrait.transform.localScale = _playerStandardScale * 1.04f;
             } 
             else if (rawLine.StartsWith("#"))
             {
                 displayText = rawLine.Substring(1); // 1. Zeichen entfernen
-                textLabel.alignment = TextAlignmentOptions.Right;
+                // textLabel.alignment = TextAlignmentOptions.Right;
+                npcPortrait.transform.localScale = _npcStandardScale * 1.04f;
             }
             
-            yield return typewriterEffect.Run(displayText, textLabel);
-            yield return new WaitUntil(() => Input.GetMouseButtonDown(0) || skipRequested);
+            yield return _typewriterEffect.Run(displayText, textLabel);
+            yield return new WaitUntil(() => Input.GetMouseButtonDown(0) || _skipRequested);
+            playerPortrait.transform.localScale = _playerStandardScale;
+            npcPortrait.transform.localScale = _npcStandardScale;
             textLabel.text = string.Empty;
         }
         
         // evtl noch buttons nur einblenden, wenn sie zugewiesen sind 
         // yield return new WaitUntil(() => Input.GetMouseButtonDown(0));
-        buttonClicked = false;
+        _buttonClicked = false;
         if (minigame != null)
         {
             startMinigame.gameObject.SetActive(true);
         }
         leaveDialog.gameObject.SetActive(true);
-        yield return new WaitUntil(() => buttonClicked);
+        yield return new WaitUntil(() => _buttonClicked);
         
         HideDialogPanel();
     }
     
     private IEnumerator StepThroughDialogueWithoutButtons(DialogLine dialogLine)
     {
-        skipRequested = false;
+        _skipRequested = false;
 
         // yield return new WaitForSeconds(1);
         foreach (string rawLine in dialogLine.dialogText)
@@ -113,21 +121,25 @@ public class DialogUIScript : MonoBehaviour
             string displayText = rawLine;
             textLabel.alignment = TextAlignmentOptions.Center;
             
-            if (skipRequested) break;
+            if (_skipRequested) break;
 
             if (rawLine.StartsWith("@"))
             {
                 displayText = rawLine.Substring(1); // 1. Zeichen entfernen
-                textLabel.alignment = TextAlignmentOptions.Left;
+                // textLabel.alignment = TextAlignmentOptions.Left;
+                playerPortrait.transform.localScale = _playerStandardScale * 1.02f;
             } 
             else if (rawLine.StartsWith("#"))
             {
                 displayText = rawLine.Substring(1); // 1. Zeichen entfernen
-                textLabel.alignment = TextAlignmentOptions.Right;
+                // textLabel.alignment = TextAlignmentOptions.Right;
+                npcPortrait.transform.localScale = _npcStandardScale * 1.02f;
             }
+            playerPortrait.transform.localScale = _playerStandardScale;
+            npcPortrait.transform.localScale = _npcStandardScale;
             
-            yield return typewriterEffect.Run(displayText, textLabel);
-            yield return new WaitUntil(() => Input.GetMouseButtonDown(0) || skipRequested);
+            yield return _typewriterEffect.Run(displayText, textLabel);
+            yield return new WaitUntil(() => Input.GetMouseButtonDown(0) || _skipRequested);
             textLabel.text = string.Empty;
         }
         // evtl noch buttons nur einblenden, wenn sie zugewiesen sind
@@ -139,7 +151,7 @@ public class DialogUIScript : MonoBehaviour
     // dialogfenster ausblenden, Charakter kann sich aber nicht bewegen
     public void HideDialogPanel()
     {
-        buttonClicked = true;
+        _buttonClicked = true;
         dialogPanel.SetActive(false);
         textLabel.text = string.Empty;
     }
@@ -147,7 +159,7 @@ public class DialogUIScript : MonoBehaviour
     // dialogfenster ausblenden, textfeld clearen und charakterbewegung aktivieren
     public void CloseDialogPanel()
     {
-        buttonClicked = true;
+        _buttonClicked = true;
         dialogPanel.SetActive(false);
         textLabel.text = string.Empty;
         player.GetComponent<PlayerMovement>().enabled = true;
@@ -158,13 +170,13 @@ public class DialogUIScript : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            skipRequested = true;
+            _skipRequested = true;
         }
     }
 
     public void startMinigameOnClick()
     {
-        buttonClicked = true;
+        _buttonClicked = true;
         // minigame starten bzw methode aufrufen
         minigame.ShowMinigamePanel();
         

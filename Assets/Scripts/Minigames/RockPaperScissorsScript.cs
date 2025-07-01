@@ -72,12 +72,15 @@ public class RockPaperScissorsScript : MinigameScript
             result = "You lose!";
             enemy_win_counter++;
         }
-        resultText.text = $"{result}\n\nyou: {win_counter} vs. enemy: {enemy_win_counter}";
+
+        // enemyCounter.text = $"{enemy_win_counter}";
+        // playerCounter.text = $"{win_counter}";
 
         if (win_counter == 3)
         {
+            resultText.text = $"\nYou won 3 times!\n Congratulations!";
             SetButtonsInteractable(false);
-            resultText.text = $"{result}\nYou won 3 times!";
+            Debug.Log(rockButton.interactable);
         }
     }
 
@@ -134,6 +137,7 @@ public class RockPaperScissorsScript : MinigameScript
         }
 
         // playerHandImage.sprite = finalSprite;
+        playerCounter.text = $"{win_counter}";
         SetButtonsInteractable(true);
     }
     
@@ -148,6 +152,7 @@ public class RockPaperScissorsScript : MinigameScript
         }
 
         // enemyHandImage.sprite = finalSprite;
+        enemyCounter.text = $"{enemy_win_counter}";
         SetButtonsInteractable(true);
     }
     
