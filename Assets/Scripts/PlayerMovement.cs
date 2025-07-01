@@ -129,10 +129,12 @@ public class PlayerMovement : MonoBehaviour
 
         }
         targetPos.x = Input.GetAxisRaw("Horizontal");
-        float horizontal = Input.GetAxis("Horizontal");
-        animator.SetFloat("horizontal", Mathf.Abs(horizontal));
         targetPos.y = Input.GetAxisRaw("Vertical");
-
+        
+        animator.SetFloat("horizontal", targetPos.x);
+        animator.SetFloat("vertical", targetPos.y);
+        animator.SetFloat("speed", targetPos.sqrMagnitude);
+        
         // FlipX für Richtung
         if (targetPos.x > 0) spriteRenderer.flipX = false;
         if (targetPos.x < 0) spriteRenderer.flipX = true;
@@ -144,7 +146,7 @@ public class PlayerMovement : MonoBehaviour
         rb.MovePosition(rb.position + targetPos.normalized * moveSpeed * Time.fixedDeltaTime);
         
         // Skalierung anhand der y-Position
-        float minY = -0.9f; // höchste position / am weitesten hinten
+        float minY = 0.1f; // höchste position / am weitesten hinten
         float maxY = -2.0f; // niedrigste position / am weitesten vorne
 
         float scale = Mathf.InverseLerp(minY, maxY, transform.position.y); // Wert zwischen 0 und 1
