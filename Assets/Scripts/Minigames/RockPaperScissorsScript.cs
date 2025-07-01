@@ -54,22 +54,22 @@ public class RockPaperScissorsScript : MinigameScript
         SetPlayerHandSprite(playerMove);
         SetEnemyHandSprite(enemyMove);
         
-        string result = "";
+        // string result = "";
 
         if (playerMove == enemyMove)
         {
-            result = "Draw";
+            // result = "Draw";
         } else if (
             (playerMove == "Rock" && enemyMove == "Scissors") ||
             (playerMove == "Paper" && enemyMove == "Rock") ||
             (playerMove == "Scissors" && enemyMove == "Paper"))
         {
-            result = "You win!!";
+            // result = "You win!!";
             win_counter++;
         }
         else
         {
-            result = "You lose!";
+            // result = "You lose!";
             enemy_win_counter++;
         }
 
@@ -81,6 +81,7 @@ public class RockPaperScissorsScript : MinigameScript
             resultText.text = $"\nYou won 3 times!\n Congratulations!";
             SetButtonsInteractable(false);
             Debug.Log(rockButton.interactable);
+            minigamePlayed = true;
         }
     }
 

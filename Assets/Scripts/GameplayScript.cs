@@ -13,6 +13,7 @@ public class GameplayScript : MonoBehaviour
     public DialogLine[] dialogLine;
     private ItembarScript _itembar;
     private Image _cup;
+    private GameObject _clickedObject;
 
     public GameObject kindergardenFairy;
 
@@ -29,6 +30,21 @@ public class GameplayScript : MonoBehaviour
         _itembar = GameObject.Find("ItembarManager").GetComponent<ItembarScript>();
     }
 
+    void Update()
+    {
+        if (Input.GetMouseButtonDown(0))
+        {
+            Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            RaycastHit2D hit = Physics2D.Raycast(mousePos, Vector2.zero);
+
+            if (hit.collider != null)
+            {
+                _clickedObject = hit.collider.gameObject;
+                Debug.Log("Angeklicktes Objekt: " + _clickedObject.name);
+            }
+        }
+    }
+
     // raum 1:
     private IEnumerator House1Gameplay()
     {
@@ -43,23 +59,29 @@ public class GameplayScript : MonoBehaviour
         // dann frei rumbewegen
         yield return new WaitUntil(() => !dialogScript.dialogPanel.activeSelf);
         // rock paper scissors kind MUSS angeklickt werden --> checken
-        // yield return new WaitUntil(() => );
-        // danach wieder dialog mit ella --> man bekommt LEERE tasse in inventar
-        // dialogScript.ShowDialogueWithoutButtons(dialogLine[2]);
-        // yield return new WaitUntil(() => !dialogScript.dialogPanel.activeSelf);
-        // _itembar.add_item(/*leere tasse*/);
-        // foreach (var slot in _itembar.itemSlots)
-        // {
-        //     if (slot.sprite.name == "tasse")
-        //     {
-        //         _cup = slot;
-        //     }
-        // }
-        // danach kaffeekanne finden und anklicken --> kaffee wird in tasse aufgefüllt
-        // checken ob kaffeekanne angeklickt wurde --> wenn ja, sprite von tasse austauschen
+        yield return new WaitUntil(() => MinigameScript.minigamePlayed);
+        // danach wieder dialog mit ella
+        yield return new WaitUntil(() => _clickedObject.name == "kindergarden_fairy");
+        dialogScript.ShowDialogueWithoutButtons(dialogLine[2]);
+        yield return new WaitUntil(() => !dialogScript.dialogPanel.activeSelf);
+        // --> man bekommt LEERE tasse in inventar
+        _itembar.add_item(Resources.Load<Sprite>("Sprites/UISprites/CloseUpSprites/becher"));
+        foreach (var slot in _itembar.itemSlots)
+        {
+            if (slot.sprite.name == "tasse")
+            {
+                _cup = slot;
+            }
+        }
+        // danach kaffeekanne finden und checken ob kaffeekanne angeklickt wurde
+        yield return new WaitUntil(() => _clickedObject.name == "kaffee");
+        // --> wenn ja, sprite von tasse austauschen
+        _cup.sprite = Resources.Load<Sprite>("Sprites/UISprites/CloseUpSprites/becher_voll");
         // wieder dialog mit ella (tasse zurückbringen) --> rübergehen zu raum 2 
-        // dialogScript.ShowDialogueWithoutButtons(dialogLine[3]);
-        // SceneManager.LoadScene("House2_Scene");
+        yield return new WaitUntil(() => _clickedObject.name == "kindergarden_fairy");
+        dialogScript.ShowDialogueWithoutButtons(dialogLine[3]);
+        yield return new WaitUntil(() => !dialogScript.dialogPanel.activeSelf);
+        SceneManager.LoadScene("House2_Scene");
     }
 
     // raum 2:

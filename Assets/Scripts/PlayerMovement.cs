@@ -126,7 +126,6 @@ public class PlayerMovement : MonoBehaviour
             mousePosWorld = mainCamera.ScreenToWorldPoint(mousePos);
             print("WorldSpace: " + mousePosWorld);
             _mousePosWorld2d = new Vector2(mousePosWorld.x, mousePosWorld.y);
-
         }
         targetPos.x = Input.GetAxisRaw("Horizontal");
         targetPos.y = Input.GetAxisRaw("Vertical");

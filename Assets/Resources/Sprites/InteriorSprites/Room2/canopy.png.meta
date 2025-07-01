@@ -1,0 +1,2184 @@
+fileFormatVersion: 2
+guid: d6d45464820b0435081fa4072a89a04d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4084549679696721064
+    second: canopy_0
+  - first:
+      213: 7910258495086268340
+    second: canopy_1
+  - first:
+      213: -2296446964412213599
+    second: canopy_2
+  - first:
+      213: -1058899354490600093
+    second: canopy_3
+  - first:
+      213: 1536367018945851374
+    second: canopy_4
+  - first:
+      213: 4241024361458027796
+    second: canopy_5
+  - first:
+      213: -7674456410680868028
+    second: canopy_6
+  - first:
+      213: -6195966923748238715
+    second: canopy_7
+  - first:
+      213: -7603659525983592995
+    second: canopy_8
+  - first:
+      213: 1989427233618804917
+    second: canopy_9
+  - first:
+      213: -7119080132690772135
+    second: canopy_10
+  - first:
+      213: -2241235214210708851
+    second: canopy_11
+  - first:
+      213: -8387944661948487024
+    second: canopy_12
+  - first:
+      213: 6187794427546320381
+    second: canopy_13
+  - first:
+      213: -5302046750102174138
+    second: canopy_14
+  - first:
+      213: 9023725516701137843
+    second: canopy_15
+  - first:
+      213: 2708002648304393854
+    second: canopy_16
+  - first:
+      213: 3949910992468919497
+    second: canopy_17
+  - first:
+      213: 7276485328977274578
+    second: canopy_18
+  - first:
+      213: 2705862497963460538
+    second: canopy_19
+  - first:
+      213: -3300784303078559464
+    second: canopy_20
+  - first:
+      213: -3106097620840965175
+    second: canopy_21
+  - first:
+      213: 529854530945953694
+    second: canopy_22
+  - first:
+      213: 8152018042215460753
+    second: canopy_23
+  - first:
+      213: 5698874903033670985
+    second: canopy_24
+  - first:
+      213: 6613225860607490737
+    second: canopy_25
+  - first:
+      213: -198992242848380259
+    second: canopy_26
+  - first:
+      213: 4185935452089868677
+    second: canopy_27
+  - first:
+      213: 4609840399035357466
+    second: canopy_28
+  - first:
+      213: 527063471388761650
+    second: canopy_29
+  - first:
+      213: 3535331575560125374
+    second: canopy_30
+  - first:
+      213: -8356479734474723294
+    second: canopy_31
+  - first:
+      213: 6045557940371554048
+    second: canopy_32
+  - first:
+      213: -7997133157129321205
+    second: canopy_33
+  - first:
+      213: -7777814968865653158
+    second: canopy_34
+  - first:
+      213: -5905932189372286869
+    second: canopy_35
+  - first:
+      213: 1187004446091991380
+    second: canopy_36
+  - first:
+      213: -8808957240723350209
+    second: canopy_37
+  - first:
+      213: -3598331131556062511
+    second: canopy_38
+  - first:
+      213: 1846959641476668525
+    second: canopy_39
+  - first:
+      213: 1551643459562697660
+    second: canopy_40
+  - first:
+      213: 438330568397601606
+    second: canopy_41
+  - first:
+      213: 1257472042522948916
+    second: canopy_42
+  - first:
+      213: 621354329763634690
+    second: canopy_43
+  - first:
+      213: -4876312340663719113
+    second: canopy_44
+  - first:
+      213: 1612882248328697622
+    second: canopy_45
+  - first:
+      213: -2531210349397928380
+    second: canopy_46
+  - first:
+      213: 1887082828362210503
+    second: canopy_47
+  - first:
+      213: -562407319263397942
+    second: canopy_48
+  - first:
+      213: -2757106893573761287
+    second: canopy_49
+  - first:
+      213: 8067181677361952500
+    second: canopy_50
+  - first:
+      213: -9105689557138942344
+    second: canopy_51
+  - first:
+      213: 1900344094107991192
+    second: canopy_52
+  - first:
+      213: 7664718230620429852
+    second: canopy_53
+  - first:
+      213: 6061954311345145560
+    second: canopy_54
+  - first:
+      213: -2395489580358078159
+    second: canopy_55
+  - first:
+      213: 642623746111596116
+    second: canopy_56
+  - first:
+      213: 7343798107500313915
+    second: canopy_57
+  - first:
+      213: -2847910146967288308
+    second: canopy_58
+  - first:
+      213: -2978473006591518403
+    second: canopy_59
+  - first:
+      213: 3730285784352204662
+    second: canopy_60
+  - first:
+      213: 7244390149016231741
+    second: canopy_61
+  - first:
+      213: -124639304853439361
+    second: canopy_62
+  - first:
+      213: 1654332660199403781
+    second: canopy_63
+  - first:
+      213: 3660253718769854553
+    second: canopy_64
+  - first:
+      213: -3466581022221142403
+    second: canopy_65
+  - first:
+      213: -7550553513760802680
+    second: canopy_66
+  - first:
+      213: -5385226853965874749
+    second: canopy_67
+  - first:
+      213: -3873067685888504498
+    second: canopy_68
+  - first:
+      213: 4961613388004162219
+    second: canopy_69
+  - first:
+      213: 4785771123013020496
+    second: canopy_70
+  - first:
+      213: 5535184818171137830
+    second: canopy_71
+  - first:
+      213: 1804120917106645610
+    second: canopy_72
+  - first:
+      213: 6379339367526983766
+    second: canopy_73
+  - first:
+      213: -4404708892303041792
+    second: canopy_74
+  - first:
+      213: 7622734536769862836
+    second: canopy_75
+  - first:
+      213: 97738344339206656
+    second: canopy_76
+  - first:
+      213: -8204700684194454628
+    second: canopy_77
+  - first:
+      213: 1011610722266172325
+    second: canopy_78
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: canopy_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1200
+        height: 833
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85bcd3a05b3c057c0800000000000000
+      internalID: -4084549679696721064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canopy_1
+      rect:
+        serializedVersion: 2
+        x: 2015
+        y: 775
+        width: 11
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4bf0221e032e6cd60800000000000000
+      internalID: 7910258495086268340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canopy_2
+      rect:
+        serializedVersion: 2
+        x: 2023
+        y: 774
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a69fa827a16120e0800000000000000
+      internalID: -2296446964412213599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canopy_3
+      rect:
+        serializedVersion: 2
+        x: 2029
+        y: 775
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36582bab5a80e41f0800000000000000
+      internalID: -1058899354490600093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canopy_4
+      rect:
+        serializedVersion: 2
+        x: 2040
+        y: 778
+        width: 18
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eefa4e8e9a5425510800000000000000
+      internalID: 1536367018945851374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canopy_5
+      rect:
+        serializedVersion: 2
+        x: 2057
+        y: 782
+        width: 5
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41dcb74df252bda30800000000000000
+      internalID: 4241024361458027796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canopy_6
+      rect:
+        serializedVersion: 2
+        x: 1959
+        y: 760
+        width: 17
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 443c5253e8ade7590800000000000000
+      internalID: -7674456410680868028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canopy_7
+      rect:
+        serializedVersion: 2
+        x: 1974
+        y: 762
+        width: 18
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58a9ae519e0830aa0800000000000000
+      internalID: -6195966923748238715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canopy_8
+      rect:
+        serializedVersion: 2
+        x: 1990
+        y: 767
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ddd9bb072ff5a7690800000000000000
+      internalID: -7603659525983592995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canopy_9
+      rect:
+        serializedVersion: 2
+        x: 1997
+        y: 769
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b0465e478ddb9b10800000000000000
+      internalID: 1989427233618804917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canopy_10
+      rect:
+        serializedVersion: 2
+        x: 2004
+        y: 769
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95ffc6b7652f33d90800000000000000
+      internalID: -7119080132690772135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canopy_11
+      rect:
+        serializedVersion: 2
+        x: 1889
+        y: 744
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8acfde727885e0e0800000000000000
+      internalID: -2241235214210708851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canopy_12
+      rect:
+        serializedVersion: 2
+        x: 1900
+        y: 746
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09a2dec65c8089b80800000000000000
+      internalID: -8387944661948487024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canopy_13
+      rect:
+        serializedVersion: 2
+        x: 1914
+        y: 750
+        width: 18
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dfd3a0d5f367fd550800000000000000
+      internalID: 6187794427546320381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canopy_14
+      rect:
+        serializedVersion: 2
+        x: 1931
+        y: 754
+        width: 20
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64645ad72985b66b0800000000000000
+      internalID: -5302046750102174138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canopy_15
+      rect:
+        serializedVersion: 2
+        x: 1949
+        y: 757
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3bb79953c86ba3d70800000000000000
+      internalID: 9023725516701137843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canopy_16
+      rect:
+        serializedVersion: 2
+        x: 1846
+        y: 734
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7e100f9f02c49520800000000000000
+      internalID: 2708002648304393854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canopy_17
+      rect:
+        serializedVersion: 2
+        x: 1853
+        y: 735
+        width: 20
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c44580ce17e0d630800000000000000
+      internalID: 3949910992468919497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canopy_18
+      rect:
+        serializedVersion: 2
+        x: 1868
+        y: 741
+        width: 20
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d6280faad44bf460800000000000000
+      internalID: 7276485328977274578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canopy_19
+      rect:
+        serializedVersion: 2
+        x: 1895
+        y: 745
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab7c92a0b972d8520800000000000000
+      internalID: 2705862497963460538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canopy_20
+      rect:
+        serializedVersion: 2
+        x: 1801
+        y: 724
+        width: 20
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81131d62a224132d0800000000000000
+      internalID: -3300784303078559464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canopy_21
+      rect:
+        serializedVersion: 2
+        x: 1818
+        y: 728
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9cb9610bbace4e4d0800000000000000
+      internalID: -3106097620840965175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canopy_22
+      rect:
+        serializedVersion: 2
+        x: 1824
+        y: 730
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9f2aab73eb6a5700800000000000000
+      internalID: 529854530945953694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canopy_23
+      rect:
+        serializedVersion: 2
+        x: 1834
+        y: 731
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19fe3d8d739c12170800000000000000
+      internalID: 8152018042215460753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canopy_24
+      rect:
+        serializedVersion: 2
+        x: 1840
+        y: 735
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94de5b6c788761f40800000000000000
+      internalID: 5698874903033670985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canopy_25
+      rect:
+        serializedVersion: 2
+        x: 1730
+        y: 708
+        width: 27
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1babfe0c1e5e6cb50800000000000000
+      internalID: 6613225860607490737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canopy_26
+      rect:
+        serializedVersion: 2
+        x: 1755
+        y: 714
+        width: 17
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9ac6f30c990d3df0800000000000000
+      internalID: -198992242848380259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canopy_27
+      rect:
+        serializedVersion: 2
+        x: 1766
+        y: 717
+        width: 30
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 581e78a9d1e671a30800000000000000
+      internalID: 4185935452089868677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canopy_28
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 722
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a195fbf3b6179ff30800000000000000
+      internalID: 4609840399035357466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canopy_29
+      rect:
+        serializedVersion: 2
+        x: 1684
+        y: 699
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23e163a4f61805700800000000000000
+      internalID: 527063471388761650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canopy_30
+      rect:
+        serializedVersion: 2
+        x: 1694
+        y: 701
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebbbb744655001130800000000000000
+      internalID: 3535331575560125374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canopy_31
+      rect:
+        serializedVersion: 2
+        x: 1706
+        y: 702
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22032edb4f1d70c80800000000000000
+      internalID: -8356479734474723294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canopy_32
+      rect:
+        serializedVersion: 2
+        x: 1711
+        y: 705
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00f73e08ae226e350800000000000000
+      internalID: 6045557940371554048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canopy_33
+      rect:
+        serializedVersion: 2
+        x: 1717
+        y: 707
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b050fc3a3c9740190800000000000000
+      internalID: -7997133157129321205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canopy_34
+      rect:
+        serializedVersion: 2
+        x: 1612
+        y: 681
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5efb049e76af0490800000000000000
+      internalID: -7777814968865653158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canopy_35
+      rect:
+        serializedVersion: 2
+        x: 1626
+        y: 685
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b687be8f6f9e90ea0800000000000000
+      internalID: -5905932189372286869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canopy_36
+      rect:
+        serializedVersion: 2
+        x: 1633
+        y: 686
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4595f143146197010800000000000000
+      internalID: 1187004446091991380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canopy_37
+      rect:
+        serializedVersion: 2
+        x: 1645
+        y: 689
+        width: 19
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3d5419bf0c40c580800000000000000
+      internalID: -8808957240723350209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canopy_38
+      rect:
+        serializedVersion: 2
+        x: 1662
+        y: 693
+        width: 26
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1da1f5f86e8201ec0800000000000000
+      internalID: -3598331131556062511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canopy_39
+      rect:
+        serializedVersion: 2
+        x: 1550
+        y: 667
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6c13b02208b1a910800000000000000
+      internalID: 1846959641476668525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canopy_40
+      rect:
+        serializedVersion: 2
+        x: 1559
+        y: 673
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb3fa49618b888510800000000000000
+      internalID: 1551643459562697660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canopy_41
+      rect:
+        serializedVersion: 2
+        x: 1563
+        y: 669
+        width: 17
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64bb88f5453451600800000000000000
+      internalID: 438330568397601606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canopy_42
+      rect:
+        serializedVersion: 2
+        x: 1578
+        y: 673
+        width: 21
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 435b0990920737110800000000000000
+      internalID: 1257472042522948916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canopy_43
+      rect:
+        serializedVersion: 2
+        x: 1598
+        y: 678
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20e5639887e7f9800800000000000000
+      internalID: 621354329763634690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canopy_44
+      rect:
+        serializedVersion: 2
+        x: 1497
+        y: 656
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73ba2e013cbd35cb0800000000000000
+      internalID: -4876312340663719113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canopy_45
+      rect:
+        serializedVersion: 2
+        x: 1509
+        y: 658
+        width: 27
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6175a240cdb126610800000000000000
+      internalID: 1612882248328697622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canopy_46
+      rect:
+        serializedVersion: 2
+        x: 1532
+        y: 666
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 446185029955fdcd0800000000000000
+      internalID: -2531210349397928380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canopy_47
+      rect:
+        serializedVersion: 2
+        x: 1537
+        y: 665
+        width: 15
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ccd44e85d3403a10800000000000000
+      internalID: 1887082828362210503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canopy_48
+      rect:
+        serializedVersion: 2
+        x: 1448
+        y: 645
+        width: 25
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac7b93cd58de138f0800000000000000
+      internalID: -562407319263397942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canopy_49
+      rect:
+        serializedVersion: 2
+        x: 1472
+        y: 649
+        width: 19
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f651c853e9ccb9d0800000000000000
+      internalID: -2757106893573761287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canopy_50
+      rect:
+        serializedVersion: 2
+        x: 1480
+        y: 654
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f6f2b96ef264ff60800000000000000
+      internalID: 8067181677361952500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canopy_51
+      rect:
+        serializedVersion: 2
+        x: 1486
+        y: 657
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 876dfbf779712a180800000000000000
+      internalID: -9105689557138942344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canopy_52
+      rect:
+        serializedVersion: 2
+        x: 1490
+        y: 654
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89c715892e06f5a10800000000000000
+      internalID: 1900344094107991192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canopy_53
+      rect:
+        serializedVersion: 2
+        x: 1398
+        y: 633
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1e579f0f9c8e5a60800000000000000
+      internalID: 7664718230620429852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canopy_54
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 635
+        width: 21
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d6006c1453602450800000000000000
+      internalID: 6061954311345145560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canopy_55
+      rect:
+        serializedVersion: 2
+        x: 1429
+        y: 640
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1317b932be281ced0800000000000000
+      internalID: -2395489580358078159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canopy_56
+      rect:
+        serializedVersion: 2
+        x: 1436
+        y: 645
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 456663f64ee0be800800000000000000
+      internalID: 642623746111596116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canopy_57
+      rect:
+        serializedVersion: 2
+        x: 1441
+        y: 644
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3dfdbb38796ae560800000000000000
+      internalID: 7343798107500313915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canopy_58
+      rect:
+        serializedVersion: 2
+        x: 1348
+        y: 622
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c06c8c96fc03a78d0800000000000000
+      internalID: -2847910146967288308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canopy_59
+      rect:
+        serializedVersion: 2
+        x: 1359
+        y: 624
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d39d505c4965aa6d0800000000000000
+      internalID: -2978473006591518403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canopy_60
+      rect:
+        serializedVersion: 2
+        x: 1365
+        y: 627
+        width: 21
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 677a00f2823a4c330800000000000000
+      internalID: 3730285784352204662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canopy_61
+      rect:
+        serializedVersion: 2
+        x: 1382
+        y: 631
+        width: 16
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3f9376457e398460800000000000000
+      internalID: 7244390149016231741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canopy_62
+      rect:
+        serializedVersion: 2
+        x: 1394
+        y: 632
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7cb82d6631354ef0800000000000000
+      internalID: -124639304853439361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canopy_63
+      rect:
+        serializedVersion: 2
+        x: 1271
+        y: 605
+        width: 26
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50133871ace55f610800000000000000
+      internalID: 1654332660199403781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canopy_64
+      rect:
+        serializedVersion: 2
+        x: 1298
+        y: 612
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95864174d55dbc230800000000000000
+      internalID: 3660253718769854553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canopy_65
+      rect:
+        serializedVersion: 2
+        x: 1305
+        y: 613
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d76f5615dea34efc0800000000000000
+      internalID: -3466581022221142403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canopy_66
+      rect:
+        serializedVersion: 2
+        x: 1311
+        y: 617
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 888b5b2759b073790800000000000000
+      internalID: -7550553513760802680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canopy_67
+      rect:
+        serializedVersion: 2
+        x: 1315
+        y: 614
+        width: 17
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c9387e55b4d345b0800000000000000
+      internalID: -5385226853965874749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canopy_68
+      rect:
+        serializedVersion: 2
+        x: 1330
+        y: 618
+        width: 20
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4d4297c579104ac0800000000000000
+      internalID: -3873067685888504498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canopy_69
+      rect:
+        serializedVersion: 2
+        x: 1223
+        y: 594
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: baa7fc0b6113bd440800000000000000
+      internalID: 4961613388004162219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canopy_70
+      rect:
+        serializedVersion: 2
+        x: 1237
+        y: 597
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05b6383fa797a6240800000000000000
+      internalID: 4785771123013020496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canopy_71
+      rect:
+        serializedVersion: 2
+        x: 1244
+        y: 598
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62fc935f34de0dc40800000000000000
+      internalID: 5535184818171137830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canopy_72
+      rect:
+        serializedVersion: 2
+        x: 1250
+        y: 600
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6a5efb5a66890910800000000000000
+      internalID: 1804120917106645610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canopy_73
+      rect:
+        serializedVersion: 2
+        x: 1255
+        y: 603
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6586c170b57f78850800000000000000
+      internalID: 6379339367526983766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canopy_74
+      rect:
+        serializedVersion: 2
+        x: 1261
+        y: 601
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00bd54f79945fd2c0800000000000000
+      internalID: -4404708892303041792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canopy_75
+      rect:
+        serializedVersion: 2
+        x: 1283
+        y: 606
+        width: 17
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4bcf4499ca469c960800000000000000
+      internalID: 7622734536769862836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canopy_76
+      rect:
+        serializedVersion: 2
+        x: 1192
+        y: 588
+        width: 14
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 002f54f918c3b5100800000000000000
+      internalID: 97738344339206656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canopy_77
+      rect:
+        serializedVersion: 2
+        x: 1204
+        y: 590
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c936f26b23c032e80800000000000000
+      internalID: -8204700684194454628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: canopy_78
+      rect:
+        serializedVersion: 2
+        x: 1212
+        y: 593
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5abc6a79796f90e00800000000000000
+      internalID: 1011610722266172325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      canopy_0: -4084549679696721064
+      canopy_1: 7910258495086268340
+      canopy_10: -7119080132690772135
+      canopy_11: -2241235214210708851
+      canopy_12: -8387944661948487024
+      canopy_13: 6187794427546320381
+      canopy_14: -5302046750102174138
+      canopy_15: 9023725516701137843
+      canopy_16: 2708002648304393854
+      canopy_17: 3949910992468919497
+      canopy_18: 7276485328977274578
+      canopy_19: 2705862497963460538
+      canopy_2: -2296446964412213599
+      canopy_20: -3300784303078559464
+      canopy_21: -3106097620840965175
+      canopy_22: 529854530945953694
+      canopy_23: 8152018042215460753
+      canopy_24: 5698874903033670985
+      canopy_25: 6613225860607490737
+      canopy_26: -198992242848380259
+      canopy_27: 4185935452089868677
+      canopy_28: 4609840399035357466
+      canopy_29: 527063471388761650
+      canopy_3: -1058899354490600093
+      canopy_30: 3535331575560125374
+      canopy_31: -8356479734474723294
+      canopy_32: 6045557940371554048
+      canopy_33: -7997133157129321205
+      canopy_34: -7777814968865653158
+      canopy_35: -5905932189372286869
+      canopy_36: 1187004446091991380
+      canopy_37: -8808957240723350209
+      canopy_38: -3598331131556062511
+      canopy_39: 1846959641476668525
+      canopy_4: 1536367018945851374
+      canopy_40: 1551643459562697660
+      canopy_41: 438330568397601606
+      canopy_42: 1257472042522948916
+      canopy_43: 621354329763634690
+      canopy_44: -4876312340663719113
+      canopy_45: 1612882248328697622
+      canopy_46: -2531210349397928380
+      canopy_47: 1887082828362210503
+      canopy_48: -562407319263397942
+      canopy_49: -2757106893573761287
+      canopy_5: 4241024361458027796
+      canopy_50: 8067181677361952500
+      canopy_51: -9105689557138942344
+      canopy_52: 1900344094107991192
+      canopy_53: 7664718230620429852
+      canopy_54: 6061954311345145560
+      canopy_55: -2395489580358078159
+      canopy_56: 642623746111596116
+      canopy_57: 7343798107500313915
+      canopy_58: -2847910146967288308
+      canopy_59: -2978473006591518403
+      canopy_6: -7674456410680868028
+      canopy_60: 3730285784352204662
+      canopy_61: 7244390149016231741
+      canopy_62: -124639304853439361
+      canopy_63: 1654332660199403781
+      canopy_64: 3660253718769854553
+      canopy_65: -3466581022221142403
+      canopy_66: -7550553513760802680
+      canopy_67: -5385226853965874749
+      canopy_68: -3873067685888504498
+      canopy_69: 4961613388004162219
+      canopy_7: -6195966923748238715
+      canopy_70: 4785771123013020496
+      canopy_71: 5535184818171137830
+      canopy_72: 1804120917106645610
+      canopy_73: 6379339367526983766
+      canopy_74: -4404708892303041792
+      canopy_75: 7622734536769862836
+      canopy_76: 97738344339206656
+      canopy_77: -8204700684194454628
+      canopy_78: 1011610722266172325
+      canopy_8: -7603659525983592995
+      canopy_9: 1989427233618804917
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -8,7 +8,8 @@ public class MinigameScript : MonoBehaviour
     public GameObject player;
     public TextMeshProUGUI playerCounter;
     public TextMeshProUGUI enemyCounter;
-    
+    public static bool minigamePlayed = false;
+
     public void HideMinigamePanel()
     {
         Debug.Log("hideMinigame button pressed");

@@ -1,0 +1,1378 @@
+fileFormatVersion: 2
+guid: 053b50d3130284421b05bbfa5dd10afa
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3746439501289928700
+    second: gras_0
+  - first:
+      213: -3779194779072903527
+    second: gras_1
+  - first:
+      213: 7757643840003281170
+    second: gras_2
+  - first:
+      213: 6376568420565435680
+    second: gras_3
+  - first:
+      213: -4695261269346347825
+    second: gras_4
+  - first:
+      213: 8136883429189363641
+    second: gras_5
+  - first:
+      213: -3963037867312280019
+    second: gras_6
+  - first:
+      213: 689197069740029352
+    second: gras_7
+  - first:
+      213: -2154759032416289709
+    second: gras_8
+  - first:
+      213: -5210876318817925397
+    second: gras_9
+  - first:
+      213: -4760819414567245910
+    second: gras_10
+  - first:
+      213: 2583547457310040885
+    second: gras_11
+  - first:
+      213: -5025159762146827915
+    second: gras_12
+  - first:
+      213: 1723242238298280194
+    second: gras_13
+  - first:
+      213: -8104422391773572179
+    second: gras_14
+  - first:
+      213: -8740515878336271963
+    second: gras_15
+  - first:
+      213: -5819097126470358478
+    second: gras_16
+  - first:
+      213: 2333576870793405468
+    second: gras_17
+  - first:
+      213: 4386844743392318602
+    second: gras_18
+  - first:
+      213: 3068741776541903806
+    second: gras_19
+  - first:
+      213: -5727031802320883446
+    second: gras_20
+  - first:
+      213: -8434854581557963086
+    second: gras_21
+  - first:
+      213: -7824538140497208737
+    second: gras_22
+  - first:
+      213: -7837713096892458953
+    second: gras_23
+  - first:
+      213: 3656246711573004333
+    second: gras_24
+  - first:
+      213: 7588291377672095532
+    second: gras_25
+  - first:
+      213: -5186106385652515502
+    second: gras_26
+  - first:
+      213: -2259086264977947640
+    second: gras_27
+  - first:
+      213: -4150570347936534829
+    second: gras_28
+  - first:
+      213: 893468143458539976
+    second: gras_29
+  - first:
+      213: -460404700791959090
+    second: gras_30
+  - first:
+      213: 1529760324444113826
+    second: gras_31
+  - first:
+      213: 8552063304826668475
+    second: gras_32
+  - first:
+      213: 4195701652414028349
+    second: gras_33
+  - first:
+      213: -444940841223016336
+    second: gras_34
+  - first:
+      213: -134268474918214339
+    second: gras_35
+  - first:
+      213: 5024902283423272295
+    second: gras_36
+  - first:
+      213: -2230826679224527312
+    second: gras_37
+  - first:
+      213: 5516419613875452574
+    second: gras_38
+  - first:
+      213: -3394485607063700465
+    second: gras_39
+  - first:
+      213: 3553641265855816102
+    second: gras_40
+  - first:
+      213: 3309218185548703578
+    second: gras_41
+  - first:
+      213: 1049424342229181758
+    second: gras_42
+  - first:
+      213: -765611674010872611
+    second: gras_43
+  - first:
+      213: 2270853365016094203
+    second: gras_44
+  - first:
+      213: 8848913363165672362
+    second: gras_45
+  - first:
+      213: -1071007262717388599
+    second: gras_46
+  - first:
+      213: 4788273920110016456
+    second: gras_47
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: gras_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 282
+        width: 146
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf7b0ee70e60ef330800000000000000
+      internalID: 3746439501289928700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gras_1
+      rect:
+        serializedVersion: 2
+        x: 1556
+        y: 389
+        width: 23
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99649581f5a9d8bc0800000000000000
+      internalID: -3779194779072903527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gras_2
+      rect:
+        serializedVersion: 2
+        x: 1581
+        y: 412
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 211946188ffa8ab60800000000000000
+      internalID: 7757643840003281170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gras_3
+      rect:
+        serializedVersion: 2
+        x: 1684
+        y: 391
+        width: 20
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 025c6c9a13f1e7850800000000000000
+      internalID: 6376568420565435680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gras_4
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 313
+        width: 24
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc416f880c417deb0800000000000000
+      internalID: -4695261269346347825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gras_5
+      rect:
+        serializedVersion: 2
+        x: 1390
+        y: 325
+        width: 161
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b728972e540ce070800000000000000
+      internalID: 8136883429189363641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gras_6
+      rect:
+        serializedVersion: 2
+        x: 2014
+        y: 196
+        width: 44
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2e0e678e067009c0800000000000000
+      internalID: -3963037867312280019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gras_7
+      rect:
+        serializedVersion: 2
+        x: 2064
+        y: 257
+        width: 119
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a5381a5515809900800000000000000
+      internalID: 689197069740029352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gras_8
+      rect:
+        serializedVersion: 2
+        x: 2188
+        y: 308
+        width: 21
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35c33409312c812e0800000000000000
+      internalID: -2154759032416289709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gras_9
+      rect:
+        serializedVersion: 2
+        x: 4885
+        y: 221
+        width: 82
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be6cc50b89f3fa7b0800000000000000
+      internalID: -5210876318817925397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gras_10
+      rect:
+        serializedVersion: 2
+        x: 5538
+        y: 262
+        width: 51
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa7afe267fb2eedb0800000000000000
+      internalID: -4760819414567245910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gras_11
+      rect:
+        serializedVersion: 2
+        x: 5583
+        y: 311
+        width: 40
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 533245569ba9ad320800000000000000
+      internalID: 2583547457310040885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gras_12
+      rect:
+        serializedVersion: 2
+        x: 5630
+        y: 229
+        width: 47
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 571e6ad12db034ab0800000000000000
+      internalID: -5025159762146827915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gras_13
+      rect:
+        serializedVersion: 2
+        x: 5662
+        y: 229
+        width: 48
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 201d7b38faf2ae710800000000000000
+      internalID: 1723242238298280194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gras_14
+      rect:
+        serializedVersion: 2
+        x: 2449
+        y: 96
+        width: 33
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da35d9416ce478f80800000000000000
+      internalID: -8104422391773572179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gras_15
+      rect:
+        serializedVersion: 2
+        x: 2481
+        y: 206
+        width: 49
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a9ea1e2e1373b680800000000000000
+      internalID: -8740515878336271963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gras_16
+      rect:
+        serializedVersion: 2
+        x: 2588
+        y: 161
+        width: 49
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23aec3f8ef96e3fa0800000000000000
+      internalID: -5819097126470358478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gras_17
+      rect:
+        serializedVersion: 2
+        x: 3007
+        y: 159
+        width: 36
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1465b7dcc7826020800000000000000
+      internalID: 2333576870793405468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gras_18
+      rect:
+        serializedVersion: 2
+        x: 3057
+        y: 210
+        width: 23
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8450b63d0431ec30800000000000000
+      internalID: 4386844743392318602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gras_19
+      rect:
+        serializedVersion: 2
+        x: 5053
+        y: 231
+        width: 47
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebb6e2a036c569a20800000000000000
+      internalID: 3068741776541903806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gras_20
+      rect:
+        serializedVersion: 2
+        x: 5095
+        y: 228
+        width: 31
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a017c4d3bee7580b0800000000000000
+      internalID: -5727031802320883446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gras_21
+      rect:
+        serializedVersion: 2
+        x: 5142
+        y: 207
+        width: 39
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b65926a27061fa80800000000000000
+      internalID: -8434854581557963086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gras_22
+      rect:
+        serializedVersion: 2
+        x: 5188
+        y: 187
+        width: 37
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5a1b247408a96390800000000000000
+      internalID: -7824538140497208737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gras_23
+      rect:
+        serializedVersion: 2
+        x: 5710
+        y: 214
+        width: 51
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7385c40e679da3390800000000000000
+      internalID: -7837713096892458953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gras_24
+      rect:
+        serializedVersion: 2
+        x: 5963
+        y: 217
+        width: 33
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d20cf7633099db230800000000000000
+      internalID: 3656246711573004333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gras_25
+      rect:
+        serializedVersion: 2
+        x: 5989
+        y: 224
+        width: 24
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c270e42bdc60f4960800000000000000
+      internalID: 7588291377672095532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gras_26
+      rect:
+        serializedVersion: 2
+        x: 1312
+        y: 75
+        width: 40
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25dfbcb28bf3708b0800000000000000
+      internalID: -5186106385652515502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gras_27
+      rect:
+        serializedVersion: 2
+        x: 1752
+        y: 94
+        width: 71
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 804860bd20d16a0e0800000000000000
+      internalID: -2259086264977947640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gras_28
+      rect:
+        serializedVersion: 2
+        x: 1970
+        y: 92
+        width: 47
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3de29fb52463666c0800000000000000
+      internalID: -4150570347936534829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gras_29
+      rect:
+        serializedVersion: 2
+        x: 2347
+        y: 36
+        width: 94
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c959fcea8c366c00800000000000000
+      internalID: 893468143458539976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gras_30
+      rect:
+        serializedVersion: 2
+        x: 3051
+        y: 166
+        width: 11
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec1106c2d505c99f0800000000000000
+      internalID: -460404700791959090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gras_31
+      rect:
+        serializedVersion: 2
+        x: 3324
+        y: 34
+        width: 28
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ab4af9f8ecca3510800000000000000
+      internalID: 1529760324444113826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gras_32
+      rect:
+        serializedVersion: 2
+        x: 3621
+        y: 60
+        width: 25
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb5c8d4d3480fa670800000000000000
+      internalID: 8552063304826668475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gras_33
+      rect:
+        serializedVersion: 2
+        x: 3972
+        y: 85
+        width: 34
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3a58af4c602a3a30800000000000000
+      internalID: 4195701652414028349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gras_34
+      rect:
+        serializedVersion: 2
+        x: 4060
+        y: 40
+        width: 95
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 070b6dc89a043d9f0800000000000000
+      internalID: -444940841223016336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gras_35
+      rect:
+        serializedVersion: 2
+        x: 2010
+        y: 83
+        width: 50
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3567ff888bf22ef0800000000000000
+      internalID: -134268474918214339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gras_36
+      rect:
+        serializedVersion: 2
+        x: 2598
+        y: 146
+        width: 23
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76d4e72f00a0cb540800000000000000
+      internalID: 5024902283423272295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gras_37
+      rect:
+        serializedVersion: 2
+        x: 3035
+        y: 56
+        width: 64
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0369b5564f28a01e0800000000000000
+      internalID: -2230826679224527312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gras_38
+      rect:
+        serializedVersion: 2
+        x: 4014
+        y: 39
+        width: 37
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9a3b0d59624e8c40800000000000000
+      internalID: 5516419613875452574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gras_39
+      rect:
+        serializedVersion: 2
+        x: 1277
+        y: 16
+        width: 30
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0cbacb335d54e0d0800000000000000
+      internalID: -3394485607063700465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gras_40
+      rect:
+        serializedVersion: 2
+        x: 1695
+        y: 54
+        width: 40
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a1618e37e1115130800000000000000
+      internalID: 3553641265855816102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gras_41
+      rect:
+        serializedVersion: 2
+        x: 1821
+        y: 90
+        width: 34
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a57a4e12864bced20800000000000000
+      internalID: 3309218185548703578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gras_42
+      rect:
+        serializedVersion: 2
+        x: 1929
+        y: 52
+        width: 33
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e35e73111ed409e00800000000000000
+      internalID: 1049424342229181758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gras_43
+      rect:
+        serializedVersion: 2
+        x: 3354
+        y: 57
+        width: 23
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd490b62d300065f0800000000000000
+      internalID: -765611674010872611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gras_44
+      rect:
+        serializedVersion: 2
+        x: 3553
+        y: 0
+        width: 42
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf5e8ce9a11b38f10800000000000000
+      internalID: 2270853365016094203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gras_45
+      rect:
+        serializedVersion: 2
+        x: 3577
+        y: 62
+        width: 24
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa372bbf1d7adca70800000000000000
+      internalID: 8848913363165672362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gras_46
+      rect:
+        serializedVersion: 2
+        x: 3169
+        y: 4
+        width: 25
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c8ddd9a1940321f0800000000000000
+      internalID: -1071007262717388599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gras_47
+      rect:
+        serializedVersion: 2
+        x: 3518
+        y: 12
+        width: 29
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c7bc6fc2cd537240800000000000000
+      internalID: 4788273920110016456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      gras_0: 3746439501289928700
+      gras_1: -3779194779072903527
+      gras_10: -4760819414567245910
+      gras_11: 2583547457310040885
+      gras_12: -5025159762146827915
+      gras_13: 1723242238298280194
+      gras_14: -8104422391773572179
+      gras_15: -8740515878336271963
+      gras_16: -5819097126470358478
+      gras_17: 2333576870793405468
+      gras_18: 4386844743392318602
+      gras_19: 3068741776541903806
+      gras_2: 7757643840003281170
+      gras_20: -5727031802320883446
+      gras_21: -8434854581557963086
+      gras_22: -7824538140497208737
+      gras_23: -7837713096892458953
+      gras_24: 3656246711573004333
+      gras_25: 7588291377672095532
+      gras_26: -5186106385652515502
+      gras_27: -2259086264977947640
+      gras_28: -4150570347936534829
+      gras_29: 893468143458539976
+      gras_3: 6376568420565435680
+      gras_30: -460404700791959090
+      gras_31: 1529760324444113826
+      gras_32: 8552063304826668475
+      gras_33: 4195701652414028349
+      gras_34: -444940841223016336
+      gras_35: -134268474918214339
+      gras_36: 5024902283423272295
+      gras_37: -2230826679224527312
+      gras_38: 5516419613875452574
+      gras_39: -3394485607063700465
+      gras_4: -4695261269346347825
+      gras_40: 3553641265855816102
+      gras_41: 3309218185548703578
+      gras_42: 1049424342229181758
+      gras_43: -765611674010872611
+      gras_44: 2270853365016094203
+      gras_45: 8848913363165672362
+      gras_46: -1071007262717388599
+      gras_47: 4788273920110016456
+      gras_5: 8136883429189363641
+      gras_6: -3963037867312280019
+      gras_7: 689197069740029352
+      gras_8: -2154759032416289709
+      gras_9: -5210876318817925397
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
