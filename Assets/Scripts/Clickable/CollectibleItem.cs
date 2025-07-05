@@ -6,11 +6,11 @@ public class CollectibleItem : MonoBehaviour
     public Sprite closeUpSprite;
     public CloseUpScript closeUpScript;
 
-    private SpriteRenderer spriteRenderer;
+    private SpriteRenderer _spriteRenderer;
     
     private void Start()
     {
-        spriteRenderer = GetComponent<SpriteRenderer>();
+        _spriteRenderer = GetComponent<SpriteRenderer>();
     }
     
     private void OnMouseDown()
@@ -27,11 +27,11 @@ public class CollectibleItem : MonoBehaviour
 
         Debug.Log("You hovered over: " + gameObject.name);
         ColorUtility.TryParseHtmlString("#BCBCBC", out Color color);
-        spriteRenderer.color = color;
+        _spriteRenderer.color = color;
     }
     
     private void OnMouseExit()
     {
-        spriteRenderer.color = Color.white;
+        _spriteRenderer.color = Color.white;
     }
 }

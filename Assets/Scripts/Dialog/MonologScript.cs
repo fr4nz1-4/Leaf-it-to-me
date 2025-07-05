@@ -10,11 +10,11 @@ public class MonologScript : MonoBehaviour
     public GameObject monologPanel;
     [SerializeField] private TMP_Text textLabel;
     public GameObject player;
-    private TypewriterEffect typewriterEffect;
+    private TypewriterEffect _typewriterEffect;
     
     public void Start()
     {
-        typewriterEffect = GetComponent<TypewriterEffect>();
+        _typewriterEffect = GetComponent<TypewriterEffect>();
         Debug.Log("showMonolog button pressed");
         monologPanel.SetActive(false);
         textLabel.text = "";
@@ -31,12 +31,12 @@ public class MonologScript : MonoBehaviour
     //jede zeile des dialogs anzeigen lassen und am ende zwei buttons anzeigen lassen
     private IEnumerator StepThroughDialogue(string text)
     {
-        yield return typewriterEffect.Run(text, textLabel);
-        yield return new WaitUntil(() => Input.GetMouseButtonDown(0));
+        yield return _typewriterEffect.Run(text, textLabel);
+        yield return new WaitUntil(() => Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.Space));
         textLabel.text = string.Empty;
         
         // evtl noch buttons nur einblenden, wenn sie zugewiesen sind 
-        yield return new WaitUntil(() => Input.GetMouseButtonDown(0));
+        yield return new WaitUntil(() => Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.Space));
         
         CloseMonologPanel();
     }

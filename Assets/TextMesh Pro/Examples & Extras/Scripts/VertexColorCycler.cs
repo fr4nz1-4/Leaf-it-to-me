@@ -8,11 +8,11 @@ namespace TMPro.Examples
     public class VertexColorCycler : MonoBehaviour
     {
 
-        private TMP_Text m_TextComponent;
+        private TMP_Text _mTextComponent;
 
         void Awake()
         {
-            m_TextComponent = GetComponent<TMP_Text>();
+            _mTextComponent = GetComponent<TMP_Text>();
         }
 
 
@@ -29,13 +29,13 @@ namespace TMPro.Examples
         IEnumerator AnimateVertexColors()
         {
             // Force the text object to update right away so we can have geometry to modify right from the start.
-            m_TextComponent.ForceMeshUpdate();
+            _mTextComponent.ForceMeshUpdate();
 
-            TMP_TextInfo textInfo = m_TextComponent.textInfo;
+            TMP_TextInfo textInfo = _mTextComponent.textInfo;
             int currentCharacter = 0;
 
             Color32[] newVertexColors;
-            Color32 c0 = m_TextComponent.color;
+            Color32 c0 = _mTextComponent.color;
 
             while (true)
             {
@@ -68,7 +68,7 @@ namespace TMPro.Examples
                     newVertexColors[vertexIndex + 3] = c0;
 
                     // New function which pushes (all) updated vertex data to the appropriate meshes when using either the Mesh Renderer or CanvasRenderer.
-                    m_TextComponent.UpdateVertexData(TMP_VertexDataUpdateFlags.Colors32);
+                    _mTextComponent.UpdateVertexData(TMP_VertexDataUpdateFlags.Colors32);
 
                     // This last process could be done to only update the vertex data that has changed as opposed to all of the vertex data but it would require extra steps and knowing what type of renderer is used.
                     // These extra steps would be a performance optimization but it is unlikely that such optimization will be necessary.

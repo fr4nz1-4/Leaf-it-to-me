@@ -12,7 +12,7 @@ public class GameplayScript : MonoBehaviour
     public DialogUIScript dialogScript;
     public DialogLine[] dialogLine;
     private ItembarScript _itembar;
-    private kindergardenfairyScript kindergardenfairyScript;
+    private KindergardenfairyScript _kindergardenfairyScript;
     
     public GameObject kindergardenFairy;
     private Sprite _kindergardenFairySprite;
@@ -32,7 +32,7 @@ public class GameplayScript : MonoBehaviour
         }
 
         _itembar = GameObject.Find("ItembarManager").GetComponent<ItembarScript>();
-        kindergardenfairyScript = kindergardenFairy.GetComponent<kindergardenfairyScript>();
+        _kindergardenfairyScript = kindergardenFairy.GetComponent<KindergardenfairyScript>();
         _fullCupSprite = Resources.Load<Sprite>("Sprites/UISprites/CloseUpSprites/becher_voll");
         _emptyCupSprite = Resources.Load<Sprite>("Sprites/UISprites/CloseUpSprites/becher");
         _kindergardenFairySprite = kindergardenFairy.GetComponent<SpriteRenderer>().sprite;
@@ -57,25 +57,24 @@ public class GameplayScript : MonoBehaviour
     private IEnumerator House1Gameplay()
     {
         // Prolog abspielen --> monologbar mit Cape-Main-Charakter im hintergrund
-        yield return StartCoroutine(prologScript.ShowProlog(dialogLine[0]));
-        yield return new WaitUntil(() => !prologScript.prologPanel.activeSelf);
+        // yield return StartCoroutine(prologScript.ShowProlog(dialogLine[0]));
+        // yield return new WaitUntil(() => !prologScript.prologPanel.activeSelf);
         
         // Direkt dialog mit kindergartenfee die baum abstaubt
         dialogScript.ShowDialogueWithoutButtons(dialogLine[1]);
-        
-        // _kindergardenFairySprite = ;
         // main character ab jetzt ohne cape 
-        // --> ella danach nicht mehr anklickbar --> clickable character script entfernen
-        // kindergardenfairyScript.StartFairyCycling();
         
         // dann frei rumbewegen
         yield return new WaitUntil(() => !dialogScript.dialogPanel.activeSelf);
+        // --> ella danach nicht mehr anklickbar
+        _kindergardenfairyScript.StartFairyCycling();
         
         // rock paper scissors kind MUSS angeklickt werden --> checken
-        yield return new WaitUntil(() => MinigameScript.minigamePlayed);
+        yield return new WaitUntil(() => MinigameScript.MinigamePlayed);
         
         // danach wieder dialog mit ella
         yield return new WaitUntil(() => _clickedObject.name == "kindergarden_fairy");
+        _kindergardenfairyScript.StopCycleSprites();
         dialogScript.ShowDialogueWithoutButtons(dialogLine[2]);
         yield return new WaitUntil(() => !dialogScript.dialogPanel.activeSelf);
         
@@ -91,7 +90,7 @@ public class GameplayScript : MonoBehaviour
         
         // danach kaffeekanne finden und checken ob kaffeekanne angeklickt wurde
         yield return new WaitUntil(() => _clickedObject.name == "kaffee");
-        Debug.Log("you klicked on kaffee"); // wird nie angezeigt
+        Debug.Log("you clicked on kaffee"); // wird nie angezeigt
         
         // --> wenn ja, sprite von tasse austauschen
         _itembar.ReplaceItemSprite(_cup, _fullCupSprite);

@@ -1,26 +1,27 @@
 using System.Collections;
 using UnityEngine;
 using TMPro;
+using UnityEngine.Serialization;
 
 public class SpeechbubbleScript : MonoBehaviour
 {
-    public GameObject Speechbubble;
+    [FormerlySerializedAs("Speechbubble")] public GameObject speechbubble;
     [SerializeField] private TMP_Text textLabel;
-    private TypewriterEffect typewriterEffect;
+    private TypewriterEffect _typewriterEffect;
     [SerializeField] private GameObject player;
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        typewriterEffect = GetComponent<TypewriterEffect>();
+        _typewriterEffect = GetComponent<TypewriterEffect>();
         // Debug.Log("showSpeechbubble button pressed");
-        Speechbubble.SetActive(false);
+        speechbubble.SetActive(false);
         textLabel.text = "";
     }
 
     public void ShowSpeechbubble(string text)
     {
-        Speechbubble.SetActive(true);
+        speechbubble.SetActive(true);
         player.GetComponent<PlayerMovement>().enabled = false;
         StartCoroutine(StepThroughDialogue(text));
         InputBlocker.Instance.BlockInput(); 
@@ -28,7 +29,7 @@ public class SpeechbubbleScript : MonoBehaviour
     
     private IEnumerator StepThroughDialogue(string text)
     {
-        yield return typewriterEffect.Run(text, textLabel);
+        yield return _typewriterEffect.Run(text, textLabel);
         yield return new WaitUntil(() => Input.GetMouseButtonDown(0));
         textLabel.text = string.Empty;
         
@@ -41,7 +42,7 @@ public class SpeechbubbleScript : MonoBehaviour
     // dialogfenster ausblenden, textfeld clearen und charakterbewegung aktivieren
     public void HideSpeechbubble()
     {
-        Speechbubble.SetActive(false);
+        speechbubble.SetActive(false);
         textLabel.text = string.Empty;
         player.GetComponent<PlayerMovement>().enabled = true;
         InputBlocker.Instance.UnblockInput(); 

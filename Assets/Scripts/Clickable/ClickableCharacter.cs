@@ -7,15 +7,15 @@ public class ClickableCharacter : MonoBehaviour
     public DialogUIScript dialogScript;
     // public DialogManager dialogManager;
     public DialogLine dialogLine;
-    private SpriteRenderer spriteRenderer;
+    private SpriteRenderer _spriteRenderer;
     public LayerMask interactableLayer;
-    private Vector3 standardScale;
-    private Vector3 transformedScale;
+    private Vector3 _standardScale;
+    private Vector3 _transformedScale;
     
     private void Start()
     {
-        spriteRenderer = GetComponent<SpriteRenderer>();
-        standardScale = gameObject.transform.localScale;
+        _spriteRenderer = GetComponent<SpriteRenderer>();
+        _standardScale = gameObject.transform.localScale;
     }
 
     private void OnMouseDown()
@@ -34,13 +34,13 @@ public class ClickableCharacter : MonoBehaviour
 
         Debug.Log("You hovered over: " + gameObject.name);
         ColorUtility.TryParseHtmlString("#BCBCBC", out Color color);
-        spriteRenderer.color = color;
-        gameObject.transform.localScale = standardScale * 1.02f;
+        _spriteRenderer.color = color;
+        // gameObject.transform.localScale = standardScale * 1.02f;
     }
     
     private void OnMouseExit()
     {
-        spriteRenderer.color = Color.white;
-        gameObject.transform.localScale = standardScale;
+        _spriteRenderer.color = Color.white;
+        // gameObject.transform.localScale = standardScale;
     }
 }

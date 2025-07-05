@@ -30,8 +30,8 @@ public class RockPaperScissorsScript : MinigameScript
     public Button paperButton;
     public Button scissorsButton;
     
-    private int win_counter = 0;
-    private int enemy_win_counter = 0;
+    private int _winCounter = 0;
+    private int _enemyWinCounter = 0;
 
     private void Start()
     {
@@ -65,22 +65,22 @@ public class RockPaperScissorsScript : MinigameScript
             (playerMove == "Scissors" && enemyMove == "Paper"))
         {
             // result = "You win!!";
-            win_counter++;
+            _winCounter++;
         }
         else
         {
             // result = "You lose!";
-            enemy_win_counter++;
+            _enemyWinCounter++;
         }
 
         // enemyCounter.text = $"{enemy_win_counter}";
         // playerCounter.text = $"{win_counter}";
 
-        if (win_counter == 3)
+        if (_winCounter == 3)
         {
             resultText.text = $"\nYou won 3 times!\n Congratulations!";
-            minigamePlayed = true;
-            Debug.Log("minigamePlayed" + minigamePlayed);
+            MinigamePlayed = true;
+            Debug.Log("minigamePlayed" + MinigamePlayed);
             SetButtonsInteractable(false);
             Debug.Log(rockButton.interactable);
         }
@@ -125,7 +125,7 @@ public class RockPaperScissorsScript : MinigameScript
     {
         yield return new WaitForSeconds(2.0f);
         HideMinigamePanel();
-        win_counter = 0;
+        _winCounter = 0;
     }
     
     private IEnumerator PlayPlayerAnimation(Sprite[] animationFrames, Sprite finalSprite)
@@ -139,7 +139,7 @@ public class RockPaperScissorsScript : MinigameScript
         }
 
         // playerHandImage.sprite = finalSprite;
-        playerCounter.text = $"{win_counter}";
+        playerCounter.text = $"{_winCounter}";
         SetButtonsInteractable(true);
     }
     
@@ -154,7 +154,7 @@ public class RockPaperScissorsScript : MinigameScript
         }
 
         // enemyHandImage.sprite = finalSprite;
-        enemyCounter.text = $"{enemy_win_counter}";
+        enemyCounter.text = $"{_enemyWinCounter}";
         SetButtonsInteractable(true);
     }
     

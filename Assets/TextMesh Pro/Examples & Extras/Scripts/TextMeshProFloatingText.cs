@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using UnityEngine.Serialization;
 
 
 namespace TMPro.Examples
@@ -7,26 +8,26 @@ namespace TMPro.Examples
 
     public class TextMeshProFloatingText : MonoBehaviour
     {
-        public Font TheFont;
+        [FormerlySerializedAs("TheFont")] public Font theFont;
 
-        private GameObject m_floatingText;
-        private TextMeshPro m_textMeshPro;
-        private TextMesh m_textMesh;
+        private GameObject _mFloatingText;
+        private TextMeshPro _mTextMeshPro;
+        private TextMesh _mTextMesh;
 
-        private Transform m_transform;
-        private Transform m_floatingText_Transform;
-        private Transform m_cameraTransform;
+        private Transform _mTransform;
+        private Transform _mFloatingTextTransform;
+        private Transform _mCameraTransform;
 
-        Vector3 lastPOS = Vector3.zero;
-        Quaternion lastRotation = Quaternion.identity;
+        Vector3 _lastPos = Vector3.zero;
+        Quaternion _lastRotation = Quaternion.identity;
 
-        public int SpawnType;
-        public bool IsTextObjectScaleStatic;
+        [FormerlySerializedAs("SpawnType")] public int spawnType;
+        [FormerlySerializedAs("IsTextObjectScaleStatic")] public bool isTextObjectScaleStatic;
 
         //private int m_frame = 0;
 
-        static WaitForEndOfFrame k_WaitForEndOfFrame = new WaitForEndOfFrame();
-        static WaitForSeconds[] k_WaitForSecondsRandom = new WaitForSeconds[]
+        static WaitForEndOfFrame _kWaitForEndOfFrame = new WaitForEndOfFrame();
+        static WaitForSeconds[] _kWaitForSecondsRandom = new WaitForSeconds[]
         {
             new WaitForSeconds(0.05f), new WaitForSeconds(0.1f), new WaitForSeconds(0.15f), new WaitForSeconds(0.2f), new WaitForSeconds(0.25f),
             new WaitForSeconds(0.3f), new WaitForSeconds(0.35f), new WaitForSeconds(0.4f), new WaitForSeconds(0.45f), new WaitForSeconds(0.5f),
@@ -36,58 +37,58 @@ namespace TMPro.Examples
 
         void Awake()
         {
-            m_transform = transform;
-            m_floatingText = new GameObject(this.name + " floating text");
+            _mTransform = transform;
+            _mFloatingText = new GameObject(this.name + " floating text");
 
             // Reference to Transform is lost when TMP component is added since it replaces it by a RectTransform.
             //m_floatingText_Transform = m_floatingText.transform;
             //m_floatingText_Transform.position = m_transform.position + new Vector3(0, 15f, 0);
 
-            m_cameraTransform = Camera.main.transform;
+            _mCameraTransform = Camera.main.transform;
         }
 
         void Start()
         {
-            if (SpawnType == 0)
+            if (spawnType == 0)
             {
                 // TextMesh Pro Implementation
-                m_textMeshPro = m_floatingText.AddComponent<TextMeshPro>();
-                m_textMeshPro.rectTransform.sizeDelta = new Vector2(3, 3);
+                _mTextMeshPro = _mFloatingText.AddComponent<TextMeshPro>();
+                _mTextMeshPro.rectTransform.sizeDelta = new Vector2(3, 3);
 
-                m_floatingText_Transform = m_floatingText.transform;
-                m_floatingText_Transform.position = m_transform.position + new Vector3(0, 15f, 0);
+                _mFloatingTextTransform = _mFloatingText.transform;
+                _mFloatingTextTransform.position = _mTransform.position + new Vector3(0, 15f, 0);
 
                 //m_textMeshPro.fontAsset = Resources.Load("Fonts & Materials/JOKERMAN SDF", typeof(TextMeshProFont)) as TextMeshProFont; // User should only provide a string to the resource.
                 //m_textMeshPro.fontSharedMaterial = Resources.Load("Fonts & Materials/LiberationSans SDF", typeof(Material)) as Material;
 
-                m_textMeshPro.alignment = TextAlignmentOptions.Center;
-                m_textMeshPro.color = new Color32((byte)Random.Range(0, 255), (byte)Random.Range(0, 255), (byte)Random.Range(0, 255), 255);
-                m_textMeshPro.fontSize = 24;
+                _mTextMeshPro.alignment = TextAlignmentOptions.Center;
+                _mTextMeshPro.color = new Color32((byte)Random.Range(0, 255), (byte)Random.Range(0, 255), (byte)Random.Range(0, 255), 255);
+                _mTextMeshPro.fontSize = 24;
                 //m_textMeshPro.enableExtraPadding = true;
                 //m_textMeshPro.enableShadows = false;
-                m_textMeshPro.fontFeatures.Clear();
-                m_textMeshPro.text = string.Empty;
-                m_textMeshPro.isTextObjectScaleStatic = IsTextObjectScaleStatic;
+                _mTextMeshPro.fontFeatures.Clear();
+                _mTextMeshPro.text = string.Empty;
+                _mTextMeshPro.isTextObjectScaleStatic = isTextObjectScaleStatic;
 
                 StartCoroutine(DisplayTextMeshProFloatingText());
             }
-            else if (SpawnType == 1)
+            else if (spawnType == 1)
             {
                 //Debug.Log("Spawning TextMesh Objects.");
 
-                m_floatingText_Transform = m_floatingText.transform;
-                m_floatingText_Transform.position = m_transform.position + new Vector3(0, 15f, 0);
+                _mFloatingTextTransform = _mFloatingText.transform;
+                _mFloatingTextTransform.position = _mTransform.position + new Vector3(0, 15f, 0);
 
-                m_textMesh = m_floatingText.AddComponent<TextMesh>();
-                m_textMesh.font = Resources.Load<Font>("Fonts/ARIAL");
-                m_textMesh.GetComponent<Renderer>().sharedMaterial = m_textMesh.font.material;
-                m_textMesh.color = new Color32((byte)Random.Range(0, 255), (byte)Random.Range(0, 255), (byte)Random.Range(0, 255), 255);
-                m_textMesh.anchor = TextAnchor.LowerCenter;
-                m_textMesh.fontSize = 24;
+                _mTextMesh = _mFloatingText.AddComponent<TextMesh>();
+                _mTextMesh.font = Resources.Load<Font>("Fonts/ARIAL");
+                _mTextMesh.GetComponent<Renderer>().sharedMaterial = _mTextMesh.font.material;
+                _mTextMesh.color = new Color32((byte)Random.Range(0, 255), (byte)Random.Range(0, 255), (byte)Random.Range(0, 255), 255);
+                _mTextMesh.anchor = TextAnchor.LowerCenter;
+                _mTextMesh.fontSize = 24;
 
                 StartCoroutine(DisplayTextMeshFloatingText());
             }
-            else if (SpawnType == 2)
+            else if (spawnType == 2)
             {
 
             }
@@ -112,55 +113,55 @@ namespace TMPro.Examples
 
         public IEnumerator DisplayTextMeshProFloatingText()
         {
-            float CountDuration = 2.0f; // How long is the countdown alive.
-            float starting_Count = Random.Range(5f, 20f); // At what number is the counter starting at.
-            float current_Count = starting_Count;
+            float countDuration = 2.0f; // How long is the countdown alive.
+            float startingCount = Random.Range(5f, 20f); // At what number is the counter starting at.
+            float currentCount = startingCount;
 
-            Vector3 start_pos = m_floatingText_Transform.position;
-            Color32 start_color = m_textMeshPro.color;
+            Vector3 startPos = _mFloatingTextTransform.position;
+            Color32 startColor = _mTextMeshPro.color;
             float alpha = 255;
-            int int_counter = 0;
+            int intCounter = 0;
 
 
-            float fadeDuration = 3 / starting_Count * CountDuration;
+            float fadeDuration = 3 / startingCount * countDuration;
 
-            while (current_Count > 0)
+            while (currentCount > 0)
             {
-                current_Count -= (Time.deltaTime / CountDuration) * starting_Count;
+                currentCount -= (Time.deltaTime / countDuration) * startingCount;
 
-                if (current_Count <= 3)
+                if (currentCount <= 3)
                 {
                     //Debug.Log("Fading Counter ... " + current_Count.ToString("f2"));
                     alpha = Mathf.Clamp(alpha - (Time.deltaTime / fadeDuration) * 255, 0, 255);
                 }
 
-                int_counter = (int)current_Count;
-                m_textMeshPro.text = int_counter.ToString();
+                intCounter = (int)currentCount;
+                _mTextMeshPro.text = intCounter.ToString();
                 //m_textMeshPro.SetText("{0}", (int)current_Count);
 
-                m_textMeshPro.color = new Color32(start_color.r, start_color.g, start_color.b, (byte)alpha);
+                _mTextMeshPro.color = new Color32(startColor.r, startColor.g, startColor.b, (byte)alpha);
 
                 // Move the floating text upward each update
-                m_floatingText_Transform.position += new Vector3(0, starting_Count * Time.deltaTime, 0);
+                _mFloatingTextTransform.position += new Vector3(0, startingCount * Time.deltaTime, 0);
 
                 // Align floating text perpendicular to Camera.
-                if (!lastPOS.Compare(m_cameraTransform.position, 1000) || !lastRotation.Compare(m_cameraTransform.rotation, 1000))
+                if (!_lastPos.Compare(_mCameraTransform.position, 1000) || !_lastRotation.Compare(_mCameraTransform.rotation, 1000))
                 {
-                    lastPOS = m_cameraTransform.position;
-                    lastRotation = m_cameraTransform.rotation;
-                    m_floatingText_Transform.rotation = lastRotation;
-                    Vector3 dir = m_transform.position - lastPOS;
-                    m_transform.forward = new Vector3(dir.x, 0, dir.z);
+                    _lastPos = _mCameraTransform.position;
+                    _lastRotation = _mCameraTransform.rotation;
+                    _mFloatingTextTransform.rotation = _lastRotation;
+                    Vector3 dir = _mTransform.position - _lastPos;
+                    _mTransform.forward = new Vector3(dir.x, 0, dir.z);
                 }
 
-                yield return k_WaitForEndOfFrame;
+                yield return _kWaitForEndOfFrame;
             }
 
             //Debug.Log("Done Counting down.");
 
-            yield return k_WaitForSecondsRandom[Random.Range(0, 19)];
+            yield return _kWaitForSecondsRandom[Random.Range(0, 19)];
 
-            m_floatingText_Transform.position = start_pos;
+            _mFloatingTextTransform.position = startPos;
 
             StartCoroutine(DisplayTextMeshProFloatingText());
         }
@@ -168,54 +169,54 @@ namespace TMPro.Examples
 
         public IEnumerator DisplayTextMeshFloatingText()
         {
-            float CountDuration = 2.0f; // How long is the countdown alive.
-            float starting_Count = Random.Range(5f, 20f); // At what number is the counter starting at.
-            float current_Count = starting_Count;
+            float countDuration = 2.0f; // How long is the countdown alive.
+            float startingCount = Random.Range(5f, 20f); // At what number is the counter starting at.
+            float currentCount = startingCount;
 
-            Vector3 start_pos = m_floatingText_Transform.position;
-            Color32 start_color = m_textMesh.color;
+            Vector3 startPos = _mFloatingTextTransform.position;
+            Color32 startColor = _mTextMesh.color;
             float alpha = 255;
-            int int_counter = 0;
+            int intCounter = 0;
 
-            float fadeDuration = 3 / starting_Count * CountDuration;
+            float fadeDuration = 3 / startingCount * countDuration;
 
-            while (current_Count > 0)
+            while (currentCount > 0)
             {
-                current_Count -= (Time.deltaTime / CountDuration) * starting_Count;
+                currentCount -= (Time.deltaTime / countDuration) * startingCount;
 
-                if (current_Count <= 3)
+                if (currentCount <= 3)
                 {
                     //Debug.Log("Fading Counter ... " + current_Count.ToString("f2"));
                     alpha = Mathf.Clamp(alpha - (Time.deltaTime / fadeDuration) * 255, 0, 255);
                 }
 
-                int_counter = (int)current_Count;
-                m_textMesh.text = int_counter.ToString();
+                intCounter = (int)currentCount;
+                _mTextMesh.text = intCounter.ToString();
                 //Debug.Log("Current Count:" + current_Count.ToString("f2"));
 
-                m_textMesh.color = new Color32(start_color.r, start_color.g, start_color.b, (byte)alpha);
+                _mTextMesh.color = new Color32(startColor.r, startColor.g, startColor.b, (byte)alpha);
 
                 // Move the floating text upward each update
-                m_floatingText_Transform.position += new Vector3(0, starting_Count * Time.deltaTime, 0);
+                _mFloatingTextTransform.position += new Vector3(0, startingCount * Time.deltaTime, 0);
 
                 // Align floating text perpendicular to Camera.
-                if (!lastPOS.Compare(m_cameraTransform.position, 1000) || !lastRotation.Compare(m_cameraTransform.rotation, 1000))
+                if (!_lastPos.Compare(_mCameraTransform.position, 1000) || !_lastRotation.Compare(_mCameraTransform.rotation, 1000))
                 {
-                    lastPOS = m_cameraTransform.position;
-                    lastRotation = m_cameraTransform.rotation;
-                    m_floatingText_Transform.rotation = lastRotation;
-                    Vector3 dir = m_transform.position - lastPOS;
-                    m_transform.forward = new Vector3(dir.x, 0, dir.z);
+                    _lastPos = _mCameraTransform.position;
+                    _lastRotation = _mCameraTransform.rotation;
+                    _mFloatingTextTransform.rotation = _lastRotation;
+                    Vector3 dir = _mTransform.position - _lastPos;
+                    _mTransform.forward = new Vector3(dir.x, 0, dir.z);
                 }
 
-                yield return k_WaitForEndOfFrame;
+                yield return _kWaitForEndOfFrame;
             }
 
             //Debug.Log("Done Counting down.");
 
-            yield return k_WaitForSecondsRandom[Random.Range(0, 20)];
+            yield return _kWaitForSecondsRandom[Random.Range(0, 20)];
 
-            m_floatingText_Transform.position = start_pos;
+            _mFloatingTextTransform.position = startPos;
 
             StartCoroutine(DisplayTextMeshFloatingText());
         }

@@ -10,11 +10,11 @@ public class PrologScript : MonoBehaviour
     public GameObject prologPanel;
     [SerializeField] private TMP_Text textLabel;
     public GameObject player;
-    private TypewriterEffect typewriterEffect;
+    private TypewriterEffect _typewriterEffect;
     
     public void Start()
     {
-        typewriterEffect = GetComponent<TypewriterEffect>();
+        _typewriterEffect = GetComponent<TypewriterEffect>();
         Debug.Log("showMonolog button pressed");
         prologPanel.SetActive(false);
         textLabel.text = "";
@@ -38,8 +38,8 @@ public class PrologScript : MonoBehaviour
             string displayText = rawLine;
             textLabel.alignment = TextAlignmentOptions.Center;
 
-            yield return typewriterEffect.Run(displayText, textLabel);
-            yield return new WaitUntil(() => Input.GetMouseButtonDown(0));
+            yield return _typewriterEffect.Run(displayText, textLabel);
+            yield return new WaitUntil(() => Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.Space));
         }
         ClosePrologPanel();
     }

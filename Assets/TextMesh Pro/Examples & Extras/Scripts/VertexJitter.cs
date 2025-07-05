@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.Serialization;
 
 
 namespace TMPro.Examples
@@ -8,26 +9,26 @@ namespace TMPro.Examples
     public class VertexJitter : MonoBehaviour
     {
 
-        public float AngleMultiplier = 1.0f;
-        public float SpeedMultiplier = 1.0f;
-        public float CurveScale = 1.0f;
+        [FormerlySerializedAs("AngleMultiplier")] public float angleMultiplier = 1.0f;
+        [FormerlySerializedAs("SpeedMultiplier")] public float speedMultiplier = 1.0f;
+        [FormerlySerializedAs("CurveScale")] public float curveScale = 1.0f;
 
-        private TMP_Text m_TextComponent;
-        private bool hasTextChanged;
+        private TMP_Text _mTextComponent;
+        private bool _hasTextChanged;
 
         /// <summary>
         /// Structure to hold pre-computed animation data.
         /// </summary>
         private struct VertexAnim
         {
-            public float angleRange;
-            public float angle;
-            public float speed;
+            public float AngleRange;
+            public float Angle;
+            public float Speed;
         }
 
         void Awake()
         {
-            m_TextComponent = GetComponent<TMP_Text>();
+            _mTextComponent = GetComponent<TMP_Text>();
         }
 
         void OnEnable()
@@ -50,8 +51,8 @@ namespace TMPro.Examples
 
         void ON_TEXT_CHANGED(Object obj)
         {
-            if (obj == m_TextComponent)
-                hasTextChanged = true;
+            if (obj == _mTextComponent)
+                _hasTextChanged = true;
         }
 
         /// <summary>
@@ -63,21 +64,21 @@ namespace TMPro.Examples
 
             // We force an update of the text object since it would only be updated at the end of the frame. Ie. before this code is executed on the first frame.
             // Alternatively, we could yield and wait until the end of the frame when the text object will be generated.
-            m_TextComponent.ForceMeshUpdate();
+            _mTextComponent.ForceMeshUpdate();
 
-            TMP_TextInfo textInfo = m_TextComponent.textInfo;
+            TMP_TextInfo textInfo = _mTextComponent.textInfo;
 
             Matrix4x4 matrix;
 
             int loopCount = 0;
-            hasTextChanged = true;
+            _hasTextChanged = true;
 
             // Create an Array which contains pre-computed Angle Ranges and Speeds for a bunch of characters.
             VertexAnim[] vertexAnim = new VertexAnim[1024];
             for (int i = 0; i < 1024; i++)
             {
-                vertexAnim[i].angleRange = Random.Range(10f, 25f);
-                vertexAnim[i].speed = Random.Range(1f, 3f);
+                vertexAnim[i].AngleRange = Random.Range(10f, 25f);
+                vertexAnim[i].Speed = Random.Range(1f, 3f);
             }
 
             // Cache the vertex data of the text object as the Jitter FX is applied to the original position of the characters.
@@ -86,12 +87,12 @@ namespace TMPro.Examples
             while (true)
             {
                 // Get new copy of vertex data if the text has changed.
-                if (hasTextChanged)
+                if (_hasTextChanged)
                 {
                     // Update the copy of the vertex data for the text object.
                     cachedMeshInfo = textInfo.CopyMeshInfoVertexData();
 
-                    hasTextChanged = false;
+                    _hasTextChanged = false;
                 }
 
                 int characterCount = textInfo.characterCount;
@@ -140,10 +141,10 @@ namespace TMPro.Examples
                     destinationVertices[vertexIndex + 2] = sourceVertices[vertexIndex + 2] - offset;
                     destinationVertices[vertexIndex + 3] = sourceVertices[vertexIndex + 3] - offset;
 
-                    vertAnim.angle = Mathf.SmoothStep(-vertAnim.angleRange, vertAnim.angleRange, Mathf.PingPong(loopCount / 25f * vertAnim.speed, 1f));
+                    vertAnim.Angle = Mathf.SmoothStep(-vertAnim.AngleRange, vertAnim.AngleRange, Mathf.PingPong(loopCount / 25f * vertAnim.Speed, 1f));
                     Vector3 jitterOffset = new Vector3(Random.Range(-.25f, .25f), Random.Range(-.25f, .25f), 0);
 
-                    matrix = Matrix4x4.TRS(jitterOffset * CurveScale, Quaternion.Euler(0, 0, Random.Range(-5f, 5f) * AngleMultiplier), Vector3.one);
+                    matrix = Matrix4x4.TRS(jitterOffset * curveScale, Quaternion.Euler(0, 0, Random.Range(-5f, 5f) * angleMultiplier), Vector3.one);
 
                     destinationVertices[vertexIndex + 0] = matrix.MultiplyPoint3x4(destinationVertices[vertexIndex + 0]);
                     destinationVertices[vertexIndex + 1] = matrix.MultiplyPoint3x4(destinationVertices[vertexIndex + 1]);
@@ -162,7 +163,7 @@ namespace TMPro.Examples
                 for (int i = 0; i < textInfo.meshInfo.Length; i++)
                 {
                     textInfo.meshInfo[i].mesh.vertices = textInfo.meshInfo[i].vertices;
-                    m_TextComponent.UpdateGeometry(textInfo.meshInfo[i].mesh, i);
+                    _mTextComponent.UpdateGeometry(textInfo.meshInfo[i].mesh, i);
                 }
 
                 loopCount += 1;

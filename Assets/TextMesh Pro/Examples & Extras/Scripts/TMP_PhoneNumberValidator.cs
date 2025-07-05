@@ -9,7 +9,7 @@ namespace TMPro
     /// </summary>
     [Serializable]
     //[CreateAssetMenu(fileName = "InputValidator - Phone Numbers.asset", menuName = "TextMeshPro/Input Validators/Phone Numbers")]
-    public class TMP_PhoneNumberValidator : TMP_InputValidator
+    public class TMPPhoneNumberValidator : TMP_InputValidator
     {
         // Custom text input validation function
         public override char Validate(ref string text, ref int pos, char ch)

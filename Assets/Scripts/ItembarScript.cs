@@ -6,10 +6,10 @@ using UnityEngine.UI;
 
 public class ItembarScript : MonoBehaviour
 {
-    public GameObject itembar_folded_in;
-    public GameObject itembar_folded_out;
+    [FormerlySerializedAs("itembar_folded_in")] public GameObject itembarFoldedIn;
+    [FormerlySerializedAs("itembar_folded_out")] public GameObject itembarFoldedOut;
     public List<Image> itemSlots;
-    public bool _isItembarfoldedOut;
+    [FormerlySerializedAs("_isItembarfoldedOut")] public bool isItembarfoldedOut;
     
     private void Awake() // not working
     {
@@ -42,15 +42,15 @@ public class ItembarScript : MonoBehaviour
     public void fold_itembar_in()
     {
         Debug.Log("Itembar einklappen");
-        itembar_folded_out.SetActive(false);
-        itembar_folded_in.SetActive(true);
+        itembarFoldedOut.SetActive(false);
+        itembarFoldedIn.SetActive(true);
     }
 
     public void fold_itembar_out()
     {
         Debug.Log("Itembar ausklappen");
-        itembar_folded_out.SetActive(true);
-        itembar_folded_in.SetActive(false);
+        itembarFoldedOut.SetActive(true);
+        itembarFoldedIn.SetActive(false);
     }
 
     public void add_item(Sprite itemSprite)

@@ -133,7 +133,7 @@ public class DialogUIScript : MonoBehaviour
             {
                 displayText = rawLine.Substring(1); // 1. Zeichen entfernen
                 // textLabel.alignment = TextAlignmentOptions.Right;
-                npcPortrait.transform.localScale = _npcStandardScale * 1.02f;
+                npcPortrait.transform.localScale = _npcStandardScale * 1.03f;
             }
             
             yield return _typewriterEffect.Run(displayText, textLabel);

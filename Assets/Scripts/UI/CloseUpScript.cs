@@ -20,10 +20,10 @@ public class CloseUpScript : MonoBehaviour
         closeUpPanel.SetActive(true);
         player.GetComponent<PlayerMovement>().enabled = false;
         InputBlocker.Instance.BlockInput(); 
-        StartCoroutine(setSpriteAndWait(sprite));
+        StartCoroutine(SetSpriteAndWait(sprite));
     }
     
-    private IEnumerator setSpriteAndWait(Sprite sprite)
+    private IEnumerator SetSpriteAndWait(Sprite sprite)
     {
         image.sprite = sprite;
         // yield return new WaitUntil(() => Input.GetMouseButtonDown(0));

@@ -1,25 +1,26 @@
 using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
+using UnityEngine.Serialization;
 using Random = UnityEngine.Random;
 
 public class TicTacToeScript : MinigameScript
 {
-    public Image field_0_0;
-    public Image field_0_1;
-    public Image field_0_2;
-    public Image field_1_0;
-    public Image field_1_1;
-    public Image field_1_2;
-    public Image field_2_0;
-    public Image field_2_1;
-    public Image field_2_2;
+    [FormerlySerializedAs("field_0_0")] public Image field00;
+    [FormerlySerializedAs("field_0_1")] public Image field01;
+    [FormerlySerializedAs("field_0_2")] public Image field02;
+    [FormerlySerializedAs("field_1_0")] public Image field10;
+    [FormerlySerializedAs("field_1_1")] public Image field11;
+    [FormerlySerializedAs("field_1_2")] public Image field12;
+    [FormerlySerializedAs("field_2_0")] public Image field20;
+    [FormerlySerializedAs("field_2_1")] public Image field21;
+    [FormerlySerializedAs("field_2_2")] public Image field22;
 
     public Sprite circle;
     public Sprite cross;
     
-    public Image connection_line_horizontal;
-    public Image connection_line_diagonal;
+    [FormerlySerializedAs("connection_line_horizontal")] public Image connectionLineHorizontal;
+    [FormerlySerializedAs("connection_line_diagonal")] public Image connectionLineDiagonal;
     
 
     public void player_choice()

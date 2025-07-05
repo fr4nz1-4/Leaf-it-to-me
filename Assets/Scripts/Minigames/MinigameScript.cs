@@ -8,7 +8,7 @@ public class MinigameScript : MonoBehaviour
     public GameObject player;
     public TextMeshProUGUI playerCounter;
     public TextMeshProUGUI enemyCounter;
-    public static bool minigamePlayed = false;
+    public static bool MinigamePlayed = false;
 
     public void HideMinigamePanel()
     {

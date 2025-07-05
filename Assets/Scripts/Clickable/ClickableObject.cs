@@ -11,17 +11,17 @@ public class ClickableObject : MonoBehaviour
 {
     public MonologScript monologScript;
     public string text;
-    private AudioSource audioSource;
-    public SpeechbubbleScript SpeechbubbleScript;
-    private SpriteRenderer spriteRenderer;
-    private Vector3 standardScale;
-    private Vector3 transformedScale;
+    private AudioSource _audioSource;
+    [FormerlySerializedAs("SpeechbubbleScript")] public SpeechbubbleScript speechbubbleScript;
+    private SpriteRenderer _spriteRenderer;
+    private Vector3 _standardScale;
+    private Vector3 _transformedScale;
     
     void Start()
     {
-        audioSource = GetComponent<AudioSource>();
-        spriteRenderer = GetComponent<SpriteRenderer>();
-        standardScale = gameObject.transform.localScale;
+        _audioSource = GetComponent<AudioSource>();
+        _spriteRenderer = GetComponent<SpriteRenderer>();
+        _standardScale = gameObject.transform.localScale;
     }
 
     private void OnMouseDown()
@@ -35,15 +35,15 @@ public class ClickableObject : MonoBehaviour
             monologScript.ShowMonolog(text);
         }
 
-        if (audioSource != null)
+        if (_audioSource != null)
         {
             Debug.Log("play audiosource");
-            audioSource.Play();
+            _audioSource.Play();
         }
         
-        if (SpeechbubbleScript != null)
+        if (speechbubbleScript != null)
         {
-            SpeechbubbleScript.ShowSpeechbubble(text);
+            speechbubbleScript.ShowSpeechbubble(text);
         }
     }
     
@@ -53,7 +53,7 @@ public class ClickableObject : MonoBehaviour
 
         Debug.Log("You hovered over: " + gameObject.name);
         ColorUtility.TryParseHtmlString("#BCBCBC", out Color color);
-        spriteRenderer.color = color;
+        _spriteRenderer.color = color;
 
         // if (gameObject.name == "crayons" || gameObject.name == "paper on floor")
         // {
@@ -64,7 +64,7 @@ public class ClickableObject : MonoBehaviour
 
     private void OnMouseExit()
     {
-        spriteRenderer.color = Color.white;
+        _spriteRenderer.color = Color.white;
         // gameObject.transform.localScale = standardScale;
     }
 }

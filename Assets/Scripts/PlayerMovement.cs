@@ -20,17 +20,17 @@ public class PlayerMovement : MonoBehaviour
     // private bool isMoving = false;
     public Rigidbody2D rb;
     public Animator animator;
-    private RaycastHit2D hit;
+    private RaycastHit2D _hit;
     // RockPaperScissorsScript rockPaperScissorsScript;
-    private AudioSource audioSource;
+    private AudioSource _audioSource;
     // public InputActionReference move;
     // private Vector2 _movementDirection;
-    private SpriteRenderer spriteRenderer;
+    private SpriteRenderer _spriteRenderer;
     
     private void Start()
     {
-        audioSource = GetComponent<AudioSource>();
-        spriteRenderer = GetComponent<SpriteRenderer>();
+        _audioSource = GetComponent<AudioSource>();
+        _spriteRenderer = GetComponent<SpriteRenderer>();
         rb = GetComponent<Rigidbody2D>();
     }
     
@@ -120,7 +120,7 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             print("Mouse button clicked");
-            audioSource.Play();
+            _audioSource.Play();
             mousePos = Input.mousePosition;
             print("ScreenSpace: " + Input.mousePosition);
             mousePosWorld = mainCamera.ScreenToWorldPoint(mousePos);
@@ -135,8 +135,8 @@ public class PlayerMovement : MonoBehaviour
         animator.SetFloat("speed", targetPos.sqrMagnitude);
         
         // FlipX für Richtung
-        if (targetPos.x > 0) spriteRenderer.flipX = false;
-        if (targetPos.x < 0) spriteRenderer.flipX = true;
+        if (targetPos.x > 0) _spriteRenderer.flipX = false;
+        if (targetPos.x < 0) _spriteRenderer.flipX = true;
     }
 
     void FixedUpdate()

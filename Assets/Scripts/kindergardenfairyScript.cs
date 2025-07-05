@@ -1,33 +1,40 @@
 using System.Collections;
 using UnityEngine;
 
-public class kindergardenfairyScript : MonoBehaviour
+public class KindergardenfairyScript : MonoBehaviour
 {
     public GameObject[] kindergardenFairySprites;
     public float interval = 5f;
-    private int currentIndex = 0;
+    private int _currentIndex = 0;
+    private Coroutine _spriteCycleRoutine; 
     
     public void StartFairyCycling()
     {
-        StartCoroutine(CycleSprites());
+        _spriteCycleRoutine = StartCoroutine(CycleSprites());
     }
 
     private IEnumerator CycleSprites()
     {
         while (true)
         {
+            Debug.Log("start cycling sprites");
             // Alle ausblenden
-            for (int i = 0; i < kindergardenFairySprites.Length; i++)
+            foreach (var fairy in kindergardenFairySprites)
             {
-                kindergardenFairySprites[i].SetActive(false);
+                fairy.SetActive(false);
+                Debug.Log("alle cycle sprites deaktiviert");
             }
 
             // Aktuelles anzeigen
-            kindergardenFairySprites[currentIndex].SetActive(true);
+            if (kindergardenFairySprites.Length > 0)
+            {
+                kindergardenFairySprites[_currentIndex].SetActive(true);
+            }
+            Debug.Log("active Fairy: " + _currentIndex);
 
             // Nächster Index
-            currentIndex = (currentIndex + 1) % kindergardenFairySprites.Length;
-
+            _currentIndex = (++_currentIndex) % kindergardenFairySprites.Length;
+            Debug.Log("current index: " + _currentIndex);
             // Warten
             yield return new WaitForSeconds(interval);
         }
@@ -35,11 +42,16 @@ public class kindergardenfairyScript : MonoBehaviour
 
     public void StopCycleSprites()
     {
-        StopCoroutine(CycleSprites());
-        for (int i = 0; i < kindergardenFairySprites.Length; i++)
+        if (_spriteCycleRoutine != null)
         {
-            kindergardenFairySprites[i].SetActive(false);
+            StopCoroutine(_spriteCycleRoutine);
+            _spriteCycleRoutine = null; // optional: zurücksetzen
+            Debug.Log("CycleSprites gestoppt.");
         }
-        // kindergardenFairySprites[ ].SetActive(true);
+        foreach (var fairy in kindergardenFairySprites)
+        {
+            fairy.SetActive(false);
+        }
+        kindergardenFairySprites[0].SetActive(true);
     }
 }
