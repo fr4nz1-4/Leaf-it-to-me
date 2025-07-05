@@ -79,9 +79,10 @@ public class RockPaperScissorsScript : MinigameScript
         if (win_counter == 3)
         {
             resultText.text = $"\nYou won 3 times!\n Congratulations!";
+            minigamePlayed = true;
+            Debug.Log("minigamePlayed" + minigamePlayed);
             SetButtonsInteractable(false);
             Debug.Log(rockButton.interactable);
-            minigamePlayed = true;
         }
     }
 

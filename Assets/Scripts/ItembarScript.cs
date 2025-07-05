@@ -9,13 +9,13 @@ public class ItembarScript : MonoBehaviour
     public GameObject itembar_folded_in;
     public GameObject itembar_folded_out;
     public List<Image> itemSlots;
-    private bool _isItembarfoldedOut;
+    public bool _isItembarfoldedOut;
     
-    // private void Awake() // not working
-    // {
-    //     DontDestroyOnLoad(this.gameObject);   // ItembarManager bleibt erhalten
-    //     DontDestroyOnLoad(itembar_folded_out);      // ItembarPanel bleibt ebenfalls erhalten
-    // }
+    private void Awake() // not working
+    {
+        // DontDestroyOnLoad(this.gameObject);   // ItembarManager bleibt erhalten
+        // //DontDestroyOnLoad(itembar_folded_out);      // ItembarPanel bleibt ebenfalls erhalten
+    }
     
     private void Start()
     {
@@ -63,10 +63,36 @@ public class ItembarScript : MonoBehaviour
             {
                 slot.sprite = itemSprite;
                 slot.color = new Color(1, 1, 1, 1); // sichtbar machen (volle Deckkraft)
-                Debug.Log("Item zu Inventar hinzugefügt");
+                Debug.Log("Item (" + slot.sprite.name + ") zu Inventar hinzugefügt");
                 // DontDestroyOnLoad(slot.gameObject);
                 return;
             }
         }
     }
+    
+    public Image FindItemSlotByName(string itemName)
+    {
+        foreach (var slot in itemSlots)
+        {
+            if (slot.sprite != null && slot.sprite.name == itemName)
+            {
+                Debug.Log("Item gefunden: " + itemName);
+                return slot; // Gibt das passende Slot-Image zurück
+            }
+        }
+
+        Debug.Log("Item nicht gefunden: " + itemName);
+        return null; // Falls nichts gefunden wurde
+    }
+    
+    public void ReplaceItemSprite(Image slot, Sprite newSprite)
+    {
+        if (slot != null)
+        {
+            slot.sprite = newSprite;
+            slot.color = new Color(1, 1, 1, 1); // sicherstellen, dass es sichtbar ist
+            Debug.Log("Sprite erfolgreich ausgetauscht mit: " + newSprite.name);
+        }
+    }
+
 }

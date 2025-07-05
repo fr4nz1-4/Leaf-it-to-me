@@ -55,16 +55,16 @@ public class ClickableObject : MonoBehaviour
         ColorUtility.TryParseHtmlString("#BCBCBC", out Color color);
         spriteRenderer.color = color;
 
-        if (gameObject.name == "crayons" || gameObject.name == "paper on floor")
-        {
-            return;
-        }
-        gameObject.transform.localScale = standardScale * 1.02f;
+        // if (gameObject.name == "crayons" || gameObject.name == "paper on floor")
+        // {
+        //     return;
+        // }
+        // gameObject.transform.localScale = standardScale * 1.02f;
     }
 
     private void OnMouseExit()
     {
         spriteRenderer.color = Color.white;
-        gameObject.transform.localScale = standardScale;
+        // gameObject.transform.localScale = standardScale;
     }
 }

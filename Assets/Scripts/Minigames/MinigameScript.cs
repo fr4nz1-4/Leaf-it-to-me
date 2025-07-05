@@ -21,11 +21,11 @@ public class MinigameScript : MonoBehaviour
     public void ShowMinigamePanel()
     {
         Debug.Log("showMinigame button pressed");
+        InputBlocker.Instance.BlockInput(); 
         minigamePanel.SetActive(true);
         resultText.text = "";
         playerCounter.text = "";
         enemyCounter.text = "";
         player.GetComponent<PlayerMovement>().enabled = false;
-        InputBlocker.Instance.BlockInput(); 
     }
 }

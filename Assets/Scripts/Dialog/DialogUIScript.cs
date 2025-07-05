@@ -92,7 +92,7 @@ public class DialogUIScript : MonoBehaviour
             }
             
             yield return _typewriterEffect.Run(displayText, textLabel);
-            yield return new WaitUntil(() => Input.GetMouseButtonDown(0) || _skipRequested);
+            yield return new WaitUntil(() => Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.Space) || _skipRequested);
             playerPortrait.transform.localScale = _playerStandardScale;
             npcPortrait.transform.localScale = _npcStandardScale;
             textLabel.text = string.Empty;
@@ -135,11 +135,11 @@ public class DialogUIScript : MonoBehaviour
                 // textLabel.alignment = TextAlignmentOptions.Right;
                 npcPortrait.transform.localScale = _npcStandardScale * 1.02f;
             }
-            playerPortrait.transform.localScale = _playerStandardScale;
-            npcPortrait.transform.localScale = _npcStandardScale;
             
             yield return _typewriterEffect.Run(displayText, textLabel);
-            yield return new WaitUntil(() => Input.GetMouseButtonDown(0) || _skipRequested);
+            yield return new WaitUntil(() => Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.Space) || _skipRequested);
+            playerPortrait.transform.localScale = _playerStandardScale;
+            npcPortrait.transform.localScale = _npcStandardScale;
             textLabel.text = string.Empty;
         }
         // evtl noch buttons nur einblenden, wenn sie zugewiesen sind
@@ -168,7 +168,7 @@ public class DialogUIScript : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.F))
         {
             _skipRequested = true;
         }
@@ -178,6 +178,7 @@ public class DialogUIScript : MonoBehaviour
     {
         _buttonClicked = true;
         // minigame starten bzw methode aufrufen
+        InputBlocker.Instance.BlockInput();
         minigame.ShowMinigamePanel();
         
         // gameObject.GetComponent<MinigameScript>().ShowMinigamePanel();

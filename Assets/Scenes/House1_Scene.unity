@@ -1170,7 +1170,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
   m_AnchoredPosition: {x: 30, y: 207}
-  m_SizeDelta: {x: 300, y: 50}
+  m_SizeDelta: {x: 250, y: 50}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &143354669
 MonoBehaviour:
@@ -5342,8 +5342,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   monologScript: {fileID: 0}
-  text: Please play with the children!
-  SpeechbubbleScript: {fileID: 455476510}
+  text: 
+  SpeechbubbleScript: {fileID: 0}
 --- !u!1 &481153561
 GameObject:
   m_ObjectHideFlags: 0
@@ -10321,7 +10321,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &993207843
 RectTransform:
   m_ObjectHideFlags: 0
@@ -11343,6 +11343,7 @@ GameObject:
   - component: {fileID: 1167409483}
   - component: {fileID: 1167409484}
   - component: {fileID: 1167409485}
+  - component: {fileID: 1167409486}
   m_Layer: 6
   m_Name: kaffee
   m_TagString: Untagged
@@ -11492,6 +11493,21 @@ PolygonCollider2D:
       - {x: 0.14, y: -0.11}
       - {x: 0.14999999, y: -0.11}
   m_UseDelaunayMesh: 0
+--- !u!114 &1167409486
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1167409482}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06e025fc324d246b597c16f593ed738a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  monologScript: {fileID: 0}
+  text: 
+  SpeechbubbleScript: {fileID: 0}
 --- !u!1 &1171570666
 GameObject:
   m_ObjectHideFlags: 0
@@ -13833,7 +13849,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1499148945
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15376,7 +15392,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -666, y: -330}
-  m_SizeDelta: {x: 700, y: 1000}
+  m_SizeDelta: {x: 700, y: 700}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1763352935
 MonoBehaviour:
@@ -15583,7 +15599,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 666, y: -330}
+  m_AnchoredPosition: {x: 699.99994, y: -330}
   m_SizeDelta: {x: 700, y: 1000}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1791556486
@@ -15737,6 +15753,7 @@ MonoBehaviour:
   - {fileID: 222682107}
   - {fileID: 548019095}
   - {fileID: 1814280414}
+  _isItembarfoldedOut: 0
 --- !u!4 &1828120432
 Transform:
   m_ObjectHideFlags: 0
@@ -16236,7 +16253,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e3bd89182bb340cca3886ab06d7d842, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  typewriterSpeed: 50
+  typewriterSpeed: 30
 --- !u!1 &1895495663
 GameObject:
   m_ObjectHideFlags: 0
@@ -17227,7 +17244,7 @@ PolygonCollider2D:
       - {x: 10.147066, y: -1.7810719}
       - {x: 8.650458, y: 4.257067}
       - {x: 13.533492, y: 4.7321334}
-      - {x: 12.611695, y: -1.2784419}
+      - {x: 16.7462, y: 2.6556046}
       - {x: 17.335808, y: -1.3732798}
       - {x: 17.40032, y: 0.23692715}
       - {x: 18.13543, y: 0.54973453}
@@ -18410,7 +18427,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &2117462205
 RectTransform:
   m_ObjectHideFlags: 0
