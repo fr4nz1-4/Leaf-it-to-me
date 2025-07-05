@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba036015fde13415e9a5056fce6ce88d, type: 3}
+  m_Name: flower_fairy_dialog_1
+  m_EditorClassIdentifier: 
+  dialogText:
+  - '@So are you happy now? I showered!'
+  - '#You still look a little dirty.'
+  - '@Seriously? This is just me!'
+  - '#Oh... You should really think about getting some things done on you.'
+  - '@Excuse me?'
+  - '#Just a nice suggestion on my part.'
+  - '@I''m... I''m... (You know what, let''s not fight with them. I still want that
+    key)'
+  - ...
+  - '@I''m here to get your key for the room of wishes.'
+  - '#And why should I give it to you?'
+  - '@Ella told me that you had some problems I could fix in exchange to get your
+    key.'
+  - '#Problems? I don''t have problems!'
+  - '@Really? Because I saw the broken flowerbeds. It does not look like you can
+    handle them on your own.'
+  - '#Hmpf... It is very hard to take care of the garden. I don''t have time to fix
+    thoes beds. And even if I''ll fix them the problem won''t go away.'
+  - '#Mari would throw more potions down and it will become a mess again.'
+  - '@Who is Mari?'
+  - '#That very careless person. They own the pub right above me. Their potions always
+    find there way down into my beautiful flowerbeds and ruin everything I work so
+    hard for.'
+  - '@Ok, so how can I help you?'
+  - '#Didn''t you listen to me? You can''t! It will always happen over and over again.'
+  - '@Ok, but if I find a way to help you, can I have your key?'
+  - '#I guess if you could find a way this problem goes away you could have my key.'
+  - '@Perfect. I''ll get the problem fixed.'
+  - '#I''m not sure you will.'
+  playerPortrait: {fileID: 21300000, guid: ce688af3802634dca9151408ce9ac862, type: 3}
+  npcPortrait: {fileID: 21300000, guid: 47835e4e2f3ee4c60be34de65f3d1bc2, type: 3}

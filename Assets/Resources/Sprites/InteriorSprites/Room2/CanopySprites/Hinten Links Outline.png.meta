@@ -1,0 +1,572 @@
+fileFormatVersion: 2
+guid: 7274c8fc3c4464c2fa987cc7475bbe30
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3194349849125141546
+    second: Hinten Links Outline_0
+  - first:
+      213: -2257974226072051764
+    second: Hinten Links Outline_1
+  - first:
+      213: 20241491785906034
+    second: Hinten Links Outline_2
+  - first:
+      213: -2060280511941658088
+    second: Hinten Links Outline_3
+  - first:
+      213: -8232201963191541003
+    second: Hinten Links Outline_4
+  - first:
+      213: 15916790533878083
+    second: Hinten Links Outline_5
+  - first:
+      213: -3187620288020016441
+    second: Hinten Links Outline_6
+  - first:
+      213: 3865156790496756121
+    second: Hinten Links Outline_7
+  - first:
+      213: 5158086022727724491
+    second: Hinten Links Outline_8
+  - first:
+      213: 9088275040791154283
+    second: Hinten Links Outline_9
+  - first:
+      213: 5284204904063318139
+    second: Hinten Links Outline_10
+  - first:
+      213: 2663612034146975627
+    second: Hinten Links Outline_11
+  - first:
+      213: -5578518538455910325
+    second: Hinten Links Outline_12
+  - first:
+      213: 8191318773602568006
+    second: Hinten Links Outline_13
+  - first:
+      213: 6888006900685890267
+    second: Hinten Links Outline_14
+  - first:
+      213: -3345811158143568775
+    second: Hinten Links Outline_15
+  - first:
+      213: 4010856755395682519
+    second: Hinten Links Outline_16
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Hinten Links Outline_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 523
+        width: 14
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2c3d6d634c945c20800000000000000
+      internalID: 3194349849125141546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hinten Links Outline_1
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 538
+        width: 31
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ccfdcf697601aa0e0800000000000000
+      internalID: -2257974226072051764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hinten Links Outline_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 449
+        width: 11
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2777f9f8789e74000800000000000000
+      internalID: 20241491785906034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hinten Links Outline_3
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 484
+        width: 13
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81abe0c4ac96863e0800000000000000
+      internalID: -2060280511941658088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hinten Links Outline_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 372
+        width: 12
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f2e1b83ee751cd80800000000000000
+      internalID: -8232201963191541003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hinten Links Outline_5
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 426
+        width: 12
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3417cb59c3c883000800000000000000
+      internalID: 15916790533878083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hinten Links Outline_6
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 296
+        width: 12
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c21dbd9c3c43c3d0800000000000000
+      internalID: -3187620288020016441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hinten Links Outline_7
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 344
+        width: 13
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9918fba5f9bc3a530800000000000000
+      internalID: 3865156790496756121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hinten Links Outline_8
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 283
+        width: 13
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bcde791b8e3359740800000000000000
+      internalID: 5158086022727724491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hinten Links Outline_9
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 207
+        width: 13
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6ec7637ff9002e70800000000000000
+      internalID: 9088275040791154283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hinten Links Outline_10
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 221
+        width: 12
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7832130d54455940800000000000000
+      internalID: 5284204904063318139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hinten Links Outline_11
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 127
+        width: 13
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8f39ca580d07f420800000000000000
+      internalID: 2663612034146975627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hinten Links Outline_12
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 155
+        width: 14
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b48776e02fe1592b0800000000000000
+      internalID: -5578518538455910325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hinten Links Outline_13
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 59
+        width: 12
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 647c19e66096da170800000000000000
+      internalID: 8191318773602568006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hinten Links Outline_14
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 71
+        width: 13
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd262dd28cd179f50800000000000000
+      internalID: 6888006900685890267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hinten Links Outline_15
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 0
+        width: 30
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97470518a7a4191d0800000000000000
+      internalID: -3345811158143568775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hinten Links Outline_16
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 0
+        width: 14
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d0e556f7fc69a730800000000000000
+      internalID: 4010856755395682519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Hinten Links Outline_0: 3194349849125141546
+      Hinten Links Outline_1: -2257974226072051764
+      Hinten Links Outline_10: 5284204904063318139
+      Hinten Links Outline_11: 2663612034146975627
+      Hinten Links Outline_12: -5578518538455910325
+      Hinten Links Outline_13: 8191318773602568006
+      Hinten Links Outline_14: 6888006900685890267
+      Hinten Links Outline_15: -3345811158143568775
+      Hinten Links Outline_16: 4010856755395682519
+      Hinten Links Outline_2: 20241491785906034
+      Hinten Links Outline_3: -2060280511941658088
+      Hinten Links Outline_4: -8232201963191541003
+      Hinten Links Outline_5: 15916790533878083
+      Hinten Links Outline_6: -3187620288020016441
+      Hinten Links Outline_7: 3865156790496756121
+      Hinten Links Outline_8: 5158086022727724491
+      Hinten Links Outline_9: 9088275040791154283
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

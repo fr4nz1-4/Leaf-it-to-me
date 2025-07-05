@@ -1,0 +1,910 @@
+fileFormatVersion: 2
+guid: 24c0037e77fc04202b789add77b9f86e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2883910982546494969
+    second: Vorne Links Outline_0
+  - first:
+      213: -6954976270799524614
+    second: Vorne Links Outline_1
+  - first:
+      213: 4407157831944231090
+    second: Vorne Links Outline_2
+  - first:
+      213: 1647146724038474426
+    second: Vorne Links Outline_3
+  - first:
+      213: -8497423221485480256
+    second: Vorne Links Outline_4
+  - first:
+      213: -4119969117395595522
+    second: Vorne Links Outline_5
+  - first:
+      213: -6433722955684813555
+    second: Vorne Links Outline_6
+  - first:
+      213: -3599666092740789794
+    second: Vorne Links Outline_7
+  - first:
+      213: -1368362459541578382
+    second: Vorne Links Outline_8
+  - first:
+      213: -2612404473778777971
+    second: Vorne Links Outline_9
+  - first:
+      213: 1044456212375602071
+    second: Vorne Links Outline_10
+  - first:
+      213: -7657964154752804660
+    second: Vorne Links Outline_11
+  - first:
+      213: -7597993656329157977
+    second: Vorne Links Outline_12
+  - first:
+      213: -5468202906031690194
+    second: Vorne Links Outline_13
+  - first:
+      213: -3871445763245552115
+    second: Vorne Links Outline_14
+  - first:
+      213: 5657358914717206054
+    second: Vorne Links Outline_15
+  - first:
+      213: -2279987000320581042
+    second: Vorne Links Outline_16
+  - first:
+      213: 532801243873793307
+    second: Vorne Links Outline_17
+  - first:
+      213: 2020727782312844346
+    second: Vorne Links Outline_18
+  - first:
+      213: -2129858981421873536
+    second: Vorne Links Outline_19
+  - first:
+      213: -3020270647526374191
+    second: Vorne Links Outline_20
+  - first:
+      213: -335142903793892058
+    second: Vorne Links Outline_21
+  - first:
+      213: 4500061949276560779
+    second: Vorne Links Outline_22
+  - first:
+      213: 6282702949763941899
+    second: Vorne Links Outline_23
+  - first:
+      213: 8743520027843960797
+    second: Vorne Links Outline_24
+  - first:
+      213: 7770326948772106405
+    second: Vorne Links Outline_25
+  - first:
+      213: -4737244360055993863
+    second: Vorne Links Outline_26
+  - first:
+      213: 8110197964008006536
+    second: Vorne Links Outline_27
+  - first:
+      213: -7022371617641340397
+    second: Vorne Links Outline_28
+  - first:
+      213: 7258416021051052689
+    second: Vorne Links Outline_29
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Vorne Links Outline_0
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 976
+        width: 39
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f5188e42c5b50820800000000000000
+      internalID: 2883910982546494969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vorne Links Outline_1
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 962
+        width: 35
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afc29b54ee5fa7f90800000000000000
+      internalID: -6954976270799524614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vorne Links Outline_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 917
+        width: 15
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b8dd12b2be592d30800000000000000
+      internalID: 4407157831944231090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vorne Links Outline_3
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 908
+        width: 20
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abaf243f737dbd610800000000000000
+      internalID: 1647146724038474426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vorne Links Outline_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 858
+        width: 15
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c6d331f996131a80800000000000000
+      internalID: -8497423221485480256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vorne Links Outline_5
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 822
+        width: 18
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efe4e009aede2d6c0800000000000000
+      internalID: -4119969117395595522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vorne Links Outline_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 775
+        width: 17
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0561232f03d6b6a0800000000000000
+      internalID: -6433722955684813555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vorne Links Outline_7
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 746
+        width: 21
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed9ba20b2ca6b0ec0800000000000000
+      internalID: -3599666092740789794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vorne Links Outline_8
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 664
+        width: 19
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27d5b0bc799920de0800000000000000
+      internalID: -1368362459541578382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vorne Links Outline_9
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 671
+        width: 23
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8056c2e8ffdebbd0800000000000000
+      internalID: -2612404473778777971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vorne Links Outline_10
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 608
+        width: 19
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79309123467ae7e00800000000000000
+      internalID: 1044456212375602071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vorne Links Outline_11
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 586
+        width: 18
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc8d845cc2279b590800000000000000
+      internalID: -7657964154752804660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vorne Links Outline_12
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 527
+        width: 17
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a244d486018e8690800000000000000
+      internalID: -7597993656329157977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vorne Links Outline_13
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 519
+        width: 18
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2ee832cd6a0d14b0800000000000000
+      internalID: -5468202906031690194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vorne Links Outline_14
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 469
+        width: 17
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0ece82179cd54ac0800000000000000
+      internalID: -3871445763245552115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vorne Links Outline_15
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 427
+        width: 20
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 626cb9e75f9f28e40800000000000000
+      internalID: 5657358914717206054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vorne Links Outline_16
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 407
+        width: 17
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e42226137ebdb50e0800000000000000
+      internalID: -2279987000320581042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vorne Links Outline_17
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 339
+        width: 20
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b15dbfc88e3e46700800000000000000
+      internalID: 532801243873793307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vorne Links Outline_18
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 334
+        width: 18
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3c158436311b0c10800000000000000
+      internalID: 2020727782312844346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vorne Links Outline_19
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 254
+        width: 19
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0868ca67a883172e0800000000000000
+      internalID: -2129858981421873536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vorne Links Outline_20
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 278
+        width: 19
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d4c6a029d7d516d0800000000000000
+      internalID: -3020270647526374191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vorne Links Outline_21
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 174
+        width: 19
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6254f5efd45595bf0800000000000000
+      internalID: -335142903793892058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vorne Links Outline_22
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 201
+        width: 18
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8d91e1208e637e30800000000000000
+      internalID: 4500061949276560779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vorne Links Outline_23
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 115
+        width: 19
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b068afdab05a03750800000000000000
+      internalID: 6282702949763941899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vorne Links Outline_24
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 138
+        width: 20
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ddf1722e329375970800000000000000
+      internalID: 8743520027843960797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vorne Links Outline_25
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 53
+        width: 21
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a0d432e03fb5db60800000000000000
+      internalID: 7770326948772106405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vorne Links Outline_26
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 84
+        width: 22
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f9c3a08a5de14eb0800000000000000
+      internalID: -4737244360055993863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vorne Links Outline_27
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 0
+        width: 28
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8832bce14163d8070800000000000000
+      internalID: 8110197964008006536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vorne Links Outline_28
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 0
+        width: 31
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 312e3b948368b8e90800000000000000
+      internalID: -7022371617641340397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vorne Links Outline_29
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 6
+        width: 30
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19290c61ae21bb460800000000000000
+      internalID: 7258416021051052689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Vorne Links Outline_0: 2883910982546494969
+      Vorne Links Outline_1: -6954976270799524614
+      Vorne Links Outline_10: 1044456212375602071
+      Vorne Links Outline_11: -7657964154752804660
+      Vorne Links Outline_12: -7597993656329157977
+      Vorne Links Outline_13: -5468202906031690194
+      Vorne Links Outline_14: -3871445763245552115
+      Vorne Links Outline_15: 5657358914717206054
+      Vorne Links Outline_16: -2279987000320581042
+      Vorne Links Outline_17: 532801243873793307
+      Vorne Links Outline_18: 2020727782312844346
+      Vorne Links Outline_19: -2129858981421873536
+      Vorne Links Outline_2: 4407157831944231090
+      Vorne Links Outline_20: -3020270647526374191
+      Vorne Links Outline_21: -335142903793892058
+      Vorne Links Outline_22: 4500061949276560779
+      Vorne Links Outline_23: 6282702949763941899
+      Vorne Links Outline_24: 8743520027843960797
+      Vorne Links Outline_25: 7770326948772106405
+      Vorne Links Outline_26: -4737244360055993863
+      Vorne Links Outline_27: 8110197964008006536
+      Vorne Links Outline_28: -7022371617641340397
+      Vorne Links Outline_29: 7258416021051052689
+      Vorne Links Outline_3: 1647146724038474426
+      Vorne Links Outline_4: -8497423221485480256
+      Vorne Links Outline_5: -4119969117395595522
+      Vorne Links Outline_6: -6433722955684813555
+      Vorne Links Outline_7: -3599666092740789794
+      Vorne Links Outline_8: -1368362459541578382
+      Vorne Links Outline_9: -2612404473778777971
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

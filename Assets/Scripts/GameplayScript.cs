@@ -10,9 +10,12 @@ public class GameplayScript : MonoBehaviour
 {
     public PrologScript prologScript;
     public DialogUIScript dialogScript;
-    public DialogLine[] dialogLine;
+    public DialogLine[] kindergardenDialogue;
+    public DialogLine[] flowerfairyDialogue;
+    public Image key1;
     private ItembarScript _itembar;
     private KindergardenfairyScript _kindergardenfairyScript;
+    private CloseUpScript _closeUpScript;
     
     public GameObject kindergardenFairy;
     private Sprite _kindergardenFairySprite;
@@ -20,6 +23,7 @@ public class GameplayScript : MonoBehaviour
     private Image _cup;
     private Sprite _fullCupSprite;
     private Sprite _emptyCupSprite;
+    private MonologScript _monologScript;
 
     private void Start()
     {
@@ -36,6 +40,8 @@ public class GameplayScript : MonoBehaviour
         _fullCupSprite = Resources.Load<Sprite>("Sprites/UISprites/CloseUpSprites/becher_voll");
         _emptyCupSprite = Resources.Load<Sprite>("Sprites/UISprites/CloseUpSprites/becher");
         _kindergardenFairySprite = kindergardenFairy.GetComponent<SpriteRenderer>().sprite;
+        _monologScript = FindFirstObjectByType<MonologScript>();
+        _closeUpScript = GameObject.Find("CloseUpManager").GetComponent<CloseUpScript>();
     }
 
     void Update()
@@ -57,11 +63,11 @@ public class GameplayScript : MonoBehaviour
     private IEnumerator House1Gameplay()
     {
         // Prolog abspielen --> monologbar mit Cape-Main-Charakter im hintergrund
-        // yield return StartCoroutine(prologScript.ShowProlog(dialogLine[0]));
+        // yield return StartCoroutine(prologScript.ShowProlog(kindergardenDialogue[0]));
         // yield return new WaitUntil(() => !prologScript.prologPanel.activeSelf);
         
         // Direkt dialog mit kindergartenfee die baum abstaubt
-        dialogScript.ShowDialogueWithoutButtons(dialogLine[1]);
+        dialogScript.ShowDialogueWithoutButtons(kindergardenDialogue[1]);
         // main character ab jetzt ohne cape 
         
         // dann frei rumbewegen
@@ -75,7 +81,7 @@ public class GameplayScript : MonoBehaviour
         // danach wieder dialog mit ella
         yield return new WaitUntil(() => _clickedObject.name == "kindergarden_fairy");
         _kindergardenfairyScript.StopCycleSprites();
-        dialogScript.ShowDialogueWithoutButtons(dialogLine[2]);
+        dialogScript.ShowDialogueWithoutButtons(kindergardenDialogue[2]);
         yield return new WaitUntil(() => !dialogScript.dialogPanel.activeSelf);
         
         // --> man bekommt LEERE tasse in inventar
@@ -97,7 +103,7 @@ public class GameplayScript : MonoBehaviour
         
         // wieder dialog mit ella (tasse zurückbringen) --> rübergehen zu raum 2 
         yield return new WaitUntil(() => _clickedObject.name == "kindergarden_fairy");
-        dialogScript.ShowDialogueWithoutButtons(dialogLine[3]);
+        dialogScript.ShowDialogueWithoutButtons(kindergardenDialogue[3]);
         _kindergardenFairySprite =
             Resources.Load<Sprite>("Sprites/CharacterSprites/kindergardenfairy/ella with coffee");
         yield return new WaitUntil(() => !dialogScript.dialogPanel.activeSelf);
@@ -108,17 +114,43 @@ public class GameplayScript : MonoBehaviour
     // raum 2:
     private IEnumerator House2Gameplay()
     {
+        _monologScript.ShowMonolog(
+            "OK I need to find the next person. What was their name again? Fera? Yes I think that was it." +
+            "Funny, why are some of the flowerbeds looking like a mess? What happened there?");
         // dialog mit gartenfee
+        yield return new WaitUntil(() => _clickedObject.name == "flower_fairy");
+        dialogScript.ShowDialogueWithoutButtons(flowerfairyDialogue[0]);
         // rübergehen zu dusche
-        // --> auf dusche klicken --> sauber
+        // --> auf dusche klicken --> sauber (Animation)
+        yield return new WaitUntil(() => _clickedObject.name == "sunflower");
+
         // zurück zu dialog mit Gartenfee
+        yield return new WaitUntil(() => _clickedObject.name == "flower_fairy");
+        dialogScript.ShowDialogueWithoutButtons(flowerfairyDialogue[1]);
         // frei rumlaufen
+        
         // --> canopy kann nur gebaut werden, wenn 2 materialien im inventar vorhanden
+        yield return new WaitUntil(() => _itembar.FindItemSlotByName("logs") != null && _itembar.FindItemSlotByName("tuch") != null);
+        // yield return new WaitUntil(() => _clickedObject.name == "flower_fairy");
+
         // canopy bauen 
+        
         // zurück zu dialog mit gartenfee
-        // boden fegen
-        // wieder dialog mit gartenfee --> SCHLÜSSEl 1!!!
+        yield return new WaitUntil(() => _clickedObject.name == "flower_fairy");
+        dialogScript.ShowDialogueWithoutButtons(flowerfairyDialogue[2]);
+
+        // boden fegen - optional
+        
+        // wieder dialog mit gartenfee
+        yield return new WaitUntil(() => _clickedObject.name == "flower_fairy");
+        dialogScript.ShowDialogueWithoutButtons(flowerfairyDialogue[3]);
+        
+        // --> SCHLÜSSEl 1!!!
+        _closeUpScript.ShowCloseUpPanel(Resources.Load<Sprite>("Sprites/KeySprites/Gross/Gartenfee_Schluessel_gross"));
+        yield return new WaitUntil(() => !InputBlocker.Instance.IsBlocked); // mal schauen ob das so geht
+        key1.sprite = Resources.Load<Sprite>("Sprites/KeySprites/Klein/Gartenfee_Schluessel_klein");
+        _itembar.fold_itembar_out();
+        
         // blackscreen und credits --> done
-        yield break;
     }
 }

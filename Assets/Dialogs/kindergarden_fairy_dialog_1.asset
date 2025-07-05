@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ba036015fde13415e9a5056fce6ce88d, type: 3}
-  m_Name: kindergarden_fairy_2_dialog
+  m_Name: kindergarden_fairy_dialog_1
   m_EditorClassIdentifier: 
   dialogText:
   - '#Thank you so much, the children are calming down now.'

@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba036015fde13415e9a5056fce6ce88d, type: 3}
+  m_Name: flower_fairy_dialog_0
+  m_EditorClassIdentifier: 
+  dialogText:
+  - '@Hi are you Fera?'
+  - '#That would be me. And who are you? And what is that smell?'
+  - "@I'm Ace. I'm here to find the \u201CRoom of Wishes\u201D. I have already met
+    Ella and they told me to come and find you."
+  - '#Seriously what is that smell?'
+  - ...
+  - '#Oh god, I think it''s you!'
+  - '@I travelled a long time and had to go through some not so nice activities!
+    So sorry I might smell a little.'
+  - '#A little? More like a lot. Urgh, Now that I took a better look at you I can
+    see all the dirt on you. You need to take a shower before I consider talking
+    to you!'
+  - '@And where would I find a shower?'
+  - '@(I am seriously so annoyed at these people here)'
+  - '#There is one at the end of the Garden.'
+  - '@You honestly want me to shower before you''ll talk to me?'
+  - '#Yes.'
+  - '@Yes?'
+  - '#Yes.'
+  - '@I really can''t believe you. I have one single wish and I feel that your guys
+    quest is to make it as complicated for me as possible!'
+  - '#Yes.'
+  - '@(Well I guess I need to take that shower now...)'
+  playerPortrait: {fileID: 21300000, guid: ce688af3802634dca9151408ce9ac862, type: 3}
+  npcPortrait: {fileID: 21300000, guid: 47835e4e2f3ee4c60be34de65f3d1bc2, type: 3}

@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba036015fde13415e9a5056fce6ce88d, type: 3}
+  m_Name: flower_fairy_dialog_3
+  m_EditorClassIdentifier: 
+  dialogText:
+  - '@I build a canopy so the potions won''t touch your flowerbeds. Can I have your
+    key now?'
+  - '#Not so fast. I want you to clean the floor first.'
+  - '@What???'
+  - '#Yeah use the broom to do it. I needs to look flawless.'
+  - '@Urgh. Fine...'
+  playerPortrait: {fileID: 21300000, guid: ce688af3802634dca9151408ce9ac862, type: 3}
+  npcPortrait: {fileID: 21300000, guid: 47835e4e2f3ee4c60be34de65f3d1bc2, type: 3}

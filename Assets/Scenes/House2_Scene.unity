@@ -269,7 +269,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   monologScript: {fileID: 0}
   text: 
-  SpeechbubbleScript: {fileID: 0}
+  speechbubbleScript: {fileID: 0}
 --- !u!114 &9605309
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -465,7 +465,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   monologScript: {fileID: 0}
   text: 
-  SpeechbubbleScript: {fileID: 0}
+  speechbubbleScript: {fileID: 0}
 --- !u!60 &11556983
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -3736,7 +3736,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   monologScript: {fileID: 0}
   text: 
-  SpeechbubbleScript: {fileID: 0}
+  speechbubbleScript: {fileID: 0}
 --- !u!60 &109183954
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -5039,7 +5039,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   monologScript: {fileID: 0}
   text: 
-  SpeechbubbleScript: {fileID: 0}
+  speechbubbleScript: {fileID: 0}
 --- !u!60 &291837860
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -5830,7 +5830,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   monologScript: {fileID: 0}
   text: 
-  SpeechbubbleScript: {fileID: 0}
+  speechbubbleScript: {fileID: 0}
 --- !u!60 &376969964
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -6501,8 +6501,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 891194f4f320b4a4f99d7e18b6558e25, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itembar_folded_in: {fileID: 1083507435}
-  itembar_folded_out: {fileID: 106946898}
+  itembarFoldedIn: {fileID: 1083507435}
+  itembarFoldedOut: {fileID: 106946898}
   itemSlots:
   - {fileID: 999371127}
   - {fileID: 1934801851}
@@ -6510,7 +6510,7 @@ MonoBehaviour:
   - {fileID: 408200419}
   - {fileID: 2117523386}
   - {fileID: 1724835623}
-  _isItembarfoldedOut: 0
+  isItembarfoldedOut: 0
 --- !u!1 &408200418
 GameObject:
   m_ObjectHideFlags: 0
@@ -6957,7 +6957,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   monologScript: {fileID: 0}
   text: 
-  SpeechbubbleScript: {fileID: 0}
+  speechbubbleScript: {fileID: 0}
 --- !u!60 &430558430
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -7360,7 +7360,7 @@ GameObject:
   - component: {fileID: 444948346}
   - component: {fileID: 444948345}
   m_Layer: 6
-  m_Name: flowerfairy
+  m_Name: flower_fairy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7921,7 +7921,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54d9435c62fc945029da62db7a1a4d9d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speechbubble: {fileID: 1367056404}
+  speechbubble: {fileID: 1367056404}
   textLabel: {fileID: 1219897147}
   player: {fileID: 20166075}
 --- !u!1 &548115546
@@ -8027,7 +8027,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   monologScript: {fileID: 0}
   text: 
-  SpeechbubbleScript: {fileID: 0}
+  speechbubbleScript: {fileID: 0}
 --- !u!60 &548115550
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -9167,7 +9167,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54d9435c62fc945029da62db7a1a4d9d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speechbubble: {fileID: 38656507}
+  speechbubble: {fileID: 38656507}
   textLabel: {fileID: 671992559}
   player: {fileID: 20166075}
 --- !u!1 &821179476
@@ -9218,7 +9218,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   monologScript: {fileID: 0}
   text: I looove socks!!
-  SpeechbubbleScript: {fileID: 0}
+  speechbubbleScript: {fileID: 0}
 --- !u!60 &821179479
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -9932,7 +9932,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   monologScript: {fileID: 0}
   text: 
-  SpeechbubbleScript: {fileID: 0}
+  speechbubbleScript: {fileID: 0}
 --- !u!60 &932372851
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -10197,7 +10197,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   monologScript: {fileID: 910976228}
   text: Wow. These flowerbeds look stunning!
-  SpeechbubbleScript: {fileID: 0}
+  speechbubbleScript: {fileID: 0}
 --- !u!60 &961646834
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -12420,7 +12420,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1225371291
 RectTransform:
   m_ObjectHideFlags: 0
@@ -12853,7 +12853,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54d9435c62fc945029da62db7a1a4d9d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speechbubble: {fileID: 1718168412}
+  speechbubble: {fileID: 1718168412}
   textLabel: {fileID: 1154560511}
   player: {fileID: 20166075}
 --- !u!1 &1394847186
@@ -13058,7 +13058,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   monologScript: {fileID: 0}
   text: Must you guys be so distruptive? We can be civilised here. It is not a Zoo!
-  SpeechbubbleScript: {fileID: 0}
+  speechbubbleScript: {fileID: 0}
 --- !u!60 &1437925039
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -14034,7 +14034,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   monologScript: {fileID: 0}
   text: 
-  SpeechbubbleScript: {fileID: 0}
+  speechbubbleScript: {fileID: 0}
 --- !u!60 &1571122712
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -14581,7 +14581,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   monologScript: {fileID: 0}
   text: 
-  SpeechbubbleScript: {fileID: 0}
+  speechbubbleScript: {fileID: 0}
 --- !u!60 &1611284140
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -16577,7 +16577,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   monologScript: {fileID: 0}
   text: 
-  SpeechbubbleScript: {fileID: 0}
+  speechbubbleScript: {fileID: 0}
 --- !u!60 &1642795571
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -16838,7 +16838,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "hello \nhello\nhello"
+  m_text: OK I need to find the next person. What was their name again? Fera? Yes
+    I think that was it. Funny, why are some of the flowerbeds looking like a mess?
+    What happened there?
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d059f20b7b4c44a069dc5f9931ed9492, type: 2}
   m_sharedMaterial: {fileID: -107186456025546579, guid: d059f20b7b4c44a069dc5f9931ed9492, type: 2}
@@ -16906,7 +16908,7 @@ MonoBehaviour:
   m_margin: {x: -376.11206, y: 51.0048, z: -204.88727, w: -122.01791}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1672442624
@@ -17472,7 +17474,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   monologScript: {fileID: 0}
   text: 
-  SpeechbubbleScript: {fileID: 0}
+  speechbubbleScript: {fileID: 0}
 --- !u!60 &1757828358
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -17876,7 +17878,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54d9435c62fc945029da62db7a1a4d9d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speechbubble: {fileID: 762341446}
+  speechbubble: {fileID: 762341446}
   textLabel: {fileID: 587888606}
   player: {fileID: 20166075}
 --- !u!1 &1890965720
@@ -18069,7 +18071,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54d9435c62fc945029da62db7a1a4d9d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speechbubble: {fileID: 931706413}
+  speechbubble: {fileID: 931706413}
   textLabel: {fileID: 1563713189}
   player: {fileID: 20166075}
 --- !u!1 &1918065772
@@ -18594,7 +18596,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   monologScript: {fileID: 910976228}
   text: I wanna take this flower with me. I might need it for something else.
-  SpeechbubbleScript: {fileID: 0}
+  speechbubbleScript: {fileID: 0}
 --- !u!60 &1979764697
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -18878,7 +18880,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   monologScript: {fileID: 0}
   text: Wheeeeee, Wheeeeeee, Wheeeee
-  SpeechbubbleScript: {fileID: 0}
+  speechbubbleScript: {fileID: 0}
 --- !u!60 &1982664798
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -19732,7 +19734,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   monologScript: {fileID: 0}
   text: I want to read a book....
-  SpeechbubbleScript: {fileID: 0}
+  speechbubbleScript: {fileID: 0}
 --- !u!60 &2063074594
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -20079,7 +20081,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   monologScript: {fileID: 0}
   text: 
-  SpeechbubbleScript: {fileID: 0}
+  speechbubbleScript: {fileID: 0}
 --- !u!60 &2093290879
 PolygonCollider2D:
   m_ObjectHideFlags: 0
