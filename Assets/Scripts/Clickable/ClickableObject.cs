@@ -11,6 +11,7 @@ public class ClickableObject : MonoBehaviour
 {
     public MonologScript monologScript;
     public string text;
+    public GameObject panel;
     private AudioSource _audioSource;
     [FormerlySerializedAs("SpeechbubbleScript")] public SpeechbubbleScript speechbubbleScript;
     private SpriteRenderer _spriteRenderer;
@@ -49,6 +50,11 @@ public class ClickableObject : MonoBehaviour
         if (gameObject.name == "destroyed_flowers")
         {
             GetComponent<MinigameScript>().ShowMinigamePanel();
+        }
+
+        if (gameObject.name == "sunflower")
+        {
+            panel.SetActive(true);
         }
     }
     

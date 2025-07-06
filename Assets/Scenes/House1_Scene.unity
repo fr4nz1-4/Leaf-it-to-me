@@ -3973,7 +3973,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &410088956
 RectTransform:
   m_ObjectHideFlags: 0
@@ -13475,6 +13475,8 @@ MonoBehaviour:
   flowerfairyDialogue: []
   key1: {fileID: 0}
   kindergardenFairy: {fileID: 1522073288}
+  monologScript: {fileID: 1880559953}
+  _treeButton: {fileID: 2013557385}
 --- !u!4 &1499148946
 Transform:
   m_ObjectHideFlags: 0
@@ -17900,8 +17902,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 8aa9099eed24f47c681394d853f8dcb0, type: 3}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: bcc9de76eb90f4a9d98cb4313026555f, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -18050,7 +18052,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 7785937509526187443, guid: cf129efc50ade4b1f8ea22ebc900c790, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

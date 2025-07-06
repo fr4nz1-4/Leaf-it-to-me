@@ -7,11 +7,13 @@ public class TypewriterEffect : MonoBehaviour
     [SerializeField] private float typewriterSpeed = 30f;
     public Coroutine Run(string textToType, TMP_Text textLabel)
     {
+        Debug.Log("in TypewriterEffect.run method");
         return StartCoroutine(TypeText(textToType, textLabel));
     }
 
     private IEnumerator TypeText(string textToType, TMP_Text textLabel)
     {
+        Debug.Log("in type text method");
         textLabel.text = string.Empty;
         
         float t = 0;

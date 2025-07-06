@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using UnityEngine;
 using TMPro;
@@ -11,11 +12,27 @@ public class MonologScript : MonoBehaviour
     [SerializeField] private TMP_Text textLabel;
     public GameObject player;
     private TypewriterEffect _typewriterEffect;
-    
-    public void Start()
+
+    private void Awake()
     {
         _typewriterEffect = GetComponent<TypewriterEffect>();
-        Debug.Log("showMonolog button pressed");
+        if (_typewriterEffect == null)
+        {
+            Debug.LogError("TypewriterEffect-Komponente fehlt am MonologScript-GameObject!");
+        }
+        if (textLabel == null)
+        {
+            Debug.LogError("textLabel ist nicht zugewiesen!");
+        }           
+    }
+
+    public void Start()
+    {
+        if (monologPanel == null)
+        {
+            Debug.LogError("MonologPanel ist nicht zugewiesen!");
+            return;
+        }
         monologPanel.SetActive(false);
         textLabel.text = "";
     }
@@ -23,14 +40,19 @@ public class MonologScript : MonoBehaviour
     public void ShowMonolog(string text)
     {
         monologPanel.SetActive(true);
+        Debug.Log("monologpanel: " + monologPanel.activeSelf);
+        Debug.Log("Panel Position: " + monologPanel.GetComponent<RectTransform>().anchoredPosition);
+        Debug.Log("Text Position: " + textLabel.GetComponent<RectTransform>().anchoredPosition);
         player.GetComponent<PlayerMovement>().enabled = false;
-        InputBlocker.Instance.BlockInput(); 
+        InputBlocker.Instance.BlockInput();
+        Debug.Log("inputblocker: " + InputBlocker.Instance.IsBlocked);
         StartCoroutine(StepThroughDialogue(text));
     }
     
     //jede zeile des dialogs anzeigen lassen und am ende zwei buttons anzeigen lassen
     private IEnumerator StepThroughDialogue(string text)
     {
+        Debug.Log("in StepThroughDialogue method");
         yield return _typewriterEffect.Run(text, textLabel);
         yield return new WaitUntil(() => Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.Space));
         textLabel.text = string.Empty;

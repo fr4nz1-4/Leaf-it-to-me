@@ -10,6 +10,7 @@ public class CanopyScript : MinigameScript
     public GameObject barren4;
 
     public GameObject canopyFinal;
+    public bool canopyBuild;
     
     private void Update()
     {
@@ -17,6 +18,7 @@ public class CanopyScript : MinigameScript
         {
             canopyFinal.SetActive(true);
             MinigamePlayed = true;
+            canopyBuild = true;
         }
     }
 }

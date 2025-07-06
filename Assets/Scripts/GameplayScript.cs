@@ -23,9 +23,9 @@ public class GameplayScript : MonoBehaviour
     private Image _cup;
     private Sprite _fullCupSprite;
     private Sprite _emptyCupSprite;
-    private MonologScript _monologScript;
+    public MonologScript monologScript;
     private CanopyScript _canopyScript;
-    private GameObject _treeButton;
+    public GameObject _treeButton;
 
     private void Start()
     {
@@ -43,10 +43,10 @@ public class GameplayScript : MonoBehaviour
         _fullCupSprite = Resources.Load<Sprite>("Sprites/UISprites/CloseUpSprites/becher_voll");
         _emptyCupSprite = Resources.Load<Sprite>("Sprites/UISprites/CloseUpSprites/becher");
         _kindergardenFairySprite = kindergardenFairy.GetComponent<SpriteRenderer>().sprite;
-        _monologScript = GameObject.Find("MonologScript").GetComponent<MonologScript>();
+        // _monologScript = GameObject.Find("MonologScript").GetComponent<MonologScript>();
         _closeUpScript = GameObject.Find("CloseUpManager").GetComponent<CloseUpScript>();
         _canopyScript = GameObject.Find("destroyed_flowers").GetComponent<CanopyScript>();
-        _treeButton = GameObject.Find("TreeButton");
+        // _treeButton = GameObject.Find("TreeButton");
     }
 
     void Update()
@@ -120,11 +120,12 @@ public class GameplayScript : MonoBehaviour
     // raum 2:
     private IEnumerator House2Gameplay()
     {
-        _monologScript.ShowMonolog(
+        _treeButton.SetActive(false);
+        monologScript.ShowMonolog(
             "OK I need to find the next person. What was their name again? Fera? Yes I think that was it." +
             "Funny, why are some of the flowerbeds looking like a mess? What happened there?");
         // dialog mit gartenfee
-        yield return new WaitUntil(() => _clickedObject.name == "flower_fairy");
+        yield return new WaitUntil(() => _clickedObject != null && _clickedObject.name == "flower_fairy");
         dialogScript.ShowDialogueWithoutButtons(flowerfairyDialogue[0]);
         // rübergehen zu dusche
         // --> auf dusche klicken --> sauber (Animation)
@@ -140,12 +141,13 @@ public class GameplayScript : MonoBehaviour
         // yield return new WaitUntil(() => _clickedObject.name == "flower_fairy");
 
         // canopy bauen 
+        yield return new WaitUntil(() => _canopyScript.canopyBuild);
         
         // zurück zu dialog mit gartenfee
         yield return new WaitUntil(() => _clickedObject.name == "flower_fairy");
         dialogScript.ShowDialogueWithoutButtons(flowerfairyDialogue[2]);
 
-        // boden fegen - optional
+        // boden fegen - optionald
         
         // wieder dialog mit gartenfee
         yield return new WaitUntil(() => _clickedObject.name == "flower_fairy");
@@ -156,7 +158,8 @@ public class GameplayScript : MonoBehaviour
         yield return new WaitUntil(() => !InputBlocker.Instance.IsBlocked); // mal schauen ob das so geht
         key1.sprite = Resources.Load<Sprite>("Sprites/KeySprites/Klein/Gartenfee_Schluessel_klein");
         _itembar.fold_itembar_out();
-        
+        // _treeButton.SetActive(true);
+
         // blackscreen und credits --> done
     }
 }
