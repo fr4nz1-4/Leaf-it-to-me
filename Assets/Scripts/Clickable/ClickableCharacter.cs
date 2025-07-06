@@ -24,8 +24,15 @@ public class ClickableCharacter : MonoBehaviour
 
         Debug.Log("You clicked on: " + gameObject.name);
 
-        // Dialog starten
-        dialogScript.ShowDialogue(dialogLine);
+        if (gameObject.name == "tic-tac-toe_child")
+        {
+            dialogScript.ShowDialogueWithoutButtons(dialogLine);   
+        }
+        else
+        {
+            // Dialog starten
+            dialogScript.ShowDialogue(dialogLine);
+        }
     }
 
     private void OnMouseOver()

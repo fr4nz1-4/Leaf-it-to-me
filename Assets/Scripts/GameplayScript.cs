@@ -24,6 +24,8 @@ public class GameplayScript : MonoBehaviour
     private Sprite _fullCupSprite;
     private Sprite _emptyCupSprite;
     private MonologScript _monologScript;
+    private CanopyScript _canopyScript;
+    private GameObject _treeButton;
 
     private void Start()
     {
@@ -32,16 +34,19 @@ public class GameplayScript : MonoBehaviour
             StartCoroutine(House1Gameplay());
         } else if (SceneManager.GetActiveScene().name == "House2_Scene")
         {
+            StopCoroutine(House1Gameplay());
             StartCoroutine(House2Gameplay());
         }
-
+        
         _itembar = GameObject.Find("ItembarManager").GetComponent<ItembarScript>();
         _kindergardenfairyScript = kindergardenFairy.GetComponent<KindergardenfairyScript>();
         _fullCupSprite = Resources.Load<Sprite>("Sprites/UISprites/CloseUpSprites/becher_voll");
         _emptyCupSprite = Resources.Load<Sprite>("Sprites/UISprites/CloseUpSprites/becher");
         _kindergardenFairySprite = kindergardenFairy.GetComponent<SpriteRenderer>().sprite;
-        _monologScript = FindFirstObjectByType<MonologScript>();
+        _monologScript = GameObject.Find("MonologScript").GetComponent<MonologScript>();
         _closeUpScript = GameObject.Find("CloseUpManager").GetComponent<CloseUpScript>();
+        _canopyScript = GameObject.Find("destroyed_flowers").GetComponent<CanopyScript>();
+        _treeButton = GameObject.Find("TreeButton");
     }
 
     void Update()
@@ -62,9 +67,10 @@ public class GameplayScript : MonoBehaviour
     // raum 1:
     private IEnumerator House1Gameplay()
     {
+        _treeButton.SetActive(false);
         // Prolog abspielen --> monologbar mit Cape-Main-Charakter im hintergrund
-        // yield return StartCoroutine(prologScript.ShowProlog(kindergardenDialogue[0]));
-        // yield return new WaitUntil(() => !prologScript.prologPanel.activeSelf);
+        yield return StartCoroutine(prologScript.ShowProlog(kindergardenDialogue[0]));
+        yield return new WaitUntil(() => !prologScript.prologPanel.activeSelf);
         
         // Direkt dialog mit kindergartenfee die baum abstaubt
         dialogScript.ShowDialogueWithoutButtons(kindergardenDialogue[1]);
@@ -108,7 +114,7 @@ public class GameplayScript : MonoBehaviour
             Resources.Load<Sprite>("Sprites/CharacterSprites/kindergardenfairy/ella with coffee");
         yield return new WaitUntil(() => !dialogScript.dialogPanel.activeSelf);
         
-        SceneManager.LoadScene("TreeMap"); // etwas unintuitiv
+        _treeButton.SetActive(true);
     }
 
     // raum 2:

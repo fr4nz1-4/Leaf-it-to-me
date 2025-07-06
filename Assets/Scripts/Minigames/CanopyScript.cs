@@ -16,6 +16,7 @@ public class CanopyScript : MinigameScript
         if (plane.activeSelf && barren1.activeSelf && barren2.activeSelf && barren3.activeSelf && barren4.activeSelf)
         {
             canopyFinal.SetActive(true);
+            MinigamePlayed = true;
         }
     }
 }

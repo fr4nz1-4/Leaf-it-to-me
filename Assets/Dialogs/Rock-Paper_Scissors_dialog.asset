@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Rock-Paper_Scissors_dialog
   m_EditorClassIdentifier: 
   dialogText:
-  - '#Hello, Hello, Heeeeeellllllooooo. I want to play Rock, Paper, Scissor. Are
+  - '#Hello, Hello, Heeeeeellllllooooo. I want to play Rock, Paper, Scissors. Are
     you going to play with me? Are you going to play with me?'
   - '@Why? Don''t you have friends?'
   - '#You''re mean!'
@@ -21,7 +21,7 @@ MonoBehaviour:
   - Hey! They are just children. Be nice to them! They haven't done anything to you!!!
   - '@Ok fine.... (I fought against monsters, and now I need to play against children.
     That''s stupid. Let''s get this over with)'
-  - '@...'
+  - ...
   - '@Ok let''s play your (stupid) game.'
   - '#Yippy, Yippy, Yippy!!!!'
   playerPortrait: {fileID: 21300000, guid: ce688af3802634dca9151408ce9ac862, type: 3}
