@@ -13,11 +13,11 @@ MonoBehaviour:
   m_Name: flower_fairy_dialog_3
   m_EditorClassIdentifier: 
   dialogText:
-  - '@I build a canopy so the potions won''t touch your flowerbeds. Can I have your
-    key now?'
-  - '#Not so fast. I want you to clean the floor first.'
-  - '@What???'
-  - '#Yeah use the broom to do it. I needs to look flawless.'
-  - '@Urgh. Fine...'
+  - '@I cleaned the floor. What''s next???'
+  - '#Well I guess I''ll give you your key now.'
+  - '@(Thank god) Great. Who else has a key?'
+  - '#Urgh. Mari propably. Good luck with them....'
+  - '@Thanks... do you now where I need to go?'
+  - '#Further up the tree.'
   playerPortrait: {fileID: 21300000, guid: ce688af3802634dca9151408ce9ac862, type: 3}
   npcPortrait: {fileID: 21300000, guid: 47835e4e2f3ee4c60be34de65f3d1bc2, type: 3}

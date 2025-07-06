@@ -18,7 +18,11 @@ public class CollectibleItem : MonoBehaviour
         closeUpScript.ShowCloseUpPanel(closeUpSprite);
         // Debug.Log(itemSprite.name);
         GameObject.Find("ItembarManager").GetComponent<ItembarScript>().add_item(closeUpSprite);
-        gameObject.SetActive(false);
+        
+        if (gameObject.name != "logs")
+        {
+            gameObject.SetActive(false);
+        }
     }
     
     private void OnMouseOver()

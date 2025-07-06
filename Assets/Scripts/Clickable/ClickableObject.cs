@@ -45,6 +45,11 @@ public class ClickableObject : MonoBehaviour
         {
             speechbubbleScript.ShowSpeechbubble(text);
         }
+
+        if (gameObject.name == "destroyed_flowers")
+        {
+            GetComponent<MinigameScript>().ShowMinigamePanel();
+        }
     }
     
     private void OnMouseOver()
@@ -53,7 +58,8 @@ public class ClickableObject : MonoBehaviour
 
         Debug.Log("You hovered over: " + gameObject.name);
         ColorUtility.TryParseHtmlString("#BCBCBC", out Color color);
-        _spriteRenderer.color = color;
+        // _spriteRenderer.color = color;
+        gameObject.GetComponent<SpriteRenderer>().color = color;
 
         // if (gameObject.name == "crayons" || gameObject.name == "paper on floor")
         // {
@@ -64,7 +70,8 @@ public class ClickableObject : MonoBehaviour
 
     private void OnMouseExit()
     {
-        _spriteRenderer.color = Color.white;
+        // _spriteRenderer.color = Color.white;
+        gameObject.GetComponent<SpriteRenderer>().color = Color.white;
         // gameObject.transform.localScale = standardScale;
     }
 }

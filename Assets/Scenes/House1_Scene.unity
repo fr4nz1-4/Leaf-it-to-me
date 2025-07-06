@@ -5018,6 +5018,8 @@ MonoBehaviour:
   player: {fileID: 1833215181}
   playerCounter: {fileID: 1247250110}
   enemyCounter: {fileID: 2101992091}
+  treeButton: {fileID: 2013557385}
+  keys: {fileID: 1895495663}
   playerHandImage: {fileID: 1023113971}
   enemyHandImage: {fileID: 1762250070}
   playerRockSprite: {fileID: 21300000, guid: 64354895a3e3647d2b2e92e6b10a60b5, type: 3}
@@ -13864,11 +13866,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prologScript: {fileID: 900240580}
   dialogScript: {fileID: 691458583}
-  dialogLine:
-  - {fileID: 11400000, guid: 20ace5103bc3744f6b36800ffc19838e, type: 2}
-  - {fileID: 11400000, guid: e7cf58b94b8e34114a2a210c79a2028d, type: 2}
-  - {fileID: 11400000, guid: 20bf21ecea7b6467d847cb25fab3131f, type: 2}
-  - {fileID: 11400000, guid: 9b9204fe962af4a57af5289001e8ad61, type: 2}
+  kindergardenDialogue: []
+  flowerfairyDialogue: []
+  key1: {fileID: 0}
   kindergardenFairy: {fileID: 1522073288}
 --- !u!4 &1499148946
 Transform:
