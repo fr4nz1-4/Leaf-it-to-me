@@ -13,9 +13,9 @@ public class GameplayScript : MonoBehaviour
     public DialogLine[] kindergardenDialogue;
     public DialogLine[] flowerfairyDialogue;
     public Image key1;
-    private ItembarScript _itembar;
+    [SerializeField] private ItembarScript _itembar;
     private KindergardenfairyScript _kindergardenfairyScript;
-    private CloseUpScript _closeUpScript;
+    [SerializeField] private CloseUpScript _closeUpScript;
     
     public GameObject kindergardenFairy;
     private Sprite _kindergardenFairySprite;
@@ -24,8 +24,12 @@ public class GameplayScript : MonoBehaviour
     private Sprite _fullCupSprite;
     private Sprite _emptyCupSprite;
     public MonologScript monologScript;
-    private CanopyScript _canopyScript;
+    [SerializeField] private CanopyScript _canopyScript;
+    public GameObject _canopyDone;
     public GameObject _treeButton;
+    public GameObject credits;
+    public GameObject our_credits;
+    public GameObject sound_credits;
 
     private void Start()
     {
@@ -38,14 +42,15 @@ public class GameplayScript : MonoBehaviour
             StartCoroutine(House2Gameplay());
         }
         
-        _itembar = GameObject.Find("ItembarManager").GetComponent<ItembarScript>();
+        // _itembar = GameObject.Find("ItembarManager").GetComponent<ItembarScript>();
         _kindergardenfairyScript = kindergardenFairy.GetComponent<KindergardenfairyScript>();
         _fullCupSprite = Resources.Load<Sprite>("Sprites/UISprites/CloseUpSprites/becher_voll");
         _emptyCupSprite = Resources.Load<Sprite>("Sprites/UISprites/CloseUpSprites/becher");
         _kindergardenFairySprite = kindergardenFairy.GetComponent<SpriteRenderer>().sprite;
         // _monologScript = GameObject.Find("MonologScript").GetComponent<MonologScript>();
-        _closeUpScript = GameObject.Find("CloseUpManager").GetComponent<CloseUpScript>();
-        _canopyScript = GameObject.Find("destroyed_flowers").GetComponent<CanopyScript>();
+        // _closeUpScript = GameObject.Find("CloseUpManager").GetComponent<CloseUpScript>();
+        // _canopyScript = GameObject.Find("destroyed_flowers").GetComponent<CanopyScript>();
+        // _canopyDone = GameObject.Find("canopy_final");
         // _treeButton = GameObject.Find("TreeButton");
     }
 
@@ -122,7 +127,7 @@ public class GameplayScript : MonoBehaviour
     {
         _treeButton.SetActive(false);
         monologScript.ShowMonolog(
-            "OK I need to find the next person. What was their name again? Fera? Yes I think that was it." +
+            "OK I need to find the next person. What was their name again? Fera? Yes I think that was it. " +
             "Funny, why are some of the flowerbeds looking like a mess? What happened there?");
         // dialog mit gartenfee
         yield return new WaitUntil(() => _clickedObject != null && _clickedObject.name == "flower_fairy");
@@ -135,31 +140,54 @@ public class GameplayScript : MonoBehaviour
         yield return new WaitUntil(() => _clickedObject.name == "flower_fairy");
         dialogScript.ShowDialogueWithoutButtons(flowerfairyDialogue[1]);
         // frei rumlaufen
+        // _clickedObject = null;
         
         // --> canopy kann nur gebaut werden, wenn 2 materialien im inventar vorhanden
-        yield return new WaitUntil(() => _itembar.FindItemSlotByName("logs") != null && _itembar.FindItemSlotByName("tuch") != null);
+        // yield return new WaitUntil(() => _itembar.FindItemSlotByName("logs") != null && _itembar.FindItemSlotByName("tuch") != null);
         // yield return new WaitUntil(() => _clickedObject.name == "flower_fairy");
 
+        // yield return new WaitUntil(() => _clickedObject.name == "logs");
+        // _clickedObject = null;
         // canopy bauen 
         yield return new WaitUntil(() => _canopyScript.canopyBuild);
         
         // zurück zu dialog mit gartenfee
-        yield return new WaitUntil(() => _clickedObject.name == "flower_fairy");
+        // yield return new WaitUntil(() => _clickedObject.name != null || _clickedObject.name == "flower_fairy");
+        yield return WaitForClick("flower_fairy");
         dialogScript.ShowDialogueWithoutButtons(flowerfairyDialogue[2]);
 
-        // boden fegen - optionald
+        // boden fegen - optional
+        // yield return new WaitUntil(() => _clickedObject.name == "broom");
         
         // wieder dialog mit gartenfee
-        yield return new WaitUntil(() => _clickedObject.name == "flower_fairy");
-        dialogScript.ShowDialogueWithoutButtons(flowerfairyDialogue[3]);
+        // yield return new WaitUntil(() => _clickedObject.name == "flower_fairy");
+        // dialogScript.ShowDialogueWithoutButtons(flowerfairyDialogue[3]);
         
+        yield return new WaitUntil(() => !dialogScript.dialogPanel.activeSelf);
         // --> SCHLÜSSEl 1!!!
         _closeUpScript.ShowCloseUpPanel(Resources.Load<Sprite>("Sprites/KeySprites/Gross/Gartenfee_Schluessel_gross"));
         yield return new WaitUntil(() => !InputBlocker.Instance.IsBlocked); // mal schauen ob das so geht
         key1.sprite = Resources.Load<Sprite>("Sprites/KeySprites/Klein/Gartenfee_Schluessel_klein");
-        _itembar.fold_itembar_out();
+        // _itembar.fold_itembar_out();
         // _treeButton.SetActive(true);
-
+        
         // blackscreen und credits --> done
+        InputBlocker.Instance.BlockInput();
+        yield return new WaitForSeconds(2);
+        credits.SetActive(true);
+        yield return new WaitUntil(() => Input.GetMouseButton(0) || Input.GetKeyDown(KeyCode.Space));
+        our_credits.SetActive(true);
+        yield return new WaitForEndOfFrame();
+        yield return new WaitUntil(() => Input.GetMouseButton(0) || Input.GetKeyDown(KeyCode.Space));
+        sound_credits.SetActive(true);
+        yield return new WaitForEndOfFrame();
+        yield return new WaitUntil(() => Input.GetKeyDown(KeyCode.Z));
+        SceneManager.LoadScene("TitleScene");
+    }
+    
+    private IEnumerator WaitForClick(string objectName)
+    {
+        yield return new WaitUntil(() => _clickedObject != null && _clickedObject.name == objectName);
+        _clickedObject = null;
     }
 }

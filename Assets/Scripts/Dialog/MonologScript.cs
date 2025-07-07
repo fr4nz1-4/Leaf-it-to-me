@@ -33,7 +33,7 @@ public class MonologScript : MonoBehaviour
             Debug.LogError("MonologPanel ist nicht zugewiesen!");
             return;
         }
-        monologPanel.SetActive(false);
+        // monologPanel.SetActive(false);
         textLabel.text = "";
     }
     

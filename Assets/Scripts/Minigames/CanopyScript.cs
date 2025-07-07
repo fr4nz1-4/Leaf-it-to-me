@@ -19,6 +19,7 @@ public class CanopyScript : MinigameScript
             canopyFinal.SetActive(true);
             MinigamePlayed = true;
             canopyBuild = true;
+            Debug.Log("canopy build: " + canopyBuild);
         }
     }
 }
