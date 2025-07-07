@@ -420,6 +420,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   monologScript: {fileID: 1880559953}
   text: This welcomemat is so dirty, who cleans here?
+  panel: {fileID: 0}
   speechbubbleScript: {fileID: 0}
 --- !u!1 &60255447
 GameObject:
@@ -1134,6 +1135,7 @@ MonoBehaviour:
   monologScript: {fileID: 1880559953}
   text: Wow I have never been to the Sea and I have never build a Sandcastle. Must
     be fun.....
+  panel: {fileID: 0}
   speechbubbleScript: {fileID: 0}
 --- !u!1 &143354667
 GameObject:
@@ -2179,6 +2181,7 @@ MonoBehaviour:
   monologScript: {fileID: 1880559953}
   text: Oh there are just books in here. I guess as a child you have enough time
     to read.
+  panel: {fileID: 0}
   speechbubbleScript: {fileID: 0}
 --- !u!1 &250901185
 GameObject:
@@ -2228,6 +2231,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   monologScript: {fileID: 0}
   text: 
+  panel: {fileID: 0}
   speechbubbleScript: {fileID: 0}
 --- !u!60 &250901188
 PolygonCollider2D:
@@ -2799,6 +2803,7 @@ MonoBehaviour:
   monologScript: {fileID: 1880559953}
   text: "They do have lot\xB4s of books. I wonder if I can recognize one from my
     childhood..... Oh yes it\xB4s the very gigantic hungry caterpillar!"
+  panel: {fileID: 0}
   speechbubbleScript: {fileID: 0}
 --- !u!1 &266288452
 GameObject:
@@ -4730,6 +4735,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   monologScript: {fileID: 1880559953}
   text: Just bananas... Just bananas...
+  panel: {fileID: 0}
   speechbubbleScript: {fileID: 0}
 --- !u!1 &455476507
 GameObject:
@@ -6240,6 +6246,7 @@ MonoBehaviour:
   monologScript: {fileID: 1880559953}
   text: Oh there is one Pen missing from this layer. The developers are just cutting
     corners
+  panel: {fileID: 0}
   speechbubbleScript: {fileID: 0}
 --- !u!1 &545889007
 GameObject:
@@ -7007,6 +7014,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   monologScript: {fileID: 0}
   text: I looove socks!!
+  panel: {fileID: 0}
   speechbubbleScript: {fileID: 382491528}
 --- !u!1 &619394800
 GameObject:
@@ -7456,6 +7464,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   monologScript: {fileID: 0}
   text: Wheeeeee, Wheeeeeee, Wheeeee
+  panel: {fileID: 0}
   speechbubbleScript: {fileID: 570521421}
 --- !u!1 &642276689
 GameObject:
@@ -7597,6 +7606,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   monologScript: {fileID: 1880559953}
   text: Oh, I wonder what I can use this for?
+  panel: {fileID: 0}
   speechbubbleScript: {fileID: 0}
 --- !u!1 &649074650
 GameObject:
@@ -7892,6 +7902,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   monologScript: {fileID: 1880559953}
   text: 1,2,3,4,5,6,7,8,9,10,11..... Why are there so many socks in here?????
+  panel: {fileID: 0}
   speechbubbleScript: {fileID: 0}
 --- !u!1 &691458582
 GameObject:
@@ -8293,6 +8304,7 @@ MonoBehaviour:
   text: There are a lot of Games in here. Wait.... No way.... Is this the Fairys
     vs. Plants limited edition in gold??????..... How did it get here???... Will
     they notice if I take it?
+  panel: {fileID: 0}
   speechbubbleScript: {fileID: 0}
 --- !u!60 &778446790
 PolygonCollider2D:
@@ -8874,6 +8886,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   monologScript: {fileID: 0}
   text: 
+  panel: {fileID: 0}
   speechbubbleScript: {fileID: 0}
 --- !u!60 &780668816
 PolygonCollider2D:
@@ -9260,6 +9273,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   monologScript: {fileID: 0}
   text: 
+  panel: {fileID: 0}
   speechbubbleScript: {fileID: 0}
 --- !u!82 &784927287
 AudioSource:
@@ -9544,6 +9558,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   monologScript: {fileID: 1880559953}
   text: Did one of the kids bite ther shoes or is this just fashion here?
+  panel: {fileID: 0}
   speechbubbleScript: {fileID: 0}
 --- !u!1 &830538980
 GameObject:
@@ -11110,6 +11125,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   monologScript: {fileID: 0}
   text: 
+  panel: {fileID: 0}
   speechbubbleScript: {fileID: 0}
 --- !u!1 &1171570666
 GameObject:
@@ -12300,6 +12316,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   monologScript: {fileID: 0}
   text: 
+  panel: {fileID: 0}
   speechbubbleScript: {fileID: 0}
 --- !u!1 &1333141025
 GameObject:
@@ -12526,6 +12543,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   monologScript: {fileID: 0}
   text: 
+  panel: {fileID: 0}
   speechbubbleScript: {fileID: 0}
 --- !u!82 &1353198330
 AudioSource:
@@ -12773,6 +12791,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   monologScript: {fileID: 1880559953}
   text: Woa, why are there so many stuffed animales in here?
+  panel: {fileID: 0}
   speechbubbleScript: {fileID: 0}
 --- !u!1 &1403469590
 GameObject:
@@ -12960,6 +12979,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   monologScript: {fileID: 0}
   text: 
+  panel: {fileID: 0}
   speechbubbleScript: {fileID: 0}
 --- !u!1 &1429557811
 GameObject:
@@ -13435,6 +13455,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   monologScript: {fileID: 0}
   text: 
+  panel: {fileID: 0}
   speechbubbleScript: {fileID: 0}
 --- !u!1 &1499148944
 GameObject:
@@ -13474,9 +13495,16 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 9b9204fe962af4a57af5289001e8ad61, type: 2}
   flowerfairyDialogue: []
   key1: {fileID: 0}
+  _itembar: {fileID: 1828120431}
+  _closeUpScript: {fileID: 0}
   kindergardenFairy: {fileID: 1522073288}
   monologScript: {fileID: 1880559953}
+  _canopyScript: {fileID: 0}
+  _canopyDone: {fileID: 0}
   _treeButton: {fileID: 2013557385}
+  credits: {fileID: 0}
+  our_credits: {fileID: 0}
+  sound_credits: {fileID: 0}
 --- !u!4 &1499148946
 Transform:
   m_ObjectHideFlags: 0
@@ -13767,6 +13795,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   monologScript: {fileID: 0}
   text: Must you guys be so distruptive? We can be civilised here. It is not a Zoo!
+  panel: {fileID: 0}
   speechbubbleScript: {fileID: 649074653}
 --- !u!1 &1509770323
 GameObject:
@@ -14639,6 +14668,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   monologScript: {fileID: 0}
   text: 
+  panel: {fileID: 0}
   speechbubbleScript: {fileID: 0}
 --- !u!60 &1699084570
 PolygonCollider2D:
@@ -15081,6 +15111,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   monologScript: {fileID: 0}
   text: 
+  panel: {fileID: 0}
   speechbubbleScript: {fileID: 0}
 --- !u!60 &1746963154
 PolygonCollider2D:
@@ -15599,6 +15630,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   monologScript: {fileID: 1880559953}
   text: Nice, Some child can take care of themself. It smells like perfume
+  panel: {fileID: 0}
   speechbubbleScript: {fileID: 0}
 --- !u!1 &1762250068
 GameObject:
@@ -17185,6 +17217,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   monologScript: {fileID: 0}
   text: I want to read a book....
+  panel: {fileID: 0}
   speechbubbleScript: {fileID: 830538983}
 --- !u!1 &1959269829
 GameObject:
@@ -17485,6 +17518,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   monologScript: {fileID: 1880559953}
   text: There is a stone in here... with googly eyes.... And a nametag..... Stoney
+  panel: {fileID: 0}
   speechbubbleScript: {fileID: 0}
 --- !u!1 &2012610826
 GameObject:
@@ -18220,6 +18254,7 @@ MonoBehaviour:
   monologScript: {fileID: 1880559953}
   text: Oh this kid is a dancer. There are Point Shoes in here, in a weird shape
     though.
+  panel: {fileID: 0}
   speechbubbleScript: {fileID: 0}
 --- !u!1 &2083770431
 GameObject:
@@ -19048,6 +19083,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   monologScript: {fileID: 1880559953}
   text: What is this smell? Did somebody lit a candle in here?
+  panel: {fileID: 0}
   speechbubbleScript: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
