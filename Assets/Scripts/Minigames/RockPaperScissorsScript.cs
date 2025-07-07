@@ -32,6 +32,7 @@ public class RockPaperScissorsScript : MinigameScript
     
     private int _winCounter = 0;
     private int _enemyWinCounter = 0;
+    private bool _isAnimationRunning = false;
 
     private void Start()
     {
@@ -76,14 +77,15 @@ public class RockPaperScissorsScript : MinigameScript
         // enemyCounter.text = $"{enemy_win_counter}";
         // playerCounter.text = $"{win_counter}";
 
-        if (_winCounter == 3)
-        {
-            resultText.text = $"\nYou won 3 times!\n Congratulations!";
-            MinigamePlayed = true;
-            Debug.Log("minigamePlayed" + MinigamePlayed);
-            SetButtonsInteractable(false);
-            Debug.Log(rockButton.interactable);
-        }
+        // if (_winCounter == 3)
+        // {
+        //     // new WaitUntil(() => _isAnimationRunning == false);
+        //     resultText.text = $"\nYou won 3 times!\n Congratulations!";
+        //     MinigamePlayed = true;
+        //     Debug.Log("minigamePlayed" + MinigamePlayed);
+        //     SetButtonsInteractable(false);
+        //     Debug.Log(rockButton.interactable);
+        // }
     }
 
     void SetPlayerHandSprite(string move)
@@ -130,6 +132,7 @@ public class RockPaperScissorsScript : MinigameScript
     
     private IEnumerator PlayPlayerAnimation(Sprite[] animationFrames, Sprite finalSprite)
     {
+        _isAnimationRunning = true;
         float frameDuration = 0.1f; // Dauer eines Frames (z.B. 0.1 Sekunden)
 
         foreach (var frame in animationFrames)
@@ -141,10 +144,22 @@ public class RockPaperScissorsScript : MinigameScript
         // playerHandImage.sprite = finalSprite;
         playerCounter.text = $"{_winCounter}";
         SetButtonsInteractable(true);
+        _isAnimationRunning = false;
+        
+        if (_winCounter == 3)
+        {
+            // new WaitUntil(() => _isAnimationRunning == false);
+            resultText.text = $"\nYou won 3 times!\n Congratulations!";
+            MinigamePlayed = true;
+            Debug.Log("minigamePlayed" + MinigamePlayed);
+            SetButtonsInteractable(false);
+            Debug.Log(rockButton.interactable);
+        }
     }
     
     private IEnumerator PlayEnemyAnimation(Sprite[] animationFrames, Sprite finalSprite)
     {
+        
         float frameDuration = 0.1f; // Dauer eines Frames (z.B. 0.1 Sekunden)
 
         foreach (var frame in animationFrames)
