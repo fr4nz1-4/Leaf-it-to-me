@@ -36,7 +36,7 @@ public class ClickableObject : MonoBehaviour
             monologScript.ShowMonolog(text);
         }
 
-        if (_audioSource != null)
+        if (_audioSource != null && gameObject.name != "raupe")
         {
             Debug.Log("play audiosource");
             _audioSource.Play();

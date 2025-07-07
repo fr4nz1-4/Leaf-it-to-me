@@ -7840,6 +7840,7 @@ MonoBehaviour:
   _itembar: {fileID: 403456721}
   _closeUpScript: {fileID: 645721642}
   kindergardenFairy: {fileID: 0}
+  _kindergardenFairySprite: {fileID: 0}
   monologScript: {fileID: 910976228}
   _canopyScript: {fileID: 11556986}
   _canopyDone: {fileID: 2093290875}
@@ -8599,7 +8600,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sceneToLoad: 
   player: {fileID: 20166075}
-  pausePanel: {fileID: 0}
+  pausePanel: {fileID: 1147023747}
 --- !u!114 &877438507
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12871,7 +12872,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 141, y: 47}
+  m_AnchoredPosition: {x: 117, y: 64}
   m_SizeDelta: {x: 1000, y: 1000}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1528188823

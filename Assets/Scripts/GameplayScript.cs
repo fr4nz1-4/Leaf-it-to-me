@@ -18,7 +18,7 @@ public class GameplayScript : MonoBehaviour
     [SerializeField] private CloseUpScript _closeUpScript;
     
     public GameObject kindergardenFairy;
-    private Sprite _kindergardenFairySprite;
+    [SerializeField] private GameObject _kindergardenFairySprite;
     private GameObject _clickedObject;
     private Image _cup;
     private Sprite _fullCupSprite;
@@ -46,7 +46,6 @@ public class GameplayScript : MonoBehaviour
         _kindergardenfairyScript = kindergardenFairy.GetComponent<KindergardenfairyScript>();
         _fullCupSprite = Resources.Load<Sprite>("Sprites/UISprites/CloseUpSprites/becher_voll");
         _emptyCupSprite = Resources.Load<Sprite>("Sprites/UISprites/CloseUpSprites/becher");
-        _kindergardenFairySprite = kindergardenFairy.GetComponent<SpriteRenderer>().sprite;
         // _monologScript = GameObject.Find("MonologScript").GetComponent<MonologScript>();
         // _closeUpScript = GameObject.Find("CloseUpManager").GetComponent<CloseUpScript>();
         // _canopyScript = GameObject.Find("destroyed_flowers").GetComponent<CanopyScript>();
@@ -115,7 +114,7 @@ public class GameplayScript : MonoBehaviour
         // wieder dialog mit ella (tasse zurückbringen) --> rübergehen zu raum 2 
         yield return new WaitUntil(() => _clickedObject.name == "kindergarden_fairy");
         dialogScript.ShowDialogueWithoutButtons(kindergardenDialogue[3]);
-        _kindergardenFairySprite =
+        _kindergardenFairySprite.GetComponent<SpriteRenderer>().sprite =
             Resources.Load<Sprite>("Sprites/CharacterSprites/kindergardenfairy/ella with coffee");
         yield return new WaitUntil(() => !dialogScript.dialogPanel.activeSelf);
         
@@ -181,7 +180,7 @@ public class GameplayScript : MonoBehaviour
         yield return new WaitUntil(() => Input.GetMouseButton(0) || Input.GetKeyDown(KeyCode.Space));
         sound_credits.SetActive(true);
         yield return new WaitForEndOfFrame();
-        yield return new WaitUntil(() => Input.GetKeyDown(KeyCode.Z));
+        yield return new WaitUntil(() => Input.GetKeyDown(KeyCode.T));
         SceneManager.LoadScene("TitleScene");
     }
     
