@@ -23,9 +23,11 @@ public class GameplayScript : MonoBehaviour
     private Image _cup;
     private Sprite _fullCupSprite;
     private Sprite _emptyCupSprite;
+    private Animator kindergardenFairyAnimator;
     public MonologScript monologScript;
     [SerializeField] private CanopyScript _canopyScript;
     public GameObject _canopyDone;
+    [SerializeField] private GameObject destroyedFlowers;
     public GameObject _treeButton;
     public GameObject credits;
     public GameObject our_credits;
@@ -46,11 +48,16 @@ public class GameplayScript : MonoBehaviour
         _kindergardenfairyScript = kindergardenFairyCycle.GetComponent<KindergardenfairyScript>();
         _fullCupSprite = Resources.Load<Sprite>("Sprites/UISprites/CloseUpSprites/becher_voll");
         _emptyCupSprite = Resources.Load<Sprite>("Sprites/UISprites/CloseUpSprites/becher");
-        // _monologScript = GameObject.Find("MonologScript").GetComponent<MonologScript>();
-        // _closeUpScript = GameObject.Find("CloseUpManager").GetComponent<CloseUpScript>();
-        // _canopyScript = GameObject.Find("destroyed_flowers").GetComponent<CanopyScript>();
-        // _canopyDone = GameObject.Find("canopy_final");
-        // _treeButton = GameObject.Find("TreeButton");
+        kindergardenFairyAnimator = _kindergardenFairy.GetComponent<Animator>();
+        kindergardenFairyAnimator.enabled = false;
+        if (credits != null)
+        {
+            credits.SetActive(false);
+            our_credits.SetActive(false);
+            sound_credits.SetActive(false);
+        }
+        credits.SetActive(true);
+
     }
 
     void Update()
@@ -72,9 +79,10 @@ public class GameplayScript : MonoBehaviour
     private IEnumerator House1Gameplay()
     {
         _treeButton.SetActive(false);
+
         // Prolog abspielen --> monologbar mit Cape-Main-Charakter im hintergrund
-        // yield return StartCoroutine(prologScript.ShowProlog(kindergardenDialogue[0]));
-        // yield return new WaitUntil(() => !prologScript.prologPanel.activeSelf);
+        yield return StartCoroutine(prologScript.ShowProlog(kindergardenDialogue[0]));
+        yield return new WaitUntil(() => !prologScript.prologPanel.activeSelf);
         
         // Direkt dialog mit kindergartenfee die baum abstaubt
         dialogScript.ShowDialogueWithoutButtons(kindergardenDialogue[1]);
@@ -83,6 +91,7 @@ public class GameplayScript : MonoBehaviour
         // dann frei rumbewegen
         yield return new WaitUntil(() => !dialogScript.dialogPanel.activeSelf);
         // --> ella danach nicht mehr anklickbar
+        _kindergardenFairy.GetComponent<Animator>().enabled = true;
         _kindergardenfairyScript.StartFairyCycling();
         
         // rock paper scissors kind MUSS angeklickt werden --> checken
@@ -90,11 +99,18 @@ public class GameplayScript : MonoBehaviour
         
         // danach wieder dialog mit ella
         yield return new WaitUntil(() => _clickedObject.name == "kindergarden_fairy");
+        
+        // Cycling anhalten
         _kindergardenfairyScript.StopCycleSprites();
         _kindergardenFairy.GetComponent<Animator>().enabled = false;
-        // kindergardenFairyCycle.GetComponent<Animator>().enabled = false;
+        
         dialogScript.ShowDialogueWithoutButtons(kindergardenDialogue[2]);
         yield return new WaitUntil(() => !dialogScript.dialogPanel.activeSelf);
+        
+        // Sprite anpassen (Ella mit leerer Tasse)
+        _kindergardenFairy.GetComponent<SpriteRenderer>().sprite =
+            Resources.Load<Sprite>("Sprites/CharacterSprites/kindergardenfairy/ella with cup no coffee");
+        _kindergardenFairy.GetComponent<SpriteRenderer>().color = new Color (1.0f, 1.0f, 1.0f, 1.0f);
         
         // --> man bekommt LEERE tasse in inventar
         _itembar.add_item(_emptyCupSprite);
@@ -113,19 +129,26 @@ public class GameplayScript : MonoBehaviour
         // --> wenn ja, sprite von tasse austauschen
         _itembar.ReplaceItemSprite(_cup, _fullCupSprite);
         
-        // wieder dialog mit ella (tasse zurückbringen) --> rübergehen zu raum 2 
+        // wieder dialog mit ella (tasse zurückbringen)
         yield return new WaitUntil(() => _clickedObject.name == "kindergarden_fairy");
         dialogScript.ShowDialogueWithoutButtons(kindergardenDialogue[3]);
-        _kindergardenFairy.GetComponent<SpriteRenderer>().sprite =
-            Resources.Load<Sprite>("Sprites/CharacterSprites/kindergardenfairy/ella with coffee");
         yield return new WaitUntil(() => !dialogScript.dialogPanel.activeSelf);
         
+        // Sprite anpassen (Ella mit kaffee)
+        _kindergardenFairy.GetComponent<SpriteRenderer>().sprite =
+            Resources.Load<Sprite>("Sprites/CharacterSprites/kindergardenfairy/ella with coffee");
+        
+        // Kaffeetasse aus itembar entfernen
+        _itembar.RemoveItem("becher_voll");
+        
+        // --> rübergehen zu raum 2 
         _treeButton.SetActive(true);
     }
 
     // raum 2:
     private IEnumerator House2Gameplay()
     {
+        destroyedFlowers.GetComponent<PolygonCollider2D>().enabled = false;
         monologScript.ShowMonolog(
             "OK I need to find the next person. What was their name again? Fera? Yes I think that was it. " +
             "Funny, why are some of the flowerbeds looking like a mess? What happened there?");
@@ -139,6 +162,8 @@ public class GameplayScript : MonoBehaviour
         // zurück zu dialog mit Gartenfee
         yield return new WaitUntil(() => _clickedObject.name == "flower_fairy");
         dialogScript.ShowDialogueWithoutButtons(flowerfairyDialogue[1]);
+        destroyedFlowers.GetComponent<PolygonCollider2D>().enabled = true;
+
         // frei rumlaufen
         // _clickedObject = null;
         
@@ -175,13 +200,23 @@ public class GameplayScript : MonoBehaviour
         InputBlocker.Instance.BlockInput();
         yield return new WaitForSeconds(2);
         credits.SetActive(true);
-        yield return new WaitUntil(() => Input.GetMouseButton(0) || Input.GetKeyDown(KeyCode.Space));
-        sound_credits.SetActive(true);
-        yield return new WaitForEndOfFrame();
-        yield return new WaitUntil(() => Input.GetMouseButton(0) || Input.GetKeyDown(KeyCode.Space));
+        yield return new WaitUntil(() => Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.Space));
         our_credits.SetActive(true);
-        yield return new WaitForEndOfFrame();
-        yield return new WaitUntil(() => Input.GetKeyDown(KeyCode.T));
+        Debug.Log("our credits aktiv? " + our_credits.activeSelf);
+        yield return new WaitForSeconds(7);
+        our_credits.SetActive(false);
+        sound_credits.SetActive(true);
+        Debug.Log("sound credits aktiv? " + sound_credits.activeSelf);
+
+        float timer = 0f;
+        float timeout = 20f; // 60 Sekunden
+
+        while (timer < timeout && !Input.GetKeyDown(KeyCode.T))
+        {
+            timer += Time.deltaTime;
+            yield return null; // warte bis zum nächsten Frame
+        }
+        // yield return new WaitUntil(() => Input.GetKeyDown(KeyCode.T));
         SceneManager.LoadScene("TitleScene");
     }
     

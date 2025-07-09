@@ -69,6 +69,13 @@ public class ItembarScript : MonoBehaviour
             }
         }
     }
+
+    public void RemoveItem(String itemName)
+    {
+        Image slot = FindItemSlotByName(itemName);
+        slot.sprite = null;
+        slot.color = new Color(1, 1, 1, 0);
+    }
     
     public Image FindItemSlotByName(string itemName)
     {
