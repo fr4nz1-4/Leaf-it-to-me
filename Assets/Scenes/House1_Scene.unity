@@ -2195,6 +2195,7 @@ GameObject:
   - component: {fileID: 250901189}
   - component: {fileID: 250901188}
   - component: {fileID: 250901187}
+  - component: {fileID: 250901190}
   m_Layer: 6
   m_Name: kindergarden_fairy
   m_TagString: Untagged
@@ -2211,11 +2212,11 @@ Transform:
   m_GameObject: {fileID: 250901185}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 13.429524, y: 0.6474993, z: 0.0448543}
+  m_LocalPosition: {x: 4.99, y: -0.06999999, z: 0.028284222}
   m_LocalScale: {x: 0.9, y: 0.9, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1447334810}
+  m_Father: {fileID: 1522073289}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &250901187
 MonoBehaviour:
@@ -2653,6 +2654,28 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &250901190
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 250901185}
+  m_Enabled: 0
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 7fb7dd8ca8fba421282707b9aaca312b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &258236978
 GameObject:
   m_ObjectHideFlags: 0
@@ -6244,8 +6267,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   monologScript: {fileID: 1880559953}
-  text: Oh there is one Pen missing from this layer. The developers are just cutting
-    corners
+  text: Oh there is one pen missing from this layer. The developers are just cutting
+    corners.
   panel: {fileID: 0}
   speechbubbleScript: {fileID: 0}
 --- !u!1 &545889007
@@ -8793,8 +8816,6 @@ GameObject:
   m_Component:
   - component: {fileID: 780668812}
   - component: {fileID: 780668813}
-  - component: {fileID: 780668815}
-  - component: {fileID: 780668816}
   m_Layer: 6
   m_Name: oberers regal_0
   m_TagString: Untagged
@@ -8872,120 +8893,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &780668815
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 780668811}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 06e025fc324d246b597c16f593ed738a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  monologScript: {fileID: 0}
-  text: 
-  panel: {fileID: 0}
-  speechbubbleScript: {fileID: 0}
---- !u!60 &780668816
-PolygonCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 780668811}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.42, y: 2.09}
-    newSize: {x: 2.42, y: 2.09}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 0.78175193, y: 0.0974499}
-      - {x: 0.8709974, y: 0.033703566}
-      - {x: 0.8861656, y: -0.34739828}
-      - {x: 0.9, y: -0.695}
-      - {x: 1.02, y: -0.565}
-      - {x: 1.0799999, y: -0.445}
-      - {x: 1.1, y: -0.355}
-      - {x: 1.1300001, y: -0.24499989}
-      - {x: 1.13, y: -0.24499999}
-      - {x: 1.14, y: 0.044999998}
-      - {x: 1.17, y: 0.265}
-      - {x: 1.17, y: 0.285}
-      - {x: 1.15, y: 0.36499998}
-      - {x: 1.1, y: 0.515}
-      - {x: 1.06, y: 0.60499996}
-      - {x: 1.03, y: 0.715}
-      - {x: 0.89, y: 0.885}
-      - {x: 0.76, y: 1.005}
-      - {x: 0.71999997, y: 1.045}
-      - {x: -0.42999998, y: 1.045}
-      - {x: -0.51, y: 0.97499996}
-      - {x: -0.59999996, y: 0.875}
-      - {x: -0.64, y: 0.885}
-      - {x: -0.72999996, y: 0.775}
-      - {x: -0.78, y: 0.775}
-      - {x: -0.87, y: 0.59499997}
-      - {x: -0.90999997, y: 0.565}
-      - {x: -0.96999997, y: 0.475}
-      - {x: -0.98999995, y: 0.435}
-      - {x: -1.04, y: 0.375}
-      - {x: -1.0699999, y: 0.315}
-      - {x: -1.1, y: 0.185}
-      - {x: -1.14, y: 0.095}
-      - {x: -1.18, y: -0.074999996}
-      - {x: -1.1899999, y: -0.185}
-      - {x: -1.1899999, y: -0.39499998}
-      - {x: -1.15, y: -0.59499997}
-      - {x: -1.11, y: -0.755}
-      - {x: -1.06, y: -0.84499997}
-      - {x: -0.98999995, y: -0.91499996}
-      - {x: -0.85999995, y: -0.965}
-      - {x: -0.55, y: -0.965}
-      - {x: -0.41, y: -0.98499995}
-      - {x: -0.22999999, y: -1.025}
-      - {x: -0.14, y: -1.035}
-      - {x: 0.04, y: -1.015}
-      - {x: 0.14, y: -1.035}
-      - {x: 0.29999998, y: -1.035}
-      - {x: -0.22471488, y: -1.025}
-      - {x: -0.22770613, y: -0.3192879}
-      - {x: 0.6407551, y: 0.12944412}
-  m_UseDelaunayMesh: 0
 --- !u!1 &781968530
 GameObject:
   m_ObjectHideFlags: 0
@@ -13204,7 +13111,6 @@ Transform:
   - {fileID: 634193492}
   - {fileID: 608305782}
   - {fileID: 1956495666}
-  - {fileID: 250901186}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1448810070
@@ -13525,7 +13431,7 @@ CircleCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1479771174}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Density: 1
   m_Material: {fileID: 0}
@@ -13609,9 +13515,9 @@ MonoBehaviour:
   flowerfairyDialogue: []
   key1: {fileID: 0}
   _itembar: {fileID: 1828120431}
-  _closeUpScript: {fileID: 0}
-  kindergardenFairy: {fileID: 1522073288}
-  _kindergardenFairySprite: {fileID: 250901185}
+  _closeUpScript: {fileID: 957420320}
+  kindergardenFairyCycle: {fileID: 1522073288}
+  _kindergardenFairy: {fileID: 250901185}
   monologScript: {fileID: 1880559953}
   _canopyScript: {fileID: 0}
   _canopyDone: {fileID: 0}
@@ -14212,6 +14118,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1699084568}
+  - {fileID: 250901186}
   - {fileID: 1746963152}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -14231,7 +14138,7 @@ MonoBehaviour:
   - {fileID: 250901185}
   - {fileID: 1699084567}
   - {fileID: 1746963151}
-  interval: 5
+  interval: 10
 --- !u!1 &1533773279
 GameObject:
   m_ObjectHideFlags: 0
@@ -14746,6 +14653,7 @@ GameObject:
   - component: {fileID: 1699084571}
   - component: {fileID: 1699084570}
   - component: {fileID: 1699084569}
+  - component: {fileID: 1699084572}
   m_Layer: 6
   m_Name: kindergarden_fairy
   m_TagString: Untagged
@@ -15041,6 +14949,28 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &1699084572
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1699084567}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 9f7841bc36d2448e4b8d1ba7441be36e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1715673770
 GameObject:
   m_ObjectHideFlags: 0
@@ -15189,13 +15119,14 @@ GameObject:
   - component: {fileID: 1746963155}
   - component: {fileID: 1746963154}
   - component: {fileID: 1746963153}
+  - component: {fileID: 1746963156}
   m_Layer: 6
   m_Name: kindergarden_fairy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1746963152
 Transform:
   m_ObjectHideFlags: 0
@@ -15595,6 +15526,28 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &1746963156
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1746963151}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 5e9ab50c5c17d4fb1aceb244bcbc0daf, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1755294327
 GameObject:
   m_ObjectHideFlags: 0
@@ -18177,8 +18130,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 3.3600006, y: 2.2599983}
-  m_SizeDelta: {x: 1825.03, y: 984.07}
+  m_AnchoredPosition: {x: 2.209999, y: -0.040000916}
+  m_SizeDelta: {x: 1827.33, y: 988.67}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2046332716
 MonoBehaviour:
@@ -19212,6 +19165,7 @@ SceneRoots:
   - {fileID: 170574622}
   - {fileID: 691458584}
   - {fileID: 1880559954}
+  - {fileID: 1522073289}
   - {fileID: 1447334810}
   - {fileID: 576826858}
   - {fileID: 2012610828}
@@ -19222,4 +19176,3 @@ SceneRoots:
   - {fileID: 1828120432}
   - {fileID: 1499148946}
   - {fileID: 900240581}
-  - {fileID: 1522073289}

@@ -17,8 +17,8 @@ public class GameplayScript : MonoBehaviour
     private KindergardenfairyScript _kindergardenfairyScript;
     [SerializeField] private CloseUpScript _closeUpScript;
     
-    public GameObject kindergardenFairy;
-    [SerializeField] private GameObject _kindergardenFairySprite;
+    public GameObject kindergardenFairyCycle;
+    [SerializeField] private GameObject _kindergardenFairy;
     private GameObject _clickedObject;
     private Image _cup;
     private Sprite _fullCupSprite;
@@ -43,7 +43,7 @@ public class GameplayScript : MonoBehaviour
         }
         
         // _itembar = GameObject.Find("ItembarManager").GetComponent<ItembarScript>();
-        _kindergardenfairyScript = kindergardenFairy.GetComponent<KindergardenfairyScript>();
+        _kindergardenfairyScript = kindergardenFairyCycle.GetComponent<KindergardenfairyScript>();
         _fullCupSprite = Resources.Load<Sprite>("Sprites/UISprites/CloseUpSprites/becher_voll");
         _emptyCupSprite = Resources.Load<Sprite>("Sprites/UISprites/CloseUpSprites/becher");
         // _monologScript = GameObject.Find("MonologScript").GetComponent<MonologScript>();
@@ -73,8 +73,8 @@ public class GameplayScript : MonoBehaviour
     {
         _treeButton.SetActive(false);
         // Prolog abspielen --> monologbar mit Cape-Main-Charakter im hintergrund
-        yield return StartCoroutine(prologScript.ShowProlog(kindergardenDialogue[0]));
-        yield return new WaitUntil(() => !prologScript.prologPanel.activeSelf);
+        // yield return StartCoroutine(prologScript.ShowProlog(kindergardenDialogue[0]));
+        // yield return new WaitUntil(() => !prologScript.prologPanel.activeSelf);
         
         // Direkt dialog mit kindergartenfee die baum abstaubt
         dialogScript.ShowDialogueWithoutButtons(kindergardenDialogue[1]);
@@ -91,6 +91,8 @@ public class GameplayScript : MonoBehaviour
         // danach wieder dialog mit ella
         yield return new WaitUntil(() => _clickedObject.name == "kindergarden_fairy");
         _kindergardenfairyScript.StopCycleSprites();
+        _kindergardenFairy.GetComponent<Animator>().enabled = false;
+        // kindergardenFairyCycle.GetComponent<Animator>().enabled = false;
         dialogScript.ShowDialogueWithoutButtons(kindergardenDialogue[2]);
         yield return new WaitUntil(() => !dialogScript.dialogPanel.activeSelf);
         
@@ -114,7 +116,7 @@ public class GameplayScript : MonoBehaviour
         // wieder dialog mit ella (tasse zurückbringen) --> rübergehen zu raum 2 
         yield return new WaitUntil(() => _clickedObject.name == "kindergarden_fairy");
         dialogScript.ShowDialogueWithoutButtons(kindergardenDialogue[3]);
-        _kindergardenFairySprite.GetComponent<SpriteRenderer>().sprite =
+        _kindergardenFairy.GetComponent<SpriteRenderer>().sprite =
             Resources.Load<Sprite>("Sprites/CharacterSprites/kindergardenfairy/ella with coffee");
         yield return new WaitUntil(() => !dialogScript.dialogPanel.activeSelf);
         
@@ -124,7 +126,6 @@ public class GameplayScript : MonoBehaviour
     // raum 2:
     private IEnumerator House2Gameplay()
     {
-        _treeButton.SetActive(false);
         monologScript.ShowMonolog(
             "OK I need to find the next person. What was their name again? Fera? Yes I think that was it. " +
             "Funny, why are some of the flowerbeds looking like a mess? What happened there?");
@@ -175,10 +176,10 @@ public class GameplayScript : MonoBehaviour
         yield return new WaitForSeconds(2);
         credits.SetActive(true);
         yield return new WaitUntil(() => Input.GetMouseButton(0) || Input.GetKeyDown(KeyCode.Space));
-        our_credits.SetActive(true);
+        sound_credits.SetActive(true);
         yield return new WaitForEndOfFrame();
         yield return new WaitUntil(() => Input.GetMouseButton(0) || Input.GetKeyDown(KeyCode.Space));
-        sound_credits.SetActive(true);
+        our_credits.SetActive(true);
         yield return new WaitForEndOfFrame();
         yield return new WaitUntil(() => Input.GetKeyDown(KeyCode.T));
         SceneManager.LoadScene("TitleScene");
