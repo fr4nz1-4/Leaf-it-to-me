@@ -19,7 +19,7 @@ public class MinigameScript : MonoBehaviour
         minigamePanel.SetActive(false);
         player.GetComponent<PlayerMovement>().enabled = true;
         InputBlocker.Instance.UnblockInput(); 
-        treeButton.SetActive(true);
+        // treeButton.SetActive(true);
         keys.SetActive(true);
     }
     

@@ -30,11 +30,11 @@ public class SpeechbubbleScript : MonoBehaviour
     private IEnumerator StepThroughDialogue(string text)
     {
         yield return _typewriterEffect.Run(text, textLabel);
-        yield return new WaitUntil(() => Input.GetMouseButtonDown(0));
+        yield return new WaitUntil(() => Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.Space));
         textLabel.text = string.Empty;
         
         // evtl noch buttons nur einblenden, wenn sie zugewiesen sind 
-        yield return new WaitUntil(() => Input.GetMouseButtonDown(0));
+        yield return new WaitUntil(() => Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.Space));
         
         HideSpeechbubble();
     }

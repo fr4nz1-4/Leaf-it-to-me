@@ -19,7 +19,9 @@ MonoBehaviour:
   - '@Because I tried and you didn''t listen!'
   - "#I\u2019m, sorry. Sometimes these kids are driving me insane. If you're not
     the new assistant, why are you here?"
-  - '#To find the room that will grant me one wish. Is the legend real?'
+  - '@To find the room that will grant me one wish. Is the legend real?'
+  - '#Wow I never met someone who was trying to find the room. But yes the legends
+    are true. There is this room.'
   - '@Great. Awesome. How do I get there?'
   - '#Well that is going to be the tricky part.'
   - '@I have done lots of tricky things. This won''t be a problem.'
@@ -32,8 +34,8 @@ MonoBehaviour:
     along. '
   - '#There was a high fairy once, but they disappeared. Since then everything was
     out of order and the people stopped communicating with each other.'
-  - '#I wish it was different! Every time the parents are picking up their children
-    from me there is a lot of Drama. They don''t want their children playing with
+  - '#I wish it was different! Everytime the parents are picking up their children
+    from me there is a lot of drama. They don''t want their children playing with
     each other.'
   - '#I just wish I could be like the high fairy and bring everybody together.'
   - ...
@@ -44,8 +46,8 @@ MonoBehaviour:
   - '@And why would I?'
   - '#You''re perfect for the job. You''re new and full of energy and have the time
     to do it. You''re so much more like the high fairy was. Come on it will be fun.'
-  - '@I don''t see why it would be fun and I should help you. I''m here to find the
-    Room of Wishes.'
+  - '@I don''t see why it would be fun and why I should help you. I''m here to find
+    the Room of Wishes.'
   - '#Exactly. If you help the people resolve their conflicts they have the time
     to search for their keys.'
   - ...
@@ -56,7 +58,7 @@ MonoBehaviour:
   - '#I happen to have one of the keys. If you help me resolve the conflicts I will
     give you my key.'
   - '@(Unfortunately I probably need the keys. And they are right. I need them for
-    my Quest. I should make the deal and start talking to the other citizens. I can
+    my quest. I should make the deal and start talking to the other citizens. I can
     do it)'
   - '@Alright I''ll help you.'
   - '#Perfect, great. Thank you so much. You won''t regret it.'
