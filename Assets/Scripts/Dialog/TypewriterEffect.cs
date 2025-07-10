@@ -21,8 +21,13 @@ public class TypewriterEffect : MonoBehaviour
 
         while (charIndex < textToType.Length)
         {
-            t += Time.deltaTime * typewriterSpeed;
-            charIndex = Mathf.FloorToInt(t);
+            t += Time.deltaTime;
+			//fast forward the text animation on mouse click / space
+            if (t > 0.3f && (Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.Space)))
+            {
+                break;
+            }
+            charIndex = Mathf.FloorToInt(t * typewriterSpeed);
             charIndex = Mathf.Clamp(charIndex, 0, textToType.Length);
             textLabel.text = textToType.Substring(0, charIndex) + Invisible(textToType.Substring(charIndex));
 
@@ -30,6 +35,8 @@ public class TypewriterEffect : MonoBehaviour
         }
         
         textLabel.text = textToType;
+        //prevent skipping text too fast
+        yield return new WaitForSeconds(0.3f);
     }
 
     /*
