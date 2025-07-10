@@ -30,7 +30,10 @@ public class ClickableSceneLink : MonoBehaviour
         _inputBlocker = GetComponent<InputBlocker>();
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            player.GetComponent<PlayerMovement>().enabled = false;
+            if (player != null)
+            {
+                 player.GetComponent<PlayerMovement>().enabled = false;
+            }
             pausePanel.SetActive(true);
             InputBlocker.Instance.BlockInput(); 
         }
@@ -38,7 +41,10 @@ public class ClickableSceneLink : MonoBehaviour
 
     public void GoBackToGame()
     {
-        player.GetComponent<PlayerMovement>().enabled = true;
+        if (player != null)
+        {
+            player.GetComponent<PlayerMovement>().enabled = true;
+        }
         pausePanel.SetActive(false);
         InputBlocker.Instance.UnblockInput(); 
     }

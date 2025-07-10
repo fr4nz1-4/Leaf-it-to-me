@@ -79,6 +79,7 @@ public class GameplayScript : MonoBehaviour
     private IEnumerator House1Gameplay()
     {
         _treeButton.SetActive(false);
+		MinigameScript.MinigamePlayed = false;
 
         // Prolog abspielen --> monologbar mit Cape-Main-Charakter im hintergrund
         yield return StartCoroutine(prologScript.ShowProlog(kindergardenDialogue[0]));
@@ -133,6 +134,8 @@ public class GameplayScript : MonoBehaviour
         
         // --> wenn ja, sprite von tasse austauschen
         _itembar.ReplaceItemSprite(_cup, _fullCupSprite);
+
+		// TODO Closeup script für volle tasse
         
         // wieder dialog mit ella (tasse zurückbringen)
         yield return new WaitUntil(() => _clickedObject.name == "kindergarden_fairy");
@@ -153,6 +156,7 @@ public class GameplayScript : MonoBehaviour
     // raum 2:
     private IEnumerator House2Gameplay()
     {
+		_treeButton.SetActive(false);
         destroyedFlowers.GetComponent<PolygonCollider2D>().enabled = false;
         monologScript.ShowMonolog(
             "OK I need to find the next person. What was their name again? Fera? Yes I think that was it. " +
