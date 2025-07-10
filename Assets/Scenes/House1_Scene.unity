@@ -738,6 +738,7 @@ MonoBehaviour:
   sceneToLoad: 
   player: {fileID: 1833215181}
   pausePanel: {fileID: 721526431}
+  _transitionAnim: {fileID: 0}
 --- !u!4 &104082599
 Transform:
   m_ObjectHideFlags: 0
@@ -842,7 +843,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -2
+  m_SortingOrder: -3
   m_Sprite: {fileID: 21300000, guid: 37aae62b1a210488a86ad32fb7fb53bf, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -3791,6 +3792,7 @@ MonoBehaviour:
   sceneToLoad: 
   player: {fileID: 1833215181}
   pausePanel: {fileID: 721526431}
+  _transitionAnim: {fileID: 0}
 --- !u!1 &382491525
 GameObject:
   m_ObjectHideFlags: 0
@@ -11806,7 +11808,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -1
+  m_SortingOrder: -2
   m_Sprite: {fileID: 21300000, guid: efc8adc6229b0eb499748b0987ebd61f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

@@ -3930,6 +3930,7 @@ MonoBehaviour:
   sceneToLoad: 
   player: {fileID: 20166075}
   pausePanel: {fileID: 1147023747}
+  _transitionAnim: {fileID: 0}
 --- !u!114 &337703226
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6318,7 +6319,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -5.029999, y: 2.5200005}
+  m_AnchoredPosition: {x: 2, y: 0}
   m_SizeDelta: {x: 1824.06, y: 982.58}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &593758110
@@ -7097,7 +7098,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -5.029999, y: 2.5237007}
+  m_AnchoredPosition: {x: 2, y: 0}
   m_SizeDelta: {x: 1824.1, y: 982.59}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &790146383
@@ -7698,6 +7699,7 @@ MonoBehaviour:
   sceneToLoad: 
   player: {fileID: 20166075}
   pausePanel: {fileID: 1147023747}
+  _transitionAnim: {fileID: 0}
 --- !u!114 &877438507
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11817,7 +11819,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 117, y: 64}
+  m_AnchoredPosition: {x: 124, y: 64}
   m_SizeDelta: {x: 1000, y: 1000}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1528188823

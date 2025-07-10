@@ -505,6 +505,7 @@ MonoBehaviour:
   sceneToLoad: 
   player: {fileID: 0}
   pausePanel: {fileID: 0}
+  _transitionAnim: {fileID: 0}
 --- !u!114 &935690196
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1476,5 +1477,5 @@ SceneRoots:
   m_Roots:
   - {fileID: 1245036483}
   - {fileID: 343265537}
-  - {fileID: 935690199}
   - {fileID: 995008753}
+  - {fileID: 935690199}

@@ -102,4 +102,24 @@ public class ItembarScript : MonoBehaviour
         }
     }
 
+    // public bool CanBuildCanopy()
+    // {
+    //     int logsCount = 0;
+    //     foreach (var slots in itemSlots)
+    //     {
+    //         if (slots.sprite != null && slot.sprite.name == "logs")
+    //         {
+    //             logsCount++;
+    //         }
+    //     }
+    //
+    //     if (FindItemSlotByName("Tuch_closeup") != null && logsCount == 4)
+    //     {
+    //         return true;
+    //     }
+    //     else
+    //     {
+    //         return false;
+    //     }
+    // }
 }

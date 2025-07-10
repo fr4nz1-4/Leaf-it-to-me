@@ -81,8 +81,8 @@ public class GameplayScript : MonoBehaviour
         _treeButton.SetActive(false);
 
         // Prolog abspielen --> monologbar mit Cape-Main-Charakter im hintergrund
-        // yield return StartCoroutine(prologScript.ShowProlog(kindergardenDialogue[0]));
-        // yield return new WaitUntil(() => !prologScript.prologPanel.activeSelf);
+        yield return StartCoroutine(prologScript.ShowProlog(kindergardenDialogue[0]));
+        yield return new WaitUntil(() => !prologScript.prologPanel.activeSelf);
         
         // Direkt dialog mit kindergartenfee die baum abstaubt
         dialogScript.ShowDialogueWithoutButtons(kindergardenDialogue[1]);
@@ -96,20 +96,25 @@ public class GameplayScript : MonoBehaviour
         
         // rock paper scissors kind MUSS angeklickt werden --> checken
         yield return new WaitUntil(() => MinigameScript.MinigamePlayed);
-        
+
+        // Sprite anpassen (Ella mit leerer Tasse)
+        // _kindergardenFairy.GetComponent<SpriteRenderer>().sprite =
+        //     Resources.Load<Sprite>("Sprites/CharacterSprites/kindergardenfairy/ella with cup no coffee");
+
         // danach wieder dialog mit ella
         yield return new WaitUntil(() => _clickedObject.name == "kindergarden_fairy");
-        
+
         // Cycling anhalten
         _kindergardenfairyScript.StopCycleSprites();
         _kindergardenFairy.GetComponent<Animator>().enabled = false;
-        
+
         dialogScript.ShowDialogueWithoutButtons(kindergardenDialogue[2]);
         yield return new WaitUntil(() => !dialogScript.dialogPanel.activeSelf);
-        
-        // Sprite anpassen (Ella mit leerer Tasse)
+
+        // Sprite anpassen (Ella ohne Tasse)
         _kindergardenFairy.GetComponent<SpriteRenderer>().sprite =
-            Resources.Load<Sprite>("Sprites/CharacterSprites/kindergardenfairy/ella with cup no coffee");
+            Resources.Load<Sprite>("Sprites/CharacterSprites/kindergardenfairy/ella no cup");
+
         _kindergardenFairy.GetComponent<SpriteRenderer>().color = new Color (1.0f, 1.0f, 1.0f, 1.0f);
         
         // --> man bekommt LEERE tasse in inventar
@@ -200,7 +205,8 @@ public class GameplayScript : MonoBehaviour
         InputBlocker.Instance.BlockInput();
         yield return new WaitForSeconds(2);
         credits.SetActive(true);
-        yield return new WaitUntil(() => Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.Space));
+        yield return new WaitForSeconds(5);
+        // yield return new WaitUntil(() => Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.Space));
         our_credits.SetActive(true);
         Debug.Log("our credits aktiv? " + our_credits.activeSelf);
         yield return new WaitForSeconds(7);
@@ -209,7 +215,7 @@ public class GameplayScript : MonoBehaviour
         Debug.Log("sound credits aktiv? " + sound_credits.activeSelf);
 
         float timer = 0f;
-        float timeout = 20f; // 60 Sekunden
+        float timeout = 20f; // 20 Sekunden
 
         while (timer < timeout && !Input.GetKeyDown(KeyCode.T))
         {

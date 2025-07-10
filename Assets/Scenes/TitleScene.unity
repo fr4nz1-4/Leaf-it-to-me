@@ -316,6 +316,7 @@ MonoBehaviour:
   sceneToLoad: 
   player: {fileID: 0}
   pausePanel: {fileID: 0}
+  _transitionAnim: {fileID: 0}
 --- !u!1 &564952342
 GameObject:
   m_ObjectHideFlags: 0
