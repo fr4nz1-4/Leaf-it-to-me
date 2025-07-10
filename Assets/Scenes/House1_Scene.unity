@@ -3244,7 +3244,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1195e1533104243dc8717cf3e26f3a59, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  closeUpSprite: {fileID: 21300000, guid: ab08ade4a0308486dbe2811e1fd9d8c3, type: 3}
+  closeUpSprite: {fileID: 21300000, guid: fe2a67f1afa678046bc1f1dc27fde4f5, type: 3}
   closeUpScript: {fileID: 957420320}
 --- !u!1 &307477132
 GameObject:
@@ -3331,14 +3331,14 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 104082598}
         m_TargetAssemblyTypeName: ClickableSceneLink, Assembly-CSharp
-        m_MethodName: QuitGame
-        m_Mode: 1
+        m_MethodName: ChangeScene
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: TitleScene
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &307477135
@@ -4525,7 +4525,7 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: de3076df3030f4e6d8ae0495327ac4cc, type: 3}
   m_Resource: {fileID: 8300000, guid: de3076df3030f4e6d8ae0495327ac4cc, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.4
+  m_Volume: 0.35
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -7735,8 +7735,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -0.070007324, y: 0.030029297}
+  m_SizeDelta: {x: 4.86, y: 5.19}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &689999282
 MonoBehaviour:
@@ -9195,7 +9195,7 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: 704296238e73974468674dfc93487275, type: 3}
   m_Resource: {fileID: 8300000, guid: 704296238e73974468674dfc93487275, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.7
+  m_Volume: 0.4
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -16764,7 +16764,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Exit
+  m_text: Home
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d059f20b7b4c44a069dc5f9931ed9492, type: 2}
   m_sharedMaterial: {fileID: -107186456025546579, guid: d059f20b7b4c44a069dc5f9931ed9492, type: 2}
@@ -18645,8 +18645,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -0.07006836, y: 0.4100952}
+  m_SizeDelta: {x: 4.8602, y: 5.95}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2117462206
 MonoBehaviour:
