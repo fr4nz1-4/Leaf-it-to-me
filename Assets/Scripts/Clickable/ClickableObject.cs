@@ -56,6 +56,16 @@ public class ClickableObject : MonoBehaviour
         {
             panel.SetActive(true);
         }
+
+        if (gameObject.name == "laterne")
+        {
+            panel.SetActive(true);
+        }
+
+        if (gameObject.name == "Blackout_nurLaterne")
+        {
+            panel.SetActive(false);
+        }
     }
     
     private void OnMouseOver()

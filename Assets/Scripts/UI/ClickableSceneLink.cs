@@ -42,17 +42,4 @@ public class ClickableSceneLink : MonoBehaviour
         pausePanel.SetActive(false);
         InputBlocker.Instance.UnblockInput(); 
     }
-
-    public void NextLevel()
-    {
-        StartCoroutine(LoadLevel());
-    }
-
-    private IEnumerator LoadLevel()
-    {
-        _transitionAnim.SetTrigger("End");
-        yield return new WaitForSeconds(1.0f);
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-        _transitionAnim.SetTrigger("Start");
-    }
 }
