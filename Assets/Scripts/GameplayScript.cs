@@ -217,7 +217,7 @@ public class GameplayScript : MonoBehaviour
             yield return null; // warte bis zum nächsten Frame
         }
         // yield return new WaitUntil(() => Input.GetKeyDown(KeyCode.T));
-        SceneManager.LoadScene("TitleScene");
+        SceneManager.LoadScene("TitleScene"); // zu titlescreen zurück
     }
     
     private IEnumerator WaitForClick(string objectName)
