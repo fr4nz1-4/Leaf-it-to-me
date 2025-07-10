@@ -1,7 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="9987a95b-a9af-429c-a69e-5a15e9b76573" name="Changes" comment="" />
+    <list default="true" id="9987a95b-a9af-429c-a69e-5a15e9b76573" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Sprites/BackgroundSprites/titlecard OHNE TITEL.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Sprites/BackgroundSprites/titlecard OHNE TITEL.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Sprites/CharacterSprites/NPCs/tic-tac-toe_child.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Sprites/CharacterSprites/NPCs/tic-tac-toe_child.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Sprites/InteriorSprites/Room1/oberers regal.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Sprites/InteriorSprites/Room1/oberers regal.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Sprites/InteriorSprites/Room2/itembarsprites/Besen_klein.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Sprites/InteriorSprites/Room2/itembarsprites/Besen_klein.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Sprites/InteriorSprites/Room2/itembarsprites/Blume_klein.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Sprites/InteriorSprites/Room2/itembarsprites/Blume_klein.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Sprites/InteriorSprites/Room2/itembarsprites/Holz_klein.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Sprites/InteriorSprites/Room2/itembarsprites/Holz_klein.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Sprites/InteriorSprites/Room2/itembarsprites/Tuch_klein.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Sprites/InteriorSprites/Room2/itembarsprites/Tuch_klein.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Sprites/TreeSprites/Fairytale_Tree_transparent.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Sprites/TreeSprites/Fairytale_Tree_transparent.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Sprites/UISprites/Titel.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Sprites/UISprites/Titel.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/House1_Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/House1_Scene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerControls.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerControls.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/StreamVideo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/StreamVideo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ShaderGraphSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ShaderGraphSettings.asset" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,22 +29,28 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "fr4nz1-4"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;fr4nz1-4&quot;
   }
-}]]></component>
+}</component>
   <component name="GithubPullRequestsUISettings"><![CDATA[{
   "selectedUrlAndAccountId": {
-    "url": "https://github.com/fr4nz1-4/2D_fairytale_game.git",
-    "accountId": "22337618-2ec4-47ef-a829-6acb0f21eb07"
+    "url": "https://github.com/fr4nz1-4/Leaf-it-to-me.git",
+    "accountId": "9953f44b-7ea7-433e-9203-9a8ee69f5018"
   }
 }]]></component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="mock://C:/Users/Admin/Documents/Franzi/Leaf-it-to-me/Assets/Resources/Sprites/TreeSprites/Fairytale_Tree_transparent.png.meta" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameplayScript.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/StreamVideo.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/Admin/Documents/Franzi/Leaf-it-to-me/ProjectSettings/EditorBuildSettings.asset" root0="SKIP_HIGHLIGHTING" />
+  </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 2
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="2xNLt6My0yGLN4faf4rHzUkiQV0" />
   <component name="ProjectViewState">
     <option name="autoscrollToSource" value="true" />
@@ -37,6 +62,10 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
@@ -50,7 +79,17 @@
       <option name="presentableId" value="Default" />
       <updated>1747773797335</updated>
       <workItem from="1747773802319" duration="29000" />
+      <workItem from="1752133234338" duration="776000" />
     </task>
+    <task id="LOCAL-00001" summary="test commit">
+      <option name="closed" value="true" />
+      <created>1752133305515</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1752133305515</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -61,7 +100,38 @@
   <component name="UnityProjectDiscoverer">
     <option name="unityProjectFolder" value="true" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="test commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="test commit" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="DotNet_Exception_Breakpoints">
+          <properties exception="System.OperationCanceledException" breakIfHandledByOtherCode="false" displayValue="System.OperationCanceledException" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+        <breakpoint enabled="true" type="DotNet_Exception_Breakpoints">
+          <properties exception="System.Threading.Tasks.TaskCanceledException" breakIfHandledByOtherCode="false" displayValue="System.Threading.Tasks.TaskCanceledException" />
+          <option name="timeStamp" value="2" />
+        </breakpoint>
+        <breakpoint enabled="true" type="DotNet_Exception_Breakpoints">
+          <properties exception="System.Threading.ThreadAbortException" breakIfHandledByOtherCode="false" displayValue="System.Threading.ThreadAbortException" />
+          <option name="timeStamp" value="3" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Tuch_klein_0: -5451131742628329043
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

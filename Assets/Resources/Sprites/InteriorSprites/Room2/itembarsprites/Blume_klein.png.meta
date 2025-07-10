@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Blume_klein_0: -5021295967953282757
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

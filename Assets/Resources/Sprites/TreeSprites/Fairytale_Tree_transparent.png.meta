@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Fairytale_Tree_transparent_0: 5137672571799028994
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

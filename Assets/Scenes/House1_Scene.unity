@@ -1462,7 +1462,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: -2
-  m_Sprite: {fileID: 21300000, guid: 9b10c827723dd47b3a6d4967a02d0be7, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 283e4b9571b52a54ea23d08c36a6788f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1548,7 +1548,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1195e1533104243dc8717cf3e26f3a59, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  closeUpSprite: {fileID: 21300000, guid: adc46ecdd263c46ea8adcb834f4316c7, type: 3}
+  closeUpSprite: {fileID: 21300000, guid: 191110f1f6c2f434b99ee2efa8975a27, type: 3}
   closeUpScript: {fileID: 957420320}
 --- !u!1 &189411164
 GameObject:
@@ -9192,10 +9192,10 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 37b4d54797997405f93912c562271946, type: 3}
-  m_Resource: {fileID: 8300000, guid: 37b4d54797997405f93912c562271946, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 704296238e73974468674dfc93487275, type: 3}
+  m_Resource: {fileID: 8300000, guid: 704296238e73974468674dfc93487275, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.7
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -10705,7 +10705,7 @@ MonoBehaviour:
       m_Calls: []
   m_Sprite: {fileID: 0}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -11756,7 +11756,6 @@ GameObject:
   - component: {fileID: 1307268195}
   - component: {fileID: 1307268194}
   - component: {fileID: 1307268197}
-  - component: {fileID: 1307268198}
   m_Layer: 6
   m_Name: tic-tac-toe_child
   m_TagString: Untagged
@@ -11808,12 +11807,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: -1
-  m_Sprite: {fileID: 21300000, guid: c9dd7f542700142aba4e5e09fa37136c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: efc8adc6229b0eb499748b0987ebd61f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 4.93, y: 6.95}
+  m_Size: {x: 3.41, y: 3.44}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -11851,141 +11850,6 @@ MonoBehaviour:
   interactableLayer:
     serializedVersion: 2
     m_Bits: 0
---- !u!60 &1307268198
-PolygonCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1307268193}
-  m_Enabled: 0
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 3.41, y: 3.44}
-    newSize: {x: 4.93, y: 6.95}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 0.675, y: -1.4}
-      - {x: 0.745, y: -1.4}
-      - {x: 0.85499996, y: -1.38}
-      - {x: 0.97499996, y: -1.35}
-      - {x: 1.185, y: -1.3}
-      - {x: 1.2149999, y: -1.27}
-      - {x: 1.2149999, y: -1.2099999}
-      - {x: 1.1949999, y: -1.17}
-      - {x: 1.095, y: -1.13}
-      - {x: 1.0849999, y: -1.03}
-      - {x: 1.045, y: -0.94}
-      - {x: 1.095, y: -0.87}
-      - {x: 1.125, y: -0.69}
-      - {x: 1.135, y: -0.51}
-      - {x: 1.095, y: -0.28}
-      - {x: 1.045, y: -0.17}
-      - {x: 0.92499995, y: 0.02}
-      - {x: 0.84499997, y: 0.11}
-      - {x: 0.73499995, y: 0.19}
-      - {x: 0.675, y: 0.22}
-      - {x: 0.575, y: 0.22999999}
-      - {x: 0.515, y: 0.32}
-      - {x: 0.375, y: 0.38}
-      - {x: 0.505, y: 0.51}
-      - {x: 0.505, y: 0.71}
-      - {x: 0.45499998, y: 0.78}
-      - {x: 0.33499998, y: 0.85999995}
-      - {x: 0.24499999, y: 0.87}
-      - {x: 0.205, y: 0.96999997}
-      - {x: 0.085, y: 1.11}
-      - {x: 0.015, y: 1.13}
-      - {x: -0.255, y: 1.14}
-      - {x: -0.275, y: 1.15}
-      - {x: -0.275, y: 1.31}
-      - {x: -0.415, y: 1.53}
-      - {x: -0.465, y: 1.53}
-      - {x: -0.505, y: 1.52}
-      - {x: -0.48499998, y: 1.38}
-      - {x: -0.465, y: 1.3199999}
-      - {x: -0.515, y: 1.1899999}
-      - {x: -0.505, y: 1.0699999}
-      - {x: -0.565, y: 1}
-      - {x: -0.655, y: 0.96}
-      - {x: -0.825, y: 0.91999996}
-      - {x: -0.905, y: 1}
-      - {x: -1.095, y: 1}
-      - {x: -1.2049999, y: 1.14}
-      - {x: -1.275, y: 1.13}
-      - {x: -1.275, y: 1.02}
-      - {x: -1.245, y: 0.96}
-      - {x: -1.185, y: 0.72999996}
-      - {x: -1.0849999, y: 0.64}
-      - {x: -0.995, y: 0.64}
-      - {x: -0.875, y: 0.63}
-      - {x: -0.875, y: 0.48}
-      - {x: -0.865, y: 0.37}
-      - {x: -0.825, y: 0.25}
-      - {x: -0.775, y: 0.17}
-      - {x: -0.695, y: 0.06}
-      - {x: -0.615, y: -0.06}
-      - {x: -0.72499996, y: -0.17999999}
-      - {x: -0.78499997, y: -0.29}
-      - {x: -0.78499997, y: -0.32999998}
-      - {x: -0.745, y: -0.45}
-      - {x: -0.73499995, y: -0.53999996}
-      - {x: -1.035, y: -0.93}
-      - {x: -1.0849999, y: -0.93}
-      - {x: -1.135, y: -0.94}
-      - {x: -1.1949999, y: -1.03}
-      - {x: -1.155, y: -1.1}
-      - {x: -1.115, y: -1.14}
-      - {x: -0.995, y: -1.17}
-      - {x: -0.955, y: -1.3199999}
-      - {x: -0.895, y: -1.4}
-      - {x: -0.79499996, y: -1.4}
-      - {x: -0.555, y: -1.36}
-      - {x: -0.415, y: -1.35}
-      - {x: -0.285, y: -1.3299999}
-      - {x: -0.105, y: -1.42}
-      - {x: 0.005, y: -1.4499999}
-      - {x: 0.205, y: -1.4499999}
-      - {x: 0.325, y: -1.43}
-      - {x: 0.475, y: -1.43}
-      - {x: 0.645, y: -1.39}
-    - - {x: 0.715, y: -0.98999995}
-      - {x: 0.695, y: -0.96999997}
-      - {x: 0.675, y: -1}
-      - {x: 0.675, y: -1.05}
-  m_UseDelaunayMesh: 0
 --- !u!1 &1332901732
 GameObject:
   m_ObjectHideFlags: 0
@@ -14406,9 +14270,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
-  m_PreserveAspect: 0
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1

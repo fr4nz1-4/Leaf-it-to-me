@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Besen_klein_0: -5371863098348209117
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

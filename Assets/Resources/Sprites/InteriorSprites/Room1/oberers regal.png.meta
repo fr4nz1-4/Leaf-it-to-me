@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      oberers regal_0: -4307852726458552864
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

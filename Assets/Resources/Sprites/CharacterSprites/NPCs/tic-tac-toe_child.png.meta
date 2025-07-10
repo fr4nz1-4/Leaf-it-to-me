@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      tic-tac-toe_child_0: 1126669169103290318
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

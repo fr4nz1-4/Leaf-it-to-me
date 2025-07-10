@@ -9,8 +9,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-
-// benötigt, wenn neues inputsystem verwendet wird (im moment nicht)
 using System;
 using System.Collections;
 using System.Collections.Generic;

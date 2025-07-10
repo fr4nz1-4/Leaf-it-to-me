@@ -40,6 +40,7 @@ public class PlayVideoOnClick : MonoBehaviour
     
     private void OnVideoFinished(VideoPlayer vp)
     {
+        rawImage.gameObject.SetActive(false);
         videoPanel.SetActive(false);
         Debug.Log("Video finished and panel hidden.");
     }

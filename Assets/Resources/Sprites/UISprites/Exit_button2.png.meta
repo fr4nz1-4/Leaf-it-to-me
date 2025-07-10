@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: a95dab9ee1c3f401f9098c84c43ce39b
+guid: 4616848e787dad0498de879eba68c78d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 9049922447030534594
-    second: Holz_klein_0
+      213: -5267264198767634049
+    second: Exit_button2_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,30 +96,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Holz_klein_0
+      name: Exit_button2_0
       rect:
         serializedVersion: 2
-        x: 746
-        y: 919
-        width: 36
-        height: 152
+        x: 0
+        y: 0
+        width: 358
+        height: 134
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2c1c61c5488c79d70800000000000000
-      internalID: 9049922447030534594
+      spriteID: f79925e4e1be6e6b0800000000000000
+      internalID: -5267264198767634049
       vertices: []
       indices: 
       edges: []
@@ -147,8 +134,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Holz_klein_0: 9049922447030534594
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

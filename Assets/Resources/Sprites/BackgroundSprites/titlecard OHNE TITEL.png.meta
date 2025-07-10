@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      titlecard OHNE TITEL_0: 7785937509526187443
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
