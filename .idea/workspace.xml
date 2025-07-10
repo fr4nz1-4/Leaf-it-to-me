@@ -5,10 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9987a95b-a9af-429c-a69e-5a15e9b76573" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Sprites/MinigameSprites/Render Texture.renderTexture" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Sprites/MinigameSprites/Render Texture.renderTexture" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/House1_Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/House1_Scene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/House2_Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/House2_Scene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/TitleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/TitleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameplayScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameplayScript.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Minigames/RockPaperScissorsScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Minigames/RockPaperScissorsScript.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,7 +32,10 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="mock://C:/Users/Admin/Documents/Franzi/Leaf-it-to-me/Assets/Resources/Sprites/InteriorSprites/Room2/itembarsprites/Besen_klein.png.meta" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/Admin/Documents/Franzi/Leaf-it-to-me/Assets/Resources/Sprites/TreeSprites/Fairytale_Tree_transparent.png.meta" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Dialog/TypewriterEffect.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameplayScript.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Minigames/MinigameScript.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Minigames/RockPaperScissorsScript.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/StreamVideo.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/Admin/Documents/Franzi/Leaf-it-to-me/ProjectSettings/EditorBuildSettings.asset" root0="SKIP_HIGHLIGHTING" />
   </component>
@@ -69,7 +71,7 @@
       <option name="presentableId" value="Default" />
       <updated>1747773797335</updated>
       <workItem from="1747773802319" duration="29000" />
-      <workItem from="1752133234338" duration="1660000" />
+      <workItem from="1752133234338" duration="3468000" />
     </task>
     <task id="LOCAL-00001" summary="test commit">
       <option name="closed" value="true" />
@@ -87,7 +89,15 @@
       <option name="project" value="LOCAL" />
       <updated>1752134554151</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="fix panels, small improvements">
+      <option name="closed" value="true" />
+      <created>1752136457613</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1752136457613</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -113,7 +123,8 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="test commit" />
     <MESSAGE value="add sprites and add nametags to the tree" />
-    <option name="LAST_COMMIT_MESSAGE" value="add sprites and add nametags to the tree" />
+    <MESSAGE value="fix panels, small improvements" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix panels, small improvements" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -81,8 +81,8 @@ public class GameplayScript : MonoBehaviour
         _treeButton.SetActive(false);
 
         // Prolog abspielen --> monologbar mit Cape-Main-Charakter im hintergrund
-        yield return StartCoroutine(prologScript.ShowProlog(kindergardenDialogue[0]));
-        yield return new WaitUntil(() => !prologScript.prologPanel.activeSelf);
+        // yield return StartCoroutine(prologScript.ShowProlog(kindergardenDialogue[0]));
+        // yield return new WaitUntil(() => !prologScript.prologPanel.activeSelf);
         
         // Direkt dialog mit kindergartenfee die baum abstaubt
         dialogScript.ShowDialogueWithoutButtons(kindergardenDialogue[1]);

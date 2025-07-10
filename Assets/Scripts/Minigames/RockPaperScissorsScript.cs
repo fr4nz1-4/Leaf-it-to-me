@@ -33,6 +33,8 @@ public class RockPaperScissorsScript : MinigameScript
     private int _winCounter = 0;
     private int _enemyWinCounter = 0;
     private bool _isAnimationRunning = false;
+    private bool _resetOnNextMove = false;
+
 
     private void Start()
     {
@@ -46,12 +48,22 @@ public class RockPaperScissorsScript : MinigameScript
 
     public void PlayerChoice(string playerMove)
     {
+        if (_resetOnNextMove)
+        {
+            _winCounter = 0;
+            _enemyWinCounter = 0;
+            playerCounter.text = "0";
+            enemyCounter.text = "0";
+            _resetOnNextMove = false;
+        }
+        
         Debug.Log("Playermovement= " + player.GetComponent<PlayerMovement>().enabled);
         string[] choices = { "Rock", "Paper", "Scissors" };
         string enemyMove = choices[Random.Range(0, choices.Length)];
         Debug.Log("playerMove: " + playerMove);
         Debug.Log("enemyMove: " + enemyMove);
         
+        resultText.text = "";
         SetPlayerHandSprite(playerMove);
         SetEnemyHandSprite(enemyMove);
         
@@ -146,14 +158,19 @@ public class RockPaperScissorsScript : MinigameScript
         SetButtonsInteractable(true);
         _isAnimationRunning = false;
         
-        if (_winCounter == 3)
+        if (_winCounter == 3 && _enemyWinCounter < 3)
         {
             // new WaitUntil(() => _isAnimationRunning == false);
-            resultText.text = $"\nYou won 3 times!\n Congratulations!";
+            resultText.text = $"\nYou won!\n Congratulations!";
             MinigamePlayed = true;
+            _resetOnNextMove = true;
             Debug.Log("minigamePlayed" + MinigamePlayed);
             SetButtonsInteractable(false);
-            Debug.Log(rockButton.interactable);
+            Debug.Log("Buttons interactable:"  + rockButton.interactable);
+        } else if (_enemyWinCounter == 3 && _winCounter < 3)
+        {
+            resultText.text = $"\nYou lose!\n Try again!";
+            _resetOnNextMove = true;
         }
     }
     
