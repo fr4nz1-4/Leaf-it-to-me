@@ -24,12 +24,19 @@ public class TypewriterEffect : MonoBehaviour
             t += Time.deltaTime * typewriterSpeed;
             charIndex = Mathf.FloorToInt(t);
             charIndex = Mathf.Clamp(charIndex, 0, textToType.Length);
+            textLabel.text = textToType.Substring(0, charIndex) + Invisible(textToType.Substring(charIndex));
 
-            textLabel.text = textToType.Substring(0, charIndex);
-            
             yield return null;
         }
         
         textLabel.text = textToType;
+    }
+
+    /*
+     * Creates transparent text to keep a paragraphs width "stable" during typing animation
+     */
+    private string Invisible(string text)
+    {
+        return "<color=#00000000>" + text + "</color>";
     }
 }
