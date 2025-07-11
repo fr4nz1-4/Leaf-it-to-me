@@ -78,40 +78,56 @@ public class GameplayScript : MonoBehaviour
     // raum 1:
     private IEnumerator House1Gameplay()
     {
+        //wait for other scripts to Start()
+        yield return null;
+
         _treeButton.SetActive(false);
 		MinigameScript.MinigamePlayed = false;
 
-        // Prolog abspielen --> monologbar mit Cape-Main-Charakter im hintergrund
-        yield return StartCoroutine(prologScript.ShowProlog(kindergardenDialogue[0]));
-        yield return new WaitUntil(() => !prologScript.prologPanel.activeSelf);
+        if (!HasGameProgress("House1_PrologShown"))
+        {
+            // Prolog abspielen --> monologbar mit Cape-Main-Charakter im hintergrund
+            yield return StartCoroutine(prologScript.ShowProlog(kindergardenDialogue[0]));
+            yield return new WaitUntil(() => !prologScript.prologPanel.activeSelf);
+            SaveGameProgress("House1_PrologShown");
+            
+            // Direkt dialog mit kindergartenfee die baum abstaubt
+            dialogScript.ShowDialogueWithoutButtons(kindergardenDialogue[1]);
+            // main character ab jetzt ohne cape 
         
-        // Direkt dialog mit kindergartenfee die baum abstaubt
-        dialogScript.ShowDialogueWithoutButtons(kindergardenDialogue[1]);
-        // main character ab jetzt ohne cape 
-        
-        // dann frei rumbewegen
-        yield return new WaitUntil(() => !dialogScript.dialogPanel.activeSelf);
+            // dann frei rumbewegen
+            yield return new WaitUntil(() => !dialogScript.dialogPanel.activeSelf);
+        }
         // --> ella danach nicht mehr anklickbar
-        _kindergardenFairy.GetComponent<Animator>().enabled = true;
+        kindergardenFairyAnimator.enabled = true;
         _kindergardenfairyScript.StartFairyCycling();
         
-        // rock paper scissors kind MUSS angeklickt werden --> checken
-        yield return new WaitUntil(() => MinigameScript.MinigamePlayed);
-
+        if (!HasGameProgress("House1_RockPaperScissorsWon"))
+        {
+            // rock paper scissors kind MUSS angeklickt werden --> checken
+            yield return new WaitUntil(() => MinigameScript.MinigamePlayed);
+            SaveGameProgress("House1_RockPaperScissorsWon");
+        }
         // Sprite anpassen (Ella mit leerer Tasse)
         // _kindergardenFairy.GetComponent<SpriteRenderer>().sprite =
         //     Resources.Load<Sprite>("Sprites/CharacterSprites/kindergardenfairy/ella with cup no coffee");
 
-        // danach wieder dialog mit ella
-        yield return new WaitUntil(() => _clickedObject.name == "kindergarden_fairy");
-
+        bool hasPickedUpEmptyCup = HasGameProgress("House1_EmptyCupPickedUp");
+        if (!hasPickedUpEmptyCup)
+        {
+            // danach wieder dialog mit ella
+            yield return new WaitUntil(() => _clickedObject.name == "kindergarden_fairy");
+            SaveGameProgress("House1_EmptyCupPickedUp");
+        }
         // Cycling anhalten
         _kindergardenfairyScript.StopCycleSprites();
-        _kindergardenFairy.GetComponent<Animator>().enabled = false;
-
-        dialogScript.ShowDialogueWithoutButtons(kindergardenDialogue[2]);
-        yield return new WaitUntil(() => !dialogScript.dialogPanel.activeSelf);
-
+        kindergardenFairyAnimator.enabled = false;
+        
+        if (!hasPickedUpEmptyCup)
+        {
+            dialogScript.ShowDialogueWithoutButtons(kindergardenDialogue[2]);
+            yield return new WaitUntil(() => !dialogScript.dialogPanel.activeSelf);
+        }
         // Sprite anpassen (Ella ohne Tasse)
         _kindergardenFairy.GetComponent<SpriteRenderer>().sprite =
             Resources.Load<Sprite>("Sprites/CharacterSprites/kindergardenfairy/ella no cup");
@@ -128,8 +144,12 @@ public class GameplayScript : MonoBehaviour
         _cup = _itembar.FindItemSlotByName("becher");
         Debug.Log("cup name: " + _cup.sprite.name);
         
-        // danach kaffeekanne finden und checken ob kaffeekanne angeklickt wurde
-        yield return new WaitUntil(() => _clickedObject.name == "kaffee");
+        if (!HasGameProgress("House1_CoffeePickedUp"))
+        {
+            // danach kaffeekanne finden und checken ob kaffeekanne angeklickt wurde
+            yield return new WaitUntil(() => _clickedObject?.name == "kaffee");
+            SaveGameProgress("House1_CoffeePickedUp");
+        }
         Debug.Log("you clicked on kaffee"); // wird nie angezeigt
         
         // --> wenn ja, sprite von tasse austauschen
@@ -137,11 +157,14 @@ public class GameplayScript : MonoBehaviour
 
 		// TODO Closeup script für volle tasse
         
-        // wieder dialog mit ella (tasse zurückbringen)
-        yield return new WaitUntil(() => _clickedObject.name == "kindergarden_fairy");
-        dialogScript.ShowDialogueWithoutButtons(kindergardenDialogue[3]);
-        yield return new WaitUntil(() => !dialogScript.dialogPanel.activeSelf);
-        
+        if (!HasGameProgress("House1_EllaReceivedCoffee"))
+        {
+            // wieder dialog mit ella (tasse zurückbringen)
+            yield return new WaitUntil(() => _clickedObject.name == "kindergarden_fairy");
+            dialogScript.ShowDialogueWithoutButtons(kindergardenDialogue[3]);
+            yield return new WaitUntil(() => !dialogScript.dialogPanel.activeSelf);
+            SaveGameProgress("House1_EllaReceivedCoffee");
+        }
         // Sprite anpassen (Ella mit kaffee)
         _kindergardenFairy.GetComponent<SpriteRenderer>().sprite =
             Resources.Load<Sprite>("Sprites/CharacterSprites/kindergardenfairy/ella with coffee");
@@ -234,5 +257,22 @@ public class GameplayScript : MonoBehaviour
     {
         yield return new WaitUntil(() => _clickedObject != null && _clickedObject.name == objectName);
         _clickedObject = null;
+    }
+    
+    public static void SaveGameProgress(string flag, bool achieved = true)
+    {
+        PlayerPrefs.SetInt(flag, achieved ? 1 : 0);
+        PlayerPrefs.Save();
+        Debug.Log("Saved game: " + flag + " " + achieved);
+    }
+    
+    public static bool HasGameProgress(string flag)
+    {
+        return PlayerPrefs.GetInt(flag) == 1;
+    }
+    
+    public void ResetGameProgress()
+    {
+        PlayerPrefs.DeleteAll();
     }
 }
