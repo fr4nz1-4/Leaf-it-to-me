@@ -263,12 +263,11 @@ public class GameplayScript : MonoBehaviour
     {
         PlayerPrefs.SetInt(flag, achieved ? 1 : 0);
         PlayerPrefs.Save();
-        Debug.Log("********************** SAVED " + flag + " " + achieved);
+        Debug.Log("Saved game: " + flag + " " + achieved);
     }
     
     public static bool HasGameProgress(string flag)
     {
-        Debug.Log("********************** CHECKED " + flag + " " + (PlayerPrefs.GetInt(flag) == 1));
         return PlayerPrefs.GetInt(flag) == 1;
     }
     
