@@ -1551,6 +1551,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   closeUpSprite: {fileID: 21300000, guid: 191110f1f6c2f434b99ee2efa8975a27, type: 3}
   closeUpScript: {fileID: 957420320}
+  toInventory: 0
 --- !u!1 &189411164
 GameObject:
   m_ObjectHideFlags: 0
@@ -3247,6 +3248,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   closeUpSprite: {fileID: 21300000, guid: fe2a67f1afa678046bc1f1dc27fde4f5, type: 3}
   closeUpScript: {fileID: 957420320}
+  toInventory: 1
 --- !u!1 &307477132
 GameObject:
   m_ObjectHideFlags: 0
@@ -12851,6 +12853,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   closeUpSprite: {fileID: 21300000, guid: 97e231408160649f8b5936ec1c0c454f, type: 3}
   closeUpScript: {fileID: 957420320}
+  toInventory: 0
 --- !u!114 &1403469595
 MonoBehaviour:
   m_ObjectHideFlags: 0

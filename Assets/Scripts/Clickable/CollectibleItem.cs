@@ -6,6 +6,7 @@ public class CollectibleItem : MonoBehaviour
     public Sprite closeUpSprite;
     public CloseUpScript closeUpScript;
     private int _logCounter;
+    [SerializeField] private bool toInventory;
 
     private SpriteRenderer _spriteRenderer;
     
@@ -30,15 +31,16 @@ public class CollectibleItem : MonoBehaviour
             {
                 gameObject.SetActive(false);
             }
-        } else
-        {
-            GameObject.Find("ItembarManager").GetComponent<ItembarScript>().add_item(closeUpSprite);
-
-        }
+        } 
         
         if (gameObject.name != "logs")
         {
             gameObject.SetActive(false);
+        }
+        
+        if (toInventory)
+        {
+            GameObject.Find("ItembarManager").GetComponent<ItembarScript>().add_item(closeUpSprite);
         }
     }
     

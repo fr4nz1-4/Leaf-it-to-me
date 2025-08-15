@@ -136,6 +136,7 @@ public class GameplayScript : MonoBehaviour
         _itembar.ReplaceItemSprite(_cup, _fullCupSprite);
 
 		// TODO Closeup script für volle tasse
+        _closeUpScript.ShowCloseUpPanel(_fullCupSprite);
         
         // wieder dialog mit ella (tasse zurückbringen)
         yield return new WaitUntil(() => _clickedObject.name == "kindergarden_fairy");

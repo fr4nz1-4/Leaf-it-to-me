@@ -269,6 +269,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   closeUpSprite: {fileID: 21300000, guid: 7a7bf124728934034804bb3f849cfc7a, type: 3}
   closeUpScript: {fileID: 645721642}
+  toInventory: 1
 --- !u!60 &9605310
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -3596,6 +3597,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   closeUpSprite: {fileID: 21300000, guid: e932fbacd31a34060a33786afa21862d, type: 3}
   closeUpScript: {fileID: 645721642}
+  toInventory: 1
 --- !u!1 &297443210
 GameObject:
   m_ObjectHideFlags: 0
@@ -9188,7 +9190,7 @@ SpriteRenderer:
   m_Size: {x: 4.93, y: 6.95}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &999371126
@@ -14492,6 +14494,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   closeUpSprite: {fileID: 21300000, guid: 506fa79a8731f485abe39e740a5462b4, type: 3}
   closeUpScript: {fileID: 645721642}
+  toInventory: 0
 --- !u!1 &1844991929
 GameObject:
   m_ObjectHideFlags: 0
@@ -15417,6 +15420,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   closeUpSprite: {fileID: 21300000, guid: 9d7b2107f3f3d40f98c028be7a73851a, type: 3}
   closeUpScript: {fileID: 645721642}
+  toInventory: 0
 --- !u!1 &1981655814
 GameObject:
   m_ObjectHideFlags: 0
