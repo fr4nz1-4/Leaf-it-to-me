@@ -135,7 +135,7 @@ public class GameplayScript : MonoBehaviour
         // --> wenn ja, sprite von tasse austauschen
         _itembar.ReplaceItemSprite(_cup, _fullCupSprite);
 
-		// TODO Closeup script für volle tasse
+		// Closeup script für volle tasse
         _closeUpScript.ShowCloseUpPanel(_fullCupSprite);
         
         // wieder dialog mit ella (tasse zurückbringen)
