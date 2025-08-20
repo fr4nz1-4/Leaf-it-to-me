@@ -13,10 +13,12 @@ public class ClickableObject : MonoBehaviour
     public string text;
     public GameObject panel;
     private AudioSource _audioSource;
-    [FormerlySerializedAs("SpeechbubbleScript")] public SpeechbubbleScript speechbubbleScript;
+    public SpeechbubbleScript speechbubbleScript;
     private SpriteRenderer _spriteRenderer;
     private Vector3 _standardScale;
     private Vector3 _transformedScale;
+    [SerializeField] private DialogLine dialog;
+    public SpeechbubbleDialogScript speechbubbleDialogScript;
     
     void Start()
     {
@@ -65,6 +67,11 @@ public class ClickableObject : MonoBehaviour
         if (gameObject.name == "Blackout_nurLaterne")
         {
             panel.SetActive(false);
+        }
+
+        if (dialog != null)
+        {
+            speechbubbleDialogScript.ShowDialogue(dialog);
         }
     }
     

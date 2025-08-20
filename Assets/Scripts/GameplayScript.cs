@@ -196,7 +196,7 @@ public class GameplayScript : MonoBehaviour
         
         // wieder dialog mit gartenfee
         // yield return new WaitUntil(() => _clickedObject.name == "flower_fairy");
-        // dialogScript.ShowDialogueWithoutButtons(flowerfairyDialogue[3]);
+        // dialogScript.ShowDialogue(flowerfairyDialogue[3]);
         
         yield return new WaitUntil(() => !dialogScript.dialogPanel.activeSelf);
         // --> SCHLÜSSEl 1!!!

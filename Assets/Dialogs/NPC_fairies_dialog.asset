@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba036015fde13415e9a5056fce6ce88d, type: 3}
+  m_Name: NPC_fairies_dialog
+  m_EditorClassIdentifier: 
+  dialogText:
+  - "@What\u2019s your plan for today?"
+  - '#I need to pick up my kid from the kindergarten in an hour. '
+  - "#I really hope I won\u2019t run into any of the other parents today!"
+  - "@I guess that\u2019s the downside of having only one kindergarten in the whole
+    tree."
+  - '#We really need to change that. Picking up the kids is always such a hassle.'
+  - "#I\u2019d love it if I never had to see Mari again. But unfortunately, that
+    probably won\u2019t happen anytime soon."
+  playerPortrait: {fileID: 0}
+  npcPortrait: {fileID: 0}
