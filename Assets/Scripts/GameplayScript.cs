@@ -16,7 +16,7 @@ public class GameplayScript : MonoBehaviour
     [SerializeField] private ItembarScript _itembar;
     private KindergardenfairyScript _kindergardenfairyScript;
     [SerializeField] private CloseUpScript _closeUpScript;
-    
+    public GameObject flowerfairy;
     public GameObject kindergardenFairyCycle;
     [SerializeField] private GameObject _kindergardenFairy;
     private GameObject _clickedObject;
@@ -32,6 +32,7 @@ public class GameplayScript : MonoBehaviour
     public GameObject credits;
     public GameObject our_credits;
     public GameObject sound_credits;
+    public Sprite flowerfairySprite2;
 
     private void Start()
     {
@@ -159,6 +160,7 @@ public class GameplayScript : MonoBehaviour
     {
 		_treeButton.SetActive(false);
         destroyedFlowers.GetComponent<PolygonCollider2D>().enabled = false;
+        // flowerfairy.gameObject.GetComponent<PolygonCollider2D>().isTrigger = true;
         
         monologScript.ShowMonolog(
             "OK I need to find the next person. What was their name again? Fera? Yes I think that was it. " +
@@ -175,9 +177,17 @@ public class GameplayScript : MonoBehaviour
         yield return new WaitUntil(() => _clickedObject.name == "flower_fairy");
         dialogScript.ShowDialogueWithoutButtons(flowerfairyDialogue[1]);
         destroyedFlowers.GetComponent<PolygonCollider2D>().enabled = true;
-
-        // anleitung was als nächstes tun (canopy bauen)
+        
         yield return new WaitUntil(() => !dialogScript.dialogPanel.activeSelf);
+        
+        // Sprite der Flowerfairy ändern
+        flowerfairy.gameObject.GetComponent<SpriteRenderer>().sprite = flowerfairySprite2;
+        flowerfairy.gameObject.GetComponent<SpriteRenderer>().flipX = true;
+        Destroy(flowerfairy.gameObject.GetComponent<PolygonCollider2D>());
+        flowerfairy.gameObject.AddComponent<PolygonCollider2D>();
+        // flowerfairy.gameObject.GetComponent<PolygonCollider2D>().isTrigger = false;
+        
+        // anleitung was als nächstes tun (canopy bauen)
         monologScript.ShowMonolog("I have to get the problem fixed to get the key but how? " +
                                   "Maybe I could build a contraption to block the potions falling on the flowerbeds.\n" +
                                   "I need to look for some materials around here to build some kind of canopy.");

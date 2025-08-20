@@ -870,7 +870,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: d92f37c2036784001b857c07750fb9dc, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 1
@@ -5563,7 +5563,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 75469000a89074eb8b61c307855f97c5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -6265,6 +6265,7 @@ MonoBehaviour:
   key1: {fileID: 1446987696}
   _itembar: {fileID: 403456721}
   _closeUpScript: {fileID: 645721642}
+  flowerfairy: {fileID: 444948343}
   kindergardenFairyCycle: {fileID: 0}
   _kindergardenFairy: {fileID: 0}
   monologScript: {fileID: 910976228}
@@ -6275,6 +6276,7 @@ MonoBehaviour:
   credits: {fileID: 974712729}
   our_credits: {fileID: 275675658}
   sound_credits: {fileID: 1967474108}
+  flowerfairySprite2: {fileID: 21300000, guid: a77f616bc734a4d338bb710e4c7aff71, type: 3}
 --- !u!4 &737849527
 Transform:
   m_ObjectHideFlags: 0
