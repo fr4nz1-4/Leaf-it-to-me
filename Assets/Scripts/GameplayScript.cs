@@ -159,9 +159,11 @@ public class GameplayScript : MonoBehaviour
     {
 		_treeButton.SetActive(false);
         destroyedFlowers.GetComponent<PolygonCollider2D>().enabled = false;
+        
         monologScript.ShowMonolog(
             "OK I need to find the next person. What was their name again? Fera? Yes I think that was it. " +
             "Funny, why are some of the flowerbeds looking like a mess? What happened there?");
+        
         // dialog mit gartenfee
         yield return new WaitUntil(() => _clickedObject != null && _clickedObject.name == "flower_fairy");
         dialogScript.ShowDialogueWithoutButtons(flowerfairyDialogue[0]);
@@ -174,6 +176,11 @@ public class GameplayScript : MonoBehaviour
         dialogScript.ShowDialogueWithoutButtons(flowerfairyDialogue[1]);
         destroyedFlowers.GetComponent<PolygonCollider2D>().enabled = true;
 
+        // anleitung was als nächstes tun (canopy bauen)
+        yield return new WaitUntil(() => !dialogScript.dialogPanel.activeSelf);
+        monologScript.ShowMonolog("I have to get the problem fixed to get the key but how? " +
+                                  "Maybe I could build a contraption to block the potions falling on the flowerbeds.\n" +
+                                  "I need to look for some materials around here to build some kind of canopy.");
         // frei rumlaufen
         // _clickedObject = null;
         
