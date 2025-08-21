@@ -37,17 +37,17 @@ public class SpeechbubbleDialogScript : MonoBehaviour
     private IEnumerator StepThroughDialogue(DialogLine dialogLine)
     {
         _skipRequested = false;
-        TMP_Text activeLabel = null;
-        bool useLeftLabel = true;
+        var useLeftLabel = true;
         
         // yield return new WaitForSeconds(1);
-        foreach (string rawLine in dialogLine.dialogText)
+        foreach (var rawLine in dialogLine.dialogText)
         {
-            string displayText = rawLine;
+            var displayText = rawLine;
             left_textLabel.alignment = TextAlignmentOptions.Center;
             
             if (_skipRequested) break;
 
+            TMP_Text activeLabel = null;
             if (rawLine.StartsWith("@"))
             {
                 left_textLabel.text = string.Empty;

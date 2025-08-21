@@ -14,6 +14,8 @@ public class DialogUIScript : MonoBehaviour
     private TypewriterEffect _typewriterEffect;
     
     [SerializeField] private TMP_Text textLabel;
+    public GameObject speechbubble;
+    [SerializeField] private TMP_Text speechbubbleTextLabel;
     public Button startMinigame;
     public Button leaveDialog;
     // public Button SkipDialog;
@@ -39,6 +41,7 @@ public class DialogUIScript : MonoBehaviour
         // canvas = GameObject.Find("Canvas"); 
         _playerStandardScale = playerPortrait.transform.localScale;
         _npcStandardScale = npcPortrait.transform.localScale;
+        speechbubble.gameObject.SetActive(false);
     }
 
     public void ShowDialogue(DialogLine dialogLine)
@@ -69,13 +72,16 @@ public class DialogUIScript : MonoBehaviour
     private IEnumerator StepThroughDialogue(DialogLine dialogLine)
     {
         _skipRequested = false;
-
+        TMP_Text activeLabel = null;
+        
         // yield return new WaitForSeconds(1);
         foreach (string rawLine in dialogLine.dialogText)
         {
             string displayText = rawLine;
+            activeLabel = textLabel;
             textLabel.alignment = TextAlignmentOptions.Center;
-            
+            speechbubble.gameObject.SetActive(false);
+
             if (_skipRequested) break;
 
             if (rawLine.StartsWith("@"))
@@ -90,8 +96,14 @@ public class DialogUIScript : MonoBehaviour
                 // textLabel.alignment = TextAlignmentOptions.Right;
                 npcPortrait.transform.localScale = _npcStandardScale * 1.04f;
             }
+            else if (rawLine.StartsWith("!"))
+            {
+                speechbubble.gameObject.SetActive(true);
+                activeLabel = speechbubbleTextLabel;
+                displayText = rawLine.Substring(1); // 1. Zeichen entfernen
+            }
             
-            yield return _typewriterEffect.Run(displayText, textLabel);
+            yield return _typewriterEffect.Run(displayText, activeLabel);
             yield return new WaitUntil(() => Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.Space) || _skipRequested);
             playerPortrait.transform.localScale = _playerStandardScale;
             npcPortrait.transform.localScale = _npcStandardScale;

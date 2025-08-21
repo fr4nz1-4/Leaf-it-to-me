@@ -22,7 +22,7 @@ MonoBehaviour:
   - '#No?'
   - '@Are you sure?'
   - '#No?'
-  - Would you just play with them?
+  - '!Would you just play with them?'
   - '@Yes, sure... (How did I get myself into this situation?)'
   - ...
   - '@Great... let''s play Tic-Tac-Toe.'
