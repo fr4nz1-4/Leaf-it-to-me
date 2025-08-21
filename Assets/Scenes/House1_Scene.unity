@@ -7986,6 +7986,7 @@ MonoBehaviour:
   dialogPanel: {fileID: 2117462204}
   minigame: {fileID: 469375046}
   textLabel: {fileID: 143354669}
+  speechbubble: {fileID: 1659187642}
   speechbubbleTextLabel: {fileID: 1083197315}
   startMinigame: {fileID: 270000379}
   leaveDialog: {fileID: 60255449}
@@ -18894,7 +18895,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2117462205
 RectTransform:
   m_ObjectHideFlags: 0

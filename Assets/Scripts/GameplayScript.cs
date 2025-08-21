@@ -87,7 +87,7 @@ public class GameplayScript : MonoBehaviour
         yield return new WaitUntil(() => !prologScript.prologPanel.activeSelf);
         
         // Direkt dialog mit kindergartenfee die baum abstaubt
-        dialogScript.ShowDialogueWithoutButtons(kindergardenDialogue[1]);
+        dialogScript.ShowDialogue(kindergardenDialogue[1], false);
         // main character ab jetzt ohne cape 
         
         // dann frei rumbewegen
@@ -110,7 +110,7 @@ public class GameplayScript : MonoBehaviour
         _kindergardenfairyScript.StopCycleSprites();
         _kindergardenFairy.GetComponent<Animator>().enabled = false;
 
-        dialogScript.ShowDialogueWithoutButtons(kindergardenDialogue[2]);
+        dialogScript.ShowDialogue(kindergardenDialogue[2], false);
         yield return new WaitUntil(() => !dialogScript.dialogPanel.activeSelf);
 
         // Sprite anpassen (Ella ohne Tasse)
@@ -141,7 +141,7 @@ public class GameplayScript : MonoBehaviour
         
         // wieder dialog mit ella (tasse zurückbringen)
         yield return new WaitUntil(() => _clickedObject.name == "kindergarden_fairy");
-        dialogScript.ShowDialogueWithoutButtons(kindergardenDialogue[3]);
+        dialogScript.ShowDialogue(kindergardenDialogue[3], false);
         yield return new WaitUntil(() => !dialogScript.dialogPanel.activeSelf);
         
         // Sprite anpassen (Ella mit kaffee)
@@ -168,14 +168,14 @@ public class GameplayScript : MonoBehaviour
         
         // dialog mit gartenfee
         yield return new WaitUntil(() => _clickedObject != null && _clickedObject.name == "flower_fairy");
-        dialogScript.ShowDialogueWithoutButtons(flowerfairyDialogue[0]);
+        dialogScript.ShowDialogue(flowerfairyDialogue[0], false);
         // rübergehen zu dusche
         // --> auf dusche klicken --> sauber (Animation)
         yield return new WaitUntil(() => _clickedObject.name == "sunflower");
 
         // zurück zu dialog mit Gartenfee
         yield return new WaitUntil(() => _clickedObject.name == "flower_fairy");
-        dialogScript.ShowDialogueWithoutButtons(flowerfairyDialogue[1]);
+        dialogScript.ShowDialogue(flowerfairyDialogue[1], false);
         destroyedFlowers.GetComponent<PolygonCollider2D>().enabled = true;
         
         yield return new WaitUntil(() => !dialogScript.dialogPanel.activeSelf);
@@ -206,7 +206,7 @@ public class GameplayScript : MonoBehaviour
         // zurück zu dialog mit gartenfee
         // yield return new WaitUntil(() => _clickedObject.name != null || _clickedObject.name == "flower_fairy");
         yield return WaitForClick("flower_fairy");
-        dialogScript.ShowDialogueWithoutButtons(flowerfairyDialogue[2]);
+        dialogScript.ShowDialogue(flowerfairyDialogue[2], false);
 
         // boden fegen - optional
         // yield return new WaitUntil(() => _clickedObject.name == "broom");

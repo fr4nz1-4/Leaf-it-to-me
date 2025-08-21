@@ -26,12 +26,12 @@ public class ClickableCharacter : MonoBehaviour
 
         if (gameObject.name == "tic-tac-toe_child")
         {
-            dialogScript.ShowDialogueWithoutButtons(dialogLine);   
+            dialogScript.ShowDialogue(dialogLine, false);   
         }
         else
         {
             // Dialog starten
-            dialogScript.ShowDialogue(dialogLine);
+            dialogScript.ShowDialogue(dialogLine, true);
         }
     }
 

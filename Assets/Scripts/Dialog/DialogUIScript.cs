@@ -27,8 +27,6 @@ public class DialogUIScript : MonoBehaviour
     private bool _skipRequested = false;
     private Vector3 _playerStandardScale;
     private Vector3 _npcStandardScale;
-
-    // private GameObject canvas;
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -44,7 +42,7 @@ public class DialogUIScript : MonoBehaviour
         speechbubble.gameObject.SetActive(false);
     }
 
-    public void ShowDialogue(DialogLine dialogLine)
+    public void ShowDialogue(DialogLine dialogLine, bool buttonsRequired)
     {
         InputBlocker.Instance.BlockInput(); 
         playerPortrait.sprite = dialogLine.playerPortrait;
@@ -53,33 +51,20 @@ public class DialogUIScript : MonoBehaviour
         startMinigame.gameObject.SetActive(false);
         leaveDialog.gameObject.SetActive(false);
         player.GetComponent<PlayerMovement>().enabled = false;
-        StartCoroutine(StepThroughDialogue(dialogLine));
-    }
-
-    public void ShowDialogueWithoutButtons(DialogLine dialogLine)
-    {
-        InputBlocker.Instance.BlockInput(); 
-        playerPortrait.sprite = dialogLine.playerPortrait;
-        npcPortrait.sprite = dialogLine.npcPortrait;
-        dialogPanel.SetActive(true);
-        startMinigame.gameObject.SetActive(false);
-        leaveDialog.gameObject.SetActive(false);
-        player.GetComponent<PlayerMovement>().enabled = false;
-        StartCoroutine(StepThroughDialogueWithoutButtons(dialogLine));
+        StartCoroutine(StepThroughDialogue(dialogLine, buttonsRequired));
     }
     
     //jede zeile des dialogs anzeigen lassen und am ende zwei buttons anzeigen lassen
-    private IEnumerator StepThroughDialogue(DialogLine dialogLine)
+    private IEnumerator StepThroughDialogue(DialogLine dialogLine, bool buttonsRequired)
     {
         _skipRequested = false;
-        TMP_Text activeLabel = null;
-        
+
         // yield return new WaitForSeconds(1);
         foreach (string rawLine in dialogLine.dialogText)
         {
             string displayText = rawLine;
-            activeLabel = textLabel;
             textLabel.alignment = TextAlignmentOptions.Center;
+            var activeLabel = textLabel;
             speechbubble.gameObject.SetActive(false);
 
             if (_skipRequested) break;
@@ -109,55 +94,24 @@ public class DialogUIScript : MonoBehaviour
             npcPortrait.transform.localScale = _npcStandardScale;
             textLabel.text = string.Empty;
         }
-        
-        // evtl noch buttons nur einblenden, wenn sie zugewiesen sind 
-        // yield return new WaitUntil(() => Input.GetMouseButtonDown(0));
-        _buttonClicked = false;
-        if (minigame != null)
-        {
-            startMinigame.gameObject.SetActive(true);
-        }
-        leaveDialog.gameObject.SetActive(true);
-        yield return new WaitUntil(() => _buttonClicked);
-        
-        HideDialogPanel();
-    }
-    
-    private IEnumerator StepThroughDialogueWithoutButtons(DialogLine dialogLine)
-    {
-        _skipRequested = false;
-
-        // yield return new WaitForSeconds(1);
-        foreach (string rawLine in dialogLine.dialogText)
-        {
-            string displayText = rawLine;
-            textLabel.alignment = TextAlignmentOptions.Center;
-            
-            if (_skipRequested) break;
-
-            if (rawLine.StartsWith("@"))
+        if (buttonsRequired) {
+            // evtl noch buttons nur einblenden, wenn sie zugewiesen sind 
+            // yield return new WaitUntil(() => Input.GetMouseButtonDown(0));
+            _buttonClicked = false;
+            if (minigame != null)
             {
-                displayText = rawLine.Substring(1); // 1. Zeichen entfernen
-                // textLabel.alignment = TextAlignmentOptions.Left;
-                playerPortrait.transform.localScale = _playerStandardScale * 1.02f;
-            } 
-            else if (rawLine.StartsWith("#"))
-            {
-                displayText = rawLine.Substring(1); // 1. Zeichen entfernen
-                // textLabel.alignment = TextAlignmentOptions.Right;
-                npcPortrait.transform.localScale = _npcStandardScale * 1.03f;
+                startMinigame.gameObject.SetActive(true);
             }
-            
-            yield return _typewriterEffect.Run(displayText, textLabel);
-            yield return new WaitUntil(() => Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.Space) || _skipRequested);
-            playerPortrait.transform.localScale = _playerStandardScale;
-            npcPortrait.transform.localScale = _npcStandardScale;
-            textLabel.text = string.Empty;
+
+            leaveDialog.gameObject.SetActive(true);
+            yield return new WaitUntil(() => _buttonClicked);
+
+            HideDialogPanel();
         }
-        // evtl noch buttons nur einblenden, wenn sie zugewiesen sind
-        // yield return new WaitUntil(() => Input.GetMouseButtonDown(0));
-        
-        CloseDialogPanel();
+        else
+        {
+            CloseDialogPanel();
+        }
     }
 
     // dialogfenster ausblenden, Charakter kann sich aber nicht bewegen
