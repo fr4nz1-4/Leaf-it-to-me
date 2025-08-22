@@ -8,38 +8,39 @@ using Random = UnityEngine.Random;
 
 public class RockPaperScissorsScript : MinigameScript
 {
-    public Image playerHandImage;
-    public Image enemyHandImage;
+    [SerializeField] private Image playerHandImage;
+    [SerializeField] private Image enemyHandImage;
 
-    public Sprite playerRockSprite;
-    public Sprite playerPaperSprite;
-    public Sprite playerScissorsSprite;
+    [SerializeField] private Sprite playerRockSprite;
+    [SerializeField] private Sprite playerPaperSprite;
+    [SerializeField] private Sprite playerScissorsSprite;
     
-    public Sprite enemyRockSprite;
-    public Sprite enemyPaperSprite;
-    public Sprite enemyScissorsSprite;
+    [SerializeField] private Sprite enemyRockSprite;
+    [SerializeField] private Sprite enemyPaperSprite;
+    [SerializeField] private Sprite enemyScissorsSprite;
 
-    public Sprite[] playerRockAnimation;
-    public Sprite[] playerPaperAnimation;
-    public Sprite[] playerScissorsAnimation;
-    public Sprite[] enemyRockAnimation;
-    public Sprite[] enemyPaperAnimation;
-    public Sprite[] enemyScissorsAnimation;
+    [SerializeField] private Sprite[] playerRockAnimation;
+    [SerializeField] private Sprite[] playerPaperAnimation;
+    [SerializeField] private Sprite[] playerScissorsAnimation;
+    [SerializeField] private Sprite[] enemyRockAnimation;
+    [SerializeField] private Sprite[] enemyPaperAnimation;
+    [SerializeField] private Sprite[] enemyScissorsAnimation;
 
-    public Button rockButton;
-    public Button paperButton;
-    public Button scissorsButton;
+    [SerializeField] private Button rockButton;
+    [SerializeField] private Button paperButton;
+    [SerializeField] private Button scissorsButton;
     
-    public TextMeshProUGUI resultText;
-    public TextMeshProUGUI playerCounter;
-    public TextMeshProUGUI enemyCounter;
+    [SerializeField] private TextMeshProUGUI resultText;
+    [SerializeField] private TextMeshProUGUI playerCounter;
+    [SerializeField] private TextMeshProUGUI enemyCounter;
     [SerializeField] private Image textBackground;
     
-    private int _winCounter = 0;
-    private int _enemyWinCounter = 0;
-    private bool _isAnimationRunning = false;
-    private bool _resetOnNextMove = false;
-    
+    private int _winCounter;
+    private int _enemyWinCounter;
+    private bool _resetOnNextMove;
+
+    private readonly float _frameDuration = 0.1f; // Dauer eines Frames (z.B. 0.1 Sekunden)
+
     private void Start()
     {
         playerRockAnimation = Resources.LoadAll<Sprite>("Sprites/MinigameSprites/Rock Paper Scissors/AnimationSprites/fairy rock");
@@ -56,14 +57,7 @@ public class RockPaperScissorsScript : MinigameScript
 
     private void Update()
     {
-        if (resultText.text.Length == 0)
-        {
-            textBackground.gameObject.SetActive(false);
-        }
-        else
-        {
-            textBackground.gameObject.SetActive(true);
-        }
+        textBackground.gameObject.SetActive(resultText.text.Length != 0);
     }
 
     public void PlayerChoice(string playerMove)
@@ -87,8 +81,6 @@ public class RockPaperScissorsScript : MinigameScript
         SetPlayerHandSprite(playerMove);
         SetEnemyHandSprite(enemyMove);
         
-        // string result = "";
-
         if (playerMove == enemyMove)
         {
             // result = "Draw";
@@ -113,13 +105,13 @@ public class RockPaperScissorsScript : MinigameScript
         switch (move)
         {
             case "Rock":
-                StartCoroutine(PlayPlayerAnimation(playerRockAnimation, playerRockSprite));
+                StartCoroutine(PlayPlayerAnimation(playerRockAnimation));
                 break;
             case "Paper":
-                StartCoroutine(PlayPlayerAnimation(playerPaperAnimation, playerPaperSprite));
+                StartCoroutine(PlayPlayerAnimation(playerPaperAnimation));
                 break;
             case "Scissors":
-                StartCoroutine(PlayPlayerAnimation(playerScissorsAnimation, playerScissorsSprite));
+                StartCoroutine(PlayPlayerAnimation(playerScissorsAnimation));
                 break;
         }
     }
@@ -130,32 +122,27 @@ public class RockPaperScissorsScript : MinigameScript
         switch (move)
         {
             case "Rock":
-                StartCoroutine(PlayEnemyAnimation(enemyRockAnimation, enemyRockSprite));
+                StartCoroutine(PlayEnemyAnimation(enemyRockAnimation));
                 break;
             case "Paper":
-                StartCoroutine(PlayEnemyAnimation(enemyPaperAnimation, enemyPaperSprite));
+                StartCoroutine(PlayEnemyAnimation(enemyPaperAnimation));
                 break;
             case "Scissors":
-                StartCoroutine(PlayEnemyAnimation(enemyScissorsAnimation, enemyScissorsSprite));
+                StartCoroutine(PlayEnemyAnimation(enemyScissorsAnimation));
                 break;
         }
     }
     
-    private IEnumerator PlayPlayerAnimation(Sprite[] animationFrames, Sprite finalSprite)
+    private IEnumerator PlayPlayerAnimation(Sprite[] animationFrames)
     {
-        _isAnimationRunning = true;
-        float frameDuration = 0.1f; // Dauer eines Frames (z.B. 0.1 Sekunden)
-
         foreach (var frame in animationFrames)
         {
             playerHandImage.sprite = frame;
-            yield return new WaitForSeconds(frameDuration);
+            yield return new WaitForSeconds(_frameDuration);
         }
 
-        // playerHandImage.sprite = finalSprite;
         playerCounter.text = $"{_winCounter}";
         SetButtonsInteractable(true);
-        _isAnimationRunning = false;
         
         if (_winCounter == 3 && _enemyWinCounter < 3)
         {
@@ -173,15 +160,12 @@ public class RockPaperScissorsScript : MinigameScript
         }
     }
     
-    private IEnumerator PlayEnemyAnimation(Sprite[] animationFrames, Sprite finalSprite)
+    private IEnumerator PlayEnemyAnimation(Sprite[] animationFrames)
     {
-        
-        float frameDuration = 0.1f; // Dauer eines Frames (z.B. 0.1 Sekunden)
-
         foreach (var frame in animationFrames)
         {
             enemyHandImage.sprite = frame;
-            yield return new WaitForSeconds(frameDuration);
+            yield return new WaitForSeconds(_frameDuration);
         }
 
         // enemyHandImage.sprite = finalSprite;
