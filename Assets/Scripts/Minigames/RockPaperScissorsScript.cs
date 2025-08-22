@@ -30,12 +30,16 @@ public class RockPaperScissorsScript : MinigameScript
     public Button paperButton;
     public Button scissorsButton;
     
+    public TextMeshProUGUI resultText;
+    public TextMeshProUGUI playerCounter;
+    public TextMeshProUGUI enemyCounter;
+    [SerializeField] private Image textBackground;
+    
     private int _winCounter = 0;
     private int _enemyWinCounter = 0;
     private bool _isAnimationRunning = false;
     private bool _resetOnNextMove = false;
-
-
+    
     private void Start()
     {
         playerRockAnimation = Resources.LoadAll<Sprite>("Sprites/MinigameSprites/Rock Paper Scissors/AnimationSprites/fairy rock");
@@ -44,6 +48,22 @@ public class RockPaperScissorsScript : MinigameScript
         enemyRockAnimation = Resources.LoadAll<Sprite>("Sprites/MinigameSprites/Rock Paper Scissors/AnimationSprites/dragon rock");
         enemyPaperAnimation = Resources.LoadAll<Sprite>("Sprites/MinigameSprites/Rock Paper Scissors/AnimationSprites/dragon paper");
         enemyScissorsAnimation = Resources.LoadAll<Sprite>("Sprites/MinigameSprites/Rock Paper Scissors/AnimationSprites/dragon scissors");
+        
+        resultText.text = "";
+        playerCounter.text = "";
+        enemyCounter.text = "";
+    }
+
+    private void Update()
+    {
+        if (resultText.text.Length == 0)
+        {
+            textBackground.gameObject.SetActive(false);
+        }
+        else
+        {
+            textBackground.gameObject.SetActive(true);
+        }
     }
 
     public void PlayerChoice(string playerMove)
@@ -85,19 +105,6 @@ public class RockPaperScissorsScript : MinigameScript
             // result = "You lose!";
             _enemyWinCounter++;
         }
-
-        // enemyCounter.text = $"{enemy_win_counter}";
-        // playerCounter.text = $"{win_counter}";
-
-        // if (_winCounter == 3)
-        // {
-        //     // new WaitUntil(() => _isAnimationRunning == false);
-        //     resultText.text = $"\nYou won 3 times!\n Congratulations!";
-        //     MinigamePlayed = true;
-        //     Debug.Log("minigamePlayed" + MinigamePlayed);
-        //     SetButtonsInteractable(false);
-        //     Debug.Log(rockButton.interactable);
-        // }
     }
 
     void SetPlayerHandSprite(string move)
@@ -133,14 +140,6 @@ public class RockPaperScissorsScript : MinigameScript
                 break;
         }
     }
-
-
-    private IEnumerator CloseMinigameWithDelay()
-    {
-        yield return new WaitForSeconds(2.0f);
-        HideMinigamePanel();
-        _winCounter = 0;
-    }
     
     private IEnumerator PlayPlayerAnimation(Sprite[] animationFrames, Sprite finalSprite)
     {
@@ -161,7 +160,7 @@ public class RockPaperScissorsScript : MinigameScript
         if (_winCounter == 3 && _enemyWinCounter < 3)
         {
             // new WaitUntil(() => _isAnimationRunning == false);
-            resultText.text = $"\nYou won!\n Congratulations!";
+            resultText.text = $"You won!\nCongratulations!";
             MinigamePlayed = true;
             _resetOnNextMove = true;
             Debug.Log("minigamePlayed" + MinigamePlayed);
@@ -169,7 +168,7 @@ public class RockPaperScissorsScript : MinigameScript
             Debug.Log("Buttons interactable:"  + rockButton.interactable);
         } else if (_enemyWinCounter == 3 && _winCounter < 3)
         {
-            resultText.text = $"\nYou lose!\n Try again!";
+            resultText.text = $"You lose!\nTry again!";
             _resetOnNextMove = true;
         }
     }
@@ -195,5 +194,19 @@ public class RockPaperScissorsScript : MinigameScript
         rockButton.interactable = interactable;
         paperButton.interactable = interactable;
         scissorsButton.interactable = interactable;
+    }
+
+    public new void HideMinigamePanel()
+    {
+        Debug.Log("hideMinigame button pressed");
+        minigamePanel.SetActive(false);
+        player.GetComponent<PlayerMovement>().enabled = true;
+        InputBlocker.Instance.UnblockInput();
+        // treeButton.SetActive(true);
+        keys.SetActive(true);
+
+        resultText.text = "";
+        playerCounter.text = "";
+        enemyCounter.text = "";
     }
 }

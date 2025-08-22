@@ -81,7 +81,7 @@ public class GameplayScript : MonoBehaviour
     {
         _treeButton.SetActive(false);
 		MinigameScript.MinigamePlayed = false;
-
+/*
         // Prolog abspielen --> monologbar mit Cape-Main-Charakter im hintergrund
         yield return StartCoroutine(prologScript.ShowProlog(kindergardenDialogue[0]));
         yield return new WaitUntil(() => !prologScript.prologPanel.activeSelf);
@@ -89,9 +89,9 @@ public class GameplayScript : MonoBehaviour
         // Direkt dialog mit kindergartenfee die baum abstaubt
         dialogScript.ShowDialogue(kindergardenDialogue[1], false);
         // main character ab jetzt ohne cape 
-        
         // dann frei rumbewegen
         yield return new WaitUntil(() => !dialogScript.dialogPanel.activeSelf);
+        */
         // --> ella danach nicht mehr anklickbar
         _kindergardenFairy.GetComponent<Animator>().enabled = true;
         _kindergardenfairyScript.StartFairyCycling();

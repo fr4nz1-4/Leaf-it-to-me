@@ -1,44 +1,77 @@
+using System;
 using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
+using Unity.VisualScripting;
 using UnityEngine.Serialization;
 using Random = UnityEngine.Random;
 
 public class TicTacToeScript : MinigameScript
 {
-    [FormerlySerializedAs("field_0_0")] public Image field00;
-    [FormerlySerializedAs("field_0_1")] public Image field01;
-    [FormerlySerializedAs("field_0_2")] public Image field02;
-    [FormerlySerializedAs("field_1_0")] public Image field10;
-    [FormerlySerializedAs("field_1_1")] public Image field11;
-    [FormerlySerializedAs("field_1_2")] public Image field12;
-    [FormerlySerializedAs("field_2_0")] public Image field20;
-    [FormerlySerializedAs("field_2_1")] public Image field21;
-    [FormerlySerializedAs("field_2_2")] public Image field22;
-
+    public Image[] fields;
+    
     public Sprite circle;
     public Sprite cross;
     
-    [FormerlySerializedAs("connection_line_horizontal")] public Image connectionLineHorizontal;
-    [FormerlySerializedAs("connection_line_diagonal")] public Image connectionLineDiagonal;
+    public Image connectionLineHorizontal;
+    public Image connectionLineDiagonal;
     
+    private bool isCircleTurn = true;  // true = Spieler Kreis, false = KI Kreuz
 
-    public void player_choice()
+    private void Start()
     {
-        // player klick registrieren --> sprite darf nur einmal gesetzt werden!!
+        foreach (var field in fields)
+        {
+            field.GetComponent<Image>().color = new Color(1f, 1f, 1f, 0f);
+            var capturedField = field;
+            var button = capturedField.GetComponent<Button>();
+
+            button.onClick.AddListener(() =>
+            {
+                Debug.Log("Button clicked");
+                HandleFieldClick(capturedField);
+            });
+        }
+    }
+
+    private void HandleFieldClick(Image field)
+    {
+        // Falls schon belegt -> ignorieren
+        if (field.sprite != null)
+            return;
+        Debug.Log("enter handlefieldcheck method");
+
+        // Sprite setzen
+        if (isCircleTurn)
+            SetSprite("circle", field);
+        else
+            SetSprite("cross", field);
+
+        // Spieler wechseln
+        isCircleTurn = !isCircleTurn;
+    }
+    
         // --> if field.sprite != empty
         // random reaktion des gegners --> Sprite setzen
-    }
+    
     // Methode die automatisch Sprite setzt und image auf nicht transparent setzen
-    public void set_sprite(string move, Image field)
+    private void SetSprite(string move, Image field)
     {
         if (move == "circle")
         {
+            Debug.Log("set sprite circle");
+            field.GetComponent<Image>().color = new Color(1f, 1f, 1f, 1f);
             field.sprite = circle;
-        } else if (move == "cross")
+            
+        }
+        else if (move == "cross")
         {
+            field.GetComponent<Image>().color = new Color(1f, 1f, 1f, 1f);
             field.sprite = cross;
         }
+
+        // Button danach deaktivieren
+        field.GetComponent<Button>().interactable = false;
     }
 }
 

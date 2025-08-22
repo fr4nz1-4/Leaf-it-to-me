@@ -2956,6 +2956,8 @@ MonoBehaviour:
   dialogPanel: {fileID: 469797914}
   minigame: {fileID: 0}
   textLabel: {fileID: 49257059}
+  speechbubble: {fileID: 0}
+  speechbubbleTextLabel: {fileID: 0}
   startMinigame: {fileID: 1170252024}
   leaveDialog: {fileID: 28361758}
   playerPortrait: {fileID: 302665302}
@@ -3622,7 +3624,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   closeUpSprite: {fileID: 21300000, guid: e932fbacd31a34060a33786afa21862d, type: 3}
   closeUpScript: {fileID: 645721642}
-  toInventory: 1
+  toInventory: 0
 --- !u!1 &297443210
 GameObject:
   m_ObjectHideFlags: 0
