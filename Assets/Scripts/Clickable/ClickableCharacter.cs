@@ -8,7 +8,6 @@ public class ClickableCharacter : MonoBehaviour
     // public DialogManager dialogManager;
     public DialogLine dialogLine;
     private SpriteRenderer _spriteRenderer;
-    public LayerMask interactableLayer;
     private Vector3 _standardScale;
     private Vector3 _transformedScale;
     
@@ -24,15 +23,9 @@ public class ClickableCharacter : MonoBehaviour
 
         Debug.Log("You clicked on: " + gameObject.name);
 
-        if (gameObject.name == "tic-tac-toe_child")
-        {
-            dialogScript.ShowDialogue(dialogLine, false);   
-        }
-        else
-        {
-            // Dialog starten
-            dialogScript.ShowDialogue(dialogLine, true);
-        }
+        dialogScript.minigame = gameObject.GetComponent<MinigameScript>();
+        // Dialog starten
+        dialogScript.ShowDialogue(dialogLine, true);
     }
 
     private void OnMouseOver()

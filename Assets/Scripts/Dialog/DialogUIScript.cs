@@ -115,7 +115,7 @@ public class DialogUIScript : MonoBehaviour
     }
 
     // dialogfenster ausblenden, Charakter kann sich aber nicht bewegen
-    public void HideDialogPanel()
+    private void HideDialogPanel()
     {
         _buttonClicked = true;
         dialogPanel.SetActive(false);
