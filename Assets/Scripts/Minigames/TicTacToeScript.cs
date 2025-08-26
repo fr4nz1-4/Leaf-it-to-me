@@ -19,6 +19,8 @@ public class TicTacToeScript : MinigameScript
     public GameObject tryAgainPanel;
     public Button tryAgainButton;
     public TextMeshProUGUI resultText;
+    
+    public static bool MinigamePlayed = false;
 
     private void Start()
     {
@@ -57,6 +59,7 @@ public class TicTacToeScript : MinigameScript
         if (CheckWin(_board, 1))
         {
             EndGame("You Win!");
+            MinigamePlayed = true;
             return;
         }
 

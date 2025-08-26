@@ -4303,7 +4303,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4278664561
-  m_fontColor: {r: 0.4433962, g: 0.24028727, b: 0.027189402, a: 1}
+  m_fontColor: {r: 0.44313726, g: 0.23921569, b: 0.02745098, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -4326,7 +4326,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 64
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535
@@ -15811,7 +15811,7 @@ MonoBehaviour:
   flowerfairyDialogue: []
   key1: {fileID: 0}
   _itembar: {fileID: 1828120431}
-  questlogScript: {fileID: 0}
+  questlogScript: {fileID: 776723144}
   _closeUpScript: {fileID: 957420320}
   flowerfairy: {fileID: 0}
   kindergardenFairyCycle: {fileID: 1522073288}

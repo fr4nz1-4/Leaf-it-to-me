@@ -14,6 +14,7 @@ public class GameplayScript : MonoBehaviour
     public DialogLine[] flowerfairyDialogue;
     public Image key1;
     [SerializeField] private ItembarScript _itembar;
+    [SerializeField] private QuestlogScript questlogScript;
     private KindergardenfairyScript _kindergardenfairyScript;
     [SerializeField] private CloseUpScript _closeUpScript;
     public GameObject flowerfairy;
@@ -80,24 +81,33 @@ public class GameplayScript : MonoBehaviour
     private IEnumerator House1Gameplay()
     {
         _treeButton.SetActive(false);
-		MinigameScript.MinigamePlayed = false;
-/*
+		RockPaperScissorsScript.MinigamePlayed = false;
+        TicTacToeScript.MinigamePlayed = false;
         // Prolog abspielen --> monologbar mit Cape-Main-Charakter im hintergrund
-        yield return StartCoroutine(prologScript.ShowProlog(kindergardenDialogue[0]));
-        yield return new WaitUntil(() => !prologScript.prologPanel.activeSelf);
+        // yield return StartCoroutine(prologScript.ShowProlog(kindergardenDialogue[0]));
+        // yield return new WaitUntil(() => !prologScript.prologPanel.activeSelf);
         
         // Direkt dialog mit kindergartenfee die baum abstaubt
-        dialogScript.ShowDialogue(kindergardenDialogue[1], false);
+        dialogScript.ShowDialogue(kindergardenDialogue[1], false, false);
         // main character ab jetzt ohne cape 
         // dann frei rumbewegen
         yield return new WaitUntil(() => !dialogScript.dialogPanel.activeSelf);
+
+        questlogScript.FoldQuestlogOut();
+/*
         */
         // --> ella danach nicht mehr anklickbar
         _kindergardenFairy.GetComponent<Animator>().enabled = true;
         _kindergardenfairyScript.StartFairyCycling();
         
         // rock paper scissors kind MUSS angeklickt werden --> checken
-        yield return new WaitUntil(() => MinigameScript.MinigamePlayed);
+        yield return new WaitUntil(() => RockPaperScissorsScript.MinigamePlayed);
+
+        questlogScript.CompleteTask(0);
+        questlogScript.FoldQuestlogOut();
+        
+        yield return new WaitUntil(() => TicTacToeScript.MinigamePlayed);
+        questlogScript.CompleteTask(1);
 
         // Sprite anpassen (Ella mit leerer Tasse)
         // _kindergardenFairy.GetComponent<SpriteRenderer>().sprite =
@@ -112,6 +122,8 @@ public class GameplayScript : MonoBehaviour
 
         dialogScript.ShowDialogue(kindergardenDialogue[2], false, false);
         yield return new WaitUntil(() => !dialogScript.dialogPanel.activeSelf);
+
+        questlogScript.CompleteTask(2);
 
         // Sprite anpassen (Ella ohne Tasse)
         _kindergardenFairy.GetComponent<SpriteRenderer>().sprite =
@@ -135,6 +147,8 @@ public class GameplayScript : MonoBehaviour
         
         // --> wenn ja, sprite von tasse austauschen
         _itembar.ReplaceItemSprite(_cup, _fullCupSprite);
+        
+        questlogScript.CompleteTask(3);
 
 		// Closeup script für volle tasse
         _closeUpScript.ShowCloseUpPanel(_fullCupSprite);
@@ -143,6 +157,8 @@ public class GameplayScript : MonoBehaviour
         yield return new WaitUntil(() => _clickedObject.name == "kindergarden_fairy");
         dialogScript.ShowDialogue(kindergardenDialogue[3], false, false);
         yield return new WaitUntil(() => !dialogScript.dialogPanel.activeSelf);
+        
+        questlogScript.CompleteTask(4);
         
         // Sprite anpassen (Ella mit kaffee)
         _kindergardenFairy.GetComponent<SpriteRenderer>().sprite =

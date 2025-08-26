@@ -37,10 +37,11 @@ public class QuestlogScript : MonoBehaviour
 
     public void CompleteTask(int taskID)
     {
-        tasks[taskID].text = StrikeText(tasks[taskID].text);
-        tasks[taskID + 1].enabled = true;
+        tasks[taskID].color = new Color(0.4431373f, 0.2392157f, 0.2392157f, 0.55f);
+        tasks[taskID + 1].gameObject.SetActive(true);
     }
     
+    // not working because of custom font
     private string StrikeText(string input)
     {
         string output = STRIKE_START + input + STRIKE_END;

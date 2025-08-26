@@ -6,7 +6,6 @@ public class MinigameScript : MonoBehaviour
 {
     public GameObject minigamePanel;
     public GameObject player;
-    public static bool MinigamePlayed = false;
     public GameObject treeButton;
     public GameObject keys;
 

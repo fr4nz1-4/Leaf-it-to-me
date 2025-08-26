@@ -40,6 +40,8 @@ public class RockPaperScissorsScript : MinigameScript
     private bool _resetOnNextMove;
 
     private readonly float _frameDuration = 0.1f; // Dauer eines Frames (z.B. 0.1 Sekunden)
+    
+    public static bool MinigamePlayed = false;
 
     private void Start()
     {

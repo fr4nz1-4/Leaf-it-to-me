@@ -11,6 +11,7 @@ public class CanopyScript : MinigameScript
 
     public GameObject canopyFinal;
     public bool canopyBuild;
+    public static bool MinigamePlayed = false;
     
     private void Update()
     {
