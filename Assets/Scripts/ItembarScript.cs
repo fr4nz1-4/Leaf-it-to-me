@@ -6,10 +6,10 @@ using UnityEngine.UI;
 
 public class ItembarScript : MonoBehaviour
 {
-    [FormerlySerializedAs("itembar_folded_in")] public GameObject itembarFoldedIn;
-    [FormerlySerializedAs("itembar_folded_out")] public GameObject itembarFoldedOut;
+    public GameObject itembarFoldedIn;
+    public GameObject itembarFoldedOut;
     public List<Image> itemSlots;
-    [FormerlySerializedAs("_isItembarfoldedOut")] public bool isItembarfoldedOut;
+    public bool isItembarfoldedOut;
     
     private void Awake() // not working
     {
