@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 6f983c9021f9a4456801d7a9abd45945
+guid: a3388d4d4c62f4940ad929079ee593e9
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3889894851331145728
-    second: cute-mouse-cursor_0
+      213: -7015787248556017333
+    second: MausCursor_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: cute-mouse-cursor_0
+      name: MausCursor_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 30
-        height: 30
+        width: 68
+        height: 116
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 00049c40e31540ac0800000000000000
-      internalID: -3889894851331145728
+      spriteID: b497a1e2baae2ae90800000000000000
+      internalID: -7015787248556017333
       vertices: []
       indices: 
       edges: []

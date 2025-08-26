@@ -42,7 +42,7 @@ public class DialogUIScript : MonoBehaviour
         speechbubble.gameObject.SetActive(false);
     }
 
-    public void ShowDialogue(DialogLine dialogLine, bool buttonsRequired)
+    public void ShowDialogue(DialogLine dialogLine, bool buttonsRequired, bool hasTalkedTo)
     {
         InputBlocker.Instance.BlockInput(); 
         playerPortrait.sprite = dialogLine.playerPortrait;
@@ -51,49 +51,54 @@ public class DialogUIScript : MonoBehaviour
         startMinigame.gameObject.SetActive(false);
         leaveDialog.gameObject.SetActive(false);
         player.GetComponent<PlayerMovement>().enabled = false;
-        StartCoroutine(StepThroughDialogue(dialogLine, buttonsRequired));
+        StartCoroutine(StepThroughDialogue(dialogLine, buttonsRequired, hasTalkedTo));
     }
     
     //jede zeile des dialogs anzeigen lassen und am ende zwei buttons anzeigen lassen
-    private IEnumerator StepThroughDialogue(DialogLine dialogLine, bool buttonsRequired)
+    private IEnumerator StepThroughDialogue(DialogLine dialogLine, bool buttonsRequired, bool hasTalkedTo)
     {
         _skipRequested = false;
 
-        // yield return new WaitForSeconds(1);
-        foreach (string rawLine in dialogLine.dialogText)
+        if (hasTalkedTo == false)
         {
-            string displayText = rawLine;
-            textLabel.alignment = TextAlignmentOptions.Center;
-            var activeLabel = textLabel;
-            speechbubble.gameObject.SetActive(false);
+            // yield return new WaitForSeconds(1);
+            foreach (string rawLine in dialogLine.dialogText)
+            {
+                string displayText = rawLine;
+                textLabel.alignment = TextAlignmentOptions.Center;
+                var activeLabel = textLabel;
+                speechbubble.gameObject.SetActive(false);
 
-            if (_skipRequested) break;
+                if (_skipRequested) break;
 
-            if (rawLine.StartsWith("@"))
-            {
-                displayText = rawLine.Substring(1); // 1. Zeichen entfernen
-                // textLabel.alignment = TextAlignmentOptions.Left;
-                playerPortrait.transform.localScale = _playerStandardScale * 1.04f;
-            } 
-            else if (rawLine.StartsWith("#"))
-            {
-                displayText = rawLine.Substring(1); // 1. Zeichen entfernen
-                // textLabel.alignment = TextAlignmentOptions.Right;
-                npcPortrait.transform.localScale = _npcStandardScale * 1.04f;
+                if (rawLine.StartsWith("@"))
+                {
+                    displayText = rawLine.Substring(1); // 1. Zeichen entfernen
+                    // textLabel.alignment = TextAlignmentOptions.Left;
+                    playerPortrait.transform.localScale = _playerStandardScale * 1.04f;
+                }
+                else if (rawLine.StartsWith("#"))
+                {
+                    displayText = rawLine.Substring(1); // 1. Zeichen entfernen
+                    // textLabel.alignment = TextAlignmentOptions.Right;
+                    npcPortrait.transform.localScale = _npcStandardScale * 1.04f;
+                }
+                else if (rawLine.StartsWith("!"))
+                {
+                    speechbubble.gameObject.SetActive(true);
+                    activeLabel = speechbubbleTextLabel;
+                    displayText = rawLine.Substring(1); // 1. Zeichen entfernen
+                }
+
+                yield return _typewriterEffect.Run(displayText, activeLabel);
+                yield return new WaitUntil(() =>
+                    Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.Space) || _skipRequested);
+                playerPortrait.transform.localScale = _playerStandardScale;
+                npcPortrait.transform.localScale = _npcStandardScale;
+                textLabel.text = string.Empty;
             }
-            else if (rawLine.StartsWith("!"))
-            {
-                speechbubble.gameObject.SetActive(true);
-                activeLabel = speechbubbleTextLabel;
-                displayText = rawLine.Substring(1); // 1. Zeichen entfernen
-            }
-            
-            yield return _typewriterEffect.Run(displayText, activeLabel);
-            yield return new WaitUntil(() => Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.Space) || _skipRequested);
-            playerPortrait.transform.localScale = _playerStandardScale;
-            npcPortrait.transform.localScale = _npcStandardScale;
-            textLabel.text = string.Empty;
         }
+
         if (buttonsRequired) {
             // evtl noch buttons nur einblenden, wenn sie zugewiesen sind 
             // yield return new WaitUntil(() => Input.GetMouseButtonDown(0));

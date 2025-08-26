@@ -10,6 +10,7 @@ public class ClickableCharacter : MonoBehaviour
     private SpriteRenderer _spriteRenderer;
     private Vector3 _standardScale;
     private Vector3 _transformedScale;
+    public bool hasTalkedTo;
     
     private void Start()
     {
@@ -25,7 +26,9 @@ public class ClickableCharacter : MonoBehaviour
 
         dialogScript.minigame = gameObject.GetComponent<MinigameScript>();
         // Dialog starten
-        dialogScript.ShowDialogue(dialogLine, true);
+        dialogScript.ShowDialogue(dialogLine, true, hasTalkedTo);
+        
+        hasTalkedTo = true;
     }
 
     private void OnMouseOver()

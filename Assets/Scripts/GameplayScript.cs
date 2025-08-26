@@ -110,7 +110,7 @@ public class GameplayScript : MonoBehaviour
         _kindergardenfairyScript.StopCycleSprites();
         _kindergardenFairy.GetComponent<Animator>().enabled = false;
 
-        dialogScript.ShowDialogue(kindergardenDialogue[2], false);
+        dialogScript.ShowDialogue(kindergardenDialogue[2], false, false);
         yield return new WaitUntil(() => !dialogScript.dialogPanel.activeSelf);
 
         // Sprite anpassen (Ella ohne Tasse)
@@ -141,7 +141,7 @@ public class GameplayScript : MonoBehaviour
         
         // wieder dialog mit ella (tasse zurückbringen)
         yield return new WaitUntil(() => _clickedObject.name == "kindergarden_fairy");
-        dialogScript.ShowDialogue(kindergardenDialogue[3], false);
+        dialogScript.ShowDialogue(kindergardenDialogue[3], false, false);
         yield return new WaitUntil(() => !dialogScript.dialogPanel.activeSelf);
         
         // Sprite anpassen (Ella mit kaffee)
@@ -168,14 +168,14 @@ public class GameplayScript : MonoBehaviour
         
         // dialog mit gartenfee
         yield return new WaitUntil(() => _clickedObject != null && _clickedObject.name == "flower_fairy");
-        dialogScript.ShowDialogue(flowerfairyDialogue[0], false);
+        dialogScript.ShowDialogue(flowerfairyDialogue[0], false, false);
         // rübergehen zu dusche
         // --> auf dusche klicken --> sauber (Animation)
         yield return new WaitUntil(() => _clickedObject.name == "sunflower");
 
         // zurück zu dialog mit Gartenfee
         yield return new WaitUntil(() => _clickedObject.name == "flower_fairy");
-        dialogScript.ShowDialogue(flowerfairyDialogue[1], false);
+        dialogScript.ShowDialogue(flowerfairyDialogue[1], false, false);
         destroyedFlowers.GetComponent<PolygonCollider2D>().enabled = true;
         
         yield return new WaitUntil(() => !dialogScript.dialogPanel.activeSelf);
@@ -206,7 +206,7 @@ public class GameplayScript : MonoBehaviour
         // zurück zu dialog mit gartenfee
         // yield return new WaitUntil(() => _clickedObject.name != null || _clickedObject.name == "flower_fairy");
         yield return WaitForClick("flower_fairy");
-        dialogScript.ShowDialogue(flowerfairyDialogue[2], false);
+        dialogScript.ShowDialogue(flowerfairyDialogue[2], false, false);
 
         // boden fegen - optional
         // yield return new WaitUntil(() => _clickedObject.name == "broom");
