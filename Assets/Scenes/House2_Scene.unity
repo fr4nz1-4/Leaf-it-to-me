@@ -4114,7 +4114,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1219545608}
         m_TargetAssemblyTypeName: QuestlogScript, Assembly-CSharp
         m_MethodName: FoldQuestlogOut
         m_Mode: 1
@@ -6659,7 +6659,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: c8a3249eb7eb74422829b352cd6f61f1, type: 2}
   key1: {fileID: 1446987696}
   _itembar: {fileID: 403456721}
-  questlogScript: {fileID: 0}
+  questlogScript: {fileID: 1219545608}
   _closeUpScript: {fileID: 645721642}
   flowerfairy: {fileID: 444948343}
   kindergardenFairyCycle: {fileID: 0}
@@ -7140,8 +7140,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.34, y: -0.31070015}
-  m_SizeDelta: {x: 516.1312, y: 83.0497}
+  m_AnchoredPosition: {x: 0.34001, y: -0.63}
+  m_SizeDelta: {x: 516.1312, y: 88.5377}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &852043156
 MonoBehaviour:
@@ -7163,7 +7163,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Find materials and build a canopy
+  m_text: Find the materials and build a canopy
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d059f20b7b4c44a069dc5f9931ed9492, type: 2}
   m_sharedMaterial: {fileID: -107186456025546579, guid: d059f20b7b4c44a069dc5f9931ed9492, type: 2}
@@ -7190,8 +7190,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35
-  m_fontSizeBase: 35
+  m_fontSize: 40
+  m_fontSizeBase: 40
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -8951,7 +8951,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.34002, y: -0.8943001}
+  m_AnchoredPosition: {x: 0.34, y: -1.42}
   m_SizeDelta: {x: 516.1312, y: 35.7022}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1047664451
@@ -9001,8 +9001,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35
-  m_fontSizeBase: 35
+  m_fontSize: 40
+  m_fontSizeBase: 40
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -9827,8 +9827,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.34, y: 1.41}
-  m_SizeDelta: {x: 516.1312, y: 76.2858}
+  m_AnchoredPosition: {x: 0.34, y: 1.47}
+  m_SizeDelta: {x: 516.1312, y: 35.6748}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1175556501
 MonoBehaviour:
@@ -9877,8 +9877,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35
-  m_fontSizeBase: 35
+  m_fontSize: 40
+  m_fontSizeBase: 40
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -10051,12 +10051,12 @@ MonoBehaviour:
   questlogFoldedOut: {fileID: 1768192057}
   questlogFoldedIn: {fileID: 333703823}
   tasks:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1175556501}
+  - {fileID: 1761037269}
+  - {fileID: 2024154692}
+  - {fileID: 852043156}
+  - {fileID: 1047664451}
+  - {fileID: 1893471144}
 --- !u!1 &1224571179
 GameObject:
   m_ObjectHideFlags: 0
@@ -13938,7 +13938,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.34, y: 0.7363999}
+  m_AnchoredPosition: {x: 0.34003, y: 0.81}
   m_SizeDelta: {x: 516.1312, y: 42.4662}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1761037269
@@ -13988,8 +13988,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35
-  m_fontSizeBase: 35
+  m_fontSize: 40
+  m_fontSizeBase: 40
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -14143,7 +14143,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1219545608}
         m_TargetAssemblyTypeName: QuestlogScript, Assembly-CSharp
         m_MethodName: FoldQuestlogIn
         m_Mode: 1
@@ -14498,8 +14498,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35
-  m_fontSizeBase: 35
+  m_fontSize: 40
+  m_fontSizeBase: 40
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -15839,7 +15839,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.34, y: 0.2963999}
+  m_AnchoredPosition: {x: 0.34003, y: 0.25}
   m_SizeDelta: {x: 516.1312, y: 34.0112}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2024154692
@@ -15889,8 +15889,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 35
-  m_fontSizeBase: 35
+  m_fontSize: 40
+  m_fontSizeBase: 40
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18

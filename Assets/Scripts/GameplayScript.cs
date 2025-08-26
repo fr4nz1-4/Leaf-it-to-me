@@ -182,12 +182,24 @@ public class GameplayScript : MonoBehaviour
             "OK I need to find the next person. What was their name again? Fera? Yes I think that was it. " +
             "Funny, why are some of the flowerbeds looking like a mess? What happened there?");
         
+        yield return new WaitUntil(() => !monologScript.monologPanel.activeSelf);
+        
+        questlogScript.FoldQuestlogOut();
+
         // dialog mit gartenfee
         yield return new WaitUntil(() => _clickedObject != null && _clickedObject.name == "flower_fairy");
         dialogScript.ShowDialogue(flowerfairyDialogue[0], false, false);
+        
+        yield return new WaitUntil(() => !dialogScript.dialogPanel.activeSelf);
+        questlogScript.CompleteTask(0);
+        questlogScript.FoldQuestlogOut();
+
         // rübergehen zu dusche
         // --> auf dusche klicken --> sauber (Animation)
         yield return new WaitUntil(() => _clickedObject.name == "sunflower");
+
+        questlogScript.CompleteTask(1);
+        questlogScript.FoldQuestlogOut();
 
         // zurück zu dialog mit Gartenfee
         yield return new WaitUntil(() => _clickedObject.name == "flower_fairy");
@@ -195,7 +207,9 @@ public class GameplayScript : MonoBehaviour
         destroyedFlowers.GetComponent<PolygonCollider2D>().enabled = true;
         
         yield return new WaitUntil(() => !dialogScript.dialogPanel.activeSelf);
-        
+        questlogScript.CompleteTask(2);
+        questlogScript.FoldQuestlogOut();
+
         // Sprite der Flowerfairy ändern
         flowerfairy.gameObject.GetComponent<SpriteRenderer>().sprite = flowerfairySprite2;
         flowerfairy.gameObject.GetComponent<SpriteRenderer>().flipX = true;
@@ -204,9 +218,10 @@ public class GameplayScript : MonoBehaviour
         // flowerfairy.gameObject.GetComponent<PolygonCollider2D>().isTrigger = false;
         
         // anleitung was als nächstes tun (canopy bauen)
-        monologScript.ShowMonolog("I have to get the problem fixed to get the key but how? " +
-                                  "Maybe I could build a contraption to block the potions falling on the flowerbeds.\n" +
-                                  "I need to look for some materials around here to build some kind of canopy.");
+        // monologScript.ShowMonolog("I have to get the problem fixed to get the key but how? " +
+        //                           "Maybe I could build a contraption to block the potions falling on the flowerbeds.\n" +
+        //                           "I need to look for some materials around here to build some kind of canopy.");
+        
         // frei rumlaufen
         // _clickedObject = null;
         
@@ -218,6 +233,10 @@ public class GameplayScript : MonoBehaviour
         // _clickedObject = null;
         // canopy bauen 
         yield return new WaitUntil(() => _canopyScript.canopyBuild);
+        yield return new WaitUntil(() => !_canopyScript.minigamePanel.activeSelf);
+        
+        questlogScript.CompleteTask(3);
+        questlogScript.FoldQuestlogOut();
         
         // zurück zu dialog mit gartenfee
         // yield return new WaitUntil(() => _clickedObject.name != null || _clickedObject.name == "flower_fairy");
@@ -232,6 +251,8 @@ public class GameplayScript : MonoBehaviour
         // dialogScript.ShowDialogue(flowerfairyDialogue[3]);
         
         yield return new WaitUntil(() => !dialogScript.dialogPanel.activeSelf);
+        questlogScript.FoldQuestlogIn();
+
         // --> SCHLÜSSEl 1!!!
         _closeUpScript.ShowCloseUpPanel(Resources.Load<Sprite>("Sprites/KeySprites/Gross/Gartenfee_Schluessel_gross"));
         yield return new WaitUntil(() => !InputBlocker.Instance.IsBlocked); // mal schauen ob das so geht
