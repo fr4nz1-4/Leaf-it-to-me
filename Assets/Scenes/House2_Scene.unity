@@ -364,6 +364,7 @@ MonoBehaviour:
   monologScript: {fileID: 0}
   text: 
   panel: {fileID: 0}
+  blackoutLaternen: {fileID: 0}
   speechbubbleScript: {fileID: 0}
   dialog: {fileID: 0}
   speechbubbleDialogScript: {fileID: 0}
@@ -472,6 +473,7 @@ MonoBehaviour:
   monologScript: {fileID: 0}
   text: 
   panel: {fileID: 0}
+  blackoutLaternen: {fileID: 0}
   speechbubbleScript: {fileID: 0}
   dialog: {fileID: 0}
   speechbubbleDialogScript: {fileID: 0}
@@ -905,9 +907,9 @@ GameObject:
   m_Component:
   - component: {fileID: 20896401}
   - component: {fileID: 20896400}
-  - component: {fileID: 20896399}
   - component: {fileID: 20896398}
   - component: {fileID: 20896402}
+  - component: {fileID: 20896403}
   m_Layer: 0
   m_Name: mouse (cursor)
   m_TagString: Untagged
@@ -930,42 +932,6 @@ MonoBehaviour:
   cursorTexture: {fileID: 2800000, guid: a3388d4d4c62f4940ad929079ee593e9, type: 3}
   cursorMode: 0
   hotSpot: {x: 0, y: 0}
---- !u!58 &20896399
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 20896397}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_Radius: 1.14
 --- !u!212 &20896400
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1009,8 +975,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 7667210683158665018, guid: 1dc1befc06ac44a93ac9a029b10744f3, type: 3}
+  m_SortingOrder: -2
+  m_Sprite: {fileID: 21300000, guid: 1ca7e69958b3b4480a7d07ee2fd03cab, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1030,8 +996,8 @@ Transform:
   m_GameObject: {fileID: 20896397}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6.4454536, y: -2.4843998, z: -6.600379}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
+  m_LocalPosition: {x: -6.134, y: -2.46, z: -6.600379}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2081775}
@@ -1051,9 +1017,56 @@ MonoBehaviour:
   monologScript: {fileID: 0}
   text: 
   panel: {fileID: 0}
+  blackoutLaternen: {fileID: 0}
   speechbubbleScript: {fileID: 0}
   dialog: {fileID: 0}
   speechbubbleDialogScript: {fileID: 0}
+--- !u!61 &20896403
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 20896397}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.99, y: 0.63}
+    newSize: {x: 0.68, y: 1.16}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 0.99, y: 0.63}
+  m_EdgeRadius: 0
 --- !u!1 &28361757
 GameObject:
   m_ObjectHideFlags: 0
@@ -3414,6 +3427,7 @@ MonoBehaviour:
   monologScript: {fileID: 0}
   text: 
   panel: {fileID: 0}
+  blackoutLaternen: {fileID: 0}
   speechbubbleScript: {fileID: 0}
   dialog: {fileID: 0}
   speechbubbleDialogScript: {fileID: 0}
@@ -3850,7 +3864,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &324685952
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5096,6 +5110,150 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!1 &425840567
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 425840568}
+  - component: {fileID: 425840571}
+  - component: {fileID: 425840570}
+  - component: {fileID: 425840569}
+  m_Layer: 0
+  m_Name: Blackout_nurLaterne
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &425840568
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 425840567}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1516678824}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -1380.5991, y: 0}
+  m_SizeDelta: {x: 6479.55, y: 1080}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &425840569
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 425840567}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 425840570}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1516678823}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2106015264}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &425840570
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 425840567}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 2985a9297dd17d7428654aae09ba97b8, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 1
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &425840571
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 425840567}
+  m_CullTransparentMesh: 1
 --- !u!1 &430558426
 GameObject:
   m_ObjectHideFlags: 0
@@ -5492,6 +5650,7 @@ MonoBehaviour:
   monologScript: {fileID: 0}
   text: 
   panel: {fileID: 1271646534}
+  blackoutLaternen: {fileID: 0}
   speechbubbleScript: {fileID: 0}
   dialog: {fileID: 0}
   speechbubbleDialogScript: {fileID: 0}
@@ -5984,6 +6143,7 @@ MonoBehaviour:
   monologScript: {fileID: 0}
   text: 
   panel: {fileID: 0}
+  blackoutLaternen: {fileID: 0}
   speechbubbleScript: {fileID: 0}
   dialog: {fileID: 0}
   speechbubbleDialogScript: {fileID: 0}
@@ -6909,6 +7069,7 @@ MonoBehaviour:
   monologScript: {fileID: 0}
   text: I looove socks!!
   panel: {fileID: 0}
+  blackoutLaternen: {fileID: 0}
   speechbubbleScript: {fileID: 0}
   dialog: {fileID: 0}
   speechbubbleDialogScript: {fileID: 0}
@@ -7498,11 +7659,12 @@ RectTransform:
   - {fileID: 1768192063}
   - {fileID: 469797917}
   - {fileID: 1225371291}
-  - {fileID: 1147023748}
   - {fileID: 2109473695}
   - {fileID: 1224571180}
   - {fileID: 1271646535}
   - {fileID: 974712730}
+  - {fileID: 1516678824}
+  - {fileID: 1147023748}
   - {fileID: 2106015265}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -7676,6 +7838,7 @@ MonoBehaviour:
   monologScript: {fileID: 0}
   text: 
   panel: {fileID: 0}
+  blackoutLaternen: {fileID: 0}
   speechbubbleScript: {fileID: 0}
   dialog: {fileID: 0}
   speechbubbleDialogScript: {fileID: 0}
@@ -7947,6 +8110,7 @@ GameObject:
   - component: {fileID: 961646836}
   - component: {fileID: 961646835}
   - component: {fileID: 961646834}
+  - component: {fileID: 961646840}
   m_Layer: 0
   m_Name: fllowers
   m_TagString: Untagged
@@ -8039,6 +8203,7 @@ MonoBehaviour:
   monologScript: {fileID: 910976228}
   text: Wow. These flowerbeds look stunning!
   panel: {fileID: 0}
+  blackoutLaternen: {fileID: 0}
   speechbubbleScript: {fileID: 0}
   dialog: {fileID: 0}
   speechbubbleDialogScript: {fileID: 0}
@@ -8049,7 +8214,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 961646830}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Density: 1
   m_Material: {fileID: 0}
@@ -8095,7 +8260,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 961646830}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Density: 1
   m_Material: {fileID: 0}
@@ -8141,7 +8306,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 961646830}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Density: 1
   m_Material: {fileID: 0}
@@ -8187,7 +8352,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 961646830}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Density: 1
   m_Material: {fileID: 0}
@@ -8233,7 +8398,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 961646830}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Density: 1
   m_Material: {fileID: 0}
@@ -8279,7 +8444,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 961646830}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Density: 1
   m_Material: {fileID: 0}
@@ -8318,6 +8483,176 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 3.3049383, y: 1.9361681}
   m_EdgeRadius: 0
+--- !u!60 &961646840
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 961646830}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 47.392517, y: 10.0199995}
+    newSize: {x: 47.392517, y: 10.0199995}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -11.950449, y: -2.7072601}
+      - {x: -11.902718, y: -2.8735752}
+      - {x: -11.566139, y: -3.129718}
+      - {x: -11.679146, y: -3.6785452}
+      - {x: -11.427616, y: -3.7800236}
+      - {x: -11.422679, y: -3.8574016}
+      - {x: -11.456185, y: -4.83725}
+      - {x: -12.95248, y: -4.9314985}
+      - {x: -12.965016, y: -3.8573713}
+      - {x: -12.47229, y: -3.6849673}
+      - {x: -12.791697, y: -3.226965}
+      - {x: -12.986106, y: -2.0506127}
+      - {x: -12.723973, y: -1.0517402}
+      - {x: -11.939125, y: -1.5015246}
+      - {x: -11.817033, y: -2.4166539}
+    - - {x: -2.5110817, y: -1.0270826}
+      - {x: -2.873539, y: -1.6225281}
+      - {x: -2.915855, y: -3.0901823}
+      - {x: -0.9478286, y: -3.260472}
+      - {x: -0.3952621, y: -2.6517277}
+      - {x: 0.47929797, y: -3.0220876}
+      - {x: 0.7176795, y: -2.2005436}
+      - {x: 1.1608138, y: -2.1001704}
+      - {x: 1.5701927, y: -2.5436685}
+      - {x: 5.8599296, y: -2.616792}
+      - {x: 5.8567357, y: -2.1311646}
+      - {x: 6.790267, y: -2.330181}
+      - {x: 6.9108133, y: -3.3153524}
+      - {x: 7.152403, y: -3.6514823}
+      - {x: 9.493645, y: -3.766028}
+      - {x: 9.912397, y: -3.0447657}
+      - {x: 10.377139, y: -3.3671494}
+      - {x: 10.4142685, y: -3.7628055}
+      - {x: 11.698846, y: -3.6271484}
+      - {x: 11.667157, y: -2.5563977}
+      - {x: 12.669084, y: -2.2948313}
+      - {x: 13.27557, y: -2.9311142}
+      - {x: 13.897097, y: -3.3165226}
+      - {x: 14.478866, y: -3.363803}
+      - {x: 14.782303, y: -2.9716203}
+      - {x: 15.140892, y: -3.333078}
+      - {x: 15.661668, y: -3.3194578}
+      - {x: 15.616037, y: -2.5844042}
+      - {x: 16.033928, y: -2.3988445}
+      - {x: 16.594076, y: -2.4779289}
+      - {x: 16.133009, y: -1.7420069}
+      - {x: 16.561106, y: -1.1945629}
+      - {x: 15.0443325, y: -0.7395801}
+      - {x: 14.911038, y: -1.0253046}
+      - {x: 14.506088, y: -1.1498632}
+      - {x: 13.542126, y: -0.7846941}
+      - {x: 11.769747, y: -1.799305}
+      - {x: 11.457243, y: -1.771147}
+      - {x: 11.207193, y: -1.1429846}
+      - {x: 10.768626, y: -1.437746}
+      - {x: 10.116015, y: -0.6370431}
+      - {x: 9.17373, y: -1.0132985}
+      - {x: 8.982241, y: 0.56752956}
+      - {x: 8.73139, y: 0.529736}
+      - {x: 8.486699, y: -0.53898925}
+      - {x: 7.9118524, y: 0.082065195}
+      - {x: 7.684693, y: -0.12106392}
+      - {x: 8.019102, y: -0.8000376}
+      - {x: 7.3692937, y: -0.26627448}
+      - {x: 7.038312, y: -0.3695234}
+      - {x: 5.982105, y: 0.027400762}
+      - {x: 5.6704316, y: -0.13854611}
+      - {x: 4.6195254, y: -0.1982862}
+      - {x: 4.662661, y: 0.08758852}
+      - {x: 2.5564606, y: 0.1765922}
+      - {x: 2.868505, y: -0.77086115}
+      - {x: 1.6523455, y: -0.94101775}
+      - {x: 1.7234854, y: 0.19449687}
+      - {x: 1.3895454, y: 0.07246646}
+      - {x: 1.1964533, y: 0.3919149}
+      - {x: 0.923441, y: -0.9097327}
+      - {x: 0.5666183, y: 0.4953764}
+      - {x: 0.4107324, y: 0.46569157}
+      - {x: 0.44474703, y: -0.530446}
+      - {x: -0.07779624, y: 0.34119233}
+      - {x: -0.5347482, y: -0.111548215}
+      - {x: -1.0025147, y: 0.44966036}
+      - {x: -1.2786106, y: 0.30401486}
+      - {x: -1.1111151, y: -0.21003357}
+      - {x: -1.4546528, y: 0.017076392}
+      - {x: -1.6906824, y: -0.10410766}
+      - {x: -1.707869, y: 0.3110157}
+      - {x: -1.8022351, y: 0.3548794}
+      - {x: -2.1157904, y: -0.0633719}
+      - {x: -2.3824666, y: 0.4559044}
+      - {x: -2.5616846, y: 0.39287448}
+    - - {x: -4.4661894, y: -3.320716}
+      - {x: -4.3967667, y: -3.2512932}
+      - {x: -4.327344, y: -2.8578985}
+      - {x: -4.327344, y: -2.4876444}
+      - {x: -4.3967667, y: -2.37194}
+      - {x: -4.0727944, y: -2.163672}
+      - {x: -4.0033717, y: -2.0479677}
+      - {x: -4.0033717, y: -1.8859816}
+      - {x: -4.1190763, y: -1.7008545}
+      - {x: -4.4893303, y: -1.4925866}
+      - {x: -4.8364434, y: -1.4694457}
+      - {x: -5.090993, y: -1.3306005}
+      - {x: -5.461247, y: -1.3537413}
+      - {x: -5.785219, y: -1.3306005}
+      - {x: -6.155473, y: -1.2843187}
+      - {x: -6.456305, y: -1.2843187}
+      - {x: -6.59515, y: -1.238037}
+      - {x: -6.8497, y: -1.238037}
+      - {x: -7.011686, y: -1.3306005}
+      - {x: -7.2430944, y: -1.3306005}
+      - {x: -7.358799, y: -1.3768822}
+      - {x: -7.705912, y: -1.6777136}
+      - {x: -7.7984757, y: -1.8628407}
+      - {x: -7.7984757, y: -2.7653348}
+      - {x: -7.775335, y: -3.1818707}
+      - {x: -7.729053, y: -3.274434}
+      - {x: -7.590208, y: -3.320716}
+      - {x: -7.173672, y: -3.4132795}
+      - {x: -6.548868, y: -3.482702}
+      - {x: -5.877783, y: -3.482702}
+      - {x: -5.27612, y: -3.4132795}
+      - {x: -4.605035, y: -3.3901386}
+  m_UseDelaunayMesh: 0
 --- !u!1 &974712729
 GameObject:
   m_ObjectHideFlags: 0
@@ -10848,6 +11183,7 @@ MonoBehaviour:
   monologScript: {fileID: 0}
   text: Must you guys be so distruptive? We can be civilised here. It is not a Zoo!
   panel: {fileID: 0}
+  blackoutLaternen: {fileID: 0}
   speechbubbleScript: {fileID: 0}
   dialog: {fileID: 0}
   speechbubbleDialogScript: {fileID: 0}
@@ -11410,6 +11746,82 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1516678823
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1516678824}
+  - component: {fileID: 1516678826}
+  - component: {fileID: 1516678825}
+  m_Layer: 5
+  m_Name: BlackoutPanel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1516678824
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1516678823}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 425840568}
+  m_Father: {fileID: 877438510}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -0.30096436, y: 0.19000244}
+  m_SizeDelta: {x: 5.9298, y: 5.5601}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1516678825
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1516678823}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1516678826
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1516678823}
+  m_CullTransparentMesh: 1
 --- !u!1 &1528188821
 GameObject:
   m_ObjectHideFlags: 0
@@ -11956,6 +12368,7 @@ MonoBehaviour:
   monologScript: {fileID: 0}
   text: 
   panel: {fileID: 0}
+  blackoutLaternen: {fileID: 0}
   speechbubbleScript: {fileID: 0}
   dialog: {fileID: 11400000, guid: a262617e57ce0429888742e6d8b29610, type: 2}
   speechbubbleDialogScript: {fileID: 400908576}
@@ -12100,11 +12513,6 @@ PolygonCollider2D:
       - {x: 0.5, y: -4.015}
       - {x: 0.74, y: -4.015}
       - {x: 0.95, y: -3.995}
-      - {x: 1.09, y: -3.985}
-      - {x: 1.22, y: -3.935}
-      - {x: 1.26, y: -3.905}
-      - {x: 1.24, y: -3.7849998}
-      - {x: 1.18, y: -3.735}
       - {x: 1.04, y: -3.675}
       - {x: 1.0699999, y: -3.585}
       - {x: 1.0699999, y: -3.5349998}
@@ -12610,6 +13018,7 @@ GameObject:
   - component: {fileID: 1642795568}
   - component: {fileID: 1642795569}
   - component: {fileID: 1642795570}
+  - component: {fileID: 1642795571}
   m_Layer: 0
   m_Name: laterne
   m_TagString: Untagged
@@ -12701,10 +13110,139 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   monologScript: {fileID: 0}
   text: 
-  panel: {fileID: 1711516437}
+  panel: {fileID: 1516678823}
+  blackoutLaternen: {fileID: 1952258347}
   speechbubbleScript: {fileID: 0}
   dialog: {fileID: 0}
   speechbubbleDialogScript: {fileID: 0}
+--- !u!60 &1642795571
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1642795567}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 46.88397, y: 2.7700002}
+    newSize: {x: 46.88397, y: 2.7700002}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -2.197686, y: -1.3621075}
+      - {x: -2.1747935, y: -1.385}
+      - {x: -1.5795869, y: -1.385}
+      - {x: -1.419339, y: -1.3163223}
+      - {x: -1.419339, y: -0.76690084}
+      - {x: -1.4422314, y: -0.6982232}
+      - {x: -1.6482645, y: -0.40061983}
+      - {x: -1.9000827, y: -0.40061983}
+      - {x: -2.197686, y: -0.65243804}
+    - - {x: 2.9073555, y: -0.35483474}
+      - {x: 2.6097522, y: -0.5837603}
+      - {x: 2.6097522, y: -1.2247521}
+      - {x: 2.6326447, y: -1.3392149}
+      - {x: 3.2507439, y: -1.3392149}
+      - {x: 3.3880992, y: -1.2476447}
+      - {x: 3.3880992, y: -0.6982232}
+      - {x: 3.0676033, y: -0.35483474}
+    - - {x: -7.005124, y: -0.19458678}
+      - {x: -7.188265, y: -0.19458678}
+      - {x: -7.2798347, y: -0.21747935}
+      - {x: -7.4629755, y: -0.5837603}
+      - {x: -7.4629755, y: -1.178967}
+      - {x: -7.3485126, y: -1.2018596}
+      - {x: -6.7761984, y: -1.2018596}
+      - {x: -6.6846285, y: -1.0645041}
+      - {x: -6.6846285, y: -0.4921901}
+    - - {x: 6.0665293, y: -0.40061983}
+      - {x: 5.654463, y: -0.40061983}
+      - {x: 5.4255376, y: -0.4235124}
+      - {x: 5.3110747, y: -0.4235124}
+      - {x: 5.1050415, y: -0.65243804}
+      - {x: 5.1050415, y: -0.9042562}
+      - {x: 5.44843, y: -1.1102893}
+      - {x: 6.0894217, y: -1.1102893}
+      - {x: 6.1352067, y: -0.9042562}
+      - {x: 6.1352067, y: -0.44640496}
+    - - {x: -12.316198, y: 0.057231408}
+      - {x: -12.613802, y: -0.35483474}
+      - {x: -12.613802, y: -0.9958265}
+      - {x: -12.590909, y: -1.0873967}
+      - {x: -11.949918, y: -1.0873967}
+      - {x: -11.812562, y: -0.92714876}
+      - {x: -11.812562, y: -0.21747935}
+      - {x: -12.155951, y: 0.057231408}
+    - - {x: -23.190166, y: -0.17169422}
+      - {x: -23.419092, y: -0.37772727}
+      - {x: -23.419092, y: -1.0187191}
+      - {x: -23.05281, y: -1.0187191}
+      - {x: -22.846777, y: -0.95004135}
+      - {x: -22.846777, y: -0.46929753}
+      - {x: -23.029919, y: -0.17169422}
+    - - {x: -16.986282, y: -0.011446281}
+      - {x: -17.2381, y: -0.35483474}
+      - {x: -17.2381, y: -0.9729339}
+      - {x: -17.215208, y: -0.9958265}
+      - {x: -16.551323, y: -0.9958265}
+      - {x: -16.551323, y: -0.28615704}
+      - {x: -16.642893, y: -0.011446281}
+    - - {x: -19.20686, y: 0.011446281}
+      - {x: -19.435785, y: -0.26326448}
+      - {x: -19.435785, y: -0.81268597}
+      - {x: -19.390001, y: -0.83557856}
+      - {x: -18.863472, y: -0.83557856}
+      - {x: -18.863472, y: -0.08012397}
+      - {x: -18.886364, y: 0.011446281}
+    - - {x: 23.258844, y: 1.2476447}
+      - {x: 23.075703, y: 1.2476447}
+      - {x: 22.984133, y: 1.178967}
+      - {x: 22.915455, y: 0.7440083}
+      - {x: 22.915455, y: 0.35483474}
+      - {x: 22.96124, y: 0.28615704}
+      - {x: 23.350414, y: 0.28615704}
+      - {x: 23.441984, y: 0.4235124}
+      - {x: 23.441984, y: 1.1560744}
+    - - {x: 17.169422, y: 1.3621075}
+      - {x: 17.077852, y: 1.3392149}
+      - {x: 16.871819, y: 1.1102893}
+      - {x: 16.871819, y: 0.40061983}
+      - {x: 17.650166, y: 0.40061983}
+      - {x: 17.650166, y: 0.9958265}
+      - {x: 17.398348, y: 1.3621075}
+  m_UseDelaunayMesh: 0
 --- !u!1 &1655998237
 GameObject:
   m_ObjectHideFlags: 0
@@ -13376,7 +13914,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1711516438
 Transform:
   m_ObjectHideFlags: 0
@@ -13390,8 +13928,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 324685953}
   - {fileID: 1952258348}
+  - {fileID: 324685953}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1718168412
@@ -13886,6 +14424,7 @@ MonoBehaviour:
   monologScript: {fileID: 0}
   text: 
   panel: {fileID: 0}
+  blackoutLaternen: {fileID: 0}
   speechbubbleScript: {fileID: 0}
   dialog: {fileID: 0}
   speechbubbleDialogScript: {fileID: 0}
@@ -14721,13 +15260,14 @@ GameObject:
   - component: {fileID: 1952258350}
   - component: {fileID: 1952258351}
   - component: {fileID: 1952258352}
-  m_Layer: 0
+  - component: {fileID: 1952258353}
+  m_Layer: 5
   m_Name: Blackout_nurLaterne
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1952258348
 Transform:
   m_ObjectHideFlags: 0
@@ -14786,7 +15326,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 3
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 2985a9297dd17d7428654aae09ba97b8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -14812,7 +15352,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   monologScript: {fileID: 0}
   text: 
-  panel: {fileID: 1711516437}
+  panel: {fileID: 1516678823}
+  blackoutLaternen: {fileID: 0}
   speechbubbleScript: {fileID: 0}
   dialog: {fileID: 0}
   speechbubbleDialogScript: {fileID: 0}
@@ -14942,6 +15483,62 @@ PolygonCollider2D:
       - {x: 25.095953, y: -1.1549133}
       - {x: 24.783815, y: -1.4046242}
   m_UseDelaunayMesh: 0
+--- !u!114 &1952258353
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1952258347}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 0}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1516678823}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1953193471
 GameObject:
   m_ObjectHideFlags: 0
@@ -15198,6 +15795,7 @@ MonoBehaviour:
   monologScript: {fileID: 910976228}
   text: I wanna take this flower with me. I might need it for something else.
   panel: {fileID: 0}
+  blackoutLaternen: {fileID: 0}
   speechbubbleScript: {fileID: 0}
   dialog: {fileID: 0}
   speechbubbleDialogScript: {fileID: 0}
@@ -15486,6 +16084,7 @@ MonoBehaviour:
   monologScript: {fileID: 0}
   text: Wheeeeee, Wheeeeeee, Wheeeee
   panel: {fileID: 0}
+  blackoutLaternen: {fileID: 0}
   speechbubbleScript: {fileID: 0}
   dialog: {fileID: 0}
   speechbubbleDialogScript: {fileID: 0}
@@ -16405,6 +17004,7 @@ MonoBehaviour:
   monologScript: {fileID: 0}
   text: I want to read a book....
   panel: {fileID: 0}
+  blackoutLaternen: {fileID: 0}
   speechbubbleScript: {fileID: 0}
   dialog: {fileID: 0}
   speechbubbleDialogScript: {fileID: 0}

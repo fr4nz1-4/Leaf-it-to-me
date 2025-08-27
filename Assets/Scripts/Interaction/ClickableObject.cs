@@ -12,6 +12,7 @@ public class ClickableObject : MonoBehaviour
     public MonologScript monologScript;
     public string text;
     public GameObject panel;
+    public GameObject blackoutLaternen;
     private AudioSource _audioSource;
     public SpeechbubbleScript speechbubbleScript;
     private SpriteRenderer _spriteRenderer;
@@ -62,11 +63,13 @@ public class ClickableObject : MonoBehaviour
         if (gameObject.name == "laterne")
         {
             panel.SetActive(true);
+            blackoutLaternen.SetActive(true);
         }
 
         if (gameObject.name == "Blackout_nurLaterne")
         {
             panel.SetActive(false);
+            gameObject.SetActive(false);
         }
 
         if (dialog != null)
