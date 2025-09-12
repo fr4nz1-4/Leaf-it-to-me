@@ -262,7 +262,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: talk to Ella
+  m_text: Talk to Ella
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d059f20b7b4c44a069dc5f9931ed9492, type: 2}
   m_sharedMaterial: {fileID: -107186456025546579, guid: d059f20b7b4c44a069dc5f9931ed9492, type: 2}
@@ -559,6 +559,7 @@ MonoBehaviour:
   monologScript: {fileID: 1880559953}
   text: This welcomemat is so dirty, who cleans here?
   panel: {fileID: 0}
+  blackoutLaternen: {fileID: 0}
   speechbubbleScript: {fileID: 0}
   dialog: {fileID: 0}
   speechbubbleDialogScript: {fileID: 0}
@@ -1334,6 +1335,7 @@ MonoBehaviour:
   text: Wow I have never been to the Sea and I have never build a Sandcastle. Must
     be fun.....
   panel: {fileID: 0}
+  blackoutLaternen: {fileID: 0}
   speechbubbleScript: {fileID: 0}
   dialog: {fileID: 0}
   speechbubbleDialogScript: {fileID: 0}
@@ -2420,6 +2422,7 @@ MonoBehaviour:
   text: Oh there are just books in here. I guess as a child you have enough time
     to read.
   panel: {fileID: 0}
+  blackoutLaternen: {fileID: 0}
   speechbubbleScript: {fileID: 0}
   dialog: {fileID: 0}
   speechbubbleDialogScript: {fileID: 0}
@@ -2473,6 +2476,7 @@ MonoBehaviour:
   monologScript: {fileID: 0}
   text: 
   panel: {fileID: 0}
+  blackoutLaternen: {fileID: 0}
   speechbubbleScript: {fileID: 0}
   dialog: {fileID: 0}
   speechbubbleDialogScript: {fileID: 0}
@@ -2975,7 +2979,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: talk to Ella
+  m_text: Talk to Ella
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d059f20b7b4c44a069dc5f9931ed9492, type: 2}
   m_sharedMaterial: {fileID: -107186456025546579, guid: d059f20b7b4c44a069dc5f9931ed9492, type: 2}
@@ -3205,6 +3209,7 @@ MonoBehaviour:
   text: "They do have lot\xB4s of books. I wonder if I can recognize one from my
     childhood..... Oh yes it\xB4s the very gigantic hungry caterpillar!"
   panel: {fileID: 0}
+  blackoutLaternen: {fileID: 0}
   speechbubbleScript: {fileID: 0}
   dialog: {fileID: 0}
   speechbubbleDialogScript: {fileID: 0}
@@ -5584,6 +5589,7 @@ MonoBehaviour:
   monologScript: {fileID: 1880559953}
   text: Just bananas... Just bananas...
   panel: {fileID: 0}
+  blackoutLaternen: {fileID: 0}
   speechbubbleScript: {fileID: 0}
   dialog: {fileID: 0}
   speechbubbleDialogScript: {fileID: 0}
@@ -5661,6 +5667,7 @@ GameObject:
   - component: {fileID: 469375047}
   - component: {fileID: 469375046}
   - component: {fileID: 469375051}
+  - component: {fileID: 469375052}
   m_Layer: 6
   m_Name: rock-paper-scissor_child
   m_TagString: Untagged
@@ -6012,6 +6019,28 @@ PolygonCollider2D:
       - {x: -0.60499996, y: -0.125}
       - {x: -0.59499997, y: -0.125}
   m_UseDelaunayMesh: 0
+--- !u!95 &469375052
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 469375045}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 6d7dbb494d2094c0887aa74c73723e35, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &481153561
 GameObject:
   m_ObjectHideFlags: 0
@@ -7096,6 +7125,7 @@ MonoBehaviour:
   text: Oh there is one pen missing from this layer. The developers are just cutting
     corners.
   panel: {fileID: 0}
+  blackoutLaternen: {fileID: 0}
   speechbubbleScript: {fileID: 0}
   dialog: {fileID: 0}
   speechbubbleDialogScript: {fileID: 0}
@@ -7730,6 +7760,7 @@ GameObject:
   - component: {fileID: 608305783}
   - component: {fileID: 608305784}
   - component: {fileID: 608305785}
+  - component: {fileID: 608305786}
   m_Layer: 6
   m_Name: socke drache
   m_TagString: Untagged
@@ -7923,9 +7954,32 @@ MonoBehaviour:
   monologScript: {fileID: 0}
   text: I looove socks!!
   panel: {fileID: 0}
+  blackoutLaternen: {fileID: 0}
   speechbubbleScript: {fileID: 382491528}
   dialog: {fileID: 0}
   speechbubbleDialogScript: {fileID: 0}
+--- !u!95 &608305786
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 608305781}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2a8cba683043049688791423c3552ee6, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &619394800
 GameObject:
   m_ObjectHideFlags: 0
@@ -8022,6 +8076,7 @@ GameObject:
   - component: {fileID: 634193493}
   - component: {fileID: 634193494}
   - component: {fileID: 634193495}
+  - component: {fileID: 634193496}
   m_Layer: 6
   m_Name: wolf
   m_TagString: Untagged
@@ -8375,9 +8430,32 @@ MonoBehaviour:
   monologScript: {fileID: 0}
   text: Wheeeeee, Wheeeeeee, Wheeeee
   panel: {fileID: 0}
+  blackoutLaternen: {fileID: 0}
   speechbubbleScript: {fileID: 570521421}
   dialog: {fileID: 0}
   speechbubbleDialogScript: {fileID: 0}
+--- !u!95 &634193496
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 634193491}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 14c93e960f7eb43d9a7842420a63a662, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &642276689
 GameObject:
   m_ObjectHideFlags: 0
@@ -8517,8 +8595,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   monologScript: {fileID: 1880559953}
-  text: Oh, I wonder what I can use this for?
+  text: Looks like they're doing craftswork here
   panel: {fileID: 0}
+  blackoutLaternen: {fileID: 0}
   speechbubbleScript: {fileID: 0}
   dialog: {fileID: 0}
   speechbubbleDialogScript: {fileID: 0}
@@ -8817,6 +8896,7 @@ MonoBehaviour:
   monologScript: {fileID: 1880559953}
   text: 1,2,3,4,5,6,7,8,9,10,11..... Why are there so many socks in here?????
   panel: {fileID: 0}
+  blackoutLaternen: {fileID: 0}
   speechbubbleScript: {fileID: 0}
   dialog: {fileID: 0}
   speechbubbleDialogScript: {fileID: 0}
@@ -9333,6 +9413,7 @@ MonoBehaviour:
     vs. Plants limited edition in gold??????..... How did it get here???... Will
     they notice if I take it?
   panel: {fileID: 0}
+  blackoutLaternen: {fileID: 0}
   speechbubbleScript: {fileID: 0}
   dialog: {fileID: 0}
   speechbubbleDialogScript: {fileID: 0}
@@ -10188,6 +10269,7 @@ MonoBehaviour:
   monologScript: {fileID: 0}
   text: 
   panel: {fileID: 0}
+  blackoutLaternen: {fileID: 0}
   speechbubbleScript: {fileID: 0}
   dialog: {fileID: 0}
   speechbubbleDialogScript: {fileID: 0}
@@ -10475,6 +10557,7 @@ MonoBehaviour:
   monologScript: {fileID: 1880559953}
   text: Did one of the kids bite ther shoes or is this just fashion here?
   panel: {fileID: 0}
+  blackoutLaternen: {fileID: 0}
   speechbubbleScript: {fileID: 0}
   dialog: {fileID: 0}
   speechbubbleDialogScript: {fileID: 0}
@@ -12134,7 +12217,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: click on the tree in the right corner to go to the next room
+  m_text: Click on the tree in the right corner to go to the next room
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d059f20b7b4c44a069dc5f9931ed9492, type: 2}
   m_sharedMaterial: {fileID: -107186456025546579, guid: d059f20b7b4c44a069dc5f9931ed9492, type: 2}
@@ -12600,6 +12683,7 @@ MonoBehaviour:
   monologScript: {fileID: 0}
   text: 
   panel: {fileID: 0}
+  blackoutLaternen: {fileID: 0}
   speechbubbleScript: {fileID: 0}
   dialog: {fileID: 0}
   speechbubbleDialogScript: {fileID: 0}
@@ -13568,6 +13652,7 @@ GameObject:
   - component: {fileID: 1307268197}
   - component: {fileID: 1307268198}
   - component: {fileID: 1307268199}
+  - component: {fileID: 1307268200}
   m_Layer: 6
   m_Name: tic-tac-toe_child
   m_TagString: Untagged
@@ -13824,6 +13909,28 @@ PolygonCollider2D:
       - {x: 0.475, y: -1.43}
       - {x: 0.645, y: -1.39}
   m_UseDelaunayMesh: 0
+--- !u!95 &1307268200
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1307268193}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4697c8d8db78c4927bd763d398060ee1, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1332901732
 GameObject:
   m_ObjectHideFlags: 0
@@ -14064,6 +14171,7 @@ MonoBehaviour:
   monologScript: {fileID: 0}
   text: 
   panel: {fileID: 0}
+  blackoutLaternen: {fileID: 0}
   speechbubbleScript: {fileID: 0}
   dialog: {fileID: 0}
   speechbubbleDialogScript: {fileID: 0}
@@ -14730,6 +14838,7 @@ MonoBehaviour:
   monologScript: {fileID: 0}
   text: 
   panel: {fileID: 0}
+  blackoutLaternen: {fileID: 0}
   speechbubbleScript: {fileID: 0}
   dialog: {fileID: 0}
   speechbubbleDialogScript: {fileID: 0}
@@ -15116,6 +15225,7 @@ MonoBehaviour:
   monologScript: {fileID: 1880559953}
   text: Woa, why are there so many stuffed animales in here?
   panel: {fileID: 0}
+  blackoutLaternen: {fileID: 0}
   speechbubbleScript: {fileID: 0}
   dialog: {fileID: 0}
   speechbubbleDialogScript: {fileID: 0}
@@ -15289,7 +15399,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1195e1533104243dc8717cf3e26f3a59, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  closeUpSprite: {fileID: 21300000, guid: 97e231408160649f8b5936ec1c0c454f, type: 3}
+  closeUpSprite: {fileID: -173493560481050836, guid: 91d79247380e748778db16793c405cc5, type: 3}
   closeUpScript: {fileID: 957420320}
   toInventory: 0
 --- !u!114 &1403469595
@@ -15307,6 +15417,7 @@ MonoBehaviour:
   monologScript: {fileID: 0}
   text: 
   panel: {fileID: 0}
+  blackoutLaternen: {fileID: 0}
   speechbubbleScript: {fileID: 0}
   dialog: {fileID: 0}
   speechbubbleDialogScript: {fileID: 0}
@@ -15769,6 +15880,7 @@ MonoBehaviour:
   monologScript: {fileID: 0}
   text: 
   panel: {fileID: 0}
+  blackoutLaternen: {fileID: 0}
   speechbubbleScript: {fileID: 0}
   dialog: {fileID: 0}
   speechbubbleDialogScript: {fileID: 0}
@@ -15929,6 +16041,7 @@ GameObject:
   - component: {fileID: 1508950824}
   - component: {fileID: 1508950825}
   - component: {fileID: 1508950826}
+  - component: {fileID: 1508950827}
   m_Layer: 6
   m_Name: plant
   m_TagString: Untagged
@@ -16193,9 +16306,32 @@ MonoBehaviour:
   monologScript: {fileID: 0}
   text: Must you guys be so distruptive? We can be civilised here. It is not a Zoo!
   panel: {fileID: 0}
+  blackoutLaternen: {fileID: 0}
   speechbubbleScript: {fileID: 649074653}
   dialog: {fileID: 0}
   speechbubbleDialogScript: {fileID: 0}
+--- !u!95 &1508950827
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1508950822}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 471276fd86efe481f83c925bc239bc94, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1509770323
 GameObject:
   m_ObjectHideFlags: 0
@@ -17574,6 +17710,7 @@ MonoBehaviour:
   monologScript: {fileID: 0}
   text: 
   panel: {fileID: 0}
+  blackoutLaternen: {fileID: 0}
   speechbubbleScript: {fileID: 0}
   dialog: {fileID: 0}
   speechbubbleDialogScript: {fileID: 0}
@@ -18042,6 +18179,7 @@ MonoBehaviour:
   monologScript: {fileID: 0}
   text: 
   panel: {fileID: 0}
+  blackoutLaternen: {fileID: 0}
   speechbubbleScript: {fileID: 0}
   dialog: {fileID: 0}
   speechbubbleDialogScript: {fileID: 0}
@@ -18585,6 +18723,7 @@ MonoBehaviour:
   monologScript: {fileID: 1880559953}
   text: Nice, Some child can take care of themself. It smells like perfume
   panel: {fileID: 0}
+  blackoutLaternen: {fileID: 0}
   speechbubbleScript: {fileID: 0}
   dialog: {fileID: 0}
   speechbubbleDialogScript: {fileID: 0}
@@ -20044,6 +20183,7 @@ GameObject:
   - component: {fileID: 1956495667}
   - component: {fileID: 1956495668}
   - component: {fileID: 1956495669}
+  - component: {fileID: 1956495670}
   m_Layer: 6
   m_Name: eule
   m_TagString: Untagged
@@ -20249,9 +20389,32 @@ MonoBehaviour:
   monologScript: {fileID: 0}
   text: I want to read a book....
   panel: {fileID: 0}
+  blackoutLaternen: {fileID: 0}
   speechbubbleScript: {fileID: 830538983}
   dialog: {fileID: 0}
   speechbubbleDialogScript: {fileID: 0}
+--- !u!95 &1956495670
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1956495665}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a185b1df7f4f44c9b9bcbaf26d4098c2, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1959269829
 GameObject:
   m_ObjectHideFlags: 0
@@ -20552,6 +20715,7 @@ MonoBehaviour:
   monologScript: {fileID: 1880559953}
   text: There is a stone in here... with googly eyes.... And a nametag..... Stoney
   panel: {fileID: 0}
+  blackoutLaternen: {fileID: 0}
   speechbubbleScript: {fileID: 0}
   dialog: {fileID: 0}
   speechbubbleDialogScript: {fileID: 0}
@@ -21345,6 +21509,7 @@ MonoBehaviour:
   text: Oh this kid is a dancer. There are Point Shoes in here, in a weird shape
     though.
   panel: {fileID: 0}
+  blackoutLaternen: {fileID: 0}
   speechbubbleScript: {fileID: 0}
   dialog: {fileID: 0}
   speechbubbleDialogScript: {fileID: 0}
@@ -22084,7 +22249,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: find the coffee (in the kitchen) and fill the cup
+  m_text: Find the coffee (in the kitchen) and fill the cup
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d059f20b7b4c44a069dc5f9931ed9492, type: 2}
   m_sharedMaterial: {fileID: -107186456025546579, guid: d059f20b7b4c44a069dc5f9931ed9492, type: 2}
@@ -22313,6 +22478,7 @@ MonoBehaviour:
   monologScript: {fileID: 1880559953}
   text: What is this smell? Did somebody lit a candle in here?
   panel: {fileID: 0}
+  blackoutLaternen: {fileID: 0}
   speechbubbleScript: {fileID: 0}
   dialog: {fileID: 0}
   speechbubbleDialogScript: {fileID: 0}

@@ -996,7 +996,7 @@ Transform:
   m_GameObject: {fileID: 20896397}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6.134, y: -2.46, z: -6.600379}
+  m_LocalPosition: {x: -5.972, y: -2.46, z: -6.600379}
   m_LocalScale: {x: 0.8, y: 0.8, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5722,6 +5722,7 @@ GameObject:
   - component: {fileID: 444948347}
   - component: {fileID: 444948345}
   - component: {fileID: 444948348}
+  - component: {fileID: 444948349}
   m_Layer: 6
   m_Name: flower_fairy
   m_TagString: Untagged
@@ -6147,6 +6148,28 @@ MonoBehaviour:
   speechbubbleScript: {fileID: 0}
   dialog: {fileID: 0}
   speechbubbleDialogScript: {fileID: 0}
+--- !u!95 &444948349
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 444948343}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: dee78b272d1c245e3a6b572305575fc9, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &469797914
 GameObject:
   m_ObjectHideFlags: 0
@@ -12276,6 +12299,7 @@ GameObject:
   - component: {fileID: 1611284138}
   - component: {fileID: 1611284139}
   - component: {fileID: 1611284140}
+  - component: {fileID: 1611284141}
   m_Layer: 0
   m_Name: pav
   m_TagString: Untagged
@@ -12360,7 +12384,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1611284136}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 06e025fc324d246b597c16f593ed738a, type: 3}
   m_Name: 
@@ -12827,6 +12851,28 @@ PolygonCollider2D:
       - {x: -2.82, y: -3.925}
       - {x: -2.82, y: -3.905}
   m_UseDelaunayMesh: 0
+--- !u!95 &1611284141
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1611284136}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 48b857f08698e4f3dbb973cf8b27ee79, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1641464462
 GameObject:
   m_ObjectHideFlags: 0
@@ -13122,7 +13168,7 @@ PolygonCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1642795567}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Density: 1
   m_Material: {fileID: 0}

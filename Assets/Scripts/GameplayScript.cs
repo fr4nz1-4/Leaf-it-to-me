@@ -213,6 +213,7 @@ public class GameplayScript : MonoBehaviour
         // Sprite der Flowerfairy ändern
         flowerfairy.gameObject.GetComponent<SpriteRenderer>().sprite = flowerfairySprite2;
         flowerfairy.gameObject.GetComponent<SpriteRenderer>().flipX = true;
+        // flowerfairy.gameObject.GetComponent<Animator>().
         Destroy(flowerfairy.gameObject.GetComponent<PolygonCollider2D>());
         flowerfairy.gameObject.AddComponent<PolygonCollider2D>();
         // flowerfairy.gameObject.GetComponent<PolygonCollider2D>().isTrigger = false;
