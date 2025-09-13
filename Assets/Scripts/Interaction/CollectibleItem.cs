@@ -33,14 +33,15 @@ public class CollectibleItem : MonoBehaviour
             }
         } 
         
-        if (gameObject.name != "logs")
-        {
-            gameObject.SetActive(false);
-        }
+        // if (gameObject.name != "logs")
+        // {
+        //     gameObject.SetActive(false);
+        // }
         
         if (toInventory)
         {
             GameObject.Find("ItembarManager").GetComponent<ItembarScript>().add_item(closeUpSprite);
+            gameObject.SetActive(false);
         }
     }
     

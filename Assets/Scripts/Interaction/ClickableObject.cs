@@ -76,6 +76,11 @@ public class ClickableObject : MonoBehaviour
         {
             speechbubbleDialogScript.ShowDialogue(dialog);
         }
+
+        if (panel != null)
+        {
+            panel.SetActive(true);
+        }
     }
     
     private void OnMouseOver()

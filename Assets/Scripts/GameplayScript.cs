@@ -15,12 +15,14 @@ public class GameplayScript : MonoBehaviour
     public Image key1;
     [SerializeField] private ItembarScript _itembar;
     [SerializeField] private QuestlogScript questlogScript;
+    [SerializeField] private newQuestScript questScript;
     private KindergardenfairyScript _kindergardenfairyScript;
     [SerializeField] private CloseUpScript _closeUpScript;
     public GameObject flowerfairy;
     public GameObject kindergardenFairyCycle;
     [SerializeField] private GameObject _kindergardenFairy;
     private GameObject _clickedObject;
+    [SerializeField] private GameObject coffee;
     private Image _cup;
     private Sprite _fullCupSprite;
     private Sprite _emptyCupSprite;
@@ -83,6 +85,7 @@ public class GameplayScript : MonoBehaviour
         _treeButton.SetActive(false);
 		RockPaperScissorsScript.MinigamePlayed = false;
         TicTacToeScript.MinigamePlayed = false;
+        coffee.gameObject.GetComponent<PolygonCollider2D>().enabled = false;
         // Prolog abspielen --> monologbar mit Cape-Main-Charakter im hintergrund
         // yield return StartCoroutine(prologScript.ShowProlog(kindergardenDialogue[0]));
         // yield return new WaitUntil(() => !prologScript.prologPanel.activeSelf);
@@ -93,7 +96,7 @@ public class GameplayScript : MonoBehaviour
         // dann frei rumbewegen
         yield return new WaitUntil(() => !dialogScript.dialogPanel.activeSelf);
 
-        questlogScript.FoldQuestlogOut();
+        // questlogScript.FoldQuestlogOut();
 /*
         */
         // --> ella danach nicht mehr anklickbar
@@ -102,12 +105,14 @@ public class GameplayScript : MonoBehaviour
         
         // rock paper scissors kind MUSS angeklickt werden --> checken
         yield return new WaitUntil(() => RockPaperScissorsScript.MinigamePlayed);
+        questScript.nextTask();
 
-        questlogScript.CompleteTask(0);
-        questlogScript.FoldQuestlogOut();
+        // questlogScript.CompleteTask(0);
+        // questlogScript.FoldQuestlogOut();
         
         yield return new WaitUntil(() => TicTacToeScript.MinigamePlayed);
-        questlogScript.CompleteTask(1);
+        // questlogScript.CompleteTask(1);
+        questScript.nextTask();
 
         // Sprite anpassen (Ella mit leerer Tasse)
         // _kindergardenFairy.GetComponent<SpriteRenderer>().sprite =
@@ -122,8 +127,9 @@ public class GameplayScript : MonoBehaviour
 
         dialogScript.ShowDialogue(kindergardenDialogue[2], false, false);
         yield return new WaitUntil(() => !dialogScript.dialogPanel.activeSelf);
-
-        questlogScript.CompleteTask(2);
+        coffee.gameObject.GetComponent<PolygonCollider2D>().enabled = true;
+        // questlogScript.CompleteTask(2);
+        questScript.nextTask();
 
         // Sprite anpassen (Ella ohne Tasse)
         _kindergardenFairy.GetComponent<SpriteRenderer>().sprite =
@@ -148,7 +154,8 @@ public class GameplayScript : MonoBehaviour
         // --> wenn ja, sprite von tasse austauschen
         _itembar.ReplaceItemSprite(_cup, _fullCupSprite);
         
-        questlogScript.CompleteTask(3);
+        // questlogScript.CompleteTask(3);
+        questScript.nextTask();
 
 		// Closeup script für volle tasse
         _closeUpScript.ShowCloseUpPanel(_fullCupSprite);
@@ -158,8 +165,9 @@ public class GameplayScript : MonoBehaviour
         dialogScript.ShowDialogue(kindergardenDialogue[3], false, false);
         yield return new WaitUntil(() => !dialogScript.dialogPanel.activeSelf);
         
-        questlogScript.CompleteTask(4);
-        
+        // questlogScript.CompleteTask(4);
+        questScript.nextTask();
+
         // Sprite anpassen (Ella mit kaffee)
         _kindergardenFairy.GetComponent<SpriteRenderer>().sprite =
             Resources.Load<Sprite>("Sprites/CharacterSprites/kindergardenfairy/ella with coffee");
@@ -184,22 +192,24 @@ public class GameplayScript : MonoBehaviour
         
         yield return new WaitUntil(() => !monologScript.monologPanel.activeSelf);
         
-        questlogScript.FoldQuestlogOut();
+        // questlogScript.FoldQuestlogOut();
 
         // dialog mit gartenfee
         yield return new WaitUntil(() => _clickedObject != null && _clickedObject.name == "flower_fairy");
         dialogScript.ShowDialogue(flowerfairyDialogue[0], false, false);
         
         yield return new WaitUntil(() => !dialogScript.dialogPanel.activeSelf);
-        questlogScript.CompleteTask(0);
-        questlogScript.FoldQuestlogOut();
+        // questlogScript.CompleteTask(0);
+        // questlogScript.FoldQuestlogOut();
+        questScript.nextTask();
 
         // rübergehen zu dusche
         // --> auf dusche klicken --> sauber (Animation)
         yield return new WaitUntil(() => _clickedObject.name == "sunflower");
 
-        questlogScript.CompleteTask(1);
-        questlogScript.FoldQuestlogOut();
+        // questlogScript.CompleteTask(1);
+        // questlogScript.FoldQuestlogOut();
+        questScript.nextTask();
 
         // zurück zu dialog mit Gartenfee
         yield return new WaitUntil(() => _clickedObject.name == "flower_fairy");
@@ -207,8 +217,9 @@ public class GameplayScript : MonoBehaviour
         destroyedFlowers.GetComponent<PolygonCollider2D>().enabled = true;
         
         yield return new WaitUntil(() => !dialogScript.dialogPanel.activeSelf);
-        questlogScript.CompleteTask(2);
-        questlogScript.FoldQuestlogOut();
+        // questlogScript.CompleteTask(2);
+        // questlogScript.FoldQuestlogOut();
+        questScript.nextTask();
 
         // Sprite der Flowerfairy ändern
         flowerfairy.gameObject.GetComponent<SpriteRenderer>().sprite = flowerfairySprite2;
@@ -236,9 +247,10 @@ public class GameplayScript : MonoBehaviour
         yield return new WaitUntil(() => _canopyScript.canopyBuild);
         yield return new WaitUntil(() => !_canopyScript.minigamePanel.activeSelf);
         
-        questlogScript.CompleteTask(3);
-        questlogScript.FoldQuestlogOut();
-        
+        // questlogScript.CompleteTask(3);
+        // questlogScript.FoldQuestlogOut();
+        questScript.nextTask();
+
         // zurück zu dialog mit gartenfee
         // yield return new WaitUntil(() => _clickedObject.name != null || _clickedObject.name == "flower_fairy");
         yield return WaitForClick("flower_fairy");
@@ -252,7 +264,7 @@ public class GameplayScript : MonoBehaviour
         // dialogScript.ShowDialogue(flowerfairyDialogue[3]);
         
         yield return new WaitUntil(() => !dialogScript.dialogPanel.activeSelf);
-        questlogScript.FoldQuestlogIn();
+        // questlogScript.FoldQuestlogIn();
 
         // --> SCHLÜSSEl 1!!!
         _closeUpScript.ShowCloseUpPanel(Resources.Load<Sprite>("Sprites/KeySprites/Gross/Gartenfee_Schluessel_gross"));
