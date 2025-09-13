@@ -8,34 +8,42 @@ using Image = UnityEngine.UI.Image;
 
 public class GameplayScript : MonoBehaviour
 {
-    public PrologScript prologScript;
+    // --------------------------- allgemein ---------------------------
     public DialogUIScript dialogScript;
-    public DialogLine[] kindergardenDialogue;
-    public DialogLine[] flowerfairyDialogue;
-    public Image key1;
+    public MonologScript monologScript;
     [SerializeField] private ItembarScript _itembar;
+    [SerializeField] private CloseUpScript _closeUpScript;
     [SerializeField] private QuestlogScript questlogScript;
     [SerializeField] private newQuestScript questScript;
-    private KindergardenfairyScript _kindergardenfairyScript;
-    [SerializeField] private CloseUpScript _closeUpScript;
-    public GameObject flowerfairy;
-    public GameObject kindergardenFairyCycle;
-    [SerializeField] private GameObject _kindergardenFairy;
+    public GameObject _treeButton;
     private GameObject _clickedObject;
+
+    // --------------------------- room 1 ---------------------------
+    public PrologScript prologScript;
+    public DialogLine[] kindergardenDialogue;
+    private KindergardenfairyScript _kindergardenfairyScript;
+    [SerializeField] private GameObject _kindergardenFairy;
+    [SerializeField] private Sprite kindergardenFairyNoCup;
+    [SerializeField] private Sprite kindergardenFairyWithCup;
+    public GameObject kindergardenFairyCycle;
     [SerializeField] private GameObject coffee;
+    [SerializeField] private Sprite _fullCupSprite;
+    [SerializeField] private Sprite _emptyCupSprite;
     private Image _cup;
-    private Sprite _fullCupSprite;
-    private Sprite _emptyCupSprite;
     private Animator kindergardenFairyAnimator;
-    public MonologScript monologScript;
+    // --------------------------- room 2 ---------------------------
+    public GameObject flowerfairy;
+    public Sprite flowerfairySprite2;
+    public DialogLine[] flowerfairyDialogue;
     [SerializeField] private CanopyScript _canopyScript;
     public GameObject _canopyDone;
     [SerializeField] private GameObject destroyedFlowers;
-    public GameObject _treeButton;
+    public Image key1Image;
+    [SerializeField] private Sprite key1SpriteSmall;
+    [SerializeField] private Sprite key1SpriteCloseUp;
     public GameObject credits;
     public GameObject our_credits;
     public GameObject sound_credits;
-    public Sprite flowerfairySprite2;
 
     private void Start()
     {
@@ -132,8 +140,7 @@ public class GameplayScript : MonoBehaviour
         questScript.nextTask();
 
         // Sprite anpassen (Ella ohne Tasse)
-        _kindergardenFairy.GetComponent<SpriteRenderer>().sprite =
-            Resources.Load<Sprite>("Sprites/CharacterSprites/kindergardenfairy/ella no cup");
+        _kindergardenFairy.GetComponent<SpriteRenderer>().sprite = kindergardenFairyNoCup;
 
         _kindergardenFairy.GetComponent<SpriteRenderer>().color = new Color (1.0f, 1.0f, 1.0f, 1.0f);
         
@@ -169,8 +176,7 @@ public class GameplayScript : MonoBehaviour
         questScript.nextTask();
 
         // Sprite anpassen (Ella mit kaffee)
-        _kindergardenFairy.GetComponent<SpriteRenderer>().sprite =
-            Resources.Load<Sprite>("Sprites/CharacterSprites/kindergardenfairy/ella with coffee");
+        _kindergardenFairy.GetComponent<SpriteRenderer>().sprite = kindergardenFairyWithCup;
         
         // Kaffeetasse aus itembar entfernen
         _itembar.RemoveItem("becher_voll");
@@ -267,9 +273,9 @@ public class GameplayScript : MonoBehaviour
         // questlogScript.FoldQuestlogIn();
 
         // --> SCHLÜSSEl 1!!!
-        _closeUpScript.ShowCloseUpPanel(Resources.Load<Sprite>("Sprites/KeySprites/Gross/Gartenfee_Schluessel_gross"));
+        _closeUpScript.ShowCloseUpPanel(key1SpriteCloseUp);
         yield return new WaitUntil(() => !InputBlocker.Instance.IsBlocked); // mal schauen ob das so geht
-        key1.sprite = Resources.Load<Sprite>("Sprites/KeySprites/Klein/Gartenfee_Schluessel_klein");
+        key1Image.sprite = key1SpriteSmall;
         // _itembar.fold_itembar_out();
         // _treeButton.SetActive(true);
         

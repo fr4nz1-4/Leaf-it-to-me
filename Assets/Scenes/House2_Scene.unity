@@ -7105,32 +7105,38 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4b84d16329d445b59f412ed194f3eda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prologScript: {fileID: 1552367736}
   dialogScript: {fileID: 161325268}
+  monologScript: {fileID: 910976228}
+  _itembar: {fileID: 403456721}
+  _closeUpScript: {fileID: 645721642}
+  questlogScript: {fileID: 1219545608}
+  questScript: {fileID: 97122526}
+  _treeButton: {fileID: 609090805}
+  prologScript: {fileID: 1552367736}
   kindergardenDialogue: []
+  _kindergardenFairy: {fileID: 0}
+  kindergardenFairyNoCup: {fileID: 0}
+  kindergardenFairyWithCup: {fileID: 0}
+  kindergardenFairyCycle: {fileID: 0}
+  coffee: {fileID: 0}
+  _fullCupSprite: {fileID: 0}
+  _emptyCupSprite: {fileID: 0}
+  flowerfairy: {fileID: 444948343}
+  flowerfairySprite2: {fileID: 21300000, guid: a77f616bc734a4d338bb710e4c7aff71, type: 3}
   flowerfairyDialogue:
   - {fileID: 11400000, guid: 7f5353d88b61f4a918473f8a57d5acad, type: 2}
   - {fileID: 11400000, guid: 42a4a30113cf84a339f8c7ea93c95a43, type: 2}
   - {fileID: 11400000, guid: 42ca652fa6d4644b7a4600093d073832, type: 2}
   - {fileID: 11400000, guid: c8a3249eb7eb74422829b352cd6f61f1, type: 2}
-  key1: {fileID: 1446987696}
-  _itembar: {fileID: 403456721}
-  questlogScript: {fileID: 1219545608}
-  questScript: {fileID: 97122526}
-  _closeUpScript: {fileID: 645721642}
-  flowerfairy: {fileID: 444948343}
-  kindergardenFairyCycle: {fileID: 0}
-  _kindergardenFairy: {fileID: 0}
-  coffee: {fileID: 0}
-  monologScript: {fileID: 910976228}
   _canopyScript: {fileID: 11556986}
   _canopyDone: {fileID: 2093290875}
   destroyedFlowers: {fileID: 11556979}
-  _treeButton: {fileID: 609090805}
+  key1Image: {fileID: 1446987696}
+  key1SpriteSmall: {fileID: 21300000, guid: 8a2e810888b204973ac95fcea416629f, type: 3}
+  key1SpriteCloseUp: {fileID: 21300000, guid: 4c374b367d2ac423bbc5cfc4f3b1fc6f, type: 3}
   credits: {fileID: 974712729}
   our_credits: {fileID: 275675658}
   sound_credits: {fileID: 1967474108}
-  flowerfairySprite2: {fileID: 21300000, guid: a77f616bc734a4d338bb710e4c7aff71, type: 3}
 --- !u!4 &737849527
 Transform:
   m_ObjectHideFlags: 0
