@@ -24,17 +24,18 @@ public class GameplayScript : MonoBehaviour
     private KindergardenfairyScript _kindergardenfairyScript;
     [SerializeField] private GameObject _kindergardenFairy;
     [SerializeField] private Sprite kindergardenFairyNoCup;
-    [SerializeField] private Sprite kindergardenFairyWithCup;
+    [SerializeField] private Sprite kindergardenFairyWithCoffee;
     public GameObject kindergardenFairyCycle;
     [SerializeField] private GameObject coffee;
     [SerializeField] private Sprite _fullCupSprite;
     [SerializeField] private Sprite _emptyCupSprite;
     private Image _cup;
     private Animator kindergardenFairyAnimator;
+    
     // --------------------------- room 2 ---------------------------
+    public DialogLine[] flowerfairyDialogue;
     public GameObject flowerfairy;
     public Sprite flowerfairySprite2;
-    public DialogLine[] flowerfairyDialogue;
     [SerializeField] private CanopyScript _canopyScript;
     public GameObject _canopyDone;
     [SerializeField] private GameObject destroyedFlowers;
@@ -165,7 +166,7 @@ public class GameplayScript : MonoBehaviour
         questScript.nextTask();
 
 		// Closeup script für volle tasse
-        _closeUpScript.ShowCloseUpPanel(_fullCupSprite);
+        // _closeUpScript.ShowCloseUpPanel(_fullCupSprite);
         
         // wieder dialog mit ella (tasse zurückbringen)
         yield return new WaitUntil(() => _clickedObject.name == "kindergarden_fairy");
@@ -176,7 +177,7 @@ public class GameplayScript : MonoBehaviour
         questScript.nextTask();
 
         // Sprite anpassen (Ella mit kaffee)
-        _kindergardenFairy.GetComponent<SpriteRenderer>().sprite = kindergardenFairyWithCup;
+        _kindergardenFairy.GetComponent<SpriteRenderer>().sprite = kindergardenFairyWithCoffee;
         
         // Kaffeetasse aus itembar entfernen
         _itembar.RemoveItem("becher_voll");

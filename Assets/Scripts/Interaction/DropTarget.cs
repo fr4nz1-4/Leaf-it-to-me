@@ -9,6 +9,7 @@ public class DropTarget : MonoBehaviour, IDropHandler
     public string expectedItemName; // z. B. "Apfel" oder "Schlüssel"
     public GameObject finishedObject;
     private ItembarScript _itembarScript;
+    // [SerializeField] private AudioSource dropSound;
 
     private void Start()
     {
@@ -37,8 +38,10 @@ public class DropTarget : MonoBehaviour, IDropHandler
                 // Position des Items im DropTarget zurücksetzen (damit es „anliegt“)
                 dropped.GetComponent<RectTransform>().anchoredPosition = Vector2.zero;
                 dropped.SetActive(false);
+                // dropSound.Play();
                 gameObject.SetActive(false); // Outline deaktivieren
                 finishedObject.SetActive(true); // Holz aktivieren
+                finishedObject.GetComponent<AudioSource>().Play();
                 Debug.Log("finishedObject platziert: " + finishedObject.activeSelf);
             }
             else
@@ -48,5 +51,4 @@ public class DropTarget : MonoBehaviour, IDropHandler
             }
         }
     }
-
 }

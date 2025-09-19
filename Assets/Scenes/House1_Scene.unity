@@ -16671,32 +16671,38 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4b84d16329d445b59f412ed194f3eda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prologScript: {fileID: 900240580}
   dialogScript: {fileID: 691458583}
+  monologScript: {fileID: 1880559953}
+  _itembar: {fileID: 1828120431}
+  _closeUpScript: {fileID: 957420320}
+  questlogScript: {fileID: 776723144}
+  questScript: {fileID: 1915670091}
+  _treeButton: {fileID: 2013557385}
+  prologScript: {fileID: 900240580}
   kindergardenDialogue:
   - {fileID: 11400000, guid: 20ace5103bc3744f6b36800ffc19838e, type: 2}
   - {fileID: 11400000, guid: e7cf58b94b8e34114a2a210c79a2028d, type: 2}
   - {fileID: 11400000, guid: 20bf21ecea7b6467d847cb25fab3131f, type: 2}
   - {fileID: 11400000, guid: 9b9204fe962af4a57af5289001e8ad61, type: 2}
-  flowerfairyDialogue: []
-  key1: {fileID: 0}
-  _itembar: {fileID: 1828120431}
-  questlogScript: {fileID: 776723144}
-  questScript: {fileID: 1915670091}
-  _closeUpScript: {fileID: 957420320}
-  flowerfairy: {fileID: 0}
-  kindergardenFairyCycle: {fileID: 1522073288}
   _kindergardenFairy: {fileID: 250901185}
+  kindergardenFairyNoCup: {fileID: 21300000, guid: 7223848bcaea141dda85d5402e17bf25, type: 3}
+  kindergardenFairyWithCoffee: {fileID: 21300000, guid: dc043c4b4519b497588489a65c85a9f1, type: 3}
+  kindergardenFairyCycle: {fileID: 1522073288}
   coffee: {fileID: 1167409482}
-  monologScript: {fileID: 1880559953}
+  _fullCupSprite: {fileID: 21300000, guid: 93593ccaf326a48648c9d09741947a45, type: 3}
+  _emptyCupSprite: {fileID: 21300000, guid: 69d533abf16da40d6978bd454ed4a0e8, type: 3}
+  flowerfairyDialogue: []
+  flowerfairy: {fileID: 0}
+  flowerfairySprite2: {fileID: 0}
   _canopyScript: {fileID: 0}
   _canopyDone: {fileID: 0}
   destroyedFlowers: {fileID: 0}
-  _treeButton: {fileID: 2013557385}
+  key1Image: {fileID: 0}
+  key1SpriteSmall: {fileID: 0}
+  key1SpriteCloseUp: {fileID: 0}
   credits: {fileID: 0}
   our_credits: {fileID: 0}
   sound_credits: {fileID: 0}
-  flowerfairySprite2: {fileID: 0}
 --- !u!4 &1499148946
 Transform:
   m_ObjectHideFlags: 0
