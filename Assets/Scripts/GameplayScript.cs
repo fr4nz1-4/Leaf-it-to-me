@@ -96,8 +96,8 @@ public class GameplayScript : MonoBehaviour
         TicTacToeScript.MinigamePlayed = false;
         coffee.gameObject.GetComponent<PolygonCollider2D>().enabled = false;
         // Prolog abspielen --> monologbar mit Cape-Main-Charakter im hintergrund
-        // yield return StartCoroutine(prologScript.ShowProlog(kindergardenDialogue[0]));
-        // yield return new WaitUntil(() => !prologScript.prologPanel.activeSelf);
+        yield return StartCoroutine(prologScript.ShowProlog(kindergardenDialogue[0]));
+        yield return new WaitUntil(() => !prologScript.prologPanel.activeSelf);
         
         // Direkt dialog mit kindergartenfee die baum abstaubt
         dialogScript.ShowDialogue(kindergardenDialogue[1], false, false);
@@ -106,8 +106,7 @@ public class GameplayScript : MonoBehaviour
         yield return new WaitUntil(() => !dialogScript.dialogPanel.activeSelf);
 
         // questlogScript.FoldQuestlogOut();
-/*
-        */
+
         // --> ella danach nicht mehr anklickbar
         _kindergardenFairy.GetComponent<Animator>().enabled = true;
         _kindergardenfairyScript.StartFairyCycling();

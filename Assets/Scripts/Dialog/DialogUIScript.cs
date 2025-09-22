@@ -137,13 +137,14 @@ public class DialogUIScript : MonoBehaviour
         InputBlocker.Instance.UnblockInput(); 
     }
 
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.F))
-        {
-            _skipRequested = true;
-        }
-    }
+    // f drücken um kompletten Dialog zu überspringen
+    // private void Update()
+    // {
+    //     if (Input.GetKeyDown(KeyCode.F))
+    //     {
+    //         _skipRequested = true;
+    //     }
+    // }
 
     public void startMinigameOnClick()
     {
